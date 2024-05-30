@@ -8,28 +8,29 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./site
+        working-directory: './site'
         
     steps:
-      - name: git / checkout
+      - name: 'git / checkout'
         uses: actions/checkout@v4
 
-      - name: Node / install
+      - name: 'Node / install'
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          cache: 'npm'
+          cache-dependency-path: './site/package-lock.json'
 
-      - name: npm / install
+      - name: 'npm / install'
         run: npm install
 
-      - name: npm / build
+      - name: 'npm / build'
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
-      - name: GitHub / upload artefacts
+      - name: 'GitHub / upload artefacts'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'build/'
@@ -47,6 +48,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: GitHub / deploy
+      - name: 'GitHub / deploy'
         id: deployment
         uses: actions/deploy-pages@v4
