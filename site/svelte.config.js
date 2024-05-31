@@ -15,6 +15,9 @@ const config = {
     paths: {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH
     },
+    // alias: {
+    //   $src: "./src/"
+    // },
     prerender: {
       entries: ["*", "/",
         "/issue/1",
