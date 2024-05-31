@@ -9,5 +9,5 @@ export let data;
 <article>
   <Header title={data.title} />
 
-  <svelte:component this={data.content}></svelte:component>
+  <svelte:component this={data.content} />
 </article>

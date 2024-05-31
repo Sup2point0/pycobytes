@@ -1,5 +1,6 @@
 export async function load({ params }) {
-  const issue = await import(`/${params.issueIndex}.md`);
+  if (params == null) return;
+  const issue = await import(`./src/export/${params.issueIndex}.md`);
   const { title, index, date } = issue.metadata;
   const content = issue.default;
 
