@@ -19,7 +19,10 @@ const config = {
   preprocess: [
     sveltePreprocess({
       scss: {
-        prependData: "@import './src/lib/styles/Nova.scss';",
+        prependData: `
+          @import './src/lib/styles/Nova.scss';
+          @import './src/variables.scss';
+        `,
       }
     }),
     mdsvex({
