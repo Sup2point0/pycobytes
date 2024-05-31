@@ -20,9 +20,9 @@ img #welcome {
 
 span {
   &.pyb-flavour {
-    &.left { color: $col-accent-prot }
-    &.centre { color: $col-grey-nova }
-    &.right { color: $col-accent-deut }
+    &.left { color: $light-accent-prot }
+    &.centre { color: $grey-nova }
+    &.right { color: $light-accent-deut }
   }
 }
 
