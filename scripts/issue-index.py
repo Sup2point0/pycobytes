@@ -6,6 +6,9 @@ from datetime import date
 from pathlib import Path
 
 
+print(">>> python: running `issue-index.py`")
+
+
 ROOT = Path(__file__).parent.parent.absolute()
 ROUTE = ROOT / "site/src/lib/issues.config.js"
 
@@ -18,7 +21,8 @@ update = date.today().strftime("%b %d")
 content = f'''/// Issues Index
 /// last auto-generated: {update}
 
-export const ISSUES = [{",\n".join(issues)}];
+export default ISSUES;
+const ISSUES = [{",\n".join(issues)}];
 '''
 
 with open(ROUTE, "w") as source:
@@ -26,4 +30,4 @@ with open(ROUTE, "w") as source:
   # A little scuffed, but it works well
 
 
-print("--- DONE! ---")
+print(">>> python: done!")

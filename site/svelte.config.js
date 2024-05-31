@@ -21,7 +21,7 @@ const config = {
       scss: {
         prependData: `
           @import './src/lib/styles/Nova.scss';
-          @import './src/variables.scss';
+          @import './src/lib/styles/variables.scss';
         `,
       }
     }),
