@@ -15,6 +15,6 @@ import Footer from "$lib/parts/Footer.svelte";
 
 <style lang="scss">
 
-@import '$lib/styles/essence.scss';
+@import './src/lib/styles/essence.scss';
 
 </style>

@@ -9,8 +9,12 @@ const navParts = [
   },
   {
     align: "right", text: "Issues",
-    link: "https://sup2point.github.io/pycobytes/issues",
+    link: "https://sup2point0.github.io/pycobytes/issues",
   },
+  {
+    align: "right", text: "About",
+    link: "https://sup2point0.github.io/pycobytes/about",
+  }
 ];
 
 </script>
@@ -41,10 +45,13 @@ nav {
   z-index: 2;
   padding: 1rem;
   background-color: $blue-night;
-  list-style-type: none;
 }
 .left { float: left; }
 .right { float: right; }
+
+ul {
+  list-style-type: none;
+}
 
 li {
   background-color: color-mix(in srgb, from $blue-night 100%, transparent);
@@ -52,6 +59,10 @@ li {
   &:hover {
     background-color: color-mix(in srgb, from $blue-night 69%, transparent);
   }
+}
+
+img {
+  height: 2rem;
 }
 
 </style>

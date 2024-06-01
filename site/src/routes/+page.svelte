@@ -15,7 +15,7 @@ main {
 }
 
 img#welcome {
-  width: 100%;
+  // width: 100%;
 }
 
 span.pyb-flavour {
