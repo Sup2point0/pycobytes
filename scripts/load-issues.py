@@ -2,6 +2,7 @@
 Load issues from `./issues/` into `issues.config.js` for SvelteKit to use when building the site routes.
 '''
 
+import os
 import shutil
 from datetime import date
 from pathlib import Path
@@ -11,12 +12,17 @@ print(">>> Python / collecting issues")
 
 
 ROOT = Path(__file__).parent.parent.absolute()
-ROUTE = ROOT / "site/src/lib/issues.config.js"
+LIB = ROOT / "site/src/lib"
+DEST = LIB / "issues.config.js"
+ROUTE = LIB / "exported"
 
 
 ## Load
 files = (ROOT / "issues").glob("[0-9][0-9].md")
 issues = []
+
+if not os.path.exists(ROUTE):
+  os.mkdir(ROUTE)
 
 for file in files:
   name = str(int(file.stem))
@@ -35,7 +41,7 @@ content = f'''/// Issues Index
 export const ISSUES = [{",\n".join(issues)}];
 '''
 
-with open(ROUTE, "w") as dest:
+with open(DEST, "w") as dest:
   dest.write(content)
   # A little scuffed, but it works well
 
