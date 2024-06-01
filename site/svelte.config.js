@@ -31,7 +31,7 @@ const config = {
     sveltePreprocess({
       scss: {
         prependData: `
-          @import './src/lib/styles/Nova.scss';
+          @import './src/lib/styles/nova.scss';
           @import './src/lib/variables.scss';
           @import './src/lib/mixins/fonts.scss';
         `,
