@@ -25,7 +25,8 @@ for file in files:
   with open(file, "r") as source:
     content = source.read()
   
-  with open(ROOT / "site/src/export" / file.name, "w") as dest:
+  route = ROOT / "site/src/lib/export" / (name + ".md")
+  with open(route, "w") as dest:
     dest.write(content)
 
 

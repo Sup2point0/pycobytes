@@ -24,6 +24,9 @@ const config = {
       ]
     },
   },
+
+  extensions: [".svelte", ".md"],
+  
   preprocess: [
     sveltePreprocess({
       scss: {
