@@ -1,0 +1,39 @@
+/// Link Styles
+
+$link: 'a:where(:not:is(img))';
+
+#{$link} {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: $blue-nova;
+  transition: 0.2s;
+}
+
+#{$link}:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.069em;
+  background-color: $pink-elec;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+#{$link}:hover {
+  color: $pink-elec;
+}
+#{$link}:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#{$link}:visited {
+  color: $blue-ocean;
+}
+#{$link}:visited:hover {
+  color: $pink-elec;
+}

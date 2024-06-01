@@ -1,5 +1,13 @@
 /// Core Styles
 
+@import 'links.scss';
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   @include font-body;
 }
@@ -25,4 +33,8 @@ blockquote {
   padding: 0 1rem;
   color: $grey-nova;
   border-left: 0.25rem solid $grey-nova;
+}
+
+img {
+  object-fit: contain;
 }
