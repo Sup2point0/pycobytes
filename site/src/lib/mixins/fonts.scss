@@ -1,0 +1,25 @@
+/// Font Mixins
+
+@mixin font-body {
+  font-family: 'Source Sans Pro', 'Segoe UI', system-ui;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+@mixin font-head {
+  font-family: 'Overpass', 'Source Sans Pro', 'Segoe UI', system-ui;
+  font-weight: semibold;
+  font-size: 150%;
+}
+
+@mixin font-mono {
+  font-family: 'Roboto Mono', 'Consolas', monospace;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+@mixin font-flavour {
+  font-family: 'Overpass', 'Source Sans Pro', 'Segoe UI', system-ui;
+  font-weight: normal;
+  font-size: 100%;
+}

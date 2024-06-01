@@ -1,0 +1,28 @@
+/// Core Styles
+
+body {
+  @include font-body;
+}
+
+:where(h2,h3,h4) {
+  @include font-head;
+}
+
+code {
+  @include font-mono;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  white-space: break-spaces;
+  background-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 0 1rem;
+  color: $grey-nova;
+  border-left: 0.25rem solid $grey-nova;
+}
