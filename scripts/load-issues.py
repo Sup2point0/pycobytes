@@ -8,28 +8,27 @@ from datetime import date
 from pathlib import Path
 
 
-print(">>> Python / collecting issues")
+print(">>> Python / collecting issues...")
 
 
 ROOT = Path(__file__).parent.parent.absolute()
 LIB = ROOT / "site/src/lib"
-DEST = LIB / "issues.config.js"
-ROUTE = LIB / "exported"
 
 
 ## Load
 files = (ROOT / "issues").glob("[0-9][0-9].md")
 issues = []
 
+ROUTE = LIB / "exported"
 if not os.path.exists(ROUTE):
   os.mkdir(ROUTE)
 
+DEST = ROOT / "site/src/lib/exported"
 for file in files:
   name = str(int(file.stem))
   issues.append(name)
 
-  dest = ROOT / "site/src/lib/exported" / (name + ".md")
-  shutil.copyfile(file, dest)
+  shutil.copyfile(file, DEST / (name + ".md"))
 
 
 ## Save
@@ -41,9 +40,7 @@ content = f'''/// Issues Index
 export const ISSUES = [{",\n".join(issues)}];
 '''
 
+DEST = LIB / "issues.config.js"
 with open(DEST, "w") as dest:
   dest.write(content)
   # A little scuffed, but it works well
-
-
-print(">>> python / done!")
