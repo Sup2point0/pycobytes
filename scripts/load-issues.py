@@ -2,7 +2,7 @@
 Load issues from `./issues/` into `issues.config.js` for SvelteKit to use when building the site routes.
 '''
 
-import json
+import shutil
 from datetime import date
 from pathlib import Path
 
@@ -22,12 +22,8 @@ for file in files:
   name = str(int(file.stem))
   issues.append(name)
 
-  with open(file, "r") as source:
-    content = source.read()
-  
-  route = ROOT / "site/src/lib/export" / (name + ".md")
-  with open(route, "w") as dest:
-    dest.write(content)
+  dest = ROOT / "site/src/lib/exported" / (name + ".md")
+  shutil.copyfile(file, dest)
 
 
 ## Save

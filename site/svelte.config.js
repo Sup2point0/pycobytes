@@ -26,13 +26,14 @@ const config = {
   },
 
   extensions: [".svelte", ".md"],
-  
+
   preprocess: [
     sveltePreprocess({
       scss: {
         prependData: `
           @import './src/lib/styles/Nova.scss';
-          @import './src/lib/styles/variables.scss';
+          @import './src/lib/variables.scss';
+          @import './src/lib/mixins/fonts.scss';
         `,
       }
     }),
