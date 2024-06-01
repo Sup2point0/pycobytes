@@ -54,15 +54,16 @@ ul {
 }
 
 li {
+  padding: 0.5rem 1rem;
   background-color: color-mix(in srgb, from $blue-night 100%, transparent);
 
   &:hover {
-    background-color: color-mix(in srgb, from $blue-night 69%, transparent);
+    background-color: color-mix(in srgb, from $col-accent 69%, transparent);
   }
 }
 
 img {
-  height: 2rem;
+  height: 4rem;
 }
 
 </style>

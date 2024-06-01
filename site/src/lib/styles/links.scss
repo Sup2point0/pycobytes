@@ -4,7 +4,8 @@
 @use './src/lib/styles/_variables' as *;
 
 
-$link: 'a:where(:not:is(img))';
+// $link: 'a:where(:not:is(img))';
+$link: 'a';
 
 #{$link} {
   text-decoration: none;

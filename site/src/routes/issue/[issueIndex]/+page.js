@@ -1,12 +1,9 @@
 // export async function load({ params }) {
-//   // if (!params || !params.issueIndex || params.issueIndex) return;
+//   const route = `../../../../../../../src/lib/exported/${params.issueIndex}.md`;
+//   const issue = await import(route);
 
-//   return params.issueIndex
+//   const { title, index, date } = issue.metadata;
+//   const content = issue.default;
 
-//   // const route = `../export/${params.issueIndex}.md`;
-//   // const issue = await import(route);
-//   // const { title, index, date } = issue.metadata;
-//   // const content = issue.default;
-
-//   // return { content, title, index, date }
+//   return { content, title, index, date }
 // }

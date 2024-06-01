@@ -4,15 +4,17 @@ import Header from "$lib/parts/Header.svelte";
 
 export let data;
 
-async function load({ params }) {
-  const route = `$lib/exported/${params.issueIndex}.md`;
-  const issue = await import(route);
+// async function load({ params }) {
+//   const route = `$lib/exported/${params.issueIndex}.md`;
+//   const issue = await import(route);
 
-  const { title, index, date } = issue.metadata;
-  const content = issue.default;
+//   const { title, index, date } = issue.metadata;
+//   const content = issue.default;
 
-  return { content, title, index, date }
-}
+//   return { content, title, index, date }
+// }
+
+// let data = load();
 
 </script>
 
