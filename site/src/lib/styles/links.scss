@@ -1,5 +1,9 @@
 /// Link Styles
 
+@use './src/lib/styles/_nova' as *;
+@use './src/lib/styles/_variables' as *;
+
+
 $link: 'a:where(:not:is(img))';
 
 #{$link} {

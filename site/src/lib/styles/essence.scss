@@ -1,6 +1,11 @@
 /// Core Styles
 
-@import 'links.scss';
+@use './src/lib/styles/_nova' as *;
+@use './src/lib/styles/_variables' as *;
+@use './src/lib/mixins/_fonts' as *;
+
+@use './src/lib/styles/links' as *;
+
 
 html {
   width: 100%;

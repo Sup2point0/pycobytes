@@ -3,6 +3,8 @@
 import Nav from "$lib/parts/Nav.svelte";
 import Footer from "$lib/parts/Footer.svelte";
 
+import '$lib/styles/essence.scss';
+
 </script>
 
 
@@ -14,7 +16,5 @@ import Footer from "$lib/parts/Footer.svelte";
 
 
 <style lang="scss">
-
-@import './src/lib/styles/essence.scss';
 
 </style>

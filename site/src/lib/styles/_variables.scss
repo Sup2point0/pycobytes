@@ -1,4 +1,8 @@
 // COLOURS //
+
+@use './src/lib/styles/_nova' as *;
+
+
 $col-accent: $blue-nova;
 $col-flavour: $pink-elec;
 
