@@ -16,14 +16,14 @@ const navParts = [
   },
   {
     align: "right", text: "Issues",
-    dropdown: {
+    dropdown: [
       { text: "Index",
         link: "https://sup2point0.github.io/pycobytes/issues" },
       { text: "Latest",
         link: `https://sup2point0.github.io/pycobytes/issues/${ISSUES[ISSUES.length -1]}` },
       { text: "Random",
         button: pickIssue },
-    },
+    ],
   },
   {
     align: "right", text: "Contact",
