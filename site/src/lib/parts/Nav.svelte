@@ -27,14 +27,14 @@ const navParts = [
   },
   {
     align: "right", text: "Contact",
-    dropdown: {
+    dropdown: [
       { text: "Discuss",
         link: "https://sup2point0.github.io/pycobytes/discussions" },
       { text: "Submit an Idea",
         link: "https://sup2point0.github.io/pycobytes/issues" },
       { text: "Report a Bug",
         link: "https://sup2point0.github.io/pycobytes/issues" },
-    },
+    ],
   },
 ].reverse());
 
