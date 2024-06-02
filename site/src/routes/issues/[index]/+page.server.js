@@ -5,6 +5,6 @@ import { ISSUES } from "$lib/issues.config.js";
 /** @type {import('./$types').EntryGenerator} */
 export function entries() {
   return ISSUES.map(
-    issue => ({ issueIndex: toString(issue) })
+    issue => ({ index: toString(issue) })
   );
 }

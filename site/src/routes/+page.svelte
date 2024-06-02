@@ -1,3 +1,7 @@
+<svelte:head>
+  <title> pycobytes | Exploring the magic of Python, week by week </title>
+</svelte:head>
+
 <main>
   <img id="welcome" alt="welcome to pycobytes" src="pycobytes-welcome.png">
   
@@ -8,15 +12,13 @@
   <p> So, <span class="pyb-flavour left">pyco</span><span class="pyb-flavour centre">:</span><span class="pyb-flavour right">bytes</span> is a weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
 </main>
 
+
 <style lang="scss">
 
 main {
-  width: 100%;
+  width: 80%;
 }
 
-img#welcome {
-  // width: 100%;
-}
 
 span.pyb-flavour {
   &.left { color: $light-accent-prot; }

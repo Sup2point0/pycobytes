@@ -19,6 +19,10 @@ export let data;
 </script>
 
 
+<svelte:head>
+  <title> {data.title} | pycobytes[{data.index}] </title>
+</svelte:head>
+
 <article>
   <Header title="{data.title}" date={data.date} />
 

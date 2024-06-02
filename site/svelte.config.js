@@ -18,11 +18,12 @@ const config = {
     // alias: {
     //   $src: "./src/"
     // },
-    prerender: {
-      entries: ["*", "/",
-        "/issue/1",
-      ]
-    },
+    // prerender: {
+    //   entries: [
+    //     // "*", "/",
+    //     // "/issue/1",
+    //   ]
+    // },
   },
 
   extensions: [".svelte", ".md"],
