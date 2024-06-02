@@ -1,10 +1,10 @@
 <script>
 
-// import { issues } from "fetch-issues.js";
+import { base } from "$app.paths";
 
 const navParts = [
   {
-    align: "left", text: "pycobytes", pict: "/pycobytes-title.png",
+    align: "left", text: "pycobytes", pict: `${base}/pycobytes-title.png`,
     link: "https://sup2point0.github.io/pycobytes",
   },
   {
