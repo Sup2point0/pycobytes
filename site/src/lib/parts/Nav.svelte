@@ -41,9 +41,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   z-index: 2;
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: $blue-night;
 }
 .left { float: left; }
@@ -63,7 +66,7 @@ li {
 }
 
 img {
-  height: 4rem;
+  height: 2rem;
 }
 
 </style>

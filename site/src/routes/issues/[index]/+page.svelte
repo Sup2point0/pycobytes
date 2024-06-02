@@ -20,7 +20,7 @@ export let data;
 
 
 <svelte:head>
-  <title> {data.title} | pycobytes[{data.index}] </title>
+  <title> {data.title ?? "404"} | pycobytes[{data.index ?? "?"}] </title>
 </svelte:head>
 
 <article>

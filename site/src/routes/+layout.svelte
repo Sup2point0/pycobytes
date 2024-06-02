@@ -10,11 +10,19 @@ import '$lib/styles/essence.scss';
 
 <Nav />
 
-<slot />
+<div class="content">
+  <slot />
+</div>
 
 <Footer />
 
 
 <style lang="scss">
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 </style>

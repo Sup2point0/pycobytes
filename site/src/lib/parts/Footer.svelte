@@ -15,11 +15,15 @@ let pageSourceLink = "";
   </div>
 </div>
  
-<style>
+<style lang="scss">
 
 .footer {
   width: 100%;
-  background-color: white;
+  background-color: $grey-swallow;
+}
+
+.footer-info {
+  padding-left: 20vw;
 }
 
 .footer-note {
