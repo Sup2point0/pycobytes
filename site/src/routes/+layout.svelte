@@ -10,29 +10,11 @@ import '$lib/styles/essence.scss';
 
 <Nav />
 
-<div class="content">
-  <slot />
-</div>
+<slot />
 
 <Footer />
 
 
 <style lang="scss">
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  width: 80%;
-}
-
-span.pyb-flavour {
-  &.left { color: $light-accent-prot; }
-  &.centre { color: $grey-nova; }
-  &.right { color: $light-accent-deut; }
-}
 
 </style>

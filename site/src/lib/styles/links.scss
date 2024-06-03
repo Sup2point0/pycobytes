@@ -4,14 +4,14 @@
 @use './src/lib/styles/_variables' as *;
 
 
-// $link: 'a:where(:not:is(img))';
 $link: 'a';
+
 
 #{$link} {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: $blue-nova;
+  color: $col-flavour;
   transition: 0.2s;
 }
 
@@ -34,11 +34,4 @@ $link: 'a';
 #{$link}:hover:after {
   transform: scaleX(1);
   transform-origin: left;
-}
-
-#{$link}:visited {
-  color: $blue-ocean;
-}
-#{$link}:visited:hover {
-  color: $pink-elec;
 }

@@ -1,6 +1,7 @@
 <script>
 
 import Header from "$lib/parts/Header.svelte";
+import Article from "$lib/parts/Article.svelte";
 
 export let data;
 
@@ -23,12 +24,14 @@ export let data;
   <title> {data.title ?? "404"} | pycobytes[{data.index ?? "?"}] </title>
 </svelte:head>
 
-<article>
-  <Header title="{data.title}" date={data.date} />
+<Article>
+  <article>
+    <Header title="{data.title}" date={data.date} />
 
-  {#if data.content}
-    <svelte:component this={data.content} />
-  {:else}
-    <h1> ERROR </h1>
-  {/if}
-</article>
+    {#if data.content}
+      <svelte:component this={data.content} />
+    {:else}
+      <h1> ERROR </h1>
+    {/if}
+  </article>
+</Article>

@@ -12,8 +12,8 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
       <p> by <a href="https://github.com/Sup2point0">Sup#2.0</a> </p>
     </div>
     <div class="info right">
-      <p> Created with SvelteKit
-      <br> Hosted on GitHub Pages </p>
+      <p> Created with <a href="https://kit.svelte.dev"><span class="col-flavour svelte">SvelteKit</span></a>
+      <br> Hosted on <a href="https://pages.github.com/">GitHub Pages</a> </p>
       <p> View on <a href={pageSourceLink}>GitHub</a> </p>
     </div>
   </div>
@@ -21,9 +21,13 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
  
 <style lang="scss">
 
+p {
+  margin-bottom: 2em;
+}
+
 .footer-container {
   width: 100%;
-  padding: 1rem auto;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,24 +35,28 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
 }
 
 .footer {
+  @include font-flavour;
   width: 80%;
+  margin: 1rem auto 2rem;
   display: flex;
   flex-direction: row;
-  justify-items: space-between;
+  justify-content: space-between;
   color: $grey-nova;
 }
 
 .left { text-align: left }
 .right { text-align: right }
 
-info {
-  // min-width: 30vw;
-}
+span {
+  &.col-flavour {
+    &.svelte { color: #ff3e00; }
+  }
 
-span.pyb-flavour {
-  &.left { color: $light-accent-prot; }
-  &.centre { color: $grey-nova; }
-  &.right { color: $light-accent-deut; }
+  &.pyb-flavour {
+    &.left { color: $light-accent-prot; }
+    &.centre { color: $grey-nova; }
+    &.right { color: $light-accent-deut; }
+  }
 }
 
 </style>

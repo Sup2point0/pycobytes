@@ -7,20 +7,20 @@ import { ISSUES } from "$lib/issues.config.js";
 const navParts = [
   {
     align: "left", text: "pycobytes", pict: `${base}/pycobytes-title.png`,
-    link: "https://sup2point0.github.io/pycobytes",
+    link: ".",
   },
 ].concat([
   {
     align: "right", text: "About",
-    link: "https://sup2point0.github.io/pycobytes/about",
+    link: "./about",
   },
   {
     align: "right", text: "Issues",
     dropdown: [
       { text: "Index",
-        link: "https://sup2point0.github.io/pycobytes/issues" },
+        link: "./issues" },
       { text: "Latest",
-        link: `https://sup2point0.github.io/pycobytes/issues/${ISSUES[ISSUES.length -1]}` },
+        link: `./issues/${ISSUES[ISSUES.length -1]}` },
       { text: "Random",
         button: pickIssue },
     ],
@@ -47,20 +47,20 @@ function pickIssue() {
 
 <nav>
   <ul>
-    {#each navParts as each}
-      <li id={each.text} class={each.align}>
-        {#if each.link}
-          <a href={each.link}>
-            {#if each.pict}
-              <img src={each.pict} alt={each.text}>
+    {#each navParts as part}
+      <li id={part.text} class={part.align}>
+        {#if part.link}
+          <a href={part.link}>
+            {#if part.pict}
+              <img src={part.pict} alt={part.text}>
             {:else}
-              {each.text}
+              {part.text}
             {/if}
           </a>
-        {:else if each.button}
-          <button on:click={each.button}> {each.text} </button>
+        {:else if part.button}
+          <button on:click={part.button}> {part.text} </button>
         {:else}
-          ?
+          {part.text}
         {/if}
       </li>
     {/each}
@@ -72,16 +72,19 @@ function pickIssue() {
 nav {
   position: fixed;
   top: 0;
-  max-width: 100%;
-  height: 3rem;
   z-index: 2;
-  padding: 0.5rem 20vw;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
+  width: 100%;
+  max-width: 100%;
+  height: 4rem;
+  padding-right: 4rem;
   background-color: $blue-night;
   background: linear-gradient(to bottom, $blue-night, color-mix(in srgb, $blue-night 90%, transparent));
 }
+
+nav ul {
+  padding-right: 2rem;
+}
+
 .left { float: left; }
 .right { float: right; }
 
@@ -90,7 +93,8 @@ ul {
 }
 
 li {
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  color: white;
   background-color: color-mix(in srgb, from $blue-night 100%, transparent);
 
   &:hover {
@@ -98,7 +102,7 @@ li {
   }
 }
 
-img {
+li img {
   height: 2rem;
 }
 

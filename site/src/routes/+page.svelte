@@ -2,6 +2,8 @@
 
 import { base } from "$app/paths";
 
+import Article from "$lib/parts/Article.svelte";
+
 </script>
 
 
@@ -23,6 +25,12 @@ import { base } from "$app/paths";
 
 
 <style lang="scss">
+
+p {
+  @include font-flavour;
+  margin: 3em 8rem;
+  font-size: 120%;
+}
 
 .header img {
   width: 100%;
