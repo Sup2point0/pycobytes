@@ -1,11 +1,20 @@
 <script>
 
 import { base } from "$app/paths";
-import { page } from '$app/stores';
 
 import { ISSUES } from "$src/issues.config.js";
 
 const navParts = [
+  {
+    align: "left", text: "icon",
+    pict: `${base}/pycobytes-icon.png`,
+    link: ".",
+  },
+  {
+    align: "left", text: "pyco:bytes",
+    link: ".",
+  },
+].concat([
   {
     align: "right", text: "About",
     link: "./about",
@@ -32,7 +41,11 @@ const navParts = [
         link: "https://sup2point0.github.io/pycobytes/issues" },
     ],
   },
-].reverse();
+  {
+    align: "right", text: "GitHub",
+    pict: `${base}/github-icon.svg`
+  },
+].reverse());
 
 function pickIssue() {
   let index = ISSUES[Math.random() * ISSUES.length | 0];
@@ -43,18 +56,8 @@ function pickIssue() {
 
 <nav>
   <ul>
-    <li class="left">
-      <a href="./">
-        {#if true}
-          <img alt="pycobytes-logo" src="{base}/pycobytes-title.png">
-        {:else}
-          <img alt="pycobytes-logo" src="{base}/pycobytes-icon.png">
-        {/if}
-      </a>
-    </li>
-
     {#each navParts as part}
-      <li id={part.text} class={part.align}>
+      <li id={part.text} class="nav-part {part.align}">
         {#if part.link}
           <a href={part.link}>
             {#if part.pict}
@@ -81,8 +84,7 @@ nav {
   z-index: 2;
   width: 100%;
   max-width: 100%;
-  height: 4rem;
-  padding-right: 4rem;
+  padding: 1rem 4rem 1rem auto;
   background-color: $blue-night;
   background: linear-gradient(to bottom, $blue-night, color-mix(in srgb, $blue-night 90%, transparent));
 }
@@ -98,16 +100,25 @@ ul {
   list-style-type: none;
 }
 
-li {
+li.nav-part {
   @include font-flavour;
-  
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem 0.5rem;
+  border-radius: 0.5em;
   color: white;
-  background-color: color-mix(in srgb, from $blue-night 100%, transparent);
+  background-color: rgb(0 0 0 / 0%);
 
-  &:hover {
-    background-color: color-mix(in srgb, from $col-accent 69%, transparent);
+  transition: all 0.2s ease-in-out;
+  @media prefers-reduced-motion {
+    transition: none;
   }
+
+  &:not(:has(img)):hover {
+    color: $col-flavour;
+  }
+}
+
+li.nav-part {
+  color: white;
 }
 
 li img {

@@ -11,9 +11,7 @@ import '$src/styles/prism-night-owl.css'
 
 <Nav />
 
-<div style="margin-top: 4rem">
-  <slot />
-</div>
+<slot />
 
 <Footer />
 

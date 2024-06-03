@@ -4,7 +4,7 @@
 @use './src/styles/_variables' as *;
 
 
-$link: 'a';
+$link: ':where(a:not(:has(img), .nav-part))';
 
 
 #{$link} {
@@ -22,14 +22,14 @@ $link: 'a';
   left: 0;
   width: 100%;
   height: 0.069em;
-  background-color: $pink-elec;
+  background-color: $purp-nova;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.2s ease-out;
 }
 
 #{$link}:hover {
-  color: $pink-elec;
+  color: $purp-nova;
 }
 #{$link}:hover:after {
   transform: scaleX(1);
