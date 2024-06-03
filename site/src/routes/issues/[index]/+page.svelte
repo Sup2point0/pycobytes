@@ -5,23 +5,11 @@ import Article from "$src/parts/Article.svelte";
 
 export let data;
 
-// async function load({ params }) {
-//   const route = `$src/exported/${params.issueIndex}.md`;
-//   const issue = await import(route);
-
-//   const { title, index, date } = issue.metadata;
-//   const content = issue.default;
-
-//   return { content, title, index, date }
-// }
-
-// let data = load();
-
 </script>
 
 
 <svelte:head>
-  <title> {data.title ?? "404"} | pycobytes[{data.index ?? "?"}] </title>
+  <title> {data.title ?? "404"} • pycobytes[{data.index ?? "?"}] </title>
 </svelte:head>
 
 <Article>

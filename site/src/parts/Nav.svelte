@@ -1,15 +1,11 @@
 <script>
 
 import { base } from "$app/paths";
+import { page } from '$app/stores';
 
 import { ISSUES } from "$src/issues.config.js";
 
 const navParts = [
-  {
-    align: "left", text: "pycobytes", pict: `${base}/pycobytes-title.png`,
-    link: ".",
-  },
-].concat([
   {
     align: "right", text: "About",
     link: "./about",
@@ -36,7 +32,7 @@ const navParts = [
         link: "https://sup2point0.github.io/pycobytes/issues" },
     ],
   },
-].reverse());
+].reverse();
 
 function pickIssue() {
   let index = ISSUES[Math.random() * ISSUES.length | 0];
@@ -47,12 +43,22 @@ function pickIssue() {
 
 <nav>
   <ul>
+    <li class="left">
+      <a href="./">
+        {#if true}
+          <img alt="pycobytes-logo" src="{base}/pycobytes-title.png">
+        {:else}
+          <img alt="pycobytes-logo" src="{base}/pycobytes-icon.png">
+        {/if}
+      </a>
+    </li>
+
     {#each navParts as part}
       <li id={part.text} class={part.align}>
         {#if part.link}
           <a href={part.link}>
             {#if part.pict}
-              <img src={part.pict} alt={part.text}>
+              <img alt={part.text} src={part.pict}>
             {:else}
               {part.text}
             {/if}
@@ -93,7 +99,9 @@ ul {
 }
 
 li {
-  padding: 0 1rem;
+  @include font-flavour;
+  
+  padding: 0.5rem 1rem;
   color: white;
   background-color: color-mix(in srgb, from $blue-night 100%, transparent);
 

@@ -2,13 +2,13 @@
 
 import { base } from "$app/paths";
 
-import Article from "$src/parts/Article.svelte";
+import site from "$src/site.config.js";
 
 </script>
 
 
 <svelte:head>
-  <title> pycobytes | Exploring the magic of Python, week by week </title>
+  <title> pycobytes • {site.desc.short} </title>
 </svelte:head>
 
 <div class="header">
@@ -30,6 +30,11 @@ p {
   @include font-flavour;
   margin: 3em 8rem;
   font-size: 120%;
+}
+
+.header {
+  padding-top: 4rem;
+  background-color: $blue-night;
 }
 
 .header img {

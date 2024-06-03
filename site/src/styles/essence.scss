@@ -23,11 +23,19 @@ body {
 
 code {
   @include font-mono;
-  padding: 0.2em 0.4em;
-  margin: 0;
-  white-space: break-spaces;
-  background-color: rgba(175,184,193,0.2);
-  border-radius: 6px;
+}
+
+// p code {
+//   padding: 0.2em 0.4em;
+//   margin: 0;
+//   white-space: break-spaces;
+//   background-color: rgba(175, 184, 193, 0.2);
+//   border-radius: 6px;
+// }
+
+pre:has(code) {
+  padding-left: 1em;
+  border-radius: 20px;
 }
 
 b, strong {

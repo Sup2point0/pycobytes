@@ -3,6 +3,7 @@ export async function load({ params }) {
 
   const route = `../../../../../../../src/exported/${params.index}.svx`;
   const issue = await import(route);
+  /* @vite-ignore */
 
   const { title, index, date } = issue.metadata;
   const content = issue.default;
