@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import Article from "$lib/parts/Article.svelte";
+import Article from "$src/parts/Article.svelte";
 
 </script>
 

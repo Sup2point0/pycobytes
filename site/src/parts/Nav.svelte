@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import { ISSUES } from "$lib/issues.config.js";
+import { ISSUES } from "$src/issues.config.js";
 
 const navParts = [
   {

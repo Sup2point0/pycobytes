@@ -1,9 +1,9 @@
 <script>
 
-import Nav from "$lib/parts/Nav.svelte";
-import Footer from "$lib/parts/Footer.svelte";
+import Nav from "$src/parts/Nav.svelte";
+import Footer from "$src/parts/Footer.svelte";
 
-import '$lib/styles/essence.scss';
+import '$src/styles/essence.scss';
 
 </script>
 

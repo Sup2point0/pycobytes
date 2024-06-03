@@ -15,9 +15,9 @@ const config = {
     paths: {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH
     },
-    // alias: {
-    //   $src: "./src/"
-    // },
+    alias: {
+      $src: "./src/"
+    },
     // prerender: {
     //   entries: [
     //     // "*", "/",
@@ -26,20 +26,20 @@ const config = {
     // },
   },
 
-  extensions: [".svelte", ".md"],
+  extensions: [".svelte", ".md", ".svx"],
 
   preprocess: [
     sveltePreprocess({
       scss: {
         prependData: `
-          @use './src/lib/styles/_nova' as *;
-          @use './src/lib/styles/_variables' as *;
-          @use './src/lib/mixins/_fonts' as *;
+          @use './src/styles/_nova' as *;
+          @use './src/styles/_variables' as *;
+          @use './src/mixins/_fonts' as *;
         `,
       }
     }),
     mdsvex({
-      extensions: [".md"]
+      extensions: [".md", ".svx"]
     })
   ]
 };

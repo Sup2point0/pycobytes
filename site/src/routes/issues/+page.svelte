@@ -1,8 +1,8 @@
 <script>
 
-import { ISSUES } from "$lib/issues.config.js";
+import { ISSUES } from "$src/issues.config.js";
 
-import Article from "$lib/parts/Article.svelte";
+import Article from "$src/parts/Article.svelte";
 
 </script>
 

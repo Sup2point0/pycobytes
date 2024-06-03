@@ -1,9 +1,11 @@
-// export async function load({ params }) {
-//   const route = `../../../../../../../src/lib/exported/${params.issueIndex}.md`;
-//   const issue = await import(route);
+export async function load({ params }) {
+  if (params.index == "[object Undefined]") return {};
 
-//   const { title, index, date } = issue.metadata;
-//   const content = issue.default;
+  const route = `../../../../../../../src/exported/${params.index}.svx`;
+  const issue = await import(route);
 
-//   return { content, title, index, date }
-// }
+  const { title, index, date } = issue.metadata;
+  const content = issue.default;
+
+  return { content, title, index, date }
+}

@@ -1,4 +1,4 @@
-import { ISSUES } from "$lib/issues.config.js";
+import { ISSUES } from "$src/issues.config.js";
 
 // export const prerender = true;
 
