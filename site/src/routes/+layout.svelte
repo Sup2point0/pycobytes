@@ -25,4 +25,14 @@ import '$lib/styles/essence.scss';
   align-items: center;
 }
 
+main {
+  width: 80%;
+}
+
+span.pyb-flavour {
+  &.left { color: $light-accent-prot; }
+  &.centre { color: $grey-nova; }
+  &.right { color: $light-accent-deut; }
+}
+
 </style>
