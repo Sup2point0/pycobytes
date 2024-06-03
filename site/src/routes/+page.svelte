@@ -9,9 +9,11 @@ import { base } from "$app/paths";
   <title> pycobytes | Exploring the magic of Python, week by week </title>
 </svelte:head>
 
-<main>
+<div class="header">
   <img id="welcome" alt="welcome to pycobytes" src="{base}/pycobytes-welcome.png">
-  
+</div>
+
+<main>
   <p> Python is awesome. But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   
   <img id="glimpse" alt="pythonic magic" src="{base}/pycobytes-glimpse.png">
@@ -22,15 +24,8 @@ import { base } from "$app/paths";
 
 <style lang="scss">
 
-main {
-  width: 80%;
-}
-
-
-span.pyb-flavour {
-  &.left { color: $light-accent-prot; }
-  &.centre { color: $grey-nova; }
-  &.right { color: $light-accent-deut; }
+.header img {
+  width: 100%;
 }
 
 </style>
