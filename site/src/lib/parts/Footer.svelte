@@ -12,8 +12,8 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
       <p> by <a href="https://github.com/Sup2point0">Sup#2.0</a> </p>
     </div>
     <div class="info right">
-      <p> Created with SvelteKit </p>
-      <p> Hosted on GitHub Pages </p>
+      <p> Created with SvelteKit
+      <br> Hosted on GitHub Pages </p>
       <p> View on <a href={pageSourceLink}>GitHub</a> </p>
     </div>
   </div>
@@ -23,6 +23,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
 
 .footer-container {
   width: 100%;
+  padding: 1rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +42,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
 .right { text-align: right }
 
 info {
-  min-width: 30vw;
+  // min-width: 30vw;
 }
 
 span.pyb-flavour {
