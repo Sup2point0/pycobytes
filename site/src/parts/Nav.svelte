@@ -23,6 +23,7 @@ const navParts = [
   },
   {
     align: "right", text: "Issues",
+    link: "./issues",
     dropdown: [
       { text: "Index",
         link: "./issues" },
@@ -74,9 +75,11 @@ function pickIssue() {
       </li>
     {/each}
 
-    <button on:click={swapDuality}>
-      <img src="{base}/duality-{$duality}.png">
-    </button>
+    <li id="swapDuality" class="nav-part left">
+      <button on:click={swapDuality}>
+        <img alt="thing" src="{base}/duality-{$duality}.png">
+      </button>
+    </li>
   </ul>
 </nav>
 
@@ -129,6 +132,11 @@ li.nav-part, a.nav-link {
 
 li img {
   height: 2rem;
+}
+
+li button {
+  background-color: rgb(0 0 0 / 0);
+  border: none;
 }
 
 </style>

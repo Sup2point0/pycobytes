@@ -13,20 +13,24 @@ export let data;
 </svelte:head>
 
 <article>
-  <Header
-    type = "issue"
-    issueIndex = {data.issueIndex}
-    title = "{data.title}"
-    date = {data.date}
-  />
+  {#if data.content}
+    <Header
+      type = "issue"
+      issueIndex = {data.issueIndex}
+      title = "{data.title}"
+      date = {data.date}
+    />
 
-  <Article>
-    {#if data.content}
+    <Article>
       <svelte:component this={data.content} />
-    {:else}
+    </Article>
+
+  {:else}
+    <Article>
       <h1 align="center"> Oops, something went wrong! </h1>
-    {/if}
-  </Article>
+    </Article>
+  
+  {/if}
 </article>
 
 

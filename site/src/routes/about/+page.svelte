@@ -11,7 +11,7 @@ import Article from "$src/parts/Article.svelte";
 </svelte:head>
 
 <article>
-  <Header title="pyco:bytes">
+  <Header title="pyco:bytes" />
 
   <Article>
   </Article>
