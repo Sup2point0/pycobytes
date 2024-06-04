@@ -26,6 +26,8 @@ assets = ichain(
 
 ## Save
 DEST = ROOT / "site/static"
+if not os.path.exists(DEST):
+   os.mkdir(DEST)
 
 for file in assets:
   shutil.copyfile(file, DEST / file.name)
