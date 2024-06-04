@@ -2,6 +2,7 @@
 Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
 '''
 
+import json
 import os
 import shutil
 from datetime import date
@@ -20,7 +21,6 @@ files = (ROOT / "issues").glob("[0-9][0-9].md")
 issues = []
 
 ROUTE = SRC / "exported"
-
 if not os.path.exists(ROUTE):
   os.mkdir(ROUTE)
 
@@ -28,10 +28,6 @@ DEST = SRC / "exported"
 FIELDS = ["index", "title", "date", "topic"]
 
 for file in files:
-  name = str(int(file.stem))
-  issues.append(name)
-
-  ## PARSE
   with open(file, "r") as source:
     content = source.readlines()
 
@@ -53,36 +49,47 @@ for file in files:
     for field in FIELDS:
       if field in line:
         *_, value = line.partition("= ")
-        fields[field] = value
+        fields[field] = value.strip()
 
   if not live:
     continue
 
+  issues.append({
+    "name": file.stem,
+    **fields,
+  })
+
   front = f'''---
-    index: {fields["index"]}
-    title: {fields["title"]}
-    date: {fields.get("date", None)}
-    topic: {fields.get("topic", None)}
+  index: {fields["index"]}
+  title: {fields["title"]}
+  date: {fields.get("date", None)}
+  topic: {fields.get("topic", None)}
 ---
 '''
 
-  with open(file, "w") as source:
+  with open(file, "r") as source:
+    content = source.read()
+
+  ROUTE = DEST / (str(int(file.stem)) + ".svx")
+  shutil.copyfile(file, ROUTE)
+
+  with open(ROUTE, "w") as source:
     source.seek(0)
-    source.write(front)
-
-  shutil.copyfile(file, DEST / (name + ".svx"))
+    source.write(front + "\n" + content)
 
 
-## Save
+## Save - a little scuffed, but it works well
 update = date.today().strftime("%b %d")
 
 content = f'''/// Issues Index
 /// last auto-generated: {update}
 
-export const ISSUES = [{",\n".join(issues)}];
+export const ISSUES = [{",\n".join(
+  json.dumps(each, indent = 2)
+  for each in issues
+)}];
 '''
 
 DEST = SRC / "issues-config.js"
 with open(DEST, "w") as dest:
   dest.write(content)
-  # A little scuffed, but it works well
