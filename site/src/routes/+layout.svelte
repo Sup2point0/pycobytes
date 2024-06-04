@@ -11,6 +11,10 @@ import duality from "$src/scripts/duality";
 </script>
 
 
+<svelte:head>
+  <script defer src="$src/scripts/prism.js"> </script>
+</svelte:head>
+
 <div class="duality-container" style="color-scheme: {$duality}">
   <Nav />
   <slot />

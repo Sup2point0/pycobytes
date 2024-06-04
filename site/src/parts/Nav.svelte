@@ -10,25 +10,25 @@ const navParts = [
   {
     align: "left", text: "icon",
     pict: `${base}/pycobytes-icon.png`,
-    link: ".",
+    link: base,
   },
   {
     align: "left", text: "pyco:bytes",
-    link: ".",
+    link: base,
   },
 ].concat([
   {
     align: "right", text: "About",
-    link: "./about",
+    link: `${base}/about`,
   },
   {
     align: "right", text: "Issues",
-    link: "./issues",
+    link: `${base}/issues`,
     dropdown: [
       { text: "Index",
-        link: "./issues" },
+        link: `${base}/issues` },
       { text: "Latest",
-        link: `./issues/${ISSUES[ISSUES.length -1]}` },
+        link: `${base}/issues/${ISSUES[ISSUES.length -1]}` },
       { text: "Random",
         button: pickIssue },
     ],
@@ -78,10 +78,8 @@ function pickIssue() {
     <li id="swapDuality" class="nav-part left">
       <button on:click={swapDuality}>
         <span class="material-symbols-outlined">
-          {#if $duality == "dark"}
-            dark_mode
-          {:else}
-            light_mode
+          {#if $duality == "dark"} dark_mode
+          {:else} light_mode
           {/if}
         </span>
       </button>
