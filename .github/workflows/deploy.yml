@@ -1,6 +1,7 @@
 name: 'GitHub Pages Deployment'
 
 on:
+  workflow_dispatch:
   push:
 
 jobs:
