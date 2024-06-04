@@ -1,16 +1,21 @@
-<script>
+<script lang="ts">
 
-export let issueIndex;
+export let type: "issue" | null = null;
+export let issueIndex = null;
 export let title;
-export let date;
+export let date = null;
 
 </script>
 
 
 <div class="header">
-  <code> {issueIndex} </code>
-  <h1> {title} </h1>
-  <p> {date} </p>
+  {#if type == "issue"}
+    <code> {issueIndex} </code>
+    <h1> {title} </h1>
+    <p> {date} </p>
+  {:else}
+    <h1> {title} </h1>
+  {/if}
 </div>
 
 

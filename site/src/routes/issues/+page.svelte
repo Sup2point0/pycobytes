@@ -15,7 +15,7 @@ import Article from "$src/parts/Article.svelte";
   <ul>
     {#each ISSUES as issue}
       <li>
-        <p> {issue.index} </p>
+        <p> {issue} </p>
         <a href={`issues/${issue}`}>{issue.title}</a>
       </li>
     {/each}

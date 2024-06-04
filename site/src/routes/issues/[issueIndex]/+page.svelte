@@ -9,14 +9,15 @@ export let data;
 
 
 <svelte:head>
-  <title> {data.title ?? "404"} · pycobytes[{data.index ?? "?"}] </title>
+  <title> {data.title ?? "404"} · pycobytes[{data.issueIndex ?? "?"}] </title>
 </svelte:head>
 
 <article>
   <Header
-    issueIndex={data.index}
-    title="{data.title}"
-    date={data.date}
+    type = "issue"
+    issueIndex = {data.issueIndex}
+    title = "{data.title}"
+    date = {data.date}
   />
 
   <Article>

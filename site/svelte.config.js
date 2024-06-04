@@ -18,12 +18,13 @@ const config = {
     alias: {
       $src: "./src/",
     },
-    // prerender: {
-    //   entries: [
-    //     // "*", "/",
-    //     // "/issue/1",
-    //   ]
-    // },
+    prerender: {
+      entries: [
+        "*",
+        // "/issue/1",
+      ],
+      handleHttpError: "warn",
+    },
   },
 
   extensions: [".svelte", ".md", ".svx"],

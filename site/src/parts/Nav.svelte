@@ -51,7 +51,7 @@ const navParts = [
 
 function pickIssue() {
   let index = ISSUES[Math.random() * ISSUES.length | 0];
-  window.location.href = "https://sup2point0.github.io/pycobytes/issues/{index}";
+  window.location.href = "https://sup2point0.github.io/pycobytes/issues/${index}";
 }
 
 </script>
