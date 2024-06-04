@@ -1,5 +1,5 @@
 '''
-Load issues from `./issues/` into `issues.config.js` for SvelteKit to use when building the site routes.
+Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
 '''
 
 import os
@@ -82,7 +82,7 @@ content = f'''/// Issues Index
 export const ISSUES = [{",\n".join(issues)}];
 '''
 
-DEST = SRC / "issues.config.js"
+DEST = SRC / "issues-config.js"
 with open(DEST, "w") as dest:
   dest.write(content)
   # A little scuffed, but it works well

@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import site from "$src/site.config.js";
+import site from "$src/site-config.js";
 
 </script>
 
