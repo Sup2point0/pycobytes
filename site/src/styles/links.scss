@@ -4,14 +4,14 @@
 @use './src/styles/_variables' as *;
 
 
-$link: ':where(a:not(:has(img), .nav-part))';
+$link: ':where(a:not(:has(img), .nav-link))';
 
 
 #{$link} {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: $col-flavour;
+  color: $blue-ocean;
   transition: 0.2s;
 }
 
@@ -22,14 +22,14 @@ $link: ':where(a:not(:has(img), .nav-part))';
   left: 0;
   width: 100%;
   height: 0.069em;
-  background-color: $purp-nova;
+  background-color: $pink-elec;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.2s ease-out;
 }
 
 #{$link}:hover {
-  color: $purp-nova;
+  color: $pink-elec;
 }
 #{$link}:hover:after {
   transform: scaleX(1);

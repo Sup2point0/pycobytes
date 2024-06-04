@@ -59,7 +59,7 @@ function pickIssue() {
     {#each navParts as part}
       <li id={part.text} class="nav-part {part.align}">
         {#if part.link}
-          <a href={part.link}>
+          <a class="nav-link" href={part.link}>
             {#if part.pict}
               <img alt={part.text} src={part.pict}>
             {:else}
@@ -112,13 +112,15 @@ li.nav-part {
     transition: none;
   }
 
-  &:not(:has(img)):hover {
+  &:not(:has(img)):hover, a.nav-link:hover {
+    cursor: pointer;
     color: $col-flavour;
   }
 }
 
-li.nav-part {
+li.nav-part, a.nav-link {
   color: white;
+  text-decoration: none
 }
 
 li img {
