@@ -11,7 +11,7 @@ from pathlib import Path
 print(">>> Python / collecting assets...")
 
 
-ROOT = Path(__file__).parent.parent.absolute()
+ROOT = Path(__file__).parents[2].absolute()
 
 
 ## Load
