@@ -3,6 +3,8 @@
 import { base } from "$app/paths";
 
 import { ISSUES } from "$src/issues.config.js";
+import duality from "$src/scripts/duality";
+import { swapDuality } from "$src/scripts/duality";
 
 const navParts = [
   {
@@ -73,6 +75,10 @@ function pickIssue() {
         {/if}
       </li>
     {/each}
+
+    <button on:click={swapDuality}>
+      <img src="{base}/duality-{$duality}.png">
+    </button>
   </ul>
 </nav>
 

@@ -1,50 +1,52 @@
-// import { browser } from "$app/environment";
-// import { writable } from "svelte/store";
+/// Theme setting
+
+import { browser } from "$app/environment";
+import { writable } from "svelte/store";
 
 
-// const SHARD = "pycobytes-duality"
+const SHARD = "pycobytes-duality"
 
 
-// const duality = writable<string>("light");
+const duality = writable<string>("light");
 
-// duality.subscribe((value) => {
-//  if (browser) {
-//    localStorage.setItem(SHARD, value);
-//  }
-// });
+duality.subscribe((value) => {
+  if (browser) {
+    localStorage.setItem(SHARD, value);
+  }
+});
 
-// export default duality;
-
-
-// const dualitySwap = {
-//  light: "dark",
-//  dark: "light",
-// }
-
-// export function swapDuality() : void {
-//  duality.set(dualitySwap[$duality]);
-// }
+export default duality;
 
 
-// export function syncDuality() : void {
-//  duality.set(getLocalDuality());
-// }
+const dualities = {
+  light: "dark",
+  dark: "light",
+}
 
-// function getLocalDuality() : string {
-//  if (browser) {
-//    let localDuality = localStorage.getItem(SHARD);
-//    if (localDuality == "light" || localDuality == "dark") {
-//      return localDuality;
-//    }
-//  }
+export function swapDuality() : void {
+  duality.update((value) => dualities[value]);
+}
 
-//  if (matchMedia) {
-//    if (matchMedia("(prefers-color-scheme: dark)").matches) {
-//      return "dark";
-//    } else {
-//      return "light";
-//    }
-//  }
 
-//  return "light";
-// }
+export function syncDuality() : void {
+  duality.set(getLocalDuality());
+}
+
+function getLocalDuality() : string {
+  if (browser) {
+    let localDuality = localStorage.getItem(SHARD);
+    if (localDuality == "light" || localDuality == "dark") {
+      return localDuality;
+    }
+  }
+
+  if (matchMedia) {
+    if (matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    } else {
+      return "light";
+    }
+  }
+
+  return "light";
+}
