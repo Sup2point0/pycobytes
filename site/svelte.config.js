@@ -16,7 +16,7 @@ const config = {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH
     },
     alias: {
-      $src: "./src/"
+      $src: "./src/",
     },
     // prerender: {
     //   entries: [
@@ -29,6 +29,9 @@ const config = {
   extensions: [".svelte", ".md", ".svx"],
 
   preprocess: [
+    mdsvex({
+      extensions: [".md", ".svx"]
+    }),
     sveltePreprocess({
       scss: {
         prependData: `
@@ -38,10 +41,7 @@ const config = {
         `,
       }
     }),
-    mdsvex({
-      extensions: [".md", ".svx"]
-    })
-  ]
+  ],
 };
 
 export default config;
