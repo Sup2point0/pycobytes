@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import { ISSUES } from "$src/issues.config.js";
+import { ISSUES } from "$src/issues-config.js";
 import duality from "$src/scripts/duality";
 import { swapDuality } from "$src/scripts/duality";
 
@@ -68,8 +68,6 @@ function pickIssue() {
               {part.text}
             {/if}
           </a>
-        {:else if part.button}
-          <button on:click={part.button}> {part.text} </button>
         {:else}
           {part.text}
         {/if}
@@ -89,8 +87,9 @@ nav {
   top: 0;
   z-index: 2;
   width: 100%;
+  // height: $nav-height;
   max-width: 100%;
-  padding: 1rem 4rem 1rem auto;
+  padding: 0 4rem 0 auto;
   background-color: $blue-night;
   background: linear-gradient(to bottom, $blue-night, color-mix(in srgb, $blue-night 90%, transparent));
 }
@@ -107,26 +106,25 @@ ul {
 }
 
 li.nav-part {
-  @include font-flavour;
   padding: 0.8rem 1rem 0.5rem;
   border-radius: 0.5em;
-  color: white;
   background-color: rgb(0 0 0 / 0%);
+}
 
-  transition: all 0.2s ease-in-out;
+li.nav-part, a.nav-link {
+  @include font-flavour;
+  text-decoration: none;
+  color: white;
+
+  transition: all 0.16s ease-out;
   @media prefers-reduced-motion {
     transition: none;
   }
 
-  &:not(:has(img)):hover, a.nav-link:hover {
+  &:not(:has(img)):hover {
     cursor: pointer;
     color: $col-flavour;
   }
-}
-
-li.nav-part, a.nav-link {
-  color: white;
-  text-decoration: none
 }
 
 li img {

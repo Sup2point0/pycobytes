@@ -1,8 +1,11 @@
-// COLOURS //
+/// Global Variables
 
 @use './src/styles/_nova' as *;
 
 
+$nav-height: 4rem;
+
+// COLOURS //
 $col-accent: $blue-nova;
 $col-flavour: $yellow-nova;
 

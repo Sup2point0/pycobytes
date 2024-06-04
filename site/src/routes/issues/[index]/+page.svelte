@@ -9,17 +9,26 @@ export let data;
 
 
 <svelte:head>
-  <title> {data.title ?? "404"} • pycobytes[{data.index ?? "?"}] </title>
+  <title> {data.title ?? "404"} · pycobytes[{data.index ?? "?"}] </title>
 </svelte:head>
 
-<Article>
-  <article>
-    <Header title="{data.title}" date={data.date} />
+<article>
+  <Header
+    issueIndex={data.index}
+    title="{data.title}"
+    date={data.date}
+  />
 
+  <Article>
     {#if data.content}
       <svelte:component this={data.content} />
     {:else}
-      <h1> ERROR </h1>
+      <h1 align="center"> Oops, something went wrong! </h1>
     {/if}
-  </article>
-</Article>
+  </Article>
+</article>
+
+
+<style lang="scss">
+
+</style>

@@ -1,11 +1,14 @@
 export async function load({ params }) {
   if (params.index == "[object Undefined]") return {};
 
-  const route = `../../../../../../../src/exported/${params.index}.svx`;
-  const issue = await import(/* @vite-ignore */ route);
+  let route = `../../../../../../../src/exported/${params.index}.svx`;
+  let issue = await import(/* @vite-ignore */ route);
 
-  const { title, index, date } = issue.metadata;
-  const content = issue.default;
+  let content = issue.default;
+  let { title, index, date } = issue.metadata;
+  if (!date) {
+    date = "Unreleased!";
+  }
 
   return { content, title, index, date }
 }

@@ -10,13 +10,17 @@
 <style>
 
 .content {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 main {
-  width: 80%;
+  min-width: 500px;
+  max-width: 80%;
+  padding: 1em 0;
 }
 
 </style>
