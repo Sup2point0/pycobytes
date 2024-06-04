@@ -53,7 +53,7 @@ for file in files:
     for field in FIELDS:
       if field in line:
         *_, value = line.partition("= ")
-          fields[field] = value
+        fields[field] = value
 
   if not live:
     continue
