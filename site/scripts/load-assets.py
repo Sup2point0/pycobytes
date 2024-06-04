@@ -18,16 +18,14 @@ ROOT = Path(__file__).parent.parent.absolute()
 SOURCE = ROOT / "assets"
 
 assets = ichain(
-  SOURCE.glob("*.png"),
-  SOURCE.glob("*.jpg"),
-  SOURCE.glob("*.jpeg"),
+  SOURCE.glob("**/*.png"),
+  SOURCE.glob("**/*.jpg"),
+  SOURCE.glob("**/*.jpeg"),
 )
 
 
 ## Save
 DEST = ROOT / "site/static"
-if not os.path.exists(DEST):
-  os.mkdir(DEST)
 
 for file in assets:
   shutil.copyfile(file, DEST / file.name)
