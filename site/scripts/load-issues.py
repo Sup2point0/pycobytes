@@ -11,7 +11,7 @@ from pathlib import Path
 print(">>> Python / collecting issues...")
 
 
-ROOT = Path(__file__).parent.parent.absolute()
+ROOT = Path(__file__).parents[2].absolute()
 SRC = ROOT / "site/src"
 
 
