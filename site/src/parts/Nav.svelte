@@ -77,7 +77,13 @@ function pickIssue() {
 
     <li id="swapDuality" class="nav-part left">
       <button on:click={swapDuality}>
-        <img alt="thing" src="{base}/duality-{$duality}.png">
+        <span class="material-symbols-outlined">
+          {#if $duality == "dark"}
+            dark_mode
+          {:else}
+            light_mode
+          {/if}
+        </span>
       </button>
     </li>
   </ul>

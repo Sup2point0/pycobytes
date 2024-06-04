@@ -53,6 +53,14 @@ img {
   object-fit: contain;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 .pyb-flavour {
   &.left { color: $light-accent-prot; }
   &.centre { color: $grey-nova; }
