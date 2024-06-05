@@ -37,7 +37,7 @@ ul {
 
 span {
   &.issue-index {
-    @include font-code;
+    @include font-mono;
     color: $grey-nova;
   }
   &.issue-title {
