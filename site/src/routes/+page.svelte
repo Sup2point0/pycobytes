@@ -8,7 +8,7 @@ import site from "$src/site-config.js";
 
 
 <svelte:head>
-  <title> pycobytes • {site.desc.short} </title>
+  <title> pycobytes · {site.desc.short} </title>
 </svelte:head>
 
 <div class="header">

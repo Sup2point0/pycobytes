@@ -10,11 +10,11 @@ const navParts = [
   {
     align: "left", text: "icon",
     pict: `${base}/pycobytes-icon.png`,
-    link: base,
+    link: `${base}`,
   },
   {
     align: "left", text: "pyco:bytes",
-    link: base,
+    link: `${base}`,
   },
 ].concat([
   {

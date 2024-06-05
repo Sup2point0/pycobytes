@@ -61,23 +61,23 @@ for file in files:
     **fields,
   })
 
-#   front = f'''---
-#   issueIndex: {fields["index"]}
-#   title: {fields["title"]}
-#   date: {fields.get("date", None)}
-#   topic: {fields.get("topic", None)}
-# ---
-# '''
+  front = f'''---
+  issueIndex: {fields["issueIndex"]}
+  title: {fields["title"]}
+  date: {fields.get("date", None)}
+  topic: {fields.get("topic", None)}
+---
+'''
 
-#   with open(file, "r") as source:
-#     content = source.read()
+  with open(file, "r") as source:
+    content = source.read()
 
-#   ROUTE = DEST / (str(int(file.stem)) + ".svx")
-#   shutil.copyfile(file, ROUTE)
+  ROUTE = DEST / (str(int(file.stem)) + ".svx")
+  shutil.copyfile(file, ROUTE)
 
-#   with open(ROUTE, "w") as source:
-#     source.seek(0)
-#     source.write(front + "\n" + content)
+  with open(ROUTE, "w") as source:
+    source.seek(0)
+    source.write(front + "\n" + content)
 
 
 ## Save - a little scuffed, but it works well

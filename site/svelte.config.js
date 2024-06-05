@@ -21,7 +21,7 @@ const config = {
     prerender: {
       entries: [
         "*",
-        "/issues/**",
+        "/issues/1",
       ],
       handleHttpError: "warn",
     },

@@ -15,6 +15,7 @@ html, body {
 
 body {
   @include font-body;
+  background-color: light-dark(#f9f9f9, #000412);
 }
 
 :where(h2,h3,h4) {

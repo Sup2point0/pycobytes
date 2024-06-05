@@ -12,7 +12,7 @@ import duality from "$src/scripts/duality";
 
 
 <svelte:head>
-  <script defer src="$src/scripts/prism.js"> </script>
+  <script defer src="/src/scripts/prism.js"> </script>
 </svelte:head>
 
 <div class="duality-container" style="color-scheme: {$duality}">
