@@ -60,7 +60,7 @@ for file in files:
   })
 
   front = f'''---
-  index: {fields["index"]}
+  issueIndex: {fields["index"]}
   title: {fields["title"]}
   date: {fields.get("date", None)}
   topic: {fields.get("topic", None)}
