@@ -7,12 +7,13 @@ import Article from "$src/parts/Article.svelte";
 
 
 <svelte:head>
-  <title> {data.title ?? "404"} · pycobytes[{data.issueIndex ?? "?"}] </title>
+  <title> About · pycobytes </title>
 </svelte:head>
 
 <article>
   <Header title="pyco:bytes" />
 
   <Article>
+    <p> Under development! </p>
   </Article>
 </article>
