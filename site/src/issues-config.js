@@ -3,7 +3,7 @@
 
 export const ISSUES = [{
   "name": "01",
-  "index": "1",
+  "issueIndex": "1",
   "title": "The Power of List Comprehensions",
   "date": "N/A"
 }];
