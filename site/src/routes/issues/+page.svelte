@@ -18,8 +18,11 @@ import Article from "$src/parts/Article.svelte";
   <ul>
     {#each ISSUES as issue}
       <li>
-        <p> {issue.index} </p>
-        <a href={`issues/${issue.issueIndex}`}>{issue.title}</a>
+        <p>
+          <span class="issue-index"> {issue.name} </span>
+          <span class="issue-title"> <a href="issues/{issue.issueIndex}">{issue.title}</a> </span>
+          <span class="issue-date> {issue.date} </span>
+        </p>
       </li>
     {/each}
   </ul>
@@ -30,6 +33,20 @@ import Article from "$src/parts/Article.svelte";
 
 ul {
   list-style-type: none;
+}
+
+span {
+  &.issue-index {
+    @include font-code;
+    color: $grey-nova;
+  }
+  &.issue-title {
+    @include font-flavour;
+    color: $col-flavour;
+  }
+  &.issue-date {
+    color: $grey-nova;
+  }
 }
 
 </style>
