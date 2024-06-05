@@ -9,7 +9,7 @@ export let data;
 
 
 <svelte:head>
-  <title> {data.title ?? "404"} · pycobytes[{data.issueIndex ?? "?"}] </title>
+  <title> {data.title? ?? "404 Not Found"} · pycobytes[{data.issueIndex? ?? "?"}] </title>
 </svelte:head>
 
 <article>
