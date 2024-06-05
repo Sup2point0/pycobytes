@@ -21,7 +21,7 @@ import Article from "$src/parts/Article.svelte";
         <p>
           <span class="issue-index"> {issue.name} </span>
           <span class="issue-title"> <a href="issues/{issue.issueIndex}">{issue.title}</a> </span>
-          <span class="issue-date> {issue.date} </span>
+          <span class="issue-date"> {issue.date} </span>
         </p>
       </li>
     {/each}
