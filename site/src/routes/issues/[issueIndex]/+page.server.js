@@ -1,8 +1,10 @@
-import { ISSUES } from "$src/issues-config.js";
+import ISSUES from "$src/issues-config.js";
 
 /** @type {import('./$types').EntryGenerator} */
 export function entries() {
   return ISSUES.map(
-    issue => ({ issueIndex: toString(issue.issueIndex) })
+    issue => ({ issueIndex: issue.issueIndex })
   );
 }
+
+export const prerender = true;

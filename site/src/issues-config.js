@@ -1,9 +1,10 @@
 /// Issues Index
-/// last auto-generated: Jun 04
+/// last auto-generated: Jun 05
 
-export const ISSUES = [{
+const ISSUES = [{
   "name": "01",
   "issueIndex": "1",
   "title": "The Power of List Comprehensions",
-  "date": "N/A"
+  "date": "6 June 2024"
 }];
+export default ISSUES;

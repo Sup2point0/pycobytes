@@ -1,6 +1,6 @@
 <script>
 
-import { ISSUES } from "$src/issues-config.js";
+import ISSUES from "$src/issues-config.js";
 
 import Header from "$src/parts/Header.svelte";
 import Article from "$src/parts/Article.svelte";

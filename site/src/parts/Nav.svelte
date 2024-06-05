@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import { ISSUES } from "$src/issues-config.js";
+import ISSUES from "$src/issues-config.js";
 import duality from "$src/scripts/duality";
 import { swapDuality } from "$src/scripts/duality";
 

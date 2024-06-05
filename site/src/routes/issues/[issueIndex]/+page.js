@@ -1,3 +1,5 @@
+import ISSUES from "$src/issues-config.js"
+
 export async function load({ params }) {
   if (params.issueIndex == "[object Undefined]") return {};
 
@@ -5,10 +7,6 @@ export async function load({ params }) {
   let issue = await import(/* @vite-ignore */ route);
 
   let content = issue.default;
-  let { title, issueIndex, date } = issue.metadata;
-  if (!date) {
-    date = "Unreleased!";
-  }
 
-  return { content, title, issueIndex, date }
+  return { content }
 }

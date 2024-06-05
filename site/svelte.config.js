@@ -8,7 +8,7 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: "404.html",
+      fallback: "fallback.html",
       precompress: false,
       strict: true,
     }),
@@ -21,7 +21,7 @@ const config = {
     prerender: {
       entries: [
         "*",
-        // "/issue/1",
+        "/issues/**",
       ],
       handleHttpError: "warn",
     },
