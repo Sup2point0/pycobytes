@@ -49,7 +49,7 @@ p {
 
 span {
   &.col-flavour {
-    &.svelte { color: #ff3e00; }
+    &.svelte:not(:hover) { color: #ff3e00; }
   }
 
   &.pyb-flavour {

@@ -1,9 +1,9 @@
 <script lang="ts">
 
 export let type: "issue" | null = null;
-export let issueIndex = null;
-export let title;
-export let date = null;
+export let issueIndex: string | null = null;
+export let title: string;
+export let date: string | null = null;
 
 </script>
 

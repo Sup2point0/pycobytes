@@ -25,3 +25,9 @@
   font-weight: normal;
   font-size: 100%;
 }
+
+@mixin font-fun {
+  font-family: 'Sniglet', 'Overpass', 'Source Sans Pro', 'Segoe UI', system-ui;
+  font-weight: normal;
+  font-size: 100%;
+}

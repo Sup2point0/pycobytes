@@ -16,10 +16,17 @@ const navParts = [
     align: "left", text: "pyco:bytes",
     link: `${base}`,
   },
+// @ts-ignore
 ].concat([
   {
     align: "right", text: "About",
     link: `${base}/about`,
+    dropdown: [
+      { text: "FAQ",
+        link: `${base}/faq` },
+      { text: "Dev",
+        link: `${base}/dev`}
+    ],
   },
   {
     align: "right", text: "Issues",
@@ -51,6 +58,7 @@ const navParts = [
 ].reverse());
 
 function pickIssue() {
+  // @ts-ignore
   let index = ISSUES[Math.random() * ISSUES.length | 0];
   window.location.href = "https://sup2point0.github.io/pycobytes/issues/${index}";
 }
@@ -119,7 +127,7 @@ li.nav-part {
 }
 
 li.nav-part, a.nav-link {
-  @include font-flavour;
+  @include font-fun;
   text-decoration: none;
   color: white;
 

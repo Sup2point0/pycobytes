@@ -70,6 +70,7 @@ for file in files:
 '''
 
   with open(file, "r") as source:
+    throwaway = source.readline()
     content = source.read()
 
   ROUTE = DEST / (str(int(file.stem)) + ".svx")

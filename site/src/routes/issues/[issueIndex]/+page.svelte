@@ -3,6 +3,8 @@
 import Header from "$src/parts/Header.svelte";
 import Article from "$src/parts/Article.svelte";
 
+import ISSUES from "$src/issues-config";
+
 export let data;
 
 </script>

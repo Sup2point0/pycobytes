@@ -7,6 +7,13 @@ export async function load({ params }) {
   let issue = await import(/* @vite-ignore */ route);
 
   let content = issue.default;
+  let issueInfo = ISSUES.find(issue => issue.issueIndex == params.issueIndex);
 
-  return { content }
+  if (issueInfo == undefined) {
+    throw new Error("Issue not found");
+  }
+
+  let { name, issueIndex, title, date } = issueInfo;
+
+  return { content, name, issueIndex, title, date };
 }
