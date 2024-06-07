@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import ISSUES from "$src/issues-config.js";
+import ISSUES from "$src/issues-config";
 import duality from "$src/scripts/duality";
 import { swapDuality } from "$src/scripts/duality";
 
@@ -25,7 +25,7 @@ const navParts = [
       { text: "FAQ",
         link: `${base}/faq` },
       { text: "Dev",
-        link: `${base}/dev`}
+        link: `${base}/dev`},
     ],
   },
   {
@@ -53,7 +53,8 @@ const navParts = [
   },
   {
     align: "right", text: "GitHub",
-    pict: `${base}/github-icon.svg`
+    pict: `${base}/github-icon.svg`,
+    link: "https://github.com/Sup2point0/pycobytes",
   },
 ].reverse());
 
