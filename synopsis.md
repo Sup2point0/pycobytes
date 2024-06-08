@@ -1,7 +1,4 @@
 # Synopsis
-<!-- #PYCO live!
-  | dest = src/routes/dev/content
--->
 
 pyco:bytes was a pretty involved project, and tons of fun to work on!
 
