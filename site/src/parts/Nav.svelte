@@ -20,7 +20,7 @@ const navParts = [
 ].concat([
   {
     align: "right", text: "About",
-    link: `${base}/about`,
+    link: `${base}/faq`,
     dropdown: [
       { text: "FAQ",
         link: `${base}/faq` },

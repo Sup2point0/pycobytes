@@ -21,8 +21,8 @@ for file, options in routes.items():
 
     content = source.read()
 
-    if "line-breaks" in options["strip"]:
-      content.replace("\n<br>\n", "")
+    if "line-breaks" in options.get("strip", {}):
+      content = content.replace("\n\n<br>\n\n", "")
   
   with open(ROOT / options["dest"], "w") as dest:
     dest.write(content)
