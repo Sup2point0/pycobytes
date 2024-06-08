@@ -2,9 +2,7 @@
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
-
-// const source = await import("/content.md");
-// const content = source.default;
+import Content from "../dev/_Content.svx";
 
 </script>
 
@@ -20,10 +18,6 @@ import Main from "#src/parts/Main.svelte";
 
 <Main>
   <article>
-    {#if content}
-      {content}
-    {:else}
-      <p> Uh, something went wrong! </p>
-    {/if}
+    <Content />
   </article>
 </Main>

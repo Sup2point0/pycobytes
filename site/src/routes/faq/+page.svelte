@@ -4,8 +4,6 @@ import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import Content from "../faq/Content.svx";
 
-export let data;
-
 </script>
 
 

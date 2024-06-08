@@ -1,3 +1,6 @@
 {
-  "synopsis.md": "site/src/routes/dev/_content.md"
+  "synopsis.md": {
+    "dest": "site/src/routes/dev/_Content.svx",
+    "strip": ["title", "line-breaks"]
+  }
 }

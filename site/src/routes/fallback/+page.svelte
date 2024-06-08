@@ -1,7 +1,2 @@
-<p>
-
-  <br><br><br>
-
-404 not found
-
-</p>
+<br>
+<p>404 not found</p>
