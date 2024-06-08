@@ -1,4 +1,4 @@
-import ISSUES from "$src/issues-config.js"
+import ISSUES from "#src/issues-config.js"
 
 export async function load({ params }) {
   if (params.issueIndex == "[object Undefined]") return {};

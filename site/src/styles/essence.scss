@@ -20,6 +20,7 @@ body {
 
 :where(h2,h3,h4) {
   @include font-head;
+  color: $col-accent;
 }
 
 code {
@@ -60,6 +61,10 @@ img {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+}
+
+.error {
+  color: $red-nova;
 }
 
 .pyb-flavour {

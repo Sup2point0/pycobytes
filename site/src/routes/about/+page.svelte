@@ -1,7 +1,7 @@
 <script>
 
-import Header from "$src/parts/Header.svelte";
-import Article from "$src/parts/Article.svelte";
+import Header from "#src/parts/Header.svelte";
+import Article from "#src/parts/Article.svelte";
 
 </script>
 

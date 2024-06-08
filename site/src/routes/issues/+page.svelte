@@ -1,9 +1,9 @@
 <script>
 
-import ISSUES from "$src/issues-config.js";
+import ISSUES from "#src/issues-config.js";
 
-import Header from "$src/parts/Header.svelte";
-import Article from "$src/parts/Article.svelte";
+import Header from "#src/parts/Header.svelte";
+import Article from "#src/parts/Article.svelte";
 
 </script>
 
@@ -30,6 +30,10 @@ import Article from "$src/parts/Article.svelte";
 
 
 <style lang="scss">
+
+h2, h3 {
+  color: $col-accent;
+}
 
 ul {
   list-style-type: none;

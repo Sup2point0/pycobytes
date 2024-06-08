@@ -1,6 +1,6 @@
 <script>
 
-import Nav from "$src/parts/Nav.svelte";
+import Nav from "#src/parts/Nav.svelte";
 
 </script>
 
