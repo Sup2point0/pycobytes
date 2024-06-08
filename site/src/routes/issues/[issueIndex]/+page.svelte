@@ -1,7 +1,7 @@
 <script>
 
 import Header from "#src/parts/Header.svelte";
-import Article from "#src/parts/Article.svelte";
+import Main from "#src/parts/Main.svelte";
 
 import ISSUES from "#src/issues-config";
 
@@ -23,14 +23,14 @@ export let data;
       date = {data.date}
     />
 
-    <Article>
+    <Main>
       <svelte:component this={data.content} />
-    </Article>
+    </Main>
 
   {:else}
-    <Article>
+    <Main>
       <h1 align="center"> Oops, something went wrong! </h1>
-    </Article>
+    </Main>
   
   {/if}
 </article>

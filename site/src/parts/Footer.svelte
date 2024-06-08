@@ -4,6 +4,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
 
 </script>
 
+
 <div class="footer-container">
   <div class="footer">
     <div class="info left">
@@ -18,6 +19,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
     </div>
   </div>
 </div>
+
  
 <style lang="scss">
 

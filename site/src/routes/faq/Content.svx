@@ -11,7 +11,7 @@ See [Hacking the Mainframe](https://sup2point0.github.io/pycobytes/dev)!
 ### Where did the name come from?
 BLOOD AND DEATH
 
-\*cough* In all seriousness, *many* alternatives were considered. As we know, there are only 2 hard problems in computer science: cache invalidation, naming things, and off-by-one errors.
+\*cough\* In all seriousness, *many* alternatives were considered. As we know, there are only 2 hard problems in computer science: cache invalidation, naming things, and off-by-one errors.
 
 Anyway, a picobyte doesn’t actually exist, but I think it conveys the intent here pretty well =)
 

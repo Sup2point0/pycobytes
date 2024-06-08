@@ -1,7 +1,8 @@
 <script>
 
 import Header from "#src/parts/Header.svelte";
-import Markdown from "#src/parts/Markdown.svelte";
+import Main from "#src/parts/Main.svelte";
+import Content from "../faq/Content.svx";
 
 export let data;
 
@@ -15,7 +16,7 @@ export let data;
 <article>
   <Header title="Fervently Anticipated Questions" />
 
-  {data.text}
-
-  <!-- <Markdown src="#src/routes/faq/content.md" /> -->
+  <Main>
+    <Content />
+  </Main>
 </article>

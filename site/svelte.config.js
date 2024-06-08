@@ -32,7 +32,7 @@ const config = {
 
   preprocess: [
     mdsvex({
-      extensions: [".md", ".svx"]
+      extensions: [".svelte", ".md", ".svx"]
     }),
     sveltePreprocess({
       scss: {

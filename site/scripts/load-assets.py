@@ -21,6 +21,7 @@ assets = ichain(
   SOURCE.glob("**/*.png"),
   SOURCE.glob("**/*.jpg"),
   SOURCE.glob("**/*.jpeg"),
+  SOURCE.glob("**/*.svg"),
 )
 
 

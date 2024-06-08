@@ -1,7 +1,7 @@
 <script>
 
 import Header from "#src/parts/Header.svelte";
-import Article from "#src/parts/Article.svelte";
+import Main from "#src/parts/Main.svelte";
 
 </script>
 
@@ -13,7 +13,7 @@ import Article from "#src/parts/Article.svelte";
 <article>
   <Header title="pyco:bytes" />
 
-  <Article>
+  <Main>
     <p> Under development! </p>
-  </Article>
+  </Main>
 </article>

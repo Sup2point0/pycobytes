@@ -3,7 +3,7 @@
 import ISSUES from "#src/issues-config.js";
 
 import Header from "#src/parts/Header.svelte";
-import Article from "#src/parts/Article.svelte";
+import Main from "#src/parts/Main.svelte";
 
 </script>
 
@@ -14,7 +14,7 @@ import Article from "#src/parts/Article.svelte";
 
 <Header title="Issues" />
 
-<Article>
+<Main>
   <ul>
     {#each ISSUES as issue}
       <li>
@@ -26,7 +26,7 @@ import Article from "#src/parts/Article.svelte";
       </li>
     {/each}
   </ul>
-</Article>
+</Main>
 
 
 <style lang="scss">

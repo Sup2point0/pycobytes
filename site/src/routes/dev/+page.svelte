@@ -1,10 +1,10 @@
 <script>
 
-import Header from "@src/parts/Header.svelte";
-import Main from "@src/parts/Main.svelte";
+import Header from "#src/parts/Header.svelte";
+import Main from "#src/parts/Main.svelte";
 
-const source = await import("/content.md");
-const content = source.default;
+// const source = await import("/content.md");
+// const content = source.default;
 
 </script>
 
