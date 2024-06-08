@@ -1,5 +1,6 @@
 exported/
 static/
+_*.md
 
 .DS_Store
 node_modules/
