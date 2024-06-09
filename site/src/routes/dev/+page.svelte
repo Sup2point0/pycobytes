@@ -11,13 +11,13 @@ import Content from "../dev/_Content.svx";
   <title> Hacking the Mainframe · About · pycobytes </title>
 </svelte:head>
 
-<Header
-  title = "Hacking the Mainframe"
-  caption = "Deep dive into the internals"
-/>
+<article>
+  <Header
+    title = "Hacking the Mainframe"
+    caption = "Deep dive into the internals"
+  />
 
-<Main>
-  <article>
-    <Content />
-  </article>
-</Main>
+  <Main>
+      <Content />
+  </Main>
+</article>

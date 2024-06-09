@@ -15,7 +15,11 @@ html, body {
 
 body {
   @include font-body;
-  background-color: light-dark(#f9f9f9, #000412);
+}
+
+.duality-container {
+  color: light-dark(black, white);
+  background-color: light-dark(#f9f9f9, #00172a);
 }
 
 :where(h2,h3,h4) {

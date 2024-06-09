@@ -1,25 +1,27 @@
 <script>
 
 import { base } from "$app/paths";
+import NavPart from "#src/parts/NavPart.svelte";
 
 import ISSUES from "#src/issues-config";
 import duality from "#src/scripts/duality";
 import { swapDuality } from "#src/scripts/duality";
 
-const navParts = [
+const navLeft = [
   {
-    align: "left", text: "icon",
+    text: "icon",
     pict: `${base}/pycobytes-icon.png`,
     link: `${base}`,
   },
   {
-    align: "left", text: "pyco:bytes",
+    text: "pyco:bytes",
     link: `${base}`,
   },
-// @ts-ignore
-].concat([
+]
+
+const navRight = [
   {
-    align: "right", text: "About",
+    text: "About",
     link: `${base}/faq`,
     dropdown: [
       { text: "FAQ",
@@ -29,7 +31,7 @@ const navParts = [
     ],
   },
   {
-    align: "right", text: "Issues",
+    text: "Issues",
     link: `${base}/issues`,
     dropdown: [
       { text: "Index",
@@ -41,7 +43,8 @@ const navParts = [
     ],
   },
   {
-    align: "right", text: "Contact",
+    text: "Contact",
+    extern: true,
     dropdown: [
       { text: "Discuss",
         link: "https://sup2point0.github.io/pycobytes/discussions" },
@@ -52,11 +55,12 @@ const navParts = [
     ],
   },
   {
-    align: "right", text: "GitHub",
+    text: "GitHub",
     pict: `${base}/github-icon.svg`,
     link: "https://github.com/Sup2point0/pycobytes",
+    extern: true,
   },
-].reverse());
+];
 
 function pickIssue() {
   // @ts-ignore
@@ -67,89 +71,96 @@ function pickIssue() {
 </script>
 
 <nav>
-  <ul>
-    {#each navParts as part}
-      <li id={part.text} class="nav-part {part.align}">
-        {#if part.link}
-          <a class="nav-link" href={part.link}>
-            {#if part.pict}
-              <img alt={part.text} src={part.pict}>
-            {:else}
-              {part.text}
-            {/if}
-          </a>
-        {:else}
-          {part.text}
-        {/if}
-      </li>
+  <ul class="left">
+    {#each navLeft as part}
+      <NavPart {part} />
     {/each}
 
-    <li id="swapDuality" class="nav-part left">
+    <li>
       <button on:click={swapDuality}>
-        <span class="material-symbols-outlined">
-          {#if $duality == "dark"} dark_mode
-          {:else} light_mode
+          <span class="material-symbols-outlined">
+          {#if $duality == "dark"}
+            dark_mode
+          {:else}
+            light_mode
           {/if}
         </span>
       </button>
     </li>
   </ul>
+
+  <ul class="right">
+    {#each navRight as part}
+      <NavPart {part} />
+    {/each}
+  </ul>
 </nav>
 
 <style lang="scss">
+
+$col-idle: rgb(0 0 0 / 0);
+$col-hover: rgb(0 0 0 / 50%);
 
 nav {
   position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
-  // height: $nav-height;
+  height: $nav-height;
   max-width: 100%;
-  padding: 0 4rem 0 auto;
+  padding: 0.1rem 4rem 0.1rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: $blue-night;
   background: linear-gradient(to bottom, $blue-night, color-mix(in srgb, $blue-night 90%, transparent));
 }
 
 nav ul {
+  max-height: $nav-height;
+  display: flex;
+  flex-direction: row;
   padding-right: 2rem;
 }
 
-.left { float: left; }
-.right { float: right; }
-
 ul {
+  margin: 0;
   list-style-type: none;
 }
 
-li.nav-part {
-  padding: 0.8rem 1rem 0.5rem;
-  border-radius: 0.5em;
-  background-color: rgb(0 0 0 / 0%);
-}
-
-li.nav-part, a.nav-link {
-  @include font-fun;
-  text-decoration: none;
-  color: white;
+li:has(button) {
+  width: 30px;
+  margin: 0;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: $col-idle;
 
   transition: all 0.16s ease-out;
   @media prefers-reduced-motion {
     transition: none;
   }
 
-  &:not(:has(img)):hover {
-    cursor: pointer;
-    color: $col-flavour;
+  & button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: light-dark($mellow-cresc, $lilac-cresc);
+    border: none;
   }
-}
 
-li img {
-  height: 2rem;
-}
-
-li button {
-  background-color: rgb(0 0 0 / 0);
-  border: none;
+  &:hover {
+    background-color: $col-hover;
+    & > button {
+      color: light-dark($lilac-cresc, $mellow-cresc);
+    }
+  }
 }
 
 </style>

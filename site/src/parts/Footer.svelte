@@ -33,7 +33,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $grey-swallow;
+  background-color: light-dark($grey-swallow, black);
 }
 
 .footer {
