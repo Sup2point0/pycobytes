@@ -5,7 +5,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
 </script>
 
 
-<div class="footer-container">
+<footer>
   <div class="footer">
     <div class="info left">
       <p> <span class="pyb-flavour left">pyco</span><span class="pyb-flavour centre">:</span><span class="pyb-flavour right">bytes</span>
@@ -18,7 +18,7 @@ let pageSourceLink = "https://github.com/Sup2point0/pycobytes";
       <p> View on <a href={pageSourceLink}>GitHub</a> </p>
     </div>
   </div>
-</div>
+</footer>
 
  
 <style lang="scss">
@@ -27,7 +27,7 @@ p {
   margin-bottom: 2em;
 }
 
-.footer-container {
+footer {
   width: 100%;
   margin-top: 2rem;
   display: flex;

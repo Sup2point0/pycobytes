@@ -3,25 +3,25 @@
 export let type: "issue" | null = null;
 export let issueIndex: string | null = null;
 export let title: string;
-export let date: string | null = null;
+export let caption: string | null = null;
 
 </script>
 
 
-<div class="header">
+<header>
   {#if type == "issue"}
     <code> {issueIndex} </code>
     <h1> {title} </h1>
-    <p> {date} </p>
+    <p> {caption} </p>
   {:else}
     <h1> {title} </h1>
   {/if}
-</div>
+</header>
 
 
 <style lang="scss">
 
-.header {
+header {
   margin-top: 0rem;
   margin-bottom: 2rem;
   padding: ($nav-height + 3rem) 0 2.5rem;
