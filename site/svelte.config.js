@@ -2,13 +2,14 @@ import adapter from "@sveltejs/adapter-static";
 import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from 'mdsvex';
 
-/** @type {import('@sveltejs/kit').Config} */
+import scssConfig from '../site/scss-config.js';
+
 const config = {
   kit: {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: "fallback.html",
+      fallback: "error.html",
       precompress: false,
       strict: true,
     }),
@@ -36,11 +37,7 @@ const config = {
     }),
     sveltePreprocess({
       scss: {
-        prependData: `
-          @use './src/styles/_nova' as *;
-          @use './src/styles/_variables' as *;
-          @use './src/mixins/_fonts' as *;
-        `,
+        prependData: scssConfig,
       }
     }),
   ],

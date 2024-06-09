@@ -14,6 +14,7 @@ ROOT = Path(__file__).parents[2].absolute()
 with open(ROOT / "site/content-config.json", "r") as source:
   routes = json.load(source)
 
+
 for file, options in routes.items():
   with open(file, "r") as source:
     if "title" in options.get("strip", {}):
