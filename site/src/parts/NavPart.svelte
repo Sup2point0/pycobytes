@@ -23,7 +23,19 @@ export let part;
       {part.text}
     {/if}
   
-    {/if}
+  {/if}
+
+  {#if part.dropdown}
+    <ul class="nav-dropdown">
+      {#each part.dropdown as part}
+        <li>
+          <a class="nav-link" href={part.link} target={part.extern ? "_blank" : null}>
+            {part.text}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  {/if}
 </li>
 
 
@@ -63,6 +75,15 @@ li, a {
 li img {
   height: 30px;
   max-height: $nav-height;
+}
+
+li > ul.nav-dropdow {
+  display: none;
+  list-style-type: none;
+}
+
+li:hover > .nav-dropdown {
+  display: block;
 }
 
 </style>
