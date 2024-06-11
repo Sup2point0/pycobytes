@@ -34,6 +34,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: light-dark($grey-swallow, black);
+  @include fade-duality;
 }
 
 .footer {
