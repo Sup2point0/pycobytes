@@ -11,10 +11,10 @@ export let caption: string | null = null;
 <header>
   {#if type == "issue"}
     <code> {issueIndex} </code>
-    <h1> {title} </h1>
-    <p> {caption} </p>
+    <h1> {@html title} </h1>
+    <p> {@html caption} </p>
   {:else}
-    <h1> {title} </h1>
+    <h1> {@html title} </h1>
   {/if}
 </header>
 
