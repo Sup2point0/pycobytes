@@ -2,5 +2,9 @@
   "synopsis.md": {
     "dest": "site/src/routes/dev/_Content.svx",
     "strip": ["title", "line-breaks"]
+  },
+  "edu.md": {
+    "dest": "src/routes/edu/_Content.svx",
+    "strip": ["title"]
   }
 }
