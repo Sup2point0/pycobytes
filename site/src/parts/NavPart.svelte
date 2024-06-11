@@ -25,7 +25,7 @@ export let part;
   
   {/if}
 
-  {#if part.dropdown}
+  <!-- {#if part.dropdown}
     <ul class="nav-dropdown">
       {#each part.dropdown as part}
         <li>
@@ -35,7 +35,7 @@ export let part;
         </li>
       {/each}
     </ul>
-  {/if}
+  {/if} -->
 </li>
 
 
