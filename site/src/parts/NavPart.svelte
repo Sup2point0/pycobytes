@@ -55,7 +55,7 @@ li {
 li, a {
   @include font-fun;
   text-decoration: none;
-  color: white;
+  color: light-dark(rgb(20 20 20), white);
 
   transition: all 0.16s ease-out;
   @media prefers-reduced-motion {
@@ -64,10 +64,10 @@ li, a {
 
   &:not(:has(img)):hover {
     cursor: pointer;
-    background-color: rgb(0 0 0 / 40%);
+    background-color: $col-hover;
 
     & > a {
-      color: $col-flavour;
+      color: light-dark($col-accent, $col-flavour);
     }
   }
 }

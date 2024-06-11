@@ -98,9 +98,6 @@ function pickIssue() {
 
 <style lang="scss">
 
-$col-idle: rgb(0 0 0 / 0);
-$col-hover: rgb(0 0 0 / 50%);
-
 nav {
   position: fixed;
   top: 0;
@@ -113,8 +110,10 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: $blue-night;
-  background: linear-gradient(to bottom, $blue-night, color-mix(in srgb, $blue-night 90%, transparent));
+  background-color: $col-idle;
+  background: linear-gradient(to bottom, $col-idle, color-mix(in srgb, $col-idle 90%, transparent));
+  border-bottom: 2px solid $col-flavour;
+  @include fade-duality;
 }
 
 nav ul {
@@ -151,14 +150,14 @@ li:has(button) {
     align-items: center;
     justify-content: center;
     background: none;
-    color: light-dark($mellow-cresc, $lilac-cresc);
+    color: light-dark($lilac-nova, $mellow-cresc);
     border: none;
   }
 
   &:hover {
     background-color: $col-hover;
     & > button {
-      color: light-dark($lilac-cresc, $mellow-cresc);
+      color: light-dark($mellow-cresc, $lilac-nova);
     }
   }
 }

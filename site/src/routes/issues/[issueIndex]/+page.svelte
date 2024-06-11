@@ -20,7 +20,7 @@ export let data;
       type = "issue"
       issueIndex = {data.issueIndex}
       title = "{data.title}"
-      date = {data.date}
+      caption = {data.date}
     />
 
     <Main>

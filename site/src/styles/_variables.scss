@@ -17,3 +17,12 @@ $light-accent-deut: $lilac-nova;
 
 $dark-accent-prot: $blue-cresc;
 $dark-accent-deut: $lilac-cresc;
+
+$col-idle: light-dark(
+  rgb(244 244 244),
+  rgb(12 12 12)
+);
+$col-hover: light-dark(
+  rgb(236 236 236),
+  rgb(20 20 20)
+);

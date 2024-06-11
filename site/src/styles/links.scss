@@ -11,7 +11,7 @@ $link: ':where(a:not(:has(img), .nav-link))';
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: $blue-ocean;
+  color: $pink-elec;
   transition: 0.2s;
 }
 
@@ -22,14 +22,14 @@ $link: ':where(a:not(:has(img), .nav-link))';
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: $pink-elec;
+  background-color: light-dark($col-accent, $col-flavour);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.2s ease-out;
 }
 
 #{$link}:hover {
-  color: $pink-elec;
+  color: light-dark($col-accent, $col-flavour);
 }
 #{$link}:hover:after {
   transform: scaleX(1);
