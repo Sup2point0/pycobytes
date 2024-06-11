@@ -9,6 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[2].absolute()
+SITE = ROOT / "site"
 
 
 with open(ROOT / "site/content-config.json", "r") as source:
@@ -25,5 +26,5 @@ for file, options in routes.items():
     if "line-breaks" in options.get("strip", {}):
       content = content.replace("\n\n<br>\n\n", "")
   
-  with open(ROOT / options["dest"], "w") as dest:
+  with open(SITE / options["dest"], "w") as dest:
     dest.write(content)
