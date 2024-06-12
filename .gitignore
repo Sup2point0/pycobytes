@@ -1,3 +1,4 @@
-.archive
+.archive/
+.devcontainer/
 send/
 scripts/test.**
