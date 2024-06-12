@@ -2,14 +2,13 @@
 Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
 '''
 
+print(">>> Python / collecting issues...")
+
 import json
 import os
 import shutil
 from datetime import date
 from pathlib import Path
-
-
-print(">>> Python / collecting issues...")
 
 
 ROOT = Path(__file__).parents[2].absolute()
@@ -18,14 +17,14 @@ SRC = ROOT / "site/src"
 
 ## Load
 files = (ROOT / "issues").glob("[0-9][0-9].md")
-issues = []
-
-ROUTE = SRC / "exported"
-if not os.path.exists(ROUTE):
-  os.mkdir(ROUTE)
 
 DEST = SRC / "exported"
+if not os.path.exists(DEST):
+  os.mkdir(DEST)
+
+issues = []
 FIELDS = ["index", "title", "date", "topic"]
+
 
 for file in files:
   with open(file, "r") as source:
@@ -61,8 +60,10 @@ for file in files:
     **fields,
   })
 
+  index = fields["issueIndex"]
+
   front = f'''---
-  issueIndex: {fields["issueIndex"]}
+  issueIndex: {index}
   title: {fields["title"]}
   date: {fields.get("date", None)}
   topic: {fields.get("topic", None)}
@@ -73,12 +74,38 @@ for file in files:
     throwaway = source.readline()
     content = source.read()
 
-  ROUTE = DEST / (str(int(file.stem)) + ".svx")
+  ROUTE = DEST / (index + ".svx")
   shutil.copyfile(file, ROUTE)
 
-  with open(ROUTE, "w") as source:
-    source.seek(0)
-    source.write(front + "\n" + content)
+  with open(ROUTE, "w") as dest:
+    dest.seek(0)
+    dest.write(front + "\n" + content)
+
+  # FIXME copy to _Content.svx for static routing
+  ISSUES = SRC / "routes/issues"
+  ROUTE = ISSUES / index
+
+  if not os.path.exists(ROUTE):
+    os.mkdir(ROUTE)
+
+  with open(ISSUES / "-page.txt", "r") as source:
+    script_tag = source.readline()
+    content = source.read()
+
+  shutil.copyfile(file, ROUTE / "_Content.svx")
+
+  with open(ROUTE / "_Content.svx", "w") as dest:
+    dest.seek(0)
+    dest.write(front + "\n" + content)
+
+  front = f'''import Content from "../{index}/_Content.svx";
+const issue = ISSUES[{int(index) - 1}]
+'''
+
+  with open(ROUTE / "+page.svelte", "w+") as dest:
+    dest.seek(0)
+    dest.readline()
+    dest.write("\n".join([script_tag, front, content]))
 
 
 ## Save - a little scuffed, but it works well

@@ -1,0 +1,43 @@
+<script>
+
+import Content from "../2/_Content.svx";
+const issue = ISSUES[1]
+
+
+import ISSUES from "#src/issues-config";
+
+import Header from "#src/parts/Header.svelte";
+import Main from "#src/parts/Main.svelte";
+
+</script>
+
+
+<svelte:head>
+  <title> {issue.title ?? "404 Not Found"} · pycobytes[{issue.issueIndex ?? "?"}] </title>
+</svelte:head>
+
+<article>
+  {#if issue.content}
+    <Header
+      type = "issue"
+      issueIndex = {issue.issueIndex}
+      title = "{issue.title}"
+      caption = {issue.date}
+    />
+
+    <Main>
+      <Content />
+    </Main>
+
+  {:else}
+    <Main>
+      <h1 align="center"> Oops, something went wrong! </h1>
+    </Main>
+  
+  {/if}
+</article>
+
+
+<style lang="scss">
+
+</style>
