@@ -5,7 +5,7 @@ export let link: string;
 </script>
 
 
-<a class="link-button" href={link}>
+<a class="link-button no-anim" href={link}>
   <slot>
     <p> RENDER ERROR </p>
   </slot>
@@ -14,25 +14,28 @@ export let link: string;
 
 <style lang="scss">
 
-button {
+a {
   @include font-flavour;
+  font-size: 125%;
   min-width: 8em;
   max-width: 50vw;
   margin: 0;
-  padding: 0.2em 0.5em;
+  padding: 0.5em 1em;
   color: white;
+  text-align: center;
+  text-decoration: none;
   background-color: light-dark($col-accent, $col-flavour);
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   outline: none;
 
-  transition: color 0.12s ease-out;
+  transition: background-color 0.16s ease-out;
 
   &:hover {
-    background-color: $pink-elec;
+    background-color: light-dark($purp-nova, $pink-elec);
   }
 
   &:active {
-    background-color: $purp-nova;
+    background-color: light-dark($pink-elec, $purp-nova);
   }
 }
 

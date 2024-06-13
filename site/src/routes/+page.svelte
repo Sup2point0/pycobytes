@@ -2,49 +2,82 @@
 
 import { base } from "$app/paths";
 
+import site from "#src/site-config.js";
+import ISSUES from "#src/issues-config";
+
 import LinkButton from "#src/parts/LinkButton.svelte";
 
-import site from "#src/site-config.js";
+import Content from "#src/routes/flavour-code.svx";
 
 </script>
 
 
 <svelte:head>
   <title> pycobytes · {site.desc.short} </title>
+  <script defer src="/src/scripts/prism.js"> </script>
 </svelte:head>
 
-<div class="header">
-  <img id="welcome" alt="welcome to pycobytes" src="{base}/pycobytes-welcome.png">
-</div>
-
 <main>
-  <p> Python is awesome. But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
-  
-  <img id="glimpse" alt="pythonic magic" src="{base}/pycobytes-glimpse.png">
+  <div class="hero left">
+    <h1> <span class="pyco-flavour"> pyco:bytes </span> </h1>
+    <span class="caption"> {site.desc.long} </span>
+  </div>
 
-  <p> So, <span class="pyb-flavour left">pyco</span><span class="pyb-flavour centre">:</span><span class="pyb-flavour right">bytes</span> is a weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
+  <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1]}"> Read the latest issue </LinkButton>
+
+  <div class="flavour right">
+    <h2> Python is awesome. </h2>
+    <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
+  </div>
+
+  <div class="flavour-code">
+    <Content />
+    <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
+  </div>
+
+  <div class="flavour left">
+    <h2> So, here’s <span class="pyco-flavour">pycobytes</span>. </h2>
+    <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
+  </div>
+
+  <div class="flavour">
+    <h2> An adventure into the wonders of Python. </h2>
+    <p> Quick, snappy and fun! </p>
+  </div>
 
   <LinkButton link="{base}/issues">
-    View All Issues
+    Start Exploring
   </LinkButton>
 </main>
 
 
 <style lang="scss">
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 p {
   @include font-flavour;
-  margin: 3em 8rem;
+  // margin: 3em 8rem;
   font-size: 120%;
 }
 
-.header {
-  padding-top: 4rem;
-  background-color: $blue-night;
-}
+.left { text-align: left }
+.right { text-align: right }
 
-.header img {
+.hero {
   width: 100%;
+  padding: 5rem 0 10rem 20vw;
+  color: white;
+  background-color: black;
+
+  & h1 {
+    font-family: 'Roboto Mono', 'Fira Code', 'Consolas', 'Overpass', 'Segoe UI Semibold#', system-ui, sans-serif;
+  }
 }
 
 </style>

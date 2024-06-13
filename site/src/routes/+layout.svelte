@@ -24,4 +24,8 @@ import duality from "#src/scripts/duality";
 
 <style lang="scss">
 
+.duality-container {
+  margin-top: $nav-height;
+}
+
 </style>
