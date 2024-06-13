@@ -28,14 +28,13 @@ issues = []
 FIELDS = ["index", "title", "date", "topic"]
 
 
-for file in files:
+def process_file(file) -> dict | None:
   with open(file, "r") as source:
     content = source.readlines()
 
   if not any(("#PYCO live!" in line) for line in content[:4]):
-    continue
+    return
 
-  meta = False
   live = False
   fields = {}
 
@@ -53,25 +52,36 @@ for file in files:
         if field == "index":
           field = "issueIndex"  # NOTE conversion to avoid conflicts
         fields[field] = value.strip()
-
+  
   if not live:
-    continue
+    return
+  
+  return {
+    "content": content,
+    "meta": fields,
+  }
+
+
+for file in files:
+  data = process_file(file)
+
+  content = data["content"]
+  meta = data["meta"]
+  index = meta["issueIndex"]
 
   content = "".join(content[1:])
   content = re.sub(r"../assets/issues/[0-9]*/", "/", content)
 
   issues.append({
     "name": file.stem,
-    **fields,
+    **meta,
   })
-
-  index = fields["issueIndex"]
 
   front = f'''---
   issueIndex: {index}
-  title: {fields["title"]}
-  date: {fields.get("date", None)}
-  topic: {fields.get("topic", None)}
+  title: {meta["title"]}
+  date: {meta.get("date", None)}
+  topic: {meta.get("topic", None)}
 ---
 '''
 
@@ -82,31 +92,34 @@ for file in files:
     dest.seek(0)
     dest.write(front + "\n" + content)
 
-  # FIXME copy to _Content.svx for static routing
+  ## FIXME copy to _Content.svx for static routing
+
+  # _Content.svx
   ISSUES = SRC / "routes/issues"
   ROUTE = ISSUES / index
 
   if not os.path.exists(ROUTE):
     os.mkdir(ROUTE)
 
-  with open(ISSUES / "-page.txt", "r") as source:
-    script_tag = source.readline()
-    content = source.read()
-
   shutil.copyfile(file, ROUTE / "_Content.svx")
 
   with open(ROUTE / "_Content.svx", "w") as dest:
-    dest.seek(0)
     dest.write(front + "\n" + content)
 
-  front = f'''import Content from "../{index}/_Content.svx";
-const issue = ISSUES[{int(index) - 1}]
+  # +page.svelte
+  with open(ISSUES / "-page.txt", "r") as source:
+    source.readline()
+    content = source.read()
+
+  front = f'''
+import ISSUES from "#src/issues-config";
+const issue = ISSUES[{int(index) - 1}];
+
+import Content from "../{index}/_Content.svx";
 '''
 
   with open(ROUTE / "+page.svelte", "w+") as dest:
-    dest.seek(0)
-    dest.readline()
-    dest.write("\n".join([script_tag, front, content]))
+    dest.write("\n".join(["<script>", front, content]))
 
 
 ## Save - a little scuffed, but it works well

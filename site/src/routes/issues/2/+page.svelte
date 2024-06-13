@@ -1,10 +1,10 @@
 <script>
 
-import Content from "../2/_Content.svx";
-const issue = ISSUES[1]
-
-
 import ISSUES from "#src/issues-config";
+const issue = ISSUES[1];
+
+import Content from "../2/_Content.svx";
+
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
