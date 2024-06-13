@@ -2,16 +2,16 @@
 Copy project assets from `./assets` to `static/` for SvelteKit to use when building the site.
 '''
 
+print("           / collecting assets...")
+
 import os
 import shutil
 from itertools import chain as ichain
 from pathlib import Path
 
+from __main__ import ROOT
 
-print(">>> Python / collecting assets...")
 
-
-ROOT = Path(__file__).parents[2].absolute()
 
 
 ## Load

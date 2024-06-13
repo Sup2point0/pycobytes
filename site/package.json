@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "cd .. && python site/scripts/load-content.py && python site/scripts/load-issues.py && python site/scripts/load-assets.py && cd site && vite build && cd .. && python site/scripts/post-build.py",
+		"build": "cd .. && python site/scripts && cd site && vite build && cd .. && python site/scripts/post-build.py",
 		"preview": "vite preview"
 	},
 	"devDependencies": {

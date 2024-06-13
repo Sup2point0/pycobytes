@@ -2,13 +2,14 @@
 Transfer .md files from elsewhere in the repo to the site for SvelteKit to source content from during prerendering.
 '''
 
-print(">>> Python / collecting content...")
+print("           / collecting content...")
 
 import json
 from pathlib import Path
 
+from __main__ import ROOT
 
-ROOT = Path(__file__).parents[2].absolute()
+
 SITE = ROOT / "site"
 
 

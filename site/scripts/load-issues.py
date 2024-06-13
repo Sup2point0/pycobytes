@@ -2,6 +2,8 @@
 Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
 '''
 
+print("           / collecting issues...")
+
 import json
 import os
 import re
@@ -9,11 +11,9 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+from __main__ import ROOT
 
-print(">>> Python / collecting issues...")
 
-
-ROOT = Path(__file__).parents[2].absolute()
 SRC = ROOT / "site/src"
 
 

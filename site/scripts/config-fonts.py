@@ -2,13 +2,14 @@
 Inject required fonts into `app.html`.
 '''
 
-print(">>> Python / configuring fonts...")
+print("           / configuring fonts...")
 
 import re
 from pathlib import Path
 
+from __main__ import ROOT
 
-ROOT = Path(__file__).parents[2].absolute()
+
 SRC = ROOT / "site/src"
 ROUTE = SRC / "app.html"
 
