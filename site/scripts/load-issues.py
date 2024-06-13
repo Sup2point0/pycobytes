@@ -2,16 +2,18 @@
 Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
 '''
 
-print(">>> Python / collecting issues...")
+print("           / collecting issues...")
 
 import json
 import os
+import re
 import shutil
 from datetime import date
 from pathlib import Path
 
+from __main__ import ROOT
 
-ROOT = Path(__file__).parents[2].absolute()
+
 SRC = ROOT / "site/src"
 
 
@@ -55,6 +57,9 @@ for file in files:
   if not live:
     continue
 
+  content = "".join(content[1:])
+  content = re.sub(r"../assets/issues/[0-9]*/", "/", content)
+
   issues.append({
     "name": file.stem,
     **fields,
@@ -69,10 +74,6 @@ for file in files:
   topic: {fields.get("topic", None)}
 ---
 '''
-
-  with open(file, "r") as source:
-    throwaway = source.readline()
-    content = source.read()
 
   ROUTE = DEST / (index + ".svx")
   shutil.copyfile(file, ROUTE)

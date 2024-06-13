@@ -2,26 +2,21 @@
 Collect SCSS files that should be applied globally into `scss-config.js` for Svelte when preprocessing.
 '''
 
+print("           / pre-preprocessing SCSS...")
+
 import os
 import shutil
 from datetime import date
-from itertools import chain as ichain
 from pathlib import Path
 
+from __main__ import ROOT
 
-print(">>> Python / pre-preprocessing SCSS...")
 
-
-ROOT = Path(__file__).parents[2].absolute()
 SRC = ROOT / "site/src"
 
 
 ## Load
-files = ichain(
-  SRC.glob("styles/_*.scss"),
-  SRC.glob("mixins/_*.scss"),
-)
-
+files = SRC.glob("styles/*.scss")
 config = []
 
 for file in files:

@@ -3,6 +3,10 @@
     "dest": "src/routes/dev/_Content.svx",
     "strip": ["title", "line-breaks"]
   },
+  "faq.md": {
+    "dest": "src/routes/faq/_Content.svx",
+    "strip": ["title"]
+  },
   "edu.md": {
     "dest": "src/routes/edu/_Content.svx",
     "strip": ["title"]

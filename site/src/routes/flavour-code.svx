@@ -1,0 +1,10 @@
+```py
+class Pycobyte[Fun]:
+    __slots__ = ["_days"]
+
+    async def __aiter__(self, /, *, flavour: Fun = "Welcome to pycobytes!") -> Fun[Fun]:
+        '''You’ve never seen Python like this~'''
+
+        for i, day in enumerate(self._days):
+            yield (await post(i) async for post in self.start(day))
+```

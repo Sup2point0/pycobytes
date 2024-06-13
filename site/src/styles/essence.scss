@@ -2,10 +2,11 @@
 
 @use './src/styles/_nova' as *;
 @use './src/styles/_variables' as *;
-@use './src/mixins/_fonts' as *;
-@use './src/mixins/_anim' as *;
 
+@use './src/styles/fonts' as *;
+@use './src/styles/anim' as *;
 @use './src/styles/links' as *;
+@use './src/styles/flavour' as *;
 
 
 html, body {
