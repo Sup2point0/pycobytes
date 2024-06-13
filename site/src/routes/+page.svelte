@@ -18,12 +18,17 @@ import Content from "#src/routes/flavour-code.svx";
 </svelte:head>
 
 <main>
-  <div class="hero left">
-    <h1> <span class="pyco-flavour"> pyco:bytes </span> </h1>
-    <span class="caption"> {site.desc.long} </span>
-  </div>
+  <div class="hero">
+    <div class="left">
+      <h1> <span class="pyco-flavour"> pyco:bytes </span> </h1>
+      <p> {site.desc.long} </p>
+    </div>
 
-  <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1]}"> Read the latest issue </LinkButton>
+    <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
+      <div> Read the latest issue </div>
+      <div class="material-symbols-outlined"> arrow_forward_ios </div>
+    </LinkButton>
+  </div>
 
   <div class="flavour right">
     <h2> Python is awesome. </h2>
@@ -71,13 +76,36 @@ p {
 
 .hero {
   width: 100%;
-  padding: 5rem 0 10rem 20vw;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   color: white;
   background-color: black;
+}
+
+.hero .left {
+  width: 100%;
+  padding: 5rem 0 8rem 20vw;
 
   & h1 {
+    margin: 0 0 2rem;
+    padding: 0;
     font-family: 'Roboto Mono', 'Fira Code', 'Consolas', 'Overpass', 'Segoe UI Semibold#', system-ui, sans-serif;
+    font-size: 10vw;
   }
+  & p {
+    @include font-flavour;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+}
+
+.flavour {
+  width: 80vw;
 }
 
 </style>

@@ -5,27 +5,45 @@
 
 
 .pyco-flavour {
+  --length: 800%;
   color: transparent;
+  background-size: var(--length) 100%;
   background: linear-gradient(to right in oklch,
-    $teal-elec 0%,
-    $blue-cresc 25%,
-    $lilac-nova 75%,
-    $pink-elec 100%
-  ) 0 0 / var(--length) 100%;
+    $teal-elec,
+    $blue-nova,
+    $blue-cresc,
+    $lilac-nova,
+    $pink-elec,
+    $red-nova,
+    $orange-spirit,
+    $yellow-solar,
+    $mellow-cresc
+  ) 0 0 / var(--length) 100% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
 
-  animation: anim-flavour 4s infinite alternate ease-in-out;
+  animation: anim-flavour 20s infinite alternate ease-in-out;
+  animation-delay: -6.9s;
 
   @media (prefers-reduced-motion) {
     animation: none;
   }
-  
-  --length: 600%;
 }
 
 @keyframes anim-flavour {
+  from {
+    background-position-x: 0;
+  }
   to {
-    background-position: var(--length) 0;
+    background-position-x: 100%;
+  }
+}
+
+@keyframes anim-popin {
+  from {
+    background-position-y: 100;
+  }
+  to {
+    background-position-y: 0;
   }
 }

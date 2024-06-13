@@ -8,3 +8,9 @@
     color 0.2s ease-in-out,
     background-color 0.2s ease-in-out;
 }
+
+@keyframes popin {
+  from {
+    translate: -20px;
+  }
+}
