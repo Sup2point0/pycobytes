@@ -4,6 +4,7 @@ Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when b
 
 import json
 import os
+import re
 import shutil
 from datetime import date
 from pathlib import Path
@@ -56,6 +57,9 @@ for file in files:
   if not live:
     continue
 
+  content = "".join(content[1:])
+  content = re.sub(r"../assets/issues/[0-9]*/", "/", content)
+
   issues.append({
     "name": file.stem,
     **fields,
@@ -67,11 +71,11 @@ for file in files:
   date: {fields.get("date", None)}
   topic: {fields.get("topic", None)}
 ---
-'''
 
-  with open(file, "r") as source:
-    throwaway = source.readline()
-    content = source.read()
+<script>
+  import {{ base }} from "$app/paths";
+</script>
+'''
 
   ROUTE = DEST / (str(int(file.stem)) + ".svx")
   shutil.copyfile(file, ROUTE)
