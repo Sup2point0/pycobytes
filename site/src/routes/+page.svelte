@@ -62,6 +62,8 @@ import Content from "#src/routes/flavour-code.svx";
       {/each}
     </span>
   </LinkButton>
+
+  <img id="xkcd" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
 </main>
 
 
@@ -116,6 +118,11 @@ p {
     padding: 0;
     color: white;
   }
+}
+
+#xkcd {
+  width: 80%;
+  max-width: 100vw;
 }
 
 </style>
