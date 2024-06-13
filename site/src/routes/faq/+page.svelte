@@ -2,7 +2,7 @@
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
-import Content from "../faq/Content.svx";
+import Content from "../faq/_Content.svx";
 
 </script>
 
