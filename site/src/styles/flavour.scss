@@ -4,22 +4,18 @@
 @use './src/styles/_variables' as *;
 
 
-// span[class='pyco-flavour'] {
-//   --length: 400%;
-// }
-
 .pyco-flavour {
   color: transparent;
   background: linear-gradient(to right in oklch,
-    $teal-elec,
-    $blue-cresc,
-    $lilac-nova,
-    $pink-elec
+    $teal-elec 0%,
+    $blue-cresc 25%,
+    $lilac-nova 75%,
+    $pink-elec 100%
   ) 0 0 / var(--length) 100%;
   -webkit-background-clip: text;
   background-clip: text;
 
-  animation: anim-flavour 2s infinite alternate;
+  animation: anim-flavour 4s infinite alternate ease-in-out;
 
   @media (prefers-reduced-motion) {
     animation: none;
