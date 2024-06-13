@@ -4,7 +4,7 @@
 @use './src/styles/_variables' as *;
 
 
-$link: ':where(a:not(:has(img), .nav-link))';
+$link: ':where(a:not(.no-anim, :has(img), .nav-link))';
 
 
 #{$link} {

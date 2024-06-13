@@ -1,0 +1,31 @@
+/// Flavour Text
+
+@use './src/styles/_nova' as *;
+@use './src/styles/_variables' as *;
+
+
+span[class='pyco-flavour'] {
+  --length: 400%;
+}
+
+.pyco-flavour {
+  color: transparent;
+  background: linear-gradient(90deg, $blue-cresc, $lilac-nova) 0 0 / var(--length) 100%;
+  // background: linear-gradient(in oklch, 90deg, $blue-cresc, $lilac-nova) 0 0 / var(--length) 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  animation: anim-flavour 2s infinite linear;
+
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
+  
+  --length: 400%;
+}
+
+@keyframes anim-flavour {
+  to {
+    background-position: var(--length) 0;
+  }
+}
