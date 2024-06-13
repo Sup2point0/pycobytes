@@ -2,6 +2,8 @@
 
 import { base } from "$app/paths";
 
+import LinkButton from "#src/parts/LinkButton.svelte";
+
 import site from "#src/site-config.js";
 
 </script>
@@ -21,6 +23,10 @@ import site from "#src/site-config.js";
   <img id="glimpse" alt="pythonic magic" src="{base}/pycobytes-glimpse.png">
 
   <p> So, <span class="pyb-flavour left">pyco</span><span class="pyb-flavour centre">:</span><span class="pyb-flavour right">bytes</span> is a weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
+
+  <LinkButton link="{base}/issues">
+    View All Issues
+  </LinkButton>
 </main>
 
 
