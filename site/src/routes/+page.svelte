@@ -18,40 +18,49 @@ import Content from "#src/routes/flavour-code.svx";
 </svelte:head>
 
 <main>
-  <div class="hero">
+  <section class="hero">
     <div class="left">
       <h1> <span class="pyco-flavour"> pyco:bytes </span> </h1>
       <p> {site.desc.long} </p>
     </div>
 
     <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
-      <div> Read the latest issue </div>
-      <div class="material-symbols-outlined"> arrow_forward_ios </div>
+      Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      <span slot="hover">
+        {#each {length: 3} as _, i}
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        {/each}
+      </span>
     </LinkButton>
-  </div>
+  </section>
 
-  <div class="flavour right">
+  <section class="flavour right">
     <h2> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
-  </div>
+  </section>
 
-  <div class="flavour-code">
+  <section class="flavour-code">
     <Content />
     <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
-  </div>
+  </section>
 
-  <div class="flavour left">
+  <section class="flavour left">
     <h2> So, here’s <span class="pyco-flavour">pycobytes</span>. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
-  </div>
+  </section>
 
-  <div class="flavour">
+  <section>
     <h2> An adventure into the wonders of Python. </h2>
     <p> Quick, snappy and fun! </p>
-  </div>
+  </section>
 
   <LinkButton link="{base}/issues">
-    Start Exploring
+    Start Exploring <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    <span slot="hover">
+      {#each {length: 3} as _, i}
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      {/each}
+    </span>
   </LinkButton>
 </main>
 
@@ -63,6 +72,11 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+section {
+  width: 80vw;
 }
 
 p {
@@ -102,10 +116,6 @@ p {
     padding: 0;
     color: white;
   }
-}
-
-.flavour {
-  width: 80vw;
 }
 
 </style>

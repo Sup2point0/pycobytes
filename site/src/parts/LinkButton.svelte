@@ -5,25 +5,52 @@ export let link: string;
 </script>
 
 
-<div class="link-button">
-  <a class="link-button no-anim" href={link}>
-    <slot>
-      <p> RENDER ERROR </p>
-    </slot>
-  </a>
-</div>
+<a class="link-button no-anim" href={link}>
+  <div class="content">
+    <slot> ... </slot>
+  </div>
+  <div class="content-hover">
+    <slot name="hover"> ... </slot>
+  </div>
+</a>
 
 
 <style lang="scss">
 
-a {
-  @include font-flavour;
+.link-button {
+  min-width: 13em;
+  max-width: 40vw;
+  min-height: 1.6em;
+  max-height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-width: 8em;
-  max-width: 50vw;
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .content-hover { display: none; }
+
+  &:hover {
+    min-width: 15em;
+
+    .content { display: none; }
+    .content-hover {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+a {
+  @include font-flavour;
   margin: 0;
   padding: 0.5em 1em;
   font-size: 125%;
