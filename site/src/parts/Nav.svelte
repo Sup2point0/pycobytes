@@ -18,7 +18,7 @@ function pickIssue() {
 <nav>
   <ul class="left">
     <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io" />
-    <NavLink text="pyco:bytes" link="https://sup2point0.github.io" />
+    <NavLink text="pyco:bytes" link="https://sup2point0.github.io/pycobytes" />
 
     <NavLink text="d" button={swapDuality}>
       <span class="material-symbols-outlined">
@@ -49,7 +49,9 @@ function pickIssue() {
       <NavLink text="Report Bug" link="https://sup2point0.github.io/pycobytes/issues" />
     </NavLink>
 
-    <NavLink text="GitHub" pict="{base}/github-icon.svg"
+    <NavLink text="GitHub"
+      light="{base}/github-light.svg"
+      dark="{base}/github-dark.svg"
       extern="https://github.com/Sup2point0/pycobytes" invertible = {true}
     />
   </ul>
@@ -63,8 +65,10 @@ nav {
   top: 0;
   z-index: 2;
   width: 100%;
-  min-height: $nav-height;
   max-width: 100%;
+  height: $nav-height;
+  min-height: $nav-height;
+  max-height: $nav-height;
   padding: 0.1rem 4rem 0.1rem auto;
   display: flex;
   flex-direction: row;
@@ -84,40 +88,6 @@ nav ul {
 ul {
   margin: 0;
   list-style-type: none;
-}
-
-li:has(button) {
-  width: 30px;
-  margin: 0;
-  padding: 0.25rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: $col-idle;
-
-  transition: all 0.16s ease-out;
-  @media prefers-reduced-motion {
-    transition: none;
-  }
-
-  & button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    color: light-dark($lilac-nova, $mellow-cresc);
-    border: none;
-  }
-
-  &:hover {
-    background-color: $col-hover;
-    & > button {
-      color: light-dark($mellow-cresc, $lilac-nova);
-    }
-  }
 }
 
 </style>

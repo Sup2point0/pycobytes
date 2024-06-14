@@ -34,7 +34,7 @@ import Content from "#src/routes/flavour-code.svx";
     </LinkButton>
   </section>
 
-  <section class="flavour right">
+  <section class="right">
     <h2> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   </section>
@@ -44,7 +44,7 @@ import Content from "#src/routes/flavour-code.svx";
     <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
   </section>
 
-  <section class="flavour left">
+  <section class="left">
     <h2> So, here’s <span class="pyco-flavour">pycobytes</span>. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
@@ -63,7 +63,9 @@ import Content from "#src/routes/flavour-code.svx";
     </span>
   </LinkButton>
 
-  <img id="xkcd" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
+  <section>
+    <img id="xkcd" alt="XKCD 353" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
+  </section>
 </main>
 
 
@@ -79,6 +81,7 @@ main {
 
 section {
   width: 80vw;
+  margin: 0 0 1em;
 }
 
 p {
@@ -121,8 +124,9 @@ p {
 }
 
 #xkcd {
-  width: 80%;
+  width: 50%;
   max-width: 100vw;
+  margin-top: 3rem;
 }
 
 </style>

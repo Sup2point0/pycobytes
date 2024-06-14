@@ -4,10 +4,15 @@
   
 import type { MouseEventHandler } from "svelte/elements";
 
+import { duality } from "#src/scripts/duality";
+
 export let text: string | null = "–";
 export let body: string | null = null;
 export let pict: string | null = null;
+  export let light: string | null = null;
+  export let dark: string | null = null;
 export let button: MouseEventHandler<HTMLButtonElement> | null = null;
+
 export let invertible: boolean = false;
 export let collapsible: boolean = false;
 
@@ -16,7 +21,10 @@ export let collapsible: boolean = false;
 
 <div class="nav-part">
   {#if pict}
-    <img alt={text} src={pict} class={invertible ? "invert-duality" : ""}>
+    <img alt={text}
+      src={invertible ?
+        ($duality == "light" ? (light ?? pict) : (dark ?? pict))
+      : pict}>
 
   {:else if button}
     <button on:click={button}>
@@ -57,19 +65,25 @@ export let collapsible: boolean = false;
 img {
   height: 30px;
 
-  & [color-scheme='light'] {
+  & .invert-duality {
     -webkit-filter: invert(1);
     filter: invert(1);
   }
 }
 
-button {
+button:not(#increase#specificity) {
+  padding: 0;
+  color: light-dark($col-accent, $col-flavour);
   background: none;
   border: none;
   cursor: pointer;
 
   & :not(#non#exist#ent) {
     padding: 0;
+  }
+
+  &:hover {
+    color: light-dark($col-flavour, $col-accent);
   }
 }
 

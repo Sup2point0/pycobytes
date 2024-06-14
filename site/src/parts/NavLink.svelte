@@ -38,6 +38,7 @@ export let extern: string | null = null;
 // }
 
 li.nav-link {
+  @include font-fun;
   margin: 0.5rem 0.2rem;
   padding: 0;
   display: flex;
@@ -47,7 +48,6 @@ li.nav-link {
   border-radius: 0.7em;
   
   & a {
-    @include font-fun;
     height: 100%;
     text-decoration: none;
     color: light-dark(rgb(20 20 20), white);
@@ -64,10 +64,6 @@ li {
   &:hover {
     cursor: pointer;
     background-color: $col-hover;
-
-    & > a {
-      color: light-dark($col-accent, $col-flavour);
-    }
   }
 }
 
