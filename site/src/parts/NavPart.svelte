@@ -4,7 +4,7 @@
   
 import type { MouseEventHandler } from "svelte/elements";
 
-import { duality } from "#src/scripts/duality";
+import duality from "#src/scripts/duality";
 
 export let text: string | null = "–";
 export let body: string | null = null;
@@ -27,7 +27,7 @@ export let collapsible: boolean = false;
       : pict}>
 
   {:else if button}
-    <button on:click={button}>
+    <button id={text} on:click={button}>
       {#if $$slots}
         <slot />
       {:else}
@@ -65,25 +65,20 @@ export let collapsible: boolean = false;
 img {
   height: 30px;
 
-  & .invert-duality {
+  &.invert-duality {
     -webkit-filter: invert(1);
     filter: invert(1);
   }
 }
 
-button:not(#increase#specificity) {
+button {
   padding: 0;
-  color: light-dark($col-accent, $col-flavour);
   background: none;
   border: none;
   cursor: pointer;
 
-  & :not(#non#exist#ent) {
-    padding: 0;
-  }
-
-  &:hover {
-    color: light-dark($col-flavour, $col-accent);
+  &#duality {
+    color: light-dark($col-accent, $lilac-nova);
   }
 }
 

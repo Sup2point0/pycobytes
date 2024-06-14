@@ -45,6 +45,10 @@ p code {
 pre:has(code) {
   padding-left: 1em;
   border-radius: 20px;
+
+  & [color-scheme=dark] {
+    box-shadow: 0 0 20px $col-flavour;
+  }
 }
 
 b, strong {
@@ -60,6 +64,12 @@ blockquote {
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+// selection colours should override everything else
+:not(code)::selection {
+  color: white !important;
+  background-color: light-dark($col-accent, $col-flavour) !important;
 }
 
 .material-symbols-outlined {

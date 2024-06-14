@@ -20,7 +20,7 @@ function pickIssue() {
     <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io" />
     <NavLink text="pyco:bytes" link="https://sup2point0.github.io/pycobytes" />
 
-    <NavLink text="d" button={swapDuality}>
+    <NavLink text="duality" button={swapDuality}>
       <span class="material-symbols-outlined">
         {#if $duality == "dark"}
           dark_mode

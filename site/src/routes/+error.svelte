@@ -1,5 +1,7 @@
 <script>
 
+import { page } from "$app/stores";
+
 import Nav from "#src/parts/Nav.svelte";
 
 </script>
@@ -9,7 +11,7 @@ import Nav from "#src/parts/Nav.svelte";
 
 <main>
   <div>
-    <p> Something went wrong! </p>
+    <p class="error"> Something went wrong! </p>
   </div>
 </main>
 
@@ -22,8 +24,7 @@ div {
 }
 
 p {
-  @include font-body;
-  color: $grey-nova;
+  @include font-flavour;
 }
 
 </style>

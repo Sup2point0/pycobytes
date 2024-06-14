@@ -2,7 +2,7 @@
 
 import { base } from "$app/paths";
 
-import site from "#src/site-config.js";
+import site from "#src/site-config";
 import ISSUES from "#src/issues-config";
 
 import LinkButton from "#src/parts/LinkButton.svelte";
@@ -20,8 +20,9 @@ import Content from "#src/routes/flavour-code.svx";
 <main>
   <section class="hero">
     <div class="left">
-      <h1> <span class="pyco-flavour"> pyco:bytes </span> </h1>
+      <h1> <span class="pyco-flavour"> pyco<span class="pyco-flavour-null">:</span>bytes </span> </h1>
       <p> {site.desc.long} </p>
+      <div class="line" />
     </div>
 
     <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
@@ -35,7 +36,7 @@ import Content from "#src/routes/flavour-code.svx";
   </section>
 
   <section class="right">
-    <h2> Python is awesome. </h2>
+    <h2 class="pyco-flavour"> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   </section>
 
@@ -45,12 +46,12 @@ import Content from "#src/routes/flavour-code.svx";
   </section>
 
   <section class="left">
-    <h2> So, here’s <span class="pyco-flavour">pycobytes</span>. </h2>
+    <h2 class="pyco-flavour"> So, here’s pycobytes. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
 
   <section>
-    <h2> An adventure into the wonders of Python. </h2>
+    <h2 class="pyco-flavour"> An adventure into the wonders of Python. </h2>
     <p> Quick, snappy and fun! </p>
   </section>
 
@@ -106,7 +107,7 @@ p {
 
 .hero .left {
   width: 100%;
-  padding: 5rem 0 8rem 20vw;
+  padding: 4rem 0 4rem 20vw;
 
   & h1 {
     margin: 0 0 2rem;
@@ -120,6 +121,12 @@ p {
     margin: 0;
     padding: 0;
     color: white;
+  }
+  & .line {
+    width: 20vw;
+    max-width: 20vw;
+    padding-top: 5rem;
+    border-bottom: 3px solid light-dark($col-flavour, $col-accent);
   }
 }
 

@@ -47,23 +47,24 @@ li.nav-link {
   justify-content: center;
   border-radius: 0.7em;
   
+  transition: all 0.16s ease-out;
+  @media prefers-reduced-motion {
+    transition: none;
+  }
+  
   & a {
     height: 100%;
     text-decoration: none;
     color: light-dark(rgb(20 20 20), white);
   }
-}
-
-li {
-  transition: all 0.16s ease-out;
-
-  @media prefers-reduced-motion {
-    transition: none;
-  }
 
   &:hover {
     cursor: pointer;
     background-color: $col-hover;
+
+    & button#duality {
+      color: light-dark($lilac-nova, $col-flavour);
+    }
   }
 }
 
