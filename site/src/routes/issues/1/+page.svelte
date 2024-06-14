@@ -17,7 +17,7 @@ import Main from "#src/parts/Main.svelte";
 </svelte:head>
 
 <article>
-  {#if issue.content}
+  {#if Content}
     <Header
       type = "issue"
       issueIndex = {issue.issueIndex}
