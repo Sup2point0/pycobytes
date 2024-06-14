@@ -46,9 +46,7 @@ pre:has(code) {
   padding-left: 1em;
   border-radius: 20px;
 
-  & [color-scheme=dark] {
-    box-shadow: 0 0 20px $col-flavour;
-  }
+  box-shadow: 0 0 12px light-dark(rgb(0 0 0 / 0), rgba($col-accent, 0.5));  // FIXME
 }
 
 b, strong {
