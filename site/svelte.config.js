@@ -1,14 +1,14 @@
 import adapter from "@sveltejs/adapter-static";
 import sveltePreprocess from "svelte-preprocess";
-import { mdsvex } from 'mdsvex';
+import { mdsvex } from "mdsvex";
 
-import scssConfig from '../site/scss-config.js';
+import scssConfig from "../site/scss-config.js";
 
 const config = {
   kit: {
     adapter: adapter({
-      pages: 'build',
-      assets: 'build',
+      pages: "build",
+      assets: "build",
       fallback: "error.html",
       precompress: false,
       strict: true,
