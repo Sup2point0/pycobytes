@@ -9,6 +9,10 @@
 @use './src/styles/flavour' as *;
 
 
+:root {
+  color-scheme: light dark;
+}
+
 html, body {
   width: 100%;
   margin: 0;
