@@ -68,4 +68,10 @@ li.nav-link {
   }
 }
 
+@media (max-width: 800px) {
+  li .collapsible {
+    display: none;
+  }
+}
+
 </style>

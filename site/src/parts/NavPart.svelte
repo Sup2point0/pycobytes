@@ -19,8 +19,8 @@ export let collapsible: boolean = false;
 </script>
 
 
-<div class="nav-part">
-  {#if pict}
+<div class="nav-part {collapsible ? "collapsible" : ""}">
+  {#if pict || light || dark}
     <img alt={text}
       src={invertible ?
         ($duality == "light" ? (light ?? pict) : (dark ?? pict))
@@ -35,6 +35,9 @@ export let collapsible: boolean = false;
       {/if}
     </button>
 
+  {:else if body}
+    <span> {@html body} </span>
+  
   {:else}
     <span> {text} </span>
 
@@ -64,6 +67,8 @@ export let collapsible: boolean = false;
 
 img {
   height: 30px;
+  min-height: 30px;
+  max-height: 30px;
 
   &.invert-duality {
     -webkit-filter: invert(1);

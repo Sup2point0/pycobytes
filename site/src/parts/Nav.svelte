@@ -20,7 +20,7 @@ function pickIssue() {
     <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io/pycobytes" />
     <NavLink text="pyco:bytes" link="https://sup2point0.github.io/pycobytes" />
 
-    <NavLink text="duality" button={swapDuality}>
+    <NavLink text="duality" button={swapDuality} collapsible={true}>
       <span class="material-symbols-outlined">
         {#if $duality == "dark"}
           dark_mode
@@ -32,27 +32,29 @@ function pickIssue() {
   </ul>
 
   <ul class="right">
-    <NavLink text="About" link="{base}/faq" >
+    <NavLink text="About" link="{base}/faq" collapsible={true} >
       <NavLink text="FAQ" link="{base}/faq" />
       <NavLink text="Dev" link="{base}/dev" />
     </NavLink>
 
-    <NavLink text="Issues" link="{base}/issues" >
+    <NavLink text="Issues" link="{base}/issues" collapsible={true} >
       <NavLink text="Index" link="{base}/issues" />
       <NavLink text="Latest" link="{base}/issues/{ISSUES[ISSUES.length -1].issueIndex}" />
       <NavLink text="Random" button={pickIssue} />
     </NavLink>
 
-    <NavLink text="Contact" collapsible = {true} >
+    <NavLink text="Contact" collapsible={true} >
       <NavLink text="Discuss" link="https://sup2point0.github.io/pycobytes/discussions" />
       <NavLink text="Submit Idea" link="https://sup2point0.github.io/pycobytes/issues" />
       <NavLink text="Report Bug" link="https://sup2point0.github.io/pycobytes/issues" />
     </NavLink>
 
     <NavLink text="GitHub"
-      light="{base}/github-light.svg"
-      dark="{base}/github-dark.svg"
-      extern="https://github.com/Sup2point0/pycobytes" invertible = {true}
+      light="{base}/github-dark.svg"
+      dark="{base}/github-light.svg"
+      extern="https://github.com/Sup2point0/pycobytes"
+      invertible={true}
+      collapsible={true}
     />
   </ul>
 </nav>
