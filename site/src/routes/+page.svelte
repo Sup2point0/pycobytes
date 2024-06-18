@@ -66,6 +66,7 @@ import Content from "#src/routes/flavour-code.svx";
 
   <section>
     <img id="xkcd" alt="XKCD 353" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
+    <p> <a href="https://xkcd.com/353"><em>XKCD, 353</em></a> </p>
   </section>
 </main>
 
@@ -78,17 +79,36 @@ main {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  
+  counter-reset: sec;
 }
 
 section {
   width: 80vw;
-  margin: 0 0 1em;
-}
+  margin: 0 0 4rem;
+  counter-increment: sec;
 
-p {
-  @include font-flavour;
-  // margin: 3em 8rem;
-  font-size: 120%;
+  &:not(.hero) {
+    width: 69%;
+    max-width: 69%;
+  }
+  
+  & h2 {
+    @include font-head;
+    margin: 0;
+    padding: 0;
+    font-size: 300%;
+
+    &.pyco-flavour {
+      animation-delay: calc(counter(sec) * -13s);
+    }
+  }
+
+  & p {
+    @include font-flavour;
+    font-size: 150%;
+    color: $grey-nova;
+  }
 }
 
 .left { text-align: left }
@@ -131,7 +151,7 @@ p {
 }
 
 #xkcd {
-  width: 50%;
+  width: 50vw;
   max-width: 100vw;
   margin-top: 3rem;
 }
