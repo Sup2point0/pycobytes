@@ -13,7 +13,6 @@ export let pict: string | null = null;
   export let dark: string | null = null;
 export let button: MouseEventHandler<HTMLButtonElement> | null = null;
 
-export let invertible: boolean = false;
 export let collapsible: boolean = false;
 
 </script>
@@ -22,9 +21,7 @@ export let collapsible: boolean = false;
 <div class="nav-part {collapsible ? "collapsible" : ""}">
   {#if pict || light || dark}
     <img alt={text}
-      src={invertible ?
-        ($duality == "light" ? (light ?? pict) : (dark ?? pict))
-      : pict}>
+      src={$duality == "light" ? (light ?? pict) : (dark ?? pict)}>
 
   {:else if button}
     <button id={text} on:click={button}>
@@ -69,11 +66,6 @@ img {
   height: 30px;
   min-height: 30px;
   max-height: 30px;
-
-  &.invert-duality {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
 }
 
 button {

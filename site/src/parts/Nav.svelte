@@ -53,7 +53,6 @@ function pickIssue() {
       light="{base}/github-dark.svg"
       dark="{base}/github-light.svg"
       extern="https://github.com/Sup2point0/pycobytes"
-      invertible={true}
       collapsible={true}
     />
   </ul>

@@ -11,7 +11,7 @@ export let extern: string | null = null;
 
 
 <li class="nav-link">
-  {#if link}
+  {#if link || extern}
     <a
       class = "no-anim"
       href = {extern ? extern : link}
