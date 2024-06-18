@@ -1,0 +1,13 @@
+/// Code Block Styles
+
+@use './src/styles/_variables' as *;
+
+
+pre:has(code) {
+  padding-left: 1em;
+  border-radius: 20px;
+
+  box-shadow: 0 0 12px light-dark(rgb(0 0 0 / 0), rgba($col-accent, 0.5));  // FIXME
+}
+
+

@@ -17,7 +17,7 @@ function pickIssue() {
 
 <nav>
   <ul class="left">
-    <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io" />
+    <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io/pycobytes" />
     <NavLink text="pyco:bytes" link="https://sup2point0.github.io/pycobytes" />
 
     <NavLink text="duality" button={swapDuality}>

@@ -6,6 +6,7 @@
 @use './src/styles/fonts' as *;
 @use './src/styles/anim' as *;
 @use './src/styles/links' as *;
+@use './src/styles/code-blocks' as *;
 @use './src/styles/flavour' as *;
 
 
@@ -44,13 +45,6 @@ p code {
   white-space: break-spaces;
   background-color: rgba(175, 184, 193, 0.2);
   border-radius: 6px;
-}
-
-pre:has(code) {
-  padding-left: 1em;
-  border-radius: 20px;
-
-  box-shadow: 0 0 12px light-dark(rgb(0 0 0 / 0), rgba($col-accent, 0.5));  // FIXME
 }
 
 b, strong {
