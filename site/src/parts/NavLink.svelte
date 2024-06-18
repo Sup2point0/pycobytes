@@ -58,9 +58,11 @@ li.nav-link {
     color: light-dark(rgb(20 20 20), white);
   }
 
-  &:hover {
+  &:where(:hover, :focus, :focus-within) {
     cursor: pointer;
     background-color: $col-hover;
+    outline: none;
+    border: none;
 
     & button#duality {
       color: light-dark($lilac-nova, $col-flavour);

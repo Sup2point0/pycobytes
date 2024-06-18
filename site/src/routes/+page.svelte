@@ -7,14 +7,13 @@ import ISSUES from "#src/issues-config";
 
 import LinkButton from "#src/parts/LinkButton.svelte";
 
-import Content from "#src/routes/flavour-code.svx";
+import FlavourCode from "#src/routes/flavour-code.svx";
 
 </script>
 
 
 <svelte:head>
   <title> pycobytes · {site.desc.short} </title>
-  <script defer src="/src/scripts/prism.js"> </script>
 </svelte:head>
 
 <main>
@@ -41,7 +40,8 @@ import Content from "#src/routes/flavour-code.svx";
   </section>
 
   <section class="flavour-code">
-    <Content />
+    <FlavourCode />
+    <br>
     <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
   </section>
 
@@ -49,6 +49,8 @@ import Content from "#src/routes/flavour-code.svx";
     <h2 class="pyco-flavour"> So, here’s pycobytes. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
+
+  <div class="line" />
 
   <section>
     <h2 class="pyco-flavour"> An adventure into the wonders of Python. </h2>
@@ -85,12 +87,15 @@ main {
 
 section {
   width: 80vw;
-  margin: 0 0 4rem;
   counter-increment: sec;
 
+  & hero {
+    margin: 0 0 4rem;
+  }
   &:not(.hero) {
     width: 69%;
     max-width: 69%;
+    margin: 2rem 0;
   }
   
   & h2 {
@@ -107,12 +112,25 @@ section {
   & p {
     @include font-flavour;
     font-size: 150%;
-    color: $grey-nova;
+    color: $grey-storm;
+  }
+
+  & .caption {
+    @include font-flavour;
+    font-size: 120%;
+    color: light-dark($grey-nova, $blue-deep);
   }
 }
 
 .left { text-align: left }
 .right { text-align: right }
+
+.line {
+  width: 42vw;
+  max-width: 42vw;
+  margin: 2rem 0;
+  border-bottom: 2px solid light-dark($col-flavour, white);
+}
 
 .hero {
   width: 100%;
@@ -137,7 +155,7 @@ section {
   }
   & p {
     @include font-flavour;
-    font-size: 2vw;
+    font-size: 200%;
     margin: 0;
     padding: 0;
     color: white;
