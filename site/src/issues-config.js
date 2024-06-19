@@ -1,5 +1,5 @@
 /// Issues Index
-/// last auto-generated: Jun 18
+/// last auto-generated: Jun 19
 
 const ISSUES = [{
   "name": "01",
@@ -12,11 +12,5 @@ const ISSUES = [{
   "issueIndex": "2",
   "title": "Stringterpolation with f-Strings",
   "date": "12 June 2024"
-},
-{
-  "name": "03",
-  "issueIndex": "3",
-  "title": "\"A Strand of String Theory\"",
-  "date": "N/A"
 }];
 export default ISSUES;

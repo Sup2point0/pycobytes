@@ -8,7 +8,7 @@ import json
 import os
 import re
 import shutil
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 from __main__ import ROOT
@@ -49,8 +49,18 @@ def process_file(file) -> dict | None:
     for field in FIELDS:
       if field in line:
         *_, value = line.partition("= ")
+        value = value.strip()
+
         if field == "index":
-          field = "issueIndex"  # NOTE conversion to avoid conflicts
+          field = "issueIndex"
+          # NOTE conversion to avoid conflicts
+        elif field == "date":
+          try:
+            fields["datetime"] = datetime.strptime(value, "%d %B %Y")
+          except:
+            fields["datetime"] = None
+            # NOTE non-dates will be filtered and removed
+        
         fields[field] = value.strip()
   
   if not live:
@@ -123,6 +133,11 @@ import Content from "../{index}/_Content.svx";
 
 
 ## Save - a little scuffed, but it works well
+issues = [each for each in issues if each["datetime"]]
+issues.sort(key = lambda issue: issue["datetime"])
+for issue in issues:
+  issue.pop("datetime", None)
+
 update = date.today().strftime("%b %d")
 
 content = f'''/// Issues Index
@@ -135,6 +150,5 @@ const ISSUES = [{",\n".join(
 export default ISSUES;
 '''
 
-DEST = SRC / "issues-config.js"
-with open(DEST, "w") as dest:
+with open(SRC / "issues-config.js", "w") as dest:
   dest.write(content)

@@ -1,4 +1,4 @@
-/// Custom site constants
+/// Site Constants for Preprocessing
 
 
 const site = {
