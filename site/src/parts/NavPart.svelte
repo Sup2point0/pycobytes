@@ -60,6 +60,7 @@ export let collapsible: boolean = false;
   justify-content: center;
   align-items: center;
   text-align: center;
+  vertical-align: middle;
 }
 
 img {

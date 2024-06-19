@@ -43,10 +43,10 @@ function pickIssue() {
       <NavLink text="Random" button={pickIssue} />
     </NavLink>
 
-    <NavLink text="Contact" collapsible={true} >
-      <NavLink text="Discuss" link="https://sup2point0.github.io/pycobytes/discussions" />
-      <NavLink text="Submit Idea" link="https://sup2point0.github.io/pycobytes/issues" />
-      <NavLink text="Report Bug" link="https://sup2point0.github.io/pycobytes/issues" />
+    <NavLink text="Contact" link="https://github.com/Sup2point0/pycobytes/discussions" collapsible={true} >
+      <NavLink text="Discuss" link="https://github.com/Sup2point0/pycobytes/discussions" />
+      <NavLink text="Submit Idea" link="https://github.com/Sup2point0/pycobytes/issues" />
+      <NavLink text="Report Bug" link="https://github.com/Sup2point0/pycobytes/issues" />
     </NavLink>
 
     <NavLink text="GitHub"

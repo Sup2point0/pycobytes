@@ -19,7 +19,9 @@ import FlavourCode from "#src/routes/flavour-code.svx";
 <main>
   <section class="hero">
     <div class="left">
-      <h1> <span class="pyco-flavour"> pyco<span class="pyco-flavour-null">:</span>bytes </span> </h1>
+      <h1> <span class="pyco-flavour">
+        pyco<span class="pyco-flavour-null">:</span>bytes
+      </span> </h1>
       <p> {site.desc.long} </p>
       <div class="line" />
     </div>
@@ -35,7 +37,7 @@ import FlavourCode from "#src/routes/flavour-code.svx";
   </section>
 
   <section class="right">
-    <h2 class="pyco-flavour"> Python is awesome. </h2>
+    <h2 class="pyco-flavour" style:--anim-offset="-12"> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   </section>
 
@@ -46,14 +48,14 @@ import FlavourCode from "#src/routes/flavour-code.svx";
   </section>
 
   <section class="left">
-    <h2 class="pyco-flavour"> So, here’s pycobytes. </h2>
+    <h2 class="pyco-flavour" style:--anim-offset="-24"> So, here’s pycobytes. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
 
   <div class="line" />
 
   <section>
-    <h2 class="pyco-flavour"> An adventure into the wonders of Python. </h2>
+    <h2 class="pyco-flavour" style:--anim-offset="-36"> An adventure into the wonders of Python. </h2>
     <p> Quick, snappy and fun! </p>
   </section>
 
@@ -89,7 +91,7 @@ section {
   width: 80vw;
   counter-increment: sec;
 
-  & hero {
+  & .hero {
     margin: 0 0 4rem;
   }
   &:not(.hero) {
@@ -105,14 +107,14 @@ section {
     font-size: 300%;
 
     &.pyco-flavour {
-      animation-delay: calc(counter(sec) * -13s);
+      animation-delay: calc(var(--anim-offset) * 1s);
     }
   }
 
   & p {
     @include font-flavour;
     font-size: 150%;
-    color: $grey-storm;
+    color: light-dark($grey-storm, $grey-swallow);
   }
 
   & .caption {
@@ -166,6 +168,11 @@ section {
     padding-top: 5rem;
     border-bottom: 3px solid light-dark($col-flavour, $col-accent);
   }
+}
+
+.material-symbols-outlined {
+  font-size: 1rem;
+  vertical-align: middle;
 }
 
 #xkcd {

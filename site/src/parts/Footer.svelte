@@ -54,12 +54,6 @@ span {
   &.col-flavour {
     &.svelte:not(:hover) { color: #ff3e00; }
   }
-
-  &.pyb-flavour {
-    &.left { color: $light-accent-prot; }
-    &.centre { color: $grey-nova; }
-    &.right { color: $light-accent-deut; }
-  }
 }
 
 </style>

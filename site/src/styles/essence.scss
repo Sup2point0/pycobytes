@@ -81,7 +81,7 @@ img {
 }
 
 .pyb-flavour {
-  &.left { color: $light-accent-prot; }
-  &.centre { color: $grey-nova; }
-  &.right { color: $light-accent-deut; }
+  &.left { color: light-dark($light-accent-prot, $dark-accent-prot); }
+  &.centre { color: light-dark($grey-nova, $blue-ocean); }
+  &.right { color: light-dark($light-accent-deut, $dark-accent-deut); }
 }

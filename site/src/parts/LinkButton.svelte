@@ -33,6 +33,8 @@ export let link: string;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
+    vertical-align: middle;
   }
   .content-hover { display: none; }
 
