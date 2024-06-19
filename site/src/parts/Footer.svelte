@@ -30,6 +30,7 @@ p {
 footer {
   width: 100%;
   margin-top: 2rem;
+  padding: 2rem 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;

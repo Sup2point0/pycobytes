@@ -52,9 +52,10 @@ b, strong {
 }
 
 blockquote {
+  margin: 0;
   padding: 0 1rem;
   color: $grey-nova;
-  border-left: 0.25rem solid $grey-nova;
+  border-left: 2px solid light-dark($grey-spirit, $blue-deep);
 }
 
 img {
@@ -81,7 +82,7 @@ img {
 }
 
 .pyb-flavour {
-  &.left { color: light-dark($light-accent-prot, $dark-accent-prot); }
+  &.left   { color: light-dark($light-accent-prot, $dark-accent-prot); }
   &.centre { color: light-dark($grey-nova, $blue-ocean); }
-  &.right { color: light-dark($light-accent-deut, $dark-accent-deut); }
+  &.right  { color: light-dark($light-accent-deut, $dark-accent-deut); }
 }

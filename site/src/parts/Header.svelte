@@ -4,18 +4,25 @@ export let type: "issue" | null = null;
 export let issueIndex: string | null = null;
 export let title: string;
 export let caption: string | null = null;
+export let tags: string[] = [];
 
 </script>
 
 
 <header>
   {#if type == "issue"}
-    <code> {issueIndex} </code>
-    <h1> {@html title} </h1>
+    <code> #{issueIndex} </code>
+    <h1 class="pyco-flavour"> {@html title} </h1>
     <p> {@html caption} </p>
   {:else}
     <h1> {@html title} </h1>
   {/if}
+
+  <ul>
+    {#each tags as tag}
+      <li> {tag} </li>
+    {/each}
+  </ul>
 </header>
 
 
@@ -26,23 +33,30 @@ header {
   margin-bottom: 2rem;
   padding: ($nav-height + 3rem) 0 2.5rem;
   text-align: center;
-  background-color: $blue-cresc;
-  background: linear-gradient(to right, $lilac-cresc, $blue-cresc);
-}
+  background-color: $blue-night;
 
-h1 {
-  @include font-head;
-  padding: 1rem 0 1.5rem;
-  margin: 0;
-  font-size: 300%;
-  color: $col-accent;
-}
+  & code {
+    font-size: 125%;
+    color: light-dark($col-flavour, $col-accent);
+  }
+  
+  & h1 {
+    @include font-head;
+    padding: 1rem 0 1.5rem;
+    margin: 0;
+    font-size: 300%;
 
-p {
-  @include font-flavour;
-  margin: 0;
-  font-size: 120%;
-  color: $grey-nova;
+    &:not(.pyco-flavour) {
+      color: light-dark($col-accent, $col-flavour);
+    }
+  }
+
+  & p {
+    @include font-flavour;
+    margin: 0;
+    font-size: 150%;
+    color: white;
+  }
 }
 
 </style>
