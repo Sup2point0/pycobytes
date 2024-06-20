@@ -23,7 +23,7 @@ onMount(() => processAnimations());
 
 <main>
   <section class="hero">
-    <div class="left">
+    <div class="left anim init-only">
       <h1> <span class="pyco-flavour">
         pyco<span class="pyco-flavour-null">:</span>bytes
       </span> </h1>
@@ -182,13 +182,16 @@ section {
 
 /// NOTE putting animation styles here until needed on other pages
 .anim {
-  transition: opacity 1s ease-out, transform 2s ease-out;
-  transition-delay: 0.5s;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  transition-delay: 0.25s;
 
   &:not(.anim-in) {
     opacity: 0;
-    .left & { transform: translateX(-20vw); }
-    .right & { transform: translateX(20vw); }
+    &.left { transform: translateX(-3rem); }
+    &.right { transform: translateX(3rem); }
+    &:not(.left, .right) { transform: translateY(3rem); }
   }
 
   &.anim-in {
