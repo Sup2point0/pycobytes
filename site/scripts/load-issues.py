@@ -25,7 +25,7 @@ if not os.path.exists(DEST):
   os.mkdir(DEST)
 
 issues = []
-FIELDS = ["index", "title", "date", "topic"]
+FIELDS = ["index", "title", "date", "topics"]
 
 
 def process_file(file) -> dict | None:
@@ -38,7 +38,7 @@ def process_file(file) -> dict | None:
   live = False
   fields = {}
 
-  for line in content[:5]:
+  for line in content[:7]:
     if "-->" in line:
       break
 
@@ -60,8 +60,10 @@ def process_file(file) -> dict | None:
           except:
             return
             # NOTE non-dates will be filtered and removed
+        elif field == "topics":
+          value = value.split(" / ")
         
-        fields[field] = value.strip()
+        fields[field] = value
   
   return {
     "content": content,
