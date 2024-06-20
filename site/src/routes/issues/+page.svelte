@@ -15,41 +15,48 @@ import Main from "#src/parts/Main.svelte";
 <Header title="Issues" />
 
 <Main>
-  <ul>
+  <table>
     {#each ISSUES as issue}
-      <li>
-        <p>
-          <span class="issue-index"> {issue.name} </span>
-          <span class="issue-title"> <a href="./issues/{issue.issueIndex}">{issue.title}</a> </span>
-          <span class="issue-date"> {issue.date} </span>
-        </p>
-      </li>
+      <tr>
+        <td class="issue-index" rowspan="2"> {issue.name} </td>
+        <td class="issue-date"> {issue.date} </td>
+      </tr>
+      <tr>
+        <td class="issue-title"> <a href="./issues/{issue.issueIndex}">{issue.title}</a> </td>
+      </tr>
     {/each}
-  </ul>
+    </table>
 </Main>
 
 
 <style lang="scss">
 
-h2, h3 {
-  color: $col-accent;
+table {
+  width: 100%;
 }
 
-ul {
-  list-style-type: none;
-}
-
-span {
+td {
   &.issue-index {
+    padding: 1rem 2rem 0 0;
     @include font-mono;
-    color: $grey-nova;
+    font-size: 150%;
+    color: $grey-spirit;
+    vertical-align: middle;
   }
-  &.issue-title {
-    @include font-flavour;
-    color: $col-flavour;
-  }
+
   &.issue-date {
+    padding: 2rem 1rem 0 0;
+    @include font-flavour;
+    font-size: 100%;
     color: $grey-nova;
+  }
+
+  &.issue-title {
+    padding: 0 10rem 0.5rem 0;
+    @include font-flavour;
+    font-size: 200%;
+    color: $col-flavour;
+    border-bottom: 1px solid $grey-spirit;
   }
 }
 
