@@ -58,22 +58,21 @@ def process_file(file) -> dict | None:
           try:
             fields["datetime"] = datetime.strptime(value, "%d %B %Y")
           except:
-            fields["datetime"] = None
+            return
             # NOTE non-dates will be filtered and removed
         
         fields[field] = value.strip()
   
-  if not live:
-    return
-  
   return {
     "content": content,
     "meta": fields,
-  }
+  } if live else None
 
 
 for file in files:
   data = process_file(file)
+  if not data:
+    continue
 
   content = data["content"]
   meta = data["meta"]

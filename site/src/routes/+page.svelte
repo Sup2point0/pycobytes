@@ -1,13 +1,18 @@
 <script>
 
 import { base } from "$app/paths";
+import { onMount } from "svelte";
 
 import site from "#src/site-config";
 import ISSUES from "#src/issues-config";
 
 import LinkButton from "#src/parts/LinkButton.svelte";
-
 import FlavourCode from "#src/routes/flavour-code.svx";
+
+import processAnimations from "#src/scripts/anim";
+
+
+onMount(() => processAnimations());
 
 </script>
 
@@ -36,7 +41,7 @@ import FlavourCode from "#src/routes/flavour-code.svx";
     </LinkButton>
   </section>
 
-  <section class="right">
+  <section class="right anim on-scroll init-only">
     <h2 class="pyco-flavour" style:--anim-offset="-12"> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   </section>
@@ -47,14 +52,14 @@ import FlavourCode from "#src/routes/flavour-code.svx";
     <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
   </section>
 
-  <section class="left">
+  <section class="left anim on-scroll init-only">
     <h2 class="pyco-flavour" style:--anim-offset="-24"> So, here’s pycobytes. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
 
   <div class="line" />
 
-  <section>
+  <section class="anim on-scroll init-only">
     <h2 class="pyco-flavour" style:--anim-offset="-36"> An adventure into the wonders of Python. </h2>
     <p> Quick, snappy and fun! </p>
   </section>
@@ -173,6 +178,23 @@ section {
 .material-symbols-outlined {
   font-size: 1rem;
   vertical-align: middle;
+}
+
+/// NOTE putting animation styles here until needed on other pages
+.anim {
+  transition: opacity 1s ease-out, transform 2s ease-out;
+  transition-delay: 0.5s;
+
+  &:not(.anim-in) {
+    opacity: 0;
+    .left & { transform: translateX(-20vw); }
+    .right & { transform: translateX(20vw); }
+  }
+
+  &.anim-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #xkcd {

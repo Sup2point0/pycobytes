@@ -63,10 +63,10 @@ li.nav-link {
     background-color: $col-hover;
     outline: none;
     border: none;
+  }
 
-    & button#duality {
-      color: light-dark($lilac-nova, $col-flavour);
-    }
+  &:where(:active) {
+    background-color: $col-active;
   }
 }
 

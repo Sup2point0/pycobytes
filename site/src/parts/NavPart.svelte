@@ -54,13 +54,17 @@ export let collapsible: boolean = false;
   height: 100%;
   height: $nav-part-height;
   max-height: $nav-part-height;
-  padding: 0 1em;
+  &:not(:has(button)) { padding: 0 1em; }
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle;
+
+  &:hover button#duality {
+    color: light-dark($lilac-nova, $col-flavour);
+  }
 }
 
 img {
@@ -70,7 +74,9 @@ img {
 }
 
 button {
-  padding: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0 1em;
   background: none;
   border: none;
   cursor: pointer;
