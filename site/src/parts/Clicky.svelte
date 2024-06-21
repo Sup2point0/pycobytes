@@ -3,6 +3,7 @@
 import { onMount } from "svelte";
 
 import requestNapkin from "#src/scripts/napkin";
+import { ClickData } from "#src/scripts/napkin";
 
 
 const SHARD = "pycobytes-clicky";
@@ -15,7 +16,7 @@ enum ClickState {
   Error,
 }
 
-let clickData: object;
+let clickData: ClickData;
 let clickState: ClickState = ClickState.Idle;
 
 
@@ -28,8 +29,16 @@ onMount(async () => {
     clickState = ClickState.Waiting;
   }
 
-  clickData = await requestNapkin("get");
-  console.log(clickData);
+  try {
+    clickData = await requestNapkin("GET");
+    console.log(clickData);
+  }
+  catch (error) {
+    clickData = {
+      clickCount: "?",
+      lastClick: "?",
+    }
+  }
 });
 
 
@@ -39,7 +48,7 @@ async function clicky() {
   if (localStorage.getItem(SHARD)) {
     clickState = ClickState.Depleted;
   } else {
-    let response = await requestNapkin("post");
+    let response = await requestNapkin("POST");
     clickState = ClickState.Clicked;
   }
 }

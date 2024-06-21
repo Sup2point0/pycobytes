@@ -3,10 +3,16 @@
 const URL = "https://sup2point0.npkn.net/pycobytes-clicky/";
 
 
+export interface ClickData {
+  clickCount: number | string;
+  lastClick: string;
+}
+
+
 export default async function requestNapkin(
   method: string,
   body: object | null = null
-) : Promise<object>
+) : Promise<ClickData>
 {
   if (!body) {
     body = {};
@@ -15,12 +21,11 @@ export default async function requestNapkin(
   let request = {
     method: method,
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "text/plain",
     },
-    body: JSON.stringify(body),
   }
-  if (method == "get") {
-    delete request.body;
+  if (method !== "GET") {
+    request.body = JSON.stringify(body),;
   }
 
   // try {
