@@ -2,12 +2,9 @@ exported/
 static/
 _*.svx
 
-.DS_Store
 node_modules/
 build/
 .svelte-kit/
-/package
-.env
-.env.*
+*.env
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
