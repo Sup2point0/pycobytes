@@ -25,7 +25,7 @@ export default async function requestNapkin(
     },
   }
   if (method !== "GET") {
-    request.body = JSON.stringify(body),;
+    request.body = JSON.stringify(body);
   }
 
   // try {
