@@ -1,19 +1,32 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200..900;1,200..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+</head>
+
 <main style="width: 1600px; height: 900px">
-  <div style="font-size: 200px">
-    <span style="color: #">
-      pyco
-    </bytes>
-    :bytes
-    <span style="color: #a9b0b8">
-      [%{issueIndex}]
-    </span>
-  </div>
+  <div style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start
+  ">
+    <div style="font-family: 'Overpass'; font-size: 100px">
+      <span style="color: #4090f1">
+        pyco</span><span style="color: #a9b0b8">:</span>bytes
+      </span>
+      <span style="color: #a9b0b8">
+        [%{issueIndex}]
+      </span>
+    </div>
 
-  <div style="color: #4090f1">
-    %{titleText}
-  </div>
+    <div style="
+      background: linear-gradient(to right in oklch, #4090f1, #9090f1);
+      background-clip: text;
+    ">
+      <span style="font-size: 100px">%{titleText}</span>
+    </div>
 
-  <div style="color: #a9b0b8">
-    %s{releaseDate}
+    <div style="color: #a9b0b8">
+      <span style="font-size: 100px">%{releaseDate}</span>
+    </div>
   </div>
 </main>

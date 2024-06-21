@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    imgkit (1.6.3)
+    json (2.7.2)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  imgkit
+  json
+
+BUNDLED WITH
+   2.5.14
