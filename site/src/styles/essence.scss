@@ -32,7 +32,7 @@ body {
 
 :where(h2,h3,h4) {
   @include font-head;
-  color: $col-accent;
+  color: light-dark($col-accent, $col-flavour);
 }
 
 code {

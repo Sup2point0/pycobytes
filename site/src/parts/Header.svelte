@@ -47,7 +47,8 @@ header {
     font-size: 300%;
 
     &:not(.pyco-flavour) {
-      color: light-dark($col-accent, $col-flavour);
+      // color: light-dark($col-accent, $col-flavour);
+      color: white;
     }
   }
 
