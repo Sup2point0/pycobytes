@@ -153,3 +153,7 @@ export default ISSUES;
 
 with open(SRC / "issues-config.js", "w") as dest:
   dest.write(content)
+
+## FIXME standardise config format
+with open(SRC / "issues-config.json", "w") as dest:
+  dest.write(json.dumps(issues, indent = 2))
