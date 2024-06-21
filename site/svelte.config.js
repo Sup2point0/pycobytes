@@ -6,6 +6,7 @@ import { remarkAlert } from "remark-github-blockquote-alert";
 
 import scssConfig from "../site/scss-config.js";
 
+
 const config = {
   kit: {
     adapter: adapter({

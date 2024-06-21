@@ -17,6 +17,8 @@ export let link: string;
 
 <style lang="scss">
 
+@use "#src/styles/button" as *;
+
 .link-button {
   min-width: 13em;
   max-width: 40vw;

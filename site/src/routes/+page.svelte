@@ -7,6 +7,7 @@ import site from "#src/site-config";
 import ISSUES from "#src/issues-config";
 
 import LinkButton from "#src/parts/LinkButton.svelte";
+import Clicky from "#src/parts/Clicky.svelte";
 import FlavourCode from "#src/routes/flavour-code.svx";
 
 import processAnimations from "#src/scripts/anim";
@@ -77,6 +78,8 @@ onMount(() => processAnimations());
     <img id="xkcd" alt="XKCD 353" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
     <p> <a href="https://xkcd.com/353"><em>XKCD, 353</em></a> </p>
   </section>
+
+  <Clicky />
 </main>
 
 
