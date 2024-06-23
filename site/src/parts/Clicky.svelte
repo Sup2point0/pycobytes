@@ -2,11 +2,17 @@
 
 import { onMount } from "svelte";
 
+import TimeAgo from "javascript-time-ago";
+import en from "javascript-time-ago/locale/en";
+
 import requestNapkin from "#src/scripts/napkin";
-import { ClickData } from "#src/scripts/napkin";
+import ClickData from "#src/scripts/napkin";
 
 
 const SHARD = "pycobytes-clicky";
+
+TimeAgo.addDefaultLocale(en);
+const timeAgo = new TimeAgo("en-US");
 
 enum ClickState {
   Idle,
@@ -56,33 +62,44 @@ async function clicky() {
 </script>
 
 
-<button on:click|once={clicky}>
-  {#if clickData}
-    {#if clickState == ClickState.Depleted}
-      <p> This button has been clicked by {clickData.clickCount ?? "?"} pips, including you! </p>
-    
-    {:else if clickState == ClickState.Clicked}
-      <p> This button has now been clicked by {clickData.clickCount ?? "?"} pips! </p>
-    
-    {:else if clickState == ClickState.Error}
-      <p> ...Something went wrong? </p>
+<div class="clicky">
+  <button on:click={clicky}>
+    {#if clickData}
+      {#if clickState == ClickState.Depleted}
+        <p> This button has been clicked by {clickData.clickCount ?? "?"} pips, including you! </p>
+      
+      {:else if clickState == ClickState.Clicked}
+        <p> This button has now been clicked by {clickData.clickCount ?? "?"} pips! </p>
+      
+      {:else if clickState == ClickState.Error}
+        <p> ...Something went wrong? </p>
+      
+      {:else}
+        <p> This button has been clicked by {clickData.clickCount ?? "?"} pips. </p>
+
+      {/if}
     
     {:else}
-      <p> This button has been clicked by {clickData.clickCount ?? "?"} pips. </p>
-
+      <p> Oh, what’s this? </p>
+    
     {/if}
-  
-  {:else}
-    <p> Oh, what’s this? </p>
-  
-  {/if}
-</button>
+  </button>
+
+  <p class="caption"> {clickData?.lastClick
+    ? "Last clicked " + timeAgo.format(new Date(clickData.lastClick * 1000))
+    : ""
+  } </p>
+</div>
 
 
 <style lang="scss">
 
-button {
+.clicky {
   margin: 2rem 0 4rem;
+}
+
+button {
+  margin: 0;
   padding: 0 2em;
   display: flex;
   flex-direction: row;
@@ -106,6 +123,10 @@ button {
     background-color: $purp-nova;
     box-shadow: 0 0 16px $lilac-nova;
   }
+}
+
+.caption {
+  color: light-dark($grey-nova, $blue-deep);
 }
 
 </style>
