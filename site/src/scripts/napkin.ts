@@ -28,11 +28,14 @@ export default async function requestNapkin(
     request.body = JSON.stringify(body);
   }
 
-  // try {
+  try {
     let response = await fetch(URL, request);
     return await response.json();
-  // }
-  // catch (error) {
-  //   return "?";
-  // }
+  }
+  catch (error) {
+    return {
+      clickCount: "?",
+      lastClick: "?",
+    };
+  }
 }

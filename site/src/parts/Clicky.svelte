@@ -27,24 +27,13 @@ let clickState: ClickState = ClickState.Idle;
 
 
 onMount(async () => {
-  console.log("mounted");
-
   if (localStorage.getItem(SHARD)) {
     clickState = ClickState.Depleted;
   } else {
     clickState = ClickState.Waiting;
   }
 
-  try {
-    clickData = await requestNapkin("GET");
-    console.log(clickData);
-  }
-  catch (error) {
-    clickData = {
-      clickCount: "?",
-      lastClick: "?",
-    }
-  }
+  clickData = await requestNapkin("GET");
 });
 
 
@@ -53,10 +42,17 @@ async function clicky() {
   
   if (localStorage.getItem(SHARD)) {
     clickState = ClickState.Depleted;
-  } else {
-    clickData = await requestNapkin("POST");
-    clickState = ClickState.Clicked;
+    return;
   }
+
+  clickData = await requestNapkin("POST");
+  if (!clickData) {
+    clickState = ClickState.Error;
+    return;
+  }
+
+  localStorage.setItem(SHARD, clickData.clickCount.toString());
+  clickState = ClickState.Clicked;
 }
 
 </script>
@@ -105,7 +101,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @include font-flavour;
+  @include font-fun;
   font-size: 125%;
   color: white;
   background-color: $orange-spirit;
@@ -113,7 +109,7 @@ button {
   border-radius: 1rem;
   
   transition: all 0.16s ease-out;  // ease-out cubic
-  box-shadow: 0 0 16px rgba($yellow-nova, 0.5);
+  box-shadow: 0 0 16px light-dark(rgba($yellow-nova, 0.5), rgb(0 0 0));
 
   &:hover {
     background-color: $pink-elec;
@@ -121,7 +117,7 @@ button {
   }
   &:active {
     background-color: $purp-nova;
-    box-shadow: 0 0 16px $lilac-nova;
+    box-shadow: 0 0 16px light-dark($lilac-nova, rgba($lilac-nova, 0.5));
   }
 }
 
