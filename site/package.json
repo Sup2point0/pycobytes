@@ -1,11 +1,12 @@
 {
 	"name": "pycobytes",
-	"version": "0.0.1",
+	"version": "1.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "cd .. && python site/scripts && cd site && vite build && python scripts/post-build.py",
-		"preview": "vite preview"
+		"preview": "vite preview",
+    "prep": "cd .. && python site/scripts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",

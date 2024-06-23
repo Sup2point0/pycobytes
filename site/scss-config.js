@@ -1,5 +1,5 @@
 /// SCSS Globals
-/// last auto-generated: Jun 21
+/// last auto-generated: Jun 23
 
 const scssConfig = `@use './src/styles/anim' as *;
 @use './src/styles/fonts' as *;

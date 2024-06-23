@@ -37,7 +37,7 @@ const config = {
   preprocess: [
     mdsvex({
       extensions: [".svelte", ".md", ".svx"],
-      rehypePlugins: [remarkAlert],
+      remarkPlugins: [remarkAlert],
     }),
     sveltePreprocess({
       scss: {

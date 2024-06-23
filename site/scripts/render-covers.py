@@ -6,10 +6,13 @@ print("           / rendering covers...")
 
 import os
 import json
+from pathlib import Path
 
 import imgkit
+from dotenv import load_dotenv
 
-from __main__ import ROOT
+
+ROOT = Path(__file__).parents[2].absolute()
 
 
 SRC = ROOT / "site/src"
@@ -20,6 +23,7 @@ with open(SRC / "cover.html", "r") as source:
 
 
 ## NOTE raises error if not local
+load_dotenv()
 CONFIG = imgkit.config(wkhtmltoimage = os.environ["WK"])
 
 def render_cover(issue: dict):

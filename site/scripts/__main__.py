@@ -16,7 +16,7 @@ __import__("load-assets")
 
 # NOTE only runs on local
 try:
-  __import__("_render-covers")
+  __import__("render-covers")
 except:
   pass
 
