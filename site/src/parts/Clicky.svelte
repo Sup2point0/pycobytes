@@ -54,7 +54,7 @@ async function clicky() {
   if (localStorage.getItem(SHARD)) {
     clickState = ClickState.Depleted;
   } else {
-    let response = await requestNapkin("POST");
+    clickData = await requestNapkin("POST");
     clickState = ClickState.Clicked;
   }
 }
