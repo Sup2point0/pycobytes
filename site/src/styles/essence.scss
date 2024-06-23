@@ -33,6 +33,7 @@ body {
 :where(h2,h3,h4) {
   @include font-head;
   color: light-dark($col-accent, $col-flavour);
+  border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
 }
 
 code {
@@ -61,6 +62,10 @@ blockquote {
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+hr {
+  color: light-dark($grey-nova, $blue-deep);
 }
 
 // selection colours should override everything else

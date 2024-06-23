@@ -19,7 +19,7 @@
 
 main {
   min-width: 500px;
-  max-width: 80%;
+  max-width: min(80%, 800px);
   padding: 1em 0;
 }
 

@@ -24,22 +24,24 @@ onMount(() => processAnimations());
 
 <main>
   <section class="hero">
-    <div class="left anim init-only">
-      <h1> <span class="pyco-flavour">
-        pyco<span class="pyco-flavour-null">:</span>bytes
-      </span> </h1>
-      <p> {site.desc.long} </p>
-      <div class="line" />
-    </div>
+    <div class="overlay">
+      <div class="left anim init-only">
+        <h1> <span class="pyco-flavour">
+          pyco<span class="pyco-flavour-null">:</span>bytes
+        </span> </h1>
+        <p> {site.desc.long} </p>
+        <div class="line" />
+      </div>
 
-    <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
-      Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
-      <span slot="hover">
-        {#each {length: 3} as _, i}
-          <span class="material-symbols-outlined"> arrow_forward_ios </span>
-        {/each}
-      </span>
-    </LinkButton>
+      <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
+        Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        <span slot="hover">
+          {#each {length: 3} as _, i}
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          {/each}
+        </span>
+      </LinkButton>
+    </div>
   </section>
 
   <section class="right anim on-scroll init-only">
@@ -91,17 +93,11 @@ main {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  
-  counter-reset: sec;
 }
 
 section {
   width: 80vw;
-  counter-increment: sec;
 
-  & .hero {
-    margin: 0 0 4rem;
-  }
   &:not(.hero) {
     width: 69%;
     max-width: 69%;
@@ -144,13 +140,24 @@ section {
 
 .hero {
   width: 100%;
-  padding-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  height: 100%;
+  margin: 0 0 4rem;
   color: white;
-  background-color: black;
+  background-color: $blue-night;
+  background-image: url("/pycobytes-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right in srgb, black 20%, rgba(black, 0.2));
+  }
 }
 
 .hero .left {
