@@ -33,7 +33,6 @@ body {
 :where(h2,h3,h4) {
   @include font-head;
   color: light-dark($col-accent, $col-flavour);
-  border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
 }
 
 code {
