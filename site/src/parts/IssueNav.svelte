@@ -107,7 +107,7 @@ p {
 h4 {
   margin: 0;
   padding: 0;
-  color: $pink-nova;
+  color: $pink-elec;
 }
 
 </style>
