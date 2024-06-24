@@ -1,4 +1,4 @@
-import ISSUES from "#src/issues-config.js";
+import ISSUES from "#src/issues-config";
 
 
 export function entries() {

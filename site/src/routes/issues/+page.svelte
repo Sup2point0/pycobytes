@@ -1,6 +1,6 @@
 <script>
 
-import ISSUES from "#src/issues-config.js";
+import ISSUES from "#src/issues-config";
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
@@ -18,11 +18,11 @@ import Main from "#src/parts/Main.svelte";
   <table>
     {#each ISSUES as issue}
       <tr>
-        <td class="issue-index" rowspan="2"> {issue.name} </td>
-        <td class="issue-date"> {issue.date} </td>
+        <td class="issue-index" rowspan="2"> {issue.displayIndex} </td>
+        <td class="issue-date"> {issue.releaseDate} </td>
       </tr>
       <tr>
-        <td class="issue-title"> <a href="./issues/{issue.issueIndex}">{issue.title}</a> </td>
+        <td class="issue-title"> <a href="./issues/{issue.issueIndex}">{issue.titleText}</a> </td>
       </tr>
     {/each}
     </table>

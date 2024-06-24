@@ -1,5 +1,5 @@
 '''
-Load issues from `./issues/` into `issues-config.js` for SvelteKit to use when building the site routes.
+Load issues from `./issues/` into `issues-config.ts` for SvelteKit to use when building the site routes.
 '''
 
 print("           / collecting issues...")
