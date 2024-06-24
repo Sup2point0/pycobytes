@@ -1,33 +1,36 @@
 [
   {
-    "name": "01",
+    "displayIndex": "01",
     "issueIndex": "1",
-    "title": "The Power of List Comprehensions",
-    "date": "6 June 2024",
-    "topics": [
+    "titleText": "The Power of List Comprehensions",
+    "releaseDate": "6 June 2024",
+    "topicTags": [
       "tricks",
       "challenge",
       "lists"
-    ]
+    ],
+    "orderIndex": 0
   },
   {
-    "name": "02",
+    "displayIndex": "02",
     "issueIndex": "2",
-    "title": "Stringterpolation with f-Strings",
-    "date": "12 June 2024",
-    "topics": [
+    "titleText": "Stringterpolation with f-Strings",
+    "releaseDate": "12 June 2024",
+    "topicTags": [
       "strings"
-    ]
+    ],
+    "orderIndex": 1
   },
   {
-    "name": "03",
+    "displayIndex": "03",
     "issueIndex": "3",
-    "title": "\"A Strand of String Theory\"",
-    "date": "21 June 2024",
-    "topics": [
+    "titleText": "\"A Strand of String Theory\"",
+    "releaseDate": "21 June 2024",
+    "topicTags": [
       "strings",
       "quickies",
       "challenge"
-    ]
+    ],
+    "orderIndex": 2
   }
 ]

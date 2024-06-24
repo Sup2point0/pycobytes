@@ -86,7 +86,7 @@ for file in files:
   content = re.sub(r"../assets/issues/[0-9]*/", "/", content)
 
   issues.append({
-    "name": file.stem,
+    "displayIndex": file.stem,
     **meta,
   })
 
@@ -95,7 +95,7 @@ for file in files:
 ---
 '''
 
-  ROUTE = DEST / (index + ".svx")
+  ROUTE = DEST / (file.stem + ".svx")
   shutil.copyfile(file, ROUTE)
 
   with open(ROUTE, "w") as dest:
@@ -135,24 +135,36 @@ import Content from "../{index}/_Content.svx";
 ## Save - a little scuffed, but it works well
 issues = [each for each in issues if each["unix"]]
 issues.sort(key = lambda each: each["unix"])
-for issue in issues:
+for i, issue in enumerate(issues):
   issue.pop("unix", None)
+  issue["orderIndex"] = i
 
-update = date.today().strftime("%b %d")
 
-content = f'''/// Issues Index
-/// last auto-generated: {update}
+with open(SRC / "issues-config.ts", "r") as source:
+  content = source.read()
 
-const ISSUES = [{",\n".join(
-  json.dumps(each, indent = 2)
-  for each in issues
-)}];
-export default ISSUES;
-'''
+content = re.sub(
+  pattern = r"(Last auto-generated: ).*",
+  repl = r"\1" + date.today().strftime("%b %d"),
+  string = content
+)
 
-with open(SRC / "issues-config.js", "w") as dest:
+data = ",\n".join(json.dumps(each, indent = 2) for each in issues)
+content = re.sub(
+  pattern = r"(#PYCO target! \*/ \[).*(\];)",
+  repl = r"\1" + data + r"\2",
+  string = content,
+  flags = re.DOTALL
+)
+content = re.sub(
+  pattern = r"\"(.*)\":",
+  repl = r"\1:",
+  string = content
+)
+
+with open(SRC / "issues-config.ts", "w") as dest:
   dest.write(content)
 
-## FIXME standardise config format
+
 with open(SRC / "issues-config.json", "w") as dest:
-  dest.write(json.dumps(issues, indent = 2))
+  json.dump(issues, dest, indent = 2)
