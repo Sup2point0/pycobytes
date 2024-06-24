@@ -1,12 +1,13 @@
 # Archived from <napkin.io>
-# 4 June 2024
+# 24 June 2024
 
-from time import time
+import json
+import time
 
 from napkin import (
     request as REQUEST,
     response as RESPONSE,
-    store
+    store as STORE,
 )
 
 
@@ -25,23 +26,23 @@ def handle_get():
     '''Handle a GET request.'''
 
     RESPONSE.body = {
-        "clicks": store.get("clicks")["data"],
-        "last-click": store.get("last-click")["data"],
+        "clickCount": STORE.get("clickCount")["data"],
+        "lastClick": STORE.get("lastClick")["data"],
     }
 
 
 def handle_post():
     '''Handle a POST request.'''
 
-    current = store.get("clicks")
-    store.put("clicks", current +1)
+    current = STORE.get("clickCount")["data"]
+    STORE.put("clickCount", current +1)
     now = round(time.time())
-    store.put("last-click", now)
+    STORE.put("lastClick", now)
 
     # Also send back updated data
     handle_get()
 
-    if RESPONSE.body["clicks"] != current +1:
+    if RESPONSE.body["clickCount"] != current +1:
         raise ValueError("Click didn't save")
 
 
@@ -52,3 +53,5 @@ METHODS = {
 
 
 process_request()
+
+print(json.dumps(STORE.get_all()))
