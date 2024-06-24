@@ -51,24 +51,21 @@ def process_file(file) -> dict | None:
       if "#PYCO live!" in line:
         live = True
 
-    for field in FIELDS.keys():
+    for field, key in FIELDS.items():
       if field in line:
         *_, value = line.partition("= ")
         value = value.strip()
 
-        if field == "index":
-          field = "issueIndex"
-          # NOTE conversion to avoid conflicts
-        elif field == "date":
+        if field == "date":
           try:
-            fields["datetime"] = datetime.strptime(value, "%d %B %Y")
+            fields["unix"] = datetime.strptime(value, "%d %B %Y")
           except:
             return
             # NOTE non-dates will be filtered and removed
         elif field == "topics":
           value = value.split(" / ")
         
-        fields[field] = value
+        fields[key] = value
   
   return {
     "content": content,
@@ -94,10 +91,7 @@ for file in files:
   })
 
   front = f'''---
-  issueIndex: {index}
-  title: {meta["title"]}
-  date: {meta.get("date", None)}
-  topic: {meta.get("topic", None)}
+{"\n".join(f"{key}: {val}" for key, val in meta.items())}
 ---
 '''
 
@@ -139,10 +133,10 @@ import Content from "../{index}/_Content.svx";
 
 
 ## Save - a little scuffed, but it works well
-issues = [each for each in issues if each["datetime"]]
-issues.sort(key = lambda issue: issue["datetime"])
+issues = [each for each in issues if each["unix"]]
+issues.sort(key = lambda each: each["unix"])
 for issue in issues:
-  issue.pop("datetime", None)
+  issue.pop("unix", None)
 
 update = date.today().strftime("%b %d")
 
