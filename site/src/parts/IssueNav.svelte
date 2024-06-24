@@ -1,22 +1,23 @@
-<script>
+<script lang="ts">
 
 import { base } from "$app/paths";
 
 import ISSUES from "#src/issues-config";
+import type IssueData from "#src/scripts/issue";
 
-export let issueData;
+export let issue: IssueData;
 
 
-const indexCurrent = issueData.orderIndex;
+const indexCurrent = issue.orderIndex;
 
 // issue 0 (#1) has no previous
-const issuePrev =
+const issuePrev: IssueData =
     (indexCurrent > 0)
   ? ISSUES[indexCurrent -1]
   : undefined;
 
 // latest issue has no next
-const issueNext =
+const issueNext: IssueData =
     (indexCurrent < ISSUES.length -1)
   ? ISSUES[indexCurrent +1]
   : undefined;
@@ -43,7 +44,7 @@ const issueNext =
         <div class="material-symbols-outlined"> right_arrow_ios </div>
         <div>
           <p> Next </p>
-          <h4> {nextPrev.titleText} </h4>
+          <h4> {issueNext.titleText} </h4>
         </div>
       </button>
     </a>
@@ -95,8 +96,8 @@ button {
     color: grey;
   }
 
-  &.prev { text-align: left; ]
-  &.next { text-align: right; ]
+  &.prev { text-align: left; }
+  &.next { text-align: right; }
 }
  
 p {

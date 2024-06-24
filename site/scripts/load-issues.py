@@ -25,7 +25,12 @@ if not os.path.exists(DEST):
   os.mkdir(DEST)
 
 issues = []
-FIELDS = ["index", "title", "date", "topics"]
+FIELDS = {
+  "index": "issueIndex",
+  "title": "titleText",
+  "date": "releaseDate",
+  "topics": "topicTags",
+}
 
 
 def process_file(file) -> dict | None:
@@ -46,7 +51,7 @@ def process_file(file) -> dict | None:
       if "#PYCO live!" in line:
         live = True
 
-    for field in FIELDS:
+    for field in FIELDS.keys():
       if field in line:
         *_, value = line.partition("= ")
         value = value.strip()
