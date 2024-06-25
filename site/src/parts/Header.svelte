@@ -24,6 +24,8 @@ export let tags: string[] = [];
         <li> {tag} </li>
       {/each}
     </ul>
+
+    <slot />
   </div>
 </header>
 
@@ -44,7 +46,7 @@ header {
   width: 100%;
   height: 100%;
   padding: ($nav-height + 3rem) 0 2.5rem;
-  background: linear-gradient(to right in srgb, rgba(black, 0.5), black var(--overlay));
+  background: linear-gradient(to right in srgb, rgba(black, 0.5), black 69%);
 
   &:hover {
   }

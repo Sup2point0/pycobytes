@@ -18,16 +18,17 @@ const issue = ISSUES[2];
 </svelte:head>
 
 {#if Content}
-  <IssueNav {issue} />
+  <Header
+    type = "issue"
+    issueIndex = {issue.issueIndex}
+    title = "{issue.titleText}"
+    caption = {issue.releaseDate}
+  >
+    <IssueNav {issue} />
+  </Header>
+  
 
   <article>
-    <Header
-      type = "issue"
-      issueIndex = {issue.issueIndex}
-      title = "{issue.titleText}"
-      caption = {issue.releaseDate}
-    />
-
     <Main>
       <Content />
     </Main>

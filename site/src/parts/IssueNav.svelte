@@ -27,9 +27,9 @@ const issueNext: IssueData | undefined =
 
 <div class="issue-nav">
   {#if issuePrev !== undefined}
-    <a href="{base}/issues/{issuePrev.issueIndex}">
+    <a class="no-anim" href="{base}/issues/{issuePrev.issueIndex}">
       <button class="prev">
-        <div class="material-symbols-outlined"> left_arrow_ios </div>
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
         <div>
           <p> Previous </p>
           <h4> {issuePrev.titleText} </h4>
@@ -39,9 +39,9 @@ const issueNext: IssueData | undefined =
   {/if}
 
   {#if issueNext !== undefined}
-    <a href="{base}/issues/{issueNext.issueIndex}">
+    <a class="no-anim" href="{base}/issues/{issueNext.issueIndex}">
       <button class="next">
-        <div class="material-symbols-outlined"> right_arrow_ios </div>
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
         <div>
           <p> Next </p>
           <h4> {issueNext.titleText} </h4>
@@ -57,8 +57,8 @@ const issueNext: IssueData | undefined =
 .issue-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a {
@@ -68,6 +68,7 @@ a {
 }
 
 button {
+  margin: 0 0.5rem;
   padding: 0.5rem;
   display: flex;
   &.prev {
@@ -79,16 +80,21 @@ button {
   justify-content: start;
   align-items: center;
   background-color: transparent;
+  border: none;
   border-radius: 1rem;
   
   transition: all 0.12s ease-out;
   
   &:hover {
-    background-color: $grey-swallow;
+    background-color: rgba($grey-swallow, 0.42);
   }
 
   &:focus, &:active {
-    background-color: $grey-spirit;
+    background-color: rgba($grey-spirit, 0.42);
+  }
+
+  span.material-symbols-outlined {
+    color: light-dark($grey-nova, $blue-deep);
   }
   
   div {
@@ -101,11 +107,14 @@ button {
 }
  
 p {
+  @include font-flavour;
   margin: 0;
+  color: light-dark($grey-nova, $blue-deep);
 }
 
 h4 {
-  margin: 0;
+  @include font-head;
+  margin: 0.5rem 0;
   padding: 0;
   color: $pink-elec;
 }

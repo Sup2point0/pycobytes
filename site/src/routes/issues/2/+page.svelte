@@ -23,9 +23,10 @@ const issue = ISSUES[1];
     issueIndex = {issue.issueIndex}
     title = "{issue.titleText}"
     caption = {issue.releaseDate}
-  />
-
-  <IssueNav {issue} />
+  >
+    <IssueNav {issue} />
+  </Header>
+  
 
   <article>
     <Main>
