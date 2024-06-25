@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm run prep && cd site && vite build && python scripts/post-build.py",
+		"build": "npm run prep && vite build && python scripts/post-build.py",
 		"preview": "vite preview",
 		"prep": "cd .. && python site/scripts",
     "devx": "npm run prep && npm run dev"
