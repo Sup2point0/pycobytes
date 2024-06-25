@@ -45,7 +45,7 @@ header {
 .dark-overlay {
   width: 100%;
   height: 100%;
-  padding: ($nav-height + 3rem) 0 2.5rem;
+  padding: ($nav-height + 2rem) 0 2.5rem;
   background: linear-gradient(to right in srgb, rgba(black, 0.5), black 69%);
 
   &:hover {
@@ -74,6 +74,31 @@ p {
   margin: 0;
   font-size: 150%;
   color: white;
+}
+
+ul {
+  margin-top: 4rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+li {
+  @include font-flavour;
+  margin: 0 0.2rem;
+  padding: 0.25em 0.8em;
+  color: white;
+  background-color: rgba($col-accent, 0.42);
+  border-radius: 1rem;
+
+  transition: all 0.12s ease-out;
+
+  &:hover {
+    background-color: $pink-elec;
+  }
 }
 
 </style>

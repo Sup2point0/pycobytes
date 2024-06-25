@@ -23,8 +23,9 @@ const issue = ISSUES[2];
     issueIndex = {issue.issueIndex}
     title = "{issue.titleText}"
     caption = {issue.releaseDate}
+    tags = {issue.topicTags}
   >
-    <IssueNav {issue} />
+    <IssueNav {issue} duality="dark" />
   </Header>
   
 

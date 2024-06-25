@@ -5,6 +5,10 @@ import ISSUES from "#src/issues-config";
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 
+
+const issues = ISSUES;
+issues.reverse();
+
 </script>
 
 
@@ -16,7 +20,7 @@ import Main from "#src/parts/Main.svelte";
 
 <Main>
   <table>
-    {#each ISSUES as issue}
+    {#each issues as issue}
       <tr>
         <td class="issue-index" rowspan="2"> {issue.displayIndex} </td>
         <td class="issue-date"> {issue.releaseDate} </td>

@@ -6,6 +6,7 @@ import ISSUES from "#src/issues-config";
 import type IssueData from "#src/scripts/issue";
 
 export let issue: IssueData;
+export let duality: string | null = null;
 
 
 const indexCurrent = issue.orderIndex;
@@ -25,7 +26,7 @@ const issueNext: IssueData | undefined =
 </script>
 
 
-<div class="issue-nav">
+<div class="issue-nav" style:color-scheme={duality || "inherit"}>
   {#if issuePrev !== undefined}
     <a class="no-anim" href="{base}/issues/{issuePrev.issueIndex}">
       <button class="prev">
@@ -55,6 +56,7 @@ const issueNext: IssueData | undefined =
 <style lang="scss">
 
 .issue-nav {
+  padding-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -86,15 +88,17 @@ button {
   transition: all 0.12s ease-out;
   
   &:hover {
-    background-color: rgba($grey-swallow, 0.42);
+    background-color: light-dark(
+      rgba($grey-swallow, 0.42),
+      rgb(69 69 69 / 0.42)
+    );
   }
 
   &:focus, &:active {
-    background-color: rgba($grey-spirit, 0.42);
-  }
-
-  span.material-symbols-outlined {
-    color: light-dark($grey-nova, $blue-deep);
+    background-color: light-dark(
+      rgba($grey-spirit, 0.42),
+      rgb(69 69 69 / 0.69)
+    );
   }
   
   div {
@@ -110,13 +114,27 @@ p {
   @include font-flavour;
   margin: 0;
   color: light-dark($grey-nova, $blue-deep);
+  font-size: 125%;
 }
 
 h4 {
-  @include font-head;
+  @include font-flavour;
   margin: 0.5rem 0;
   padding: 0;
   color: $pink-elec;
+  font-size: 125%;
+}
+
+span.material-symbols-outlined {
+  color: light-dark($grey-nova, white);
+
+  transition: all 0.12s ease-out;
+}
+
+button:where(:hover, :focus, :active)
+  span.material-symbols-outlined
+{
+  color: light-dark($col-accent, $col-flavour);
 }
 
 </style>
