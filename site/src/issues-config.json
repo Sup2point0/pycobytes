@@ -17,7 +17,8 @@
     "titleText": "Stringterpolation with f-Strings",
     "releaseDate": "12 June 2024",
     "topicTags": [
-      "strings"
+      "strings",
+      "syntax"
     ],
     "orderIndex": 1
   },
@@ -28,6 +29,7 @@
     "releaseDate": "21 June 2024",
     "topicTags": [
       "strings",
+      "methods",
       "quickies",
       "challenge"
     ],

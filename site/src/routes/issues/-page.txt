@@ -1,8 +1,14 @@
 <script>
 
+import ISSUES from "#src/issues-config";
+
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
+
+import Content from "../#{issueIndex}/_Content.svx";
+
+const issue = ISSUES[#{orderIndex}];
 
 </script>
 
