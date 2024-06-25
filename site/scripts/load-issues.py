@@ -121,7 +121,7 @@ def save_static(issue: dict):
     content = source.read()
 
   content = re.sub(
-    pattern = r"#{displayIndex}",
+    pattern = r"#{issueIndex}",
     repl = issue["meta"]["issueIndex"],
     string = content
   )
