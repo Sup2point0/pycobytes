@@ -44,13 +44,9 @@ header {
   width: 100%;
   height: 100%;
   padding: ($nav-height + 3rem) 0 2.5rem;
-  background: linear-gradient(to right in srgb, rgba(black, 0.5), black 69%);
-  opacity: 1;
-
-  transition: opacity 0.4s ease-out;
+  background: linear-gradient(to right in srgb, rgba(black, 0.5), black var(--overlay));
 
   &:hover {
-    opacity: 0.8;
   }
 }
 

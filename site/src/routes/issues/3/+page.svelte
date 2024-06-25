@@ -1,14 +1,14 @@
 <script>
 
 import ISSUES from "#src/issues-config";
-const issue = ISSUES[2];
-
-import Content from "../3/_Content.svx";
-
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
+
+import Content from "../3/_Content.svx";
+
+const issue = ISSUES[2];
 
 </script>
 
@@ -18,7 +18,7 @@ import IssueNav from "#src/parts/IssueNav.svelte";
 </svelte:head>
 
 {#if Content}
-  <IssueNav />
+  <IssueNav {issue} />
 
   <article>
     <Header

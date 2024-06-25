@@ -1,14 +1,14 @@
 <script>
 
 import ISSUES from "#src/issues-config";
-const issue = ISSUES[1];
-
-import Content from "../2/_Content.svx";
-
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
+
+import Content from "../2/_Content.svx";
+
+const issue = ISSUES[1];
 
 </script>
 
@@ -18,16 +18,16 @@ import IssueNav from "#src/parts/IssueNav.svelte";
 </svelte:head>
 
 {#if Content}
-  <IssueNav />
+  <Header
+    type = "issue"
+    issueIndex = {issue.issueIndex}
+    title = "{issue.titleText}"
+    caption = {issue.releaseDate}
+  />
+
+  <IssueNav {issue} />
 
   <article>
-    <Header
-      type = "issue"
-      issueIndex = {issue.issueIndex}
-      title = "{issue.titleText}"
-      caption = {issue.releaseDate}
-    />
-
     <Main>
       <Content />
     </Main>

@@ -11,13 +11,13 @@ export let issue: IssueData;
 const indexCurrent = issue.orderIndex;
 
 // issue 0 (#1) has no previous
-const issuePrev: IssueData =
+const issuePrev: IssueData | undefined =
     (indexCurrent > 0)
   ? ISSUES[indexCurrent -1]
   : undefined;
 
 // latest issue has no next
-const issueNext: IssueData =
+const issueNext: IssueData | undefined =
     (indexCurrent < ISSUES.length -1)
   ? ISSUES[indexCurrent +1]
   : undefined;
