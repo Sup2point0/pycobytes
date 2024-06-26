@@ -7,6 +7,7 @@ import ISSUES from "#src/issues-config";
 import duality from "#src/scripts/duality";
 import { swapDuality } from "#src/scripts/duality";
 
+
 function pickIssue() {
   let index = ISSUES[Math.random() * ISSUES.length | 0];
   window.location.href = `https://sup2point0.github.io/pycobytes/issues/${index}`;
@@ -43,10 +44,10 @@ function pickIssue() {
       <NavLink text="Random" button={pickIssue} />
     </NavLink>
 
-    <NavLink text="Contact" link="https://github.com/Sup2point0/pycobytes/discussions" collapsible={true} >
-      <NavLink text="Discuss" link="https://github.com/Sup2point0/pycobytes/discussions" />
-      <NavLink text="Submit Idea" link="https://github.com/Sup2point0/pycobytes/issues" />
-      <NavLink text="Report Bug" link="https://github.com/Sup2point0/pycobytes/issues" />
+    <NavLink text="Contact" extern="https://github.com/Sup2point0/pycobytes/discussions" collapsible={true} >
+      <NavLink text="Discuss" extern="https://github.com/Sup2point0/pycobytes/discussions" />
+      <NavLink text="Submit Idea" extern="https://github.com/Sup2point0/pycobytes/issues" />
+      <NavLink text="Report Bug" extern="https://github.com/Sup2point0/pycobytes/issues" />
     </NavLink>
 
     <NavLink text="GitHub"

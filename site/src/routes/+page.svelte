@@ -124,7 +124,6 @@ section {
   & .caption {
     @include font-flavour;
     font-size: 120%;
-    color: light-dark($grey-nova, $blue-deep);
   }
 }
 

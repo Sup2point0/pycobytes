@@ -5,6 +5,7 @@ import ISSUES from "#src/issues-config";
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
+import IssueFooter from "#src/parts/IssueFooter.svelte";
 
 import "#src/routes/issues/issue.scss";
 
@@ -34,6 +35,7 @@ const issue = ISSUES[1];
   <article>
     <Main>
       <Content />
+      <IssueFooter />
     </Main>
   </article>
 

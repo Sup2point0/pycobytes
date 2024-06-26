@@ -24,12 +24,6 @@ body {
   @include font-body;
 }
 
-.duality-container {
-  color: light-dark(black, white);
-  background-color: light-dark(#f9f9f9, #00172a);
-  @include fade-duality;
-}
-
 :where(h2,h3,h4) {
   @include font-head;
   color: light-dark($col-accent, $col-flavour);
@@ -73,12 +67,23 @@ hr {
   background-color: light-dark($col-accent, $col-flavour) !important;
 }
 
+
+:where(.duality-container) {
+  color: light-dark(black, white);
+  background-color: light-dark(#f9f9f9, #00172a);
+  @include fade-duality;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+}
+
+.caption {
+  color: light-dark($grey-nova, $blue-deep);
 }
 
 .error {
