@@ -6,7 +6,7 @@ import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 
 
-const issues = ISSUES;
+const issues = [...ISSUES];
 issues.reverse();
 
 </script>

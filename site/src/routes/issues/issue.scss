@@ -1,0 +1,27 @@
+@use './src/styles/_nova' as *;
+@use './src/styles/_variables' as *;
+@use './src/styles/_fonts' as *;
+
+
+p {
+  margin: 1.5em 0;
+}
+
+h2, h3 {
+  border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
+}
+
+main > blockquote:first-child {
+  @include font-fun;
+  margin: 0 0 3rem;
+  padding: 0 0 2rem;
+  font-size: 200%;
+  color: light-dark($col-accent, $col-flavour);
+  text-align: center;
+  border-left: none;
+  border-bottom: 2px solid light-dark($grey-spirit, $blue-deep);
+
+  p {
+    margin: 0;
+  }
+}

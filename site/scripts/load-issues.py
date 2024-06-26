@@ -78,6 +78,7 @@ def extract_data(filepath: Path) -> dict | None:
 
 def render_svx(content: list[str], meta: dict) -> str:
   content = "".join(content[1:])
+  content = content.replace("\n\n<br>\n\n", "")
   content = re.sub(r"../assets/issues/[0-9]*/", "/", content)
 
   front = f'''---

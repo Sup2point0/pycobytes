@@ -1,5 +1,5 @@
 /// Stores issues data in the `ISSUES` constant.
-/// Last auto-generated: Jun 25
+/// Last auto-generated: Jun 26
 
 import type IssueData from "./scripts/issue";
 
@@ -12,8 +12,8 @@ const ISSUES: IssueData[] = /* #PYCO target! */ [
     releaseDate: "6 June 2024",
     topicTags: [
       "tricks",
-      "challenge",
-      "lists"
+      "lists",
+      "challenge"
     ],
     orderIndex: 0
   },

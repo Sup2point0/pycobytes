@@ -21,7 +21,7 @@ export let tags: string[] = [];
 
     <ul>
       {#each tags as tag}
-        <li> {tag} </li>
+        <li class={tag}> {tag} </li>
       {/each}
     </ul>
 
@@ -98,6 +98,12 @@ li {
 
   &:hover {
     background-color: $pink-elec;
+  }
+
+  &:not(:hover) {
+    &.syntax { background-color: rgba($pink-spirit, 0.69); }
+    &.quickies { background-color: rgba($blue-sky, 0.69); }
+    &.challenge { background-color: rgba($teal-elec, 0.69); }
   }
 }
 

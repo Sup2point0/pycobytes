@@ -6,6 +6,8 @@ import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
 
+import "#src/routes/issues/issue.scss";
+
 import Content from "../2/_Content.svx";
 
 const issue = ISSUES[1];
@@ -43,12 +45,3 @@ const issue = ISSUES[1];
   </Main>
 
 {/if}
-
-
-<style lang="scss">
-
-h2, h3 {
-  border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
-}
-
-</style>

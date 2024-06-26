@@ -113,8 +113,8 @@ button {
 p {
   @include font-flavour;
   margin: 0;
-  color: light-dark($grey-nova, $blue-deep);
-  font-size: 125%;
+  color: light-dark($grey-nova, white);
+  font-size: 120%;
 }
 
 h4 {
@@ -122,19 +122,23 @@ h4 {
   margin: 0.5rem 0;
   padding: 0;
   color: $pink-elec;
-  font-size: 125%;
+  font-size: 150%;
 }
 
 span.material-symbols-outlined {
-  color: light-dark($grey-nova, white);
+  color: light-dark($grey-nova, $blue-deep);
 
   transition: all 0.12s ease-out;
 }
 
-button:where(:hover, :focus, :active)
-  span.material-symbols-outlined
-{
-  color: light-dark($col-accent, $col-flavour);
+button:where(:hover, :focus, :active) {
+  h4 {
+    color: light-dark($col-accent, $col-flavour);
+  }
+  
+  span.material-symbols-outlined {
+    color: light-dark($col-accent, $col-flavour);
+  }
 }
 
 </style>
