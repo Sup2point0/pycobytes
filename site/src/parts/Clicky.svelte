@@ -39,11 +39,14 @@ onMount(async () => {
 
 async function clicky() {
   if (clickState == ClickState.Idle) return;
+  if (clickState == ClickState.Clicked) return;
   
   if (localStorage.getItem(SHARD)) {
     clickState = ClickState.Depleted;
     return;
   }
+
+  if (clickState == ClickState.Depleted) return;
 
   clickData = await requestNapkin("POST");
   if (!clickData) {
