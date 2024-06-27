@@ -3,7 +3,7 @@ print(">>> Python / cleaning up build...")
 import re
 
 
-FILE = "03.html"
+FILE = "core.html"
 
 
 with open(FILE, "r") as source:

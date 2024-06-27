@@ -11,8 +11,8 @@ const ISSUES: IssueData[] = /* #PYCO target! */ [
     titleText: "The Power of List Comprehensions",
     releaseDate: "6 June 2024",
     topicTags: [
-      "tricks",
       "lists",
+      "syntax",
       "challenge"
     ],
     orderIndex: 0
@@ -40,6 +40,18 @@ const ISSUES: IssueData[] = /* #PYCO target! */ [
       "challenge"
     ],
     orderIndex: 2
+  },
+  {
+    displayIndex: "04",
+    issueIndex: "4",
+    titleText: "\"Wait, you can multiply strings?\"",
+    releaseDate: "27 June 2024",
+    topicTags: [
+      "strings",
+      "operators",
+      "tricks"
+    ],
+    orderIndex: 3
   }
 ];
 export default ISSUES;
