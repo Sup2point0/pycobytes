@@ -74,6 +74,7 @@ img {
 }
 
 button {
+  font: inherit;
   height: 100%;
   width: 100%;
   padding: 0 1em;
@@ -86,13 +87,21 @@ button {
   }
 }
 
-.nav-dropdown {
+ul.nav-dropdown {
   display: none;
   list-style-type: none;
 }
 
-// li:hover > .nav-dropdown {
-//   display: block;
-// }
+.nav-part:hover ~ ul.nav-dropdown,
+ul.nav-dropdown:hover
+{
+  position: absolute;
+  top: $nav-height - 0.2rem;
+  padding: 0 0.5rem;
+  display: block;
+  background-color: $col-idle;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
 
 </style>

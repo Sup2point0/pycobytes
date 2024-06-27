@@ -33,19 +33,17 @@ export let extern: string | null = null;
 
 <style lang="scss">
 
-// * {
-//   outline: $lilac-nova solid 1px;
-// }
-
 li.nav-link {
   @include font-fun;
+  max-height: $nav-part-height;
   margin: 0.5rem 0.2rem;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 0.7em;
+  overflow: visible;
+  border-radius: 0.75em;
   
   transition: all 0.16s ease-out;
   @media prefers-reduced-motion {

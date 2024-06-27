@@ -170,7 +170,7 @@ section {
     font-size: 10vw;
   }
   & p {
-    @include font-flavour;
+    @include font-fun;
     font-size: 200%;
     margin: 0;
     padding: 0;
