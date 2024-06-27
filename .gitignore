@@ -2,6 +2,3 @@
 .devcontainer/
 
 __pycache__/
-
-send/
-scripts/test.**
