@@ -13,7 +13,6 @@ from __main__ import ROOT
 
 
 
-
 ## Load
 SOURCE = ROOT / "assets"
 
@@ -25,14 +24,13 @@ assets = ichain(
 )
 
 
-## Clear
-
-
 ## Save
 DEST = ROOT / "site/static"
 
 if os.path.exists(DEST):
   shutil.rmtree(DEST)
+
+if not os.path.exists(DEST):
   os.mkdir(DEST)
 
 for file in assets:
