@@ -102,6 +102,7 @@ li {
 
   &:not(:hover) {
     &.syntax { background-color: rgba($pink-spirit, 0.69); }
+    &.tricks { background-color: rgba($lilac-nova, 0.69); }
     &.quickies { background-color: rgba($blue-sky, 0.69); }
     &.challenge { background-color: rgba($teal-elec, 0.69); }
   }

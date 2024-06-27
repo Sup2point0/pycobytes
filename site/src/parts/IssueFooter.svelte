@@ -1,4 +1,4 @@
-<p class="caption"> Question? Bug that needs fixing? Drop a message in the <a target="_blank" href="https://github.com/Sup2point0/pycobytes/discussions">GitHub discussion</a> for this issue. </p>
+<p class="caption"> Question? Bug needs fixing? Or just want to nerd out over programming? <br> Drop a message in the <a target="_blank" href="https://github.com/Sup2point0/pycobytes/discussions">GitHub discussion</a> for this issue. </p>
 
 
 <style lang="scss">
