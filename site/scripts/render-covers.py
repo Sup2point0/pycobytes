@@ -16,7 +16,7 @@ ROOT = Path(__file__).parents[2].absolute()
 
 
 SRC = ROOT / "site/src"
-DEST = ROOT / "assets/covers"
+DEST = ROOT / "assets/issues"
 
 with open(SRC / "cover.html", "r") as source:
   content = source.read()
@@ -35,7 +35,7 @@ def render_cover(issue: dict):
   
   imgkit.from_string(
     render,
-    DEST / (issue["name"] + ".png"),
+    DEST / (issue["name"] + "-cover.png"),
     config = CONFIG
   )
 
