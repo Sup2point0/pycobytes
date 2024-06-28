@@ -1,5 +1,5 @@
 /// Stores issues data in the `ISSUES` constant.
-/// Last auto-generated: Jun 27
+/// Last auto-generated: Jun 28
 
 import type IssueData from "./scripts/issue";
 
