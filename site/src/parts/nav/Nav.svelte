@@ -1,7 +1,11 @@
+<!-- @component
+The global site navigation bar.
+-->
+
 <script>
 
 import { base } from "$app/paths";
-import NavLink from "#src/parts/NavLink.svelte";
+import NavLink from "#src/parts/nav/NavLink.svelte";
 
 import ISSUES from "#src/issues-config";
 import duality from "#src/scripts/duality";

@@ -118,7 +118,7 @@ def save_static(issue: dict):
     dest.write(issue["content"])
 
   ## +page.svelte
-  with open(routes.issues / "-page.txt", "r") as source:
+  with open(routes.issues / "_page.txt", "r") as source:
     content = source.read()
 
   content = re.sub(

@@ -2,7 +2,7 @@
 
 import { page } from "$app/stores";
 
-import Nav from "#src/parts/Nav.svelte";
+import Nav from "#src/parts/nav/Nav.svelte";
 
 </script>
 

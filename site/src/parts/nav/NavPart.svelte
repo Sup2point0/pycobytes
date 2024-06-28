@@ -1,4 +1,6 @@
-<!-- The content within a `NavLink`. -->
+<!-- @component
+The content within a `NavLink`.
+-->
 
 <script lang="ts">
   

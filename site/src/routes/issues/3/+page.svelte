@@ -7,6 +7,8 @@ import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
 import IssueFooter from "#src/parts/IssueFooter.svelte";
 
+import "#src/routes/issues/_issue.scss";
+
 import Content from "../3/_Content.svx";
 
 const issue = ISSUES[2];
