@@ -12,7 +12,7 @@ h2, h3 {
 }
 
 main > blockquote:first-child {
-  @include font-fun;
+  @include font-flavour;
   margin: 0 0 3rem;
   padding: 0 0 2rem;
   font-size: 200%;

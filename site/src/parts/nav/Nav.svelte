@@ -12,6 +12,9 @@ import duality from "#src/scripts/duality";
 import { swapDuality } from "#src/scripts/duality";
 
 
+const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flavour centre\">:</span><span class=\"pyb-flavour right\">bytes</span>"
+
+
 function pickIssue() {
   let index = ISSUES[Math.random() * ISSUES.length | 0].issueIndex;
   window.location.href = `${base}/issues/${index}`;
@@ -23,7 +26,7 @@ function pickIssue() {
 <nav>
   <ul class="left">
     <NavLink text="i" pict="{base}/pycobytes-icon.png" link="https://sup2point0.github.io/pycobytes" />
-    <NavLink text="pyco:bytes" link="https://sup2point0.github.io/pycobytes" />
+    <NavLink body={pyco} link="https://sup2point0.github.io/pycobytes" />
 
     <NavLink text="duality" button={swapDuality} collapsible={true}>
       <span class="material-symbols-outlined">

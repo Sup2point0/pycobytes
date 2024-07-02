@@ -36,7 +36,7 @@ export let extern: string | null = null;
 <style lang="scss">
 
 li.nav-link {
-  @include font-fun;
+  @include font-flavour;
   max-height: $nav-part-height;
   margin: 0.5rem 0.2rem;
   padding: 0;
