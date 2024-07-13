@@ -30,6 +30,7 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 | [2](issues/02.md) | 12/06/24 | *Stringterpolation with f-Strings* |
 | [3](issues/03.md) | 21/06/24 | *"A Strand of String Theory"* |
 | [4](issues/04.md) | 27/06/24 | *Wait, you can multiply strings?* |
+| [404](issues/404.md) | 04/07/24 | *Where do I learn?* |
 
 
 <br>
@@ -39,6 +40,6 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 <div align="center">
 
-![XKCD 353](https://imgs.xkcd.com/comics/python.png)
+[![XKCD 353](https://imgs.xkcd.com/comics/python.png)](https://xkcd.com/353)
 
 </div>
