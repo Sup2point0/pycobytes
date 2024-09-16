@@ -1,12 +1,29 @@
-# pycobytes[1] := The Power of List Comprehensions
-<!-- #SQUARK live!
-| dest = 1
-| title = The Power of List Comprehensions
-| head = The Power of List Comprehensions
-| index = 01
-| shard = lists / syntax / challenge
-| date = 2024 June 6
--->
+---
+path: issues/01.md
+isFeatured: false
+title: The Power of List Comprehensions
+head: pycobytes[1] := The Power of List Comprehensions
+capt:
+desc:
+index:
+- '01'
+shard:
+- lists
+- syntax
+- challenge
+date_display: 2024 June 6
+---
+
+<script>
+
+import { base } from "$app/paths";
+
+</script>
+
+<svelte:head>
+  <title> The Power of List Comprehensions · pycobytes </title>
+</svelte:head>
+
 
 > *Code is read far more than it is written.*
 
@@ -135,3 +152,8 @@ Can you write a one-liner to split a number the user inputs into its digits?
 
 > [!TIP]
 > You can use a `for` loop to iterate through the characters of a string, just like you can with a `list` ;)
+
+<style lang="scss">
+
+@use './src/styles/article' as *;
+</style>

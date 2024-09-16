@@ -1,9 +1,29 @@
 {
-  "$schema": "https://sup2point0.github.io/stranger-quarkdown/squarkup-schema.json",
+  "$schema": "../.stranger-quarkdown/squarkdown/resources/squarkup-schema.json",
 
   "repo": "pycobytes",
+
   "site": "site",
   "sources": ["issues"],
+  "dest": "src/routes/issues",
+  "if-no-dir": ["warn", "create"],
+  "on-error": "kill",
 
-  "if-no-dir": ["warn", "create"]
+  "file-name": "~content",
+  "bases": "src/parts/bases",
+  "page.svelte": "~page.svelte",
+  "page.js": "~page.js",
+  
+  "site-data": "src/data/site.json",
+  "styles": "src/styles",
+  "page-styles": "src/styles",
+  "assets": "assets",
+  "site-assets": "assets/site",
+  "fonts": [
+    "Source+Sans+Pro:ital,wght@0,200..900;1,200..900",
+    "Overpass:ital,wght@0,100..900;1,100..900",
+    "Sniglet:wght@400;800",
+    "Fira+Code:wght@300..700",
+    "Roboto+Mono:ital,wght@0,100..700;1,100..700"
+  ]
 }

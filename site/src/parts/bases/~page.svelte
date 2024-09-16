@@ -1,24 +1,20 @@
 <script>
 
-import ISSUES from "#src/issues-config";
+import { page } from "$app/stores";
+import { Issues } from "#src/site";
 
 import Header from "#src/parts/Header.svelte";
 import Main from "#src/parts/Main.svelte";
 import IssueNav from "#src/parts/IssueNav.svelte";
 import IssueFooter from "#src/parts/IssueFooter.svelte";
 
-import "#src/routes/issues/_issue.scss";
+import Content from "./%{file}.svx";
 
-import Content from "../4/_Content.svx";
 
-const issue = ISSUES[3];
+const issue = Issues[$page.data.index];
 
 </script>
 
-
-<svelte:head>
-  <title> {issue.titleText ?? "404 Not Found"} · pycobytes[{issue.issueIndex ?? "?"}] </title>
-</svelte:head>
 
 {#if Content}
   <Header

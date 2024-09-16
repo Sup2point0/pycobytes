@@ -4,10 +4,12 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm run prep && vite build && python scripts/post-build.py",
-		"preview": "vite preview",
-		"prep": "cd .. && python site/scripts",
-    "devx": "npm run prep && npm run dev"
+      "devx": "npm run prep && npm run dev",
+		"prep": "npm run squark",
+		"squark": "cd ../.stranger-quarkdown && rake squark[fonts] && cd ../site",
+    "build": "vite build",
+      "buildx": "npm run prep && vite build && python scripts/post-build.py",
+		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
