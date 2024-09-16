@@ -4,7 +4,7 @@ A link in the navbar. Dropdown `NavLink`s can be added as a slot.
 
 <script lang="ts">
 
-import NavPart from "#src/parts/nav/NavPart.svelte";
+import NavPart from "#parts/nav/NavPart.svelte";
 
 export let link: string | null = null;
 export let extern: string | null = null;

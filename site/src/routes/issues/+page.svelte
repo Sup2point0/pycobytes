@@ -2,8 +2,8 @@
 
 import ISSUES from "#src/issues-config";
 
-import Header from "#src/parts/Header.svelte";
-import Main from "#src/parts/Main.svelte";
+import Header from "#parts/Header.svelte";
+import Main from "#parts/Main.svelte";
 
 
 const issues = [...ISSUES];

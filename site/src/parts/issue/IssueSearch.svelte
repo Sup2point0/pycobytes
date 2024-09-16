@@ -2,7 +2,7 @@
 
 import { ratio } from "fuzzball";
 
-import { searchData } from "#src/scripts/stores/search";
+import { searchData } from "#scripts/stores/search";
 
 let value = "";
 

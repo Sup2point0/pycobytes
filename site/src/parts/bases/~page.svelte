@@ -3,10 +3,10 @@
 import { page } from "$app/stores";
 import { Issues } from "#src/site";
 
-import Header from "#src/parts/Header.svelte";
-import Main from "#src/parts/Main.svelte";
-import IssueNav from "#src/parts/IssueNav.svelte";
-import IssueFooter from "#src/parts/IssueFooter.svelte";
+import Header from "#parts/Header.svelte";
+import Main from "#parts/Main.svelte";
+import IssueNav from "#parts/issue/IssueNav.svelte";
+import IssueFooter from "#parts/issue/IssueFooter.svelte";
 
 import Content from "./%{file}.svx";
 

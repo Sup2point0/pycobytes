@@ -5,8 +5,8 @@ import { onMount } from "svelte";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
 
-import requestNapkin from "#src/scripts/napkin";
-import ClickData from "#src/scripts/napkin";
+import requestNapkin from "#scripts/napkin";
+import ClickData from "#scripts/napkin";
 
 
 const SHARD = "pycobytes-clicky";
