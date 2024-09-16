@@ -11,7 +11,7 @@ import IssueFooter from "#parts/issue/IssueFooter.svelte";
 
 
 <svelte:head>
-  <title> {$page.data.titleText ?? "404 Not Found"} · pycobytes[{$page.data.issueIndex ?? "?"}] </title>
+  <title> {$page.data.title ?? "404 Not Found"} · pycobytes[{$page.data.index ?? "?"}] </title>
 </svelte:head>
 
 
