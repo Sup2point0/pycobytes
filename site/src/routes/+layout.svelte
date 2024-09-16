@@ -1,12 +1,12 @@
 <script>
 
-import Nav from "#parts/nav/Nav.svelte";
-import Footer from "#parts/Footer.svelte";
-
 import "#styles/essence.scss";
 import "#styles/prism-night-owl.scss";
 
 import duality from "#scripts/duality";
+
+import Nav from "#parts/nav/Nav.svelte";
+import Footer from "#parts/Footer.svelte";
 
 </script>
 

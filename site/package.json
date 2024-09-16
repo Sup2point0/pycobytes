@@ -1,14 +1,14 @@
 {
 	"name": "pycobytes",
-	"version": "1.0",
+	"version": "2.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-      "devx": "npm run prep && npm run dev",
+		"devx": "npm run prep && npm run dev",
 		"prep": "npm run squark",
 		"squark": "cd ../.stranger-quarkdown && rake squark[fonts,scss] && cd ../site",
-    "build": "vite build",
-      "buildx": "npm run prep && vite build && python scripts/post-build.py",
+		"build": "vite build",
+		"buildx": "npm run prep && vite build && python scripts/post-build.py",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
@@ -20,8 +20,7 @@
 		"remark-github-blockquote-alert": "^1.2.1",
 		"sass": "^1.77.3",
 		"svelte": "^4.2.7",
-		"svelte-add": "^2.0.10",
-		"svelte-check": "^3.6.0",
+		"svelte-persisted-store": "^0.11.0",
 		"svelte-preprocess": "^5.1.4",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
