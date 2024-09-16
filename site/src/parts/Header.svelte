@@ -1,9 +1,10 @@
 <script lang="ts">
 
+import { page } from "$app/stores";
+
 export let type: "issue" | null = null;
 export let issueIndex: string | null = null;
 export let title: string;
-export let caption: string | null = null;
 export let tags: string[] = [];
 
 </script>
@@ -11,21 +12,29 @@ export let tags: string[] = [];
 
 <header>
   <div class="dark-overlay">
-    {#if type == "issue"}
-      <code> #{issueIndex} </code>
-      <h1 class="pyco-flavour"> {@html title} </h1>
-      <p> {@html caption} </p>
+    {#if type === "issue"}
+      <code> #{parseInt($page.data.index)} </code>
+      <h1 class="pyco-flavour"> {@html $page.data.head} </h1>
+
+      <ul>
+        {#each $page.data.shard as shard}
+          <li class={shard}> {shard} </li>
+        {/each}
+      </ul>
+
     {:else}
       <h1> {@html title} </h1>
+
+      <ul>
+        {#each tags as tag}
+          <li class={tag}> {tag} </li>
+        {/each}
+      </ul>
+    
     {/if}
 
-    <ul>
-      {#each tags as tag}
-        <li class={tag}> {tag} </li>
-      {/each}
-    </ul>
-
     <slot />
+    
   </div>
 </header>
 
