@@ -1,9 +1,13 @@
 <script lang="ts">
 
 import { base } from "$app/paths";
+import { page } from "$app/stores";
 
-import ISSUES from "#src/issues-config";
-import type IssueData from "#src/scripts/issue";
+import Site from "#src/site";
+
+import { getIssue } from "#scripts/utils";
+
+import type IssueData from "#scripts/issue";
 
 export let issue: IssueData;
 export let duality: string | null = null;

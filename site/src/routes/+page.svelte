@@ -6,11 +6,11 @@ import { onMount } from "svelte";
 import site from "#src/site-config";
 import ISSUES from "#src/issues-config";
 
-import LinkButton from "#src/parts/LinkButton.svelte";
-import Clicky from "#src/parts/Clicky.svelte";
+import LinkButton from "#parts/LinkButton.svelte";
+import Clicky from "#parts/Clicky.svelte";
 import FlavourCode from "#src/routes/flavour-code.svx";
 
-import processAnimations from "#src/scripts/anim";
+import processAnimations from "#scripts/anim";
 
 
 onMount(() => processAnimations());

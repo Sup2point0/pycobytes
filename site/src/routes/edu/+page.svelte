@@ -1,7 +1,7 @@
 <script>
 
-  import Header from "#src/parts/Header.svelte";
-  import Main from "#src/parts/Main.svelte";
+  import Header from "#parts/Header.svelte";
+  import Main from "#parts/Main.svelte";
   import Content from "../edu/_Content.svx";
   
   </script>

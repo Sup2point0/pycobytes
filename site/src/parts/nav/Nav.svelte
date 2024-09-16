@@ -5,11 +5,11 @@ The global site navigation bar.
 <script>
 
 import { base } from "$app/paths";
-import NavLink from "#src/parts/nav/NavLink.svelte";
+import NavLink from "#parts/nav/NavLink.svelte";
 
 import ISSUES from "#src/issues-config";
-import duality from "#src/scripts/duality";
-import { swapDuality } from "#src/scripts/duality";
+import duality from "#scripts/duality";
+import { swapDuality } from "#scripts/duality";
 
 
 const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flavour centre\">:</span><span class=\"pyb-flavour right\">bytes</span>"

@@ -6,7 +6,7 @@ The content within a `NavLink`.
   
 import type { MouseEventHandler } from "svelte/elements";
 
-import duality from "#src/scripts/duality";
+import duality from "#scripts/duality";
 
 export let text: string | null = "–";
 export let body: string | null = null;
