@@ -1,7 +1,5 @@
 <script>
 
-import { page } from "$app/stores";
-
 import Nav from "#parts/nav/Nav.svelte";
 
 </script>

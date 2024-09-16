@@ -4,7 +4,7 @@ import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import { remarkAlert } from "remark-github-blockquote-alert";
 
-import scssConfig from "../site/scss-config.js";
+import scssConfig from "./scss-config.js";
 
 
 const config = {
@@ -22,20 +22,14 @@ const config = {
     alias: {
       "#src": "./src/",
       "#parts": "./src/parts",
-      "#scripts": "./src/scripts",
       "#styles": "./src/styles",
+      "#scripts": "./src/scripts",
     },
     prerender: {
-      entries: [
-        "*",
-        "/issues",
-        "/issues/1",
-      ],
       handleHttpError: "warn",
+      handleMissingId: "warn",
     },
   },
-
-  extensions: [".svelte", ".md", ".svx"],
 
   preprocess: [
     mdsvex({
@@ -48,6 +42,8 @@ const config = {
       }
     }),
   ],
+
+  extensions: [".svelte", ".md", ".svx"],
 };
 
 export default config;
