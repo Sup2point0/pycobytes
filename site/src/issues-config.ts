@@ -1,5 +1,5 @@
 /// Stores issues data in the `ISSUES` constant.
-/// Last auto-generated: Jun 28
+/// Last auto-generated: Sep 12
 
 import type IssueData from "./scripts/issue";
 
@@ -52,6 +52,16 @@ const ISSUES: IssueData[] = /* #PYCO target! */ [
       "tricks"
     ],
     orderIndex: 3
+  },
+  {
+    displayIndex: "05",
+    issueIndex: "5",
+    titleText: "\"Setting the Scene with Miserable Iterables\"",
+    releaseDate: "14 September 2024",
+    topicTags: [
+      "iterables"
+    ],
+    orderIndex: 4
   }
 ];
 export default ISSUES;

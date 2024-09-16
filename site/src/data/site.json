@@ -1,0 +1,44 @@
+{
+  "exported": "2024-09-16",
+  "index": {
+    "01": [
+      "issues/01.md"
+    ]
+  },
+  "shard": {
+    "lists": [
+      "issues/01.md"
+    ],
+    "syntax": [
+      "issues/01.md"
+    ],
+    "challenge": [
+      "issues/01.md"
+    ]
+  },
+  "pages": {
+    "issues/01.md": {
+      "path": "issues/01.md",
+      "slocs": 137,
+      "chars": 4069,
+      "isIndex": false,
+      "isFeatured": false,
+      "isWoozy": false,
+      "dest": "1",
+      "title": "The Power of List Comprehensions",
+      "head": "pycobytes[1] := The Power of List Comprehensions",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "01"
+      ],
+      "shard": [
+        "lists",
+        "syntax",
+        "challenge"
+      ],
+      "date": "2024-06-06",
+      "date_display": "2024 June 6"
+    }
+  }
+}
