@@ -21,6 +21,9 @@ const config = {
     },
     alias: {
       "#src": "./src/",
+      "#parts": "./src/parts",
+      "#scripts": "./src/scripts",
+      "#styles": "./src/styles",
     },
     prerender: {
       entries: [

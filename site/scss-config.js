@@ -1,9 +1,11 @@
-/// SCSS Globals
-/// last auto-generated: Sep 12
+/// SCSS Config
+/// Last generated 
 
-const scssConfig = `@use './src/styles/anim' as *;
-@use './src/styles/_fonts' as *;
-@use './src/styles/_nova' as *;
-@use './src/styles/_variables' as *;`;
-
+const scssConfig = {
+  prependData: `
+    @use './src/styles/~nova.scss' as *;
+    @use './src/styles/~fonts.scss' as *;
+    @use './src/styles/~variables.scss' as *;
+  `
+};
 export default scssConfig;

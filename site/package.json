@@ -6,7 +6,7 @@
 		"dev": "vite dev",
       "devx": "npm run prep && npm run dev",
 		"prep": "npm run squark",
-		"squark": "cd ../.stranger-quarkdown && rake squark[fonts] && cd ../site",
+		"squark": "cd ../.stranger-quarkdown && rake squark[fonts,scss] && cd ../site",
     "build": "vite build",
       "buildx": "npm run prep && vite build && python scripts/post-build.py",
 		"preview": "vite preview"
