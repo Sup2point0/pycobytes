@@ -1,7 +1,8 @@
 /// Handles processing scroll animations
 
 
-export default function processAnimations() {
+export default function processAnimations()
+{
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
