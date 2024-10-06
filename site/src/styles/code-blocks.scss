@@ -1,6 +1,6 @@
 /// Code Block Styles
 
-@use './src/styles/_variables' as *;
+@use './src/styles/~variables' as *;
 
 
 pre:has(code) {
