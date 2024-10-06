@@ -1,7 +1,7 @@
 /// Link Styles
 
-@use './src/styles/_nova' as *;
-@use './src/styles/_variables' as *;
+@use './src/styles/~nova' as *;
+@use './src/styles/~variables' as *;
 
 
 $link: ':where(a:not(.no-anim, :has(img), .nav-link))';
