@@ -3,8 +3,8 @@
 @use './src/styles/~nova' as *;
 @use './src/styles/~variables' as *;
 @use './src/styles/~fonts' as *;
+@use './src/styles/~anim' as *;
 
-@use './src/styles/anim' as *;
 @use './src/styles/links' as *;
 @use './src/styles/code-blocks' as *;
 @use './src/styles/flavour' as *;

@@ -1,4 +1,4 @@
-export default interface IssueData
+export interface IssueData
 {
   path: string;
   last_deploy: string;

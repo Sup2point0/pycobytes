@@ -3,10 +3,10 @@ The content within a `NavLink`.
 -->
 
 <script lang="ts">
-  
-import type { MouseEventHandler } from "svelte/elements";
 
-import duality from "#scripts/duality";
+import duality from "#scripts/stores";
+
+import type { MouseEventHandler } from "svelte/elements";
 
 export let text: string | null = "–";
 export let body: string | null = null;
