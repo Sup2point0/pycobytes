@@ -1,9 +1,12 @@
 {
   "exported": "2024-10-06",
   "index": {
-    "01": [
-      "issues/01.md"
-    ]
+    "01": {
+      "route": null,
+      "pages": [
+        "issues/01.md"
+      ]
+    }
   },
   "shard": {
     "lists": [
@@ -19,14 +22,16 @@
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
+      "last_deploy": "2024-09-16 19:15:05 +0100",
       "slocs": 137,
       "chars": 4069,
       "isIndex": false,
-      "isFeatured": false,
-      "isWoozy": false,
+      "flags": [
+        "live"
+      ],
       "dest": "1",
       "title": "The Power of List Comprehensions",
-      "head": "pycobytes[1] := The Power of List Comprehensions",
+      "head": "The Power of List Comprehensions",
       "capt": null,
       "desc": null,
       "index": [

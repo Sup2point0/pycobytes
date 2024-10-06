@@ -3,25 +3,20 @@
 The global site navigation bar.
 -->
 
-<script>
-
-import { base } from "$app/paths";
+<script lang="ts">
 
 import Site from "#src/site";
-import duality from "#scripts/duality";
+
+import { duality } from "#scripts/stores";
 
 import NavLink from "#parts/nav/NavLink.svelte";
 
-import { swapDuality } from "#scripts/duality";
+import { base } from "$app/paths";
 
+
+const Issues: object[] = Object.values(Site.issues);
 
 const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flavour centre\">:</span><span class=\"pyb-flavour right\">bytes</span>"
-
-
-function pickIssue() {
-  let index = ISSUES[Math.random() * ISSUES.length | 0].issueIndex;
-  window.location.href = `${base}/issues/${index}`;
-}
 
 </script>
 
@@ -51,8 +46,8 @@ function pickIssue() {
 
     <NavLink text="Issues" link="{base}/issues" collapsible={true} >
       <NavLink text="Index" link="{base}/issues" />
-      <NavLink text="Latest" link="{base}/issues/{ISSUES[ISSUES.length -1].issueIndex}" />
-      <NavLink text="Random" button={pickIssue}>
+      <NavLink text="Latest" link="{base}/issues/{Issues[Issues.length -1].index}" />
+      <NavLink text="Random" button={() => { window.location.href = pickRandomIssue(); }}>
         Random
       </NavLink>
     </NavLink>

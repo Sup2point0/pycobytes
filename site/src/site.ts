@@ -1,4 +1,4 @@
-const data = await import("./data/site-data.json");
+const data = await import("./data/site.json");
 
 
 const Site = {

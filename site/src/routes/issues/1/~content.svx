@@ -1,8 +1,10 @@
 ---
 path: issues/01.md
-isFeatured: false
+last_deploy: 2024-09-16 19:15:05.536623100 +01:00
+flags:
+- live
 title: The Power of List Comprehensions
-head: pycobytes[1] := The Power of List Comprehensions
+head: The Power of List Comprehensions
 capt:
 desc:
 index:
@@ -24,6 +26,14 @@ import { base } from "$app/paths";
   <title> The Power of List Comprehensions · pycobytes </title>
 </svelte:head>
 
+<!-- #SQUARK live!
+| dest = 1
+| title = The Power of List Comprehensions
+| head = The Power of List Comprehensions
+| index = 01
+| shard = lists / syntax / challenge
+| date = 2024 June 6
+-->
 
 > *Code is read far more than it is written.*
 
