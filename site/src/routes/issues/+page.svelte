@@ -5,6 +5,8 @@ import Site from "#src/site";
 import Header from "#parts/Header.svelte";
 import Main from "#parts/Main.svelte";
 
+import { base } from "$app/paths";
+
 </script>
 
 
@@ -22,7 +24,7 @@ import Main from "#parts/Main.svelte";
         <td class="issue-date"> {issue.date_display} </td>
       </tr>
       <tr>
-        <td class="issue-title"> <a href="./issues/{issue.index}">{issue.title}</a> </td>
+        <td class="issue-title"> <a href="{base}/issues/{issue.dest}">{issue.title}</a> </td>
       </tr>
     {/each}
   </table>

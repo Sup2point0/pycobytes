@@ -1,55 +1,50 @@
 <script lang="ts">
 
+import Site from "#src/site";
+
+import type { IssueData } from "#scripts/types";
+
 import { base } from "$app/paths";
 import { page } from "$app/stores";
 
-import Site from "#src/site";
-
-import { getIssue } from "#scripts/utils";
-
-import type IssueData from "#scripts/issue";
-
-export let issue: IssueData;
 export let duality: string | null = null;
 
 
-const indexCurrent = issue.orderIndex;
+const indexCurrent = Site.issues.findIndex(issue => issue.index == $page.data.index) ?? null;
 
 // issue 0 (#1) has no previous
-const issuePrev: IssueData | undefined =
-    (indexCurrent > 0)
-  ? ISSUES[indexCurrent -1]
-  : undefined;
+const issuePrev: IssueData | false | null = (indexCurrent != null) && (
+  (indexCurrent > 0) && Site.issues[indexCurrent -1]
+);
 
 // latest issue has no next
-const issueNext: IssueData | undefined =
-    (indexCurrent < ISSUES.length -1)
-  ? ISSUES[indexCurrent +1]
-  : undefined;
+const issueNext: IssueData | false | null = (indexCurrent != null) && (
+  (indexCurrent < Site.issues.length -1) && Site.issues[indexCurrent +1]
+);
 
 </script>
 
 
 <div class="issue-nav" style:color-scheme={duality || "inherit"}>
-  {#if issuePrev !== undefined}
-    <a class="no-anim" href="{base}/issues/{issuePrev.issueIndex}">
+  {#if issuePrev}
+    <a class="no-anim" href="{base}/issues/{issuePrev.index}">
       <button class="prev">
         <span class="material-symbols-outlined"> arrow_back_ios </span>
         <div>
           <p> Previous </p>
-          <h4> {issuePrev.titleText} </h4>
+          <h4> {issuePrev.title} </h4>
         </div>
       </button>
     </a>
   {/if}
 
-  {#if issueNext !== undefined}
-    <a class="no-anim" href="{base}/issues/{issueNext.issueIndex}">
+  {#if issueNext}
+    <a class="no-anim" href="{base}/issues/{issueNext.index}">
       <button class="next">
         <span class="material-symbols-outlined"> arrow_forward_ios </span>
         <div>
           <p> Next </p>
-          <h4> {issueNext.titleText} </h4>
+          <h4> {issueNext.title} </h4>
         </div>
       </button>
     </a>

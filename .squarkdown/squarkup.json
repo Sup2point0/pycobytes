@@ -5,7 +5,7 @@
 
   "site": "site",
   "sources": ["issues"],
-  "dest": "src/routes/issues",
+  "dest": "src/routes/issues/(issues)",
   "if-no-dir": ["warn", "create"],
   "on-error": "kill",
 

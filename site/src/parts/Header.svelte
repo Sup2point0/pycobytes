@@ -3,9 +3,7 @@
 import { page } from "$app/stores";
 
 export let type: "issue" | null = null;
-export let issueIndex: string | null = null;
-export let title: string;
-export let tags: string[] = [];
+export let title: string | undefined = undefined;
 
 </script>
 
@@ -13,23 +11,17 @@ export let tags: string[] = [];
 <header>
   <div class="dark-overlay">
     {#if type === "issue"}
-      <code> #{parseInt($page.data.index)} </code>
+      <code> #{$page.data.index} </code>
       <h1 class="pyco-flavour"> {@html $page.data.head} </h1>
 
       <ul>
-        {#each $page.data.shard as shard}
+        {#each $page.data.shard ?? [] as shard}
           <li class={shard}> {shard} </li>
         {/each}
       </ul>
 
     {:else}
       <h1> {@html title} </h1>
-
-      <ul>
-        {#each tags as tag}
-          <li class={tag}> {tag} </li>
-        {/each}
-      </ul>
     
     {/if}
 
