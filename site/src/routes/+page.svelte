@@ -1,16 +1,15 @@
 <script>
 
-import { base } from "$app/paths";
-import { onMount } from "svelte";
+import Site from "#src/site";
 
-import site from "#src/site-config";
-import ISSUES from "#src/issues-config";
+import processAnimations from "#scripts/anim";
 
 import LinkButton from "#parts/LinkButton.svelte";
 import Clicky from "#parts/Clicky.svelte";
 import FlavourCode from "#src/routes/flavour-code.svx";
 
-import processAnimations from "#scripts/anim";
+import { base } from "$app/paths";
+import { onMount } from "svelte";
 
 
 onMount(() => processAnimations());
@@ -19,7 +18,7 @@ onMount(() => processAnimations());
 
 
 <svelte:head>
-  <title> pycobytes · {site.desc.short} </title>
+  <title> pycobytes · {Site.desc.short} </title>
 </svelte:head>
 
 <main>
@@ -29,11 +28,11 @@ onMount(() => processAnimations());
         <h1> <span class="pyco-flavour">
           pyco<span class="pyco-flavour-null">:</span>bytes
         </span> </h1>
-        <p> {site.desc.long} </p>
+        <p> {Site.desc.long} </p>
         <div class="line" />
       </div>
 
-      <LinkButton link="{base}/issues/{ISSUES[ISSUES.length - 1].issueIndex}">
+      <LinkButton link="{base}/issues/{Site.issues[Site.issues.length - 1].issueIndex}">
         Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
         <span slot="hover">
           {#each {length: 3} as _, i}
