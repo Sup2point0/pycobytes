@@ -1,13 +1,9 @@
 <script>
 
-import ISSUES from "#src/issues-config";
+import Site from "#src/site";
 
 import Header from "#parts/Header.svelte";
 import Main from "#parts/Main.svelte";
-
-
-const issues = [...ISSUES];
-issues.reverse();
 
 </script>
 
@@ -20,16 +16,16 @@ issues.reverse();
 
 <Main>
   <table>
-    {#each issues as issue}
+    {#each Site.issues ?? [] as issue}
       <tr>
-        <td class="issue-index" rowspan="2"> {issue.displayIndex} </td>
-        <td class="issue-date"> {issue.releaseDate} </td>
+        <td class="issue-index" rowspan="2"> {issue.index} </td>
+        <td class="issue-date"> {issue.date_display} </td>
       </tr>
       <tr>
-        <td class="issue-title"> <a href="./issues/{issue.issueIndex}">{issue.titleText}</a> </td>
+        <td class="issue-title"> <a href="./issues/{issue.index}">{issue.title}</a> </td>
       </tr>
     {/each}
-    </table>
+  </table>
 </Main>
 
 
