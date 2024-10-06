@@ -12,6 +12,8 @@ import { base } from "$app/paths";
 import { onMount } from "svelte";
 
 
+const issues = Object.values(Site.issues);
+
 onMount(() => processAnimations());
 
 </script>
@@ -32,7 +34,7 @@ onMount(() => processAnimations());
         <div class="line" />
       </div>
 
-      <LinkButton link="{base}/issues/{Site.issues[Site.issues.length - 1].issueIndex}">
+      <LinkButton link="{base}/issues/{issues[issues.length - 1].index}">
         Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
         <span slot="hover">
           {#each {length: 3} as _, i}

@@ -4,7 +4,7 @@ The content within a `NavLink`.
 
 <script lang="ts">
 
-import duality from "#scripts/stores";
+import { duality } from "#scripts/stores";
 
 import type { MouseEventHandler } from "svelte/elements";
 

@@ -1,6 +1,6 @@
-@use './src/styles/_nova' as *;
-@use './src/styles/_variables' as *;
-@use './src/styles/_fonts' as *;
+@use './src/styles/~nova' as *;
+@use './src/styles/~variables' as *;
+@use './src/styles/~fonts' as *;
 
 
 p {
