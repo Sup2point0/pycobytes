@@ -4,10 +4,11 @@ import { browser } from "$app/environment";
 
 
 type Duality = "light" | "dark" | null;
-export const duality = persisted<Duality>("pycobytes.duality", getLocalDuality());
+export const duality = persisted<Duality>("pycobytes.duality", null);
 
 
-function getLocalDuality(): string
+// Get system theme preference.
+export function getLocalDuality(): string
 {
   if (matchMedia) {
     if (matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -20,8 +21,8 @@ function getLocalDuality(): string
   return "light";
 }
 
-// Switch the duality. If none has been set, do nothing.
-function swapDuality()
+// Switch the theme. If none has been set, do nothing.
+export function swapDuality()
 {
   duality.update(d => d ? (d == "light" ? "dark" : "light") : null)
 }

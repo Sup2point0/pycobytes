@@ -1,12 +1,14 @@
 {
 	"name": "pycobytes",
-	"version": "2.0",
+	"version": "3.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
       "devx": "npm run prep && npm run dev",
 		"prep": "npm run squark",
-		"squark": "cd ../.stranger-quarkdown && rake squark[fonts,scss] && cd ../site",
+      "prepx": "npm run squarkx",
+		"squark": "cd ../.stranger-quarkdown && rake squark && cd ../site",
+      "squarkx": "cd ../.stranger-quarkdown && rake squark[fonts,scss,assets] && cd ../site",
 		"build": "vite build",
       "buildx": "npm run prep && vite build",
 		"preview": "vite preview"
