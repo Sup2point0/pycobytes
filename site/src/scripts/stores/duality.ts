@@ -1,17 +1,15 @@
 import { persisted } from "svelte-persisted-store";
 
-import { browser } from "$app/environment";
-
 
 type Duality = "light" | "dark" | null;
 export const duality = persisted<Duality>("pycobytes.duality", null);
 
 
 // Get system theme preference.
-export function getLocalDuality(): string
+export function getLocalDuality(window): string
 {
-  if (matchMedia) {
-    if (matchMedia("(prefers-color-scheme: dark)").matches) {
+  if (window.matchMedia) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
     } else {
       return "light";

@@ -1,4 +1,5 @@
-<!-- @component
+<!-- @component `NavLink`
+
 A link in the navbar. Dropdown `NavLink`s can be added as a slot.
 -->
 
@@ -6,7 +7,8 @@ A link in the navbar. Dropdown `NavLink`s can be added as a slot.
 
 import NavPart from "#parts/nav/NavPart.svelte";
 
-// NOTE adding intern functionality
+import { base } from "$app/paths";
+
 export let link: string | undefined = undefined;
   export let intern: string | undefined = undefined;
   export let extern: string | undefined = undefined;
@@ -15,11 +17,11 @@ export let link: string | undefined = undefined;
 
 
 <li class="nav-link">
-  {#if link || extern}
+  {#if link || intern || extern}
     <a
       class = "no-anim"
-      href = {extern ? extern : link}
-      target = {extern ? "_blank" : null}
+      href = {extern || link || `${base}/${intern}`}
+      target = {extern ? "_blank" : "_self"}
     >
       <NavPart {...$$restProps}>
         <slot />

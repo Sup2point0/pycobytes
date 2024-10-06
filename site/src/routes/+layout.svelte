@@ -8,6 +8,11 @@ import { duality, getLocalDuality } from "#scripts/stores";
 import Nav from "#parts/nav/Nav.svelte";
 import Footer from "#parts/Footer.svelte";
 
+
+$: currentDuality = duality ? ($duality == "dark" ? "dark" : "light") : (
+  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+)
+
 </script>
 
 
@@ -15,7 +20,7 @@ import Footer from "#parts/Footer.svelte";
   <script defer src="/src/scripts/prism.js"> </script>
 </svelte:head>
 
-<div class="duality-container" style="color-scheme: {$duality ?? getLocalDuality()}">
+<div class="duality-container" style="color-scheme: {currentDuality}">
   <Nav />
   <slot />
   <Footer />

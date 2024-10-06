@@ -7,7 +7,8 @@ The global site navigation bar.
 
 import Site from "#src/site";
 
-import { duality } from "#scripts/stores";
+import { duality, swapDuality } from "#scripts/stores";
+import { pickRandomIssue } from "#scripts/utils";
 
 import NavLink from "#parts/nav/NavLink.svelte";
 
