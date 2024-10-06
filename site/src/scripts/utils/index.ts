@@ -1,1 +1,1 @@
-export { getIssue } from "./get-issue";
+export { getIssue, pickRandomIssue } from "./get-issue";
