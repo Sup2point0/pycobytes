@@ -15,9 +15,7 @@ import IssueFooter from "#parts/issue/IssueFooter.svelte";
 </svelte:head>
 
 
-<Header
-  type = "issue"
->
+<Header type = "issue">
   <IssueNav duality="dark" />
 </Header>
 
