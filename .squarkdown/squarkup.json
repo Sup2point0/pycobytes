@@ -20,10 +20,10 @@
   "assets": "assets",
   "site-assets": "assets/site",
   "fonts": [
-    "Source+Sans+Pro:ital,wght@0,200..900;1,200..900",
-    "Overpass:ital,wght@0,100..900;1,100..900",
-    "Sniglet:wght@400;800",
     "Fira+Code:wght@300..700",
-    "Roboto+Mono:ital,wght@0,100..700;1,100..700"
+    "Overpass:ital,wght@0,100..900;1,100..900",
+    "Roboto+Mono:ital,wght@0,100..700;1,100..700",
+    "Sniglet:wght@400;800",
+    "Source+Sans+Pro:ital,wght@0,200..900;1,200..900"
   ]
 }
