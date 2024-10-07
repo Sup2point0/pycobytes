@@ -10,16 +10,16 @@ import { page } from "$app/stores";
 export let duality: string | null = null;
 
 
-const indexCurrent = Site.issues.findIndex(issue => issue.index == $page.data.index) ?? null;
+const indexCurrent = Site.issues.findIndex(issue => issue.index && issue.index[0] == $page.data.index[0]);
 
 // issue 0 (#1) has no previous
 const issuePrev: IssueData | false | null = (indexCurrent != null) && (
-  (indexCurrent > 0) && Site.issues[indexCurrent -1]
+  (indexCurrent < Site.issues.length -1) && Site.issues[indexCurrent +1]
 );
 
 // latest issue has no next
 const issueNext: IssueData | false | null = (indexCurrent != null) && (
-  (indexCurrent < Site.issues.length -1) && Site.issues[indexCurrent +1]
+  (indexCurrent > 0) && Site.issues[indexCurrent -1]
 );
 
 </script>
