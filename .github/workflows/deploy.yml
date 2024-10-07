@@ -15,28 +15,28 @@ jobs:
       - name: 'git / checkout'
         uses: actions/checkout@v4
 
-      - name: 'Python / setup'
+      - name: 'python / setup'
         uses: actions/setup-python@v5
         with:
           python-version: 3.12
 
-      - name: 'Node / install'
+      - name: 'node / setup'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
           cache-dependency-path: './site/package-lock.json'
 
-      - name: 'npm / install'
+      - name: 'svelte / install'
         run: npm install
 
-      - name: 'npm / build'
+      - name: 'svelte / build'
         env:
           BASE_PATH: '/${{ github.event.repository.name }}/site'
         run: |
           npm run build
 
-      - name: 'GitHub / upload artifacts'
+      - name: 'github / upload artifacts'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'site/build/'
@@ -54,6 +54,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: 'GitHub / deploy'
+      - name: 'github / deploy'
         id: deployment
         uses: actions/deploy-pages@v4
