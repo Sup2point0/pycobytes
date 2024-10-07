@@ -78,16 +78,16 @@
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-10-07 18:07:59 +0100",
+      "last_deploy": "2024-10-07 18:21:11 +0100",
       "slocs": 136,
-      "chars": 4028,
+      "chars": 4027,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "01",
       "title": "The Power of List Comprehensions",
-      "head": "pycobytes[1] := The Power of List Comprehensions",
+      "head": "The Power of List Comprehensions",
       "capt": null,
       "desc": null,
       "index": [
@@ -103,16 +103,16 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-10-07 18:08:02 +0100",
+      "last_deploy": "2024-10-07 18:21:14 +0100",
       "slocs": 103,
-      "chars": 3320,
+      "chars": 3319,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "02",
       "title": "Stringterpolation with f-Strings",
-      "head": "pycobytes[2] := Stringterpolation with f-Strings",
+      "head": "Stringterpolation with f-Strings",
       "capt": null,
       "desc": null,
       "index": [
@@ -127,16 +127,16 @@
     },
     "issues/03.md": {
       "path": "issues/03.md",
-      "last_deploy": "2024-10-07 18:08:04 +0100",
+      "last_deploy": "2024-10-07 18:21:16 +0100",
       "slocs": 107,
-      "chars": 3373,
+      "chars": 3372,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "03",
       "title": "\"A Strand of String Theory\"",
-      "head": "pycobytes[3] := \"A Strand of String Theory\"",
+      "head": "\"A Strand of String Theory\"",
       "capt": null,
       "desc": null,
       "index": [
@@ -153,16 +153,16 @@
     },
     "issues/04.md": {
       "path": "issues/04.md",
-      "last_deploy": "2024-10-07 18:08:07 +0100",
+      "last_deploy": "2024-10-07 18:21:18 +0100",
       "slocs": 124,
-      "chars": 2931,
+      "chars": 2930,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "04",
       "title": "\"Wait, you can multiply strings?\"",
-      "head": "pycobytes[4] *= \"Wait, you can multiply strings?\"",
+      "head": "\"Wait, you can multiply strings?\"",
       "capt": null,
       "desc": null,
       "index": [
@@ -179,16 +179,16 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-10-07 18:08:11 +0100",
+      "last_deploy": "2024-10-07 18:21:21 +0100",
       "slocs": 84,
-      "chars": 2927,
+      "chars": 2926,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "05",
       "title": "\"Setting the Scene with Miserable Iterables\"",
-      "head": "pycobytes[5] := Setting the Scene with Miserable Iterables",
+      "head": "\"Setting the Scene with Miserable Iterables\"",
       "capt": null,
       "desc": null,
       "index": [
@@ -202,16 +202,16 @@
     },
     "issues/404.md": {
       "path": "issues/404.md",
-      "last_deploy": "2024-10-06 20:34:54 +0100",
+      "last_deploy": "2024-10-07 18:21:23 +0100",
       "slocs": 50,
-      "chars": 2549,
+      "chars": 2548,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "404",
       "title": "Where do I learn?",
-      "head": "pycobytes[404] := Where do I learn?",
+      "head": "Where do I learn?",
       "capt": null,
       "desc": null,
       "index": [
