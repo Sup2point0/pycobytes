@@ -2,8 +2,8 @@
 
 import { page } from "$app/stores";
 
-import Header from "#parts/Header.svelte";
-import Main from "#parts/Main.svelte";
+import Header from "#parts/layout/Header.svelte";
+import Main from "#parts/layout/Main.svelte";
 import IssueNav from "#parts/issue/IssueNav.svelte";
 import IssueFooter from "#parts/issue/IssueFooter.svelte";
 

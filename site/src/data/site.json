@@ -78,14 +78,14 @@
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-10-06 20:33:42 +0100",
+      "last_deploy": "2024-10-07 18:07:59 +0100",
       "slocs": 136,
-      "chars": 4027,
+      "chars": 4028,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "1",
+      "dest": "01",
       "title": "The Power of List Comprehensions",
       "head": "pycobytes[1] := The Power of List Comprehensions",
       "capt": null,
@@ -103,14 +103,14 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-10-07 17:39:18 +0100",
+      "last_deploy": "2024-10-07 18:08:02 +0100",
       "slocs": 103,
-      "chars": 3319,
+      "chars": 3320,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "2",
+      "dest": "02",
       "title": "Stringterpolation with f-Strings",
       "head": "pycobytes[2] := Stringterpolation with f-Strings",
       "capt": null,
@@ -127,14 +127,14 @@
     },
     "issues/03.md": {
       "path": "issues/03.md",
-      "last_deploy": "2024-10-06 20:35:13 +0100",
+      "last_deploy": "2024-10-07 18:08:04 +0100",
       "slocs": 107,
-      "chars": 3372,
+      "chars": 3373,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "3",
+      "dest": "03",
       "title": "\"A Strand of String Theory\"",
       "head": "pycobytes[3] := \"A Strand of String Theory\"",
       "capt": null,
@@ -153,14 +153,14 @@
     },
     "issues/04.md": {
       "path": "issues/04.md",
-      "last_deploy": "2024-10-07 17:30:24 +0100",
+      "last_deploy": "2024-10-07 18:08:07 +0100",
       "slocs": 124,
-      "chars": 2930,
+      "chars": 2931,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "4",
+      "dest": "04",
       "title": "\"Wait, you can multiply strings?\"",
       "head": "pycobytes[4] *= \"Wait, you can multiply strings?\"",
       "capt": null,
@@ -179,14 +179,14 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-10-07 17:30:56 +0100",
+      "last_deploy": "2024-10-07 18:08:11 +0100",
       "slocs": 84,
-      "chars": 2926,
+      "chars": 2927,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "5",
+      "dest": "05",
       "title": "\"Setting the Scene with Miserable Iterables\"",
       "head": "pycobytes[5] := Setting the Scene with Miserable Iterables",
       "capt": null,

@@ -2,8 +2,8 @@
 
 import Site from "#src/site";
 
-import Header from "#parts/Header.svelte";
-import Main from "#parts/Main.svelte";
+import Header from "#parts/layout/Header.svelte";
+import Main from "#parts/layout/Main.svelte";
 
 import { base } from "$app/paths";
 

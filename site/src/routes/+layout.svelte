@@ -6,12 +6,10 @@ import "#styles/prism-night-owl.scss";
 import { duality, getLocalDuality } from "#scripts/stores";
 
 import Nav from "#parts/nav/Nav.svelte";
-import Footer from "#parts/Footer.svelte";
+import Footer from "#parts/layout/Footer.svelte";
 
 
-$: currentDuality = duality ? ($duality == "dark" ? "dark" : "light") : (
-  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-)
+$: currentDuality = duality ? ($duality == "dark" ? "dark" : "light") : getLocalDuality(window)
 
 </script>
 

@@ -8,12 +8,12 @@ import { duality } from "#scripts/stores";
 
 import type { MouseEventHandler } from "svelte/elements";
 
-export let text: string | null = "–";
-export let body: string | null = null;
-export let pict: string | null = null;
-  export let light: string | null = null;
-  export let dark: string | null = null;
-export let button: MouseEventHandler<HTMLButtonElement> | null = null;
+export let text: string | undefined = "–";
+export let body: string | undefined = undefined;
+export let pict: string | undefined = undefined;
+  export let light: string | undefined = undefined;
+  export let dark: string | undefined = undefined;
+export let button: MouseEventHandler<HTMLButtonElement> | undefined = undefined;
 
 export let collapsible: boolean = false;
 
