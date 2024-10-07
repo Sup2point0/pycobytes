@@ -15,8 +15,6 @@ import NavLink from "#parts/nav/NavLink.svelte";
 import { base } from "$app/paths";
 
 
-const Issues: object[] = Object.values(Site.issues);
-
 const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flavour centre\">:</span><span class=\"pyb-flavour right\">bytes</span>"
 
 </script>
@@ -47,8 +45,8 @@ const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flav
 
     <NavLink text="Issues" link="{base}/issues" collapsible={true} >
       <NavLink text="Index" link="{base}/issues" />
-      <NavLink text="Latest" link="{base}/issues/{Issues[Issues.length -1].index}" />
-      <NavLink text="Random" button={() => { window.location.href = pickRandomIssue(); }}>
+      <NavLink text="Latest" link="{base}/issues/{Site.issues[0].index}" />
+      <NavLink text="Random" button={() => { console.log("picking"); }}>
         Random
       </NavLink>
     </NavLink>
