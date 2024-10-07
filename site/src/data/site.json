@@ -1,10 +1,40 @@
 {
-  "exported": "2024-10-06",
+  "exported": "2024-10-07",
   "index": {
     "01": {
       "route": null,
       "pages": [
         "issues/01.md"
+      ]
+    },
+    "02": {
+      "route": null,
+      "pages": [
+        "issues/02.md"
+      ]
+    },
+    "03": {
+      "route": null,
+      "pages": [
+        "issues/03.md"
+      ]
+    },
+    "04": {
+      "route": null,
+      "pages": [
+        "issues/04.md"
+      ]
+    },
+    "05": {
+      "route": null,
+      "pages": [
+        "issues/05.md"
+      ]
+    },
+    "404": {
+      "route": null,
+      "pages": [
+        "issues/404.md"
       ]
     }
   },
@@ -13,25 +43,51 @@
       "issues/01.md"
     ],
     "syntax": [
-      "issues/01.md"
+      "issues/01.md",
+      "issues/02.md"
     ],
     "challenge": [
-      "issues/01.md"
+      "issues/01.md",
+      "issues/03.md",
+      "issues/04.md"
+    ],
+    "strings": [
+      "issues/02.md",
+      "issues/03.md",
+      "issues/04.md"
+    ],
+    "methods": [
+      "issues/03.md"
+    ],
+    "quickies": [
+      "issues/03.md"
+    ],
+    "operators": [
+      "issues/04.md"
+    ],
+    "tricks": [
+      "issues/04.md"
+    ],
+    "sets": [
+      "issues/05.md"
+    ],
+    "special": [
+      "issues/404.md"
     ]
   },
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-09-16 19:15:05 +0100",
-      "slocs": 137,
-      "chars": 4069,
+      "last_deploy": "2024-10-06 20:33:42 +0100",
+      "slocs": 136,
+      "chars": 4027,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "1",
       "title": "The Power of List Comprehensions",
-      "head": "The Power of List Comprehensions",
+      "head": "pycobytes[1] := The Power of List Comprehensions",
       "capt": null,
       "desc": null,
       "index": [
@@ -44,6 +100,128 @@
       ],
       "date": "2024-06-06",
       "date_display": "2024 June 6"
+    },
+    "issues/02.md": {
+      "path": "issues/02.md",
+      "last_deploy": "2024-10-06 20:35:08 +0100",
+      "slocs": 103,
+      "chars": 3319,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "2",
+      "title": "Stringterpolation with f-Strings",
+      "head": "pycobytes[2] := Stringterpolation with f-Strings",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "02"
+      ],
+      "shard": [
+        "strings",
+        "syntax"
+      ],
+      "date": "2042-06-12",
+      "date_display": "2042 June 12"
+    },
+    "issues/03.md": {
+      "path": "issues/03.md",
+      "last_deploy": "2024-10-06 20:35:13 +0100",
+      "slocs": 107,
+      "chars": 3372,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "3",
+      "title": "\"A Strand of String Theory\"",
+      "head": "pycobytes[3] := \"A Strand of String Theory\"",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "03"
+      ],
+      "shard": [
+        "strings",
+        "methods",
+        "quickies",
+        "challenge"
+      ],
+      "date": "2024-06-21",
+      "date_display": "2024 June 21"
+    },
+    "issues/04.md": {
+      "path": "issues/04.md",
+      "last_deploy": "2024-10-07 17:30:24 +0100",
+      "slocs": 124,
+      "chars": 2930,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "4",
+      "title": "\"Wait, you can multiply strings?\"",
+      "head": "pycobytes[4] *= \"Wait, you can multiply strings?\"",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "04"
+      ],
+      "shard": [
+        "strings",
+        "operators",
+        "tricks",
+        "challenge"
+      ],
+      "date": "2024-06-27",
+      "date_display": "2024 June 27"
+    },
+    "issues/05.md": {
+      "path": "issues/05.md",
+      "last_deploy": "2024-10-07 17:30:56 +0100",
+      "slocs": 84,
+      "chars": 2926,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "5",
+      "title": "\"Setting the Scene with Miserable Iterables\"",
+      "head": "pycobytes[5] := Setting the Scene with Miserable Iterables",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "05"
+      ],
+      "shard": [
+        "sets"
+      ],
+      "date": "2024-09-14",
+      "date_display": "2024 September 14"
+    },
+    "issues/404.md": {
+      "path": "issues/404.md",
+      "last_deploy": "2024-10-06 20:34:54 +0100",
+      "slocs": 50,
+      "chars": 2549,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "404",
+      "title": "Where do I learn?",
+      "head": "pycobytes[404] := Where do I learn?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "404"
+      ],
+      "shard": [
+        "special"
+      ],
+      "date": "2024-07-04",
+      "date_display": "2024 July 4"
     }
   }
 }

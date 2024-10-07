@@ -6,8 +6,12 @@ const pages = Object.values(data.default.pages);
 
 
 interface SiteData {
-  desc: object;
+  desc: SiteDesc;
   issues: IssueData[];
+}
+interface SiteDesc {
+  short: string;
+  long: string;
 }
 
 const Site: SiteData = {

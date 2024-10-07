@@ -1,6 +1,5 @@
-exported/
 static/
-_*.svx
+issues/(issues)/
 
 node_modules/
 build/
