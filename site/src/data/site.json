@@ -103,7 +103,7 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-10-06 20:35:08 +0100",
+      "last_deploy": "2024-10-07 17:39:18 +0100",
       "slocs": 103,
       "chars": 3319,
       "isIndex": false,
@@ -122,8 +122,8 @@
         "strings",
         "syntax"
       ],
-      "date": "2042-06-12",
-      "date_display": "2042 June 12"
+      "date": "2024-06-12",
+      "date_display": "2024 June 12"
     },
     "issues/03.md": {
       "path": "issues/03.md",
