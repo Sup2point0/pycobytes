@@ -34,7 +34,7 @@ onMount(() => processAnimations());
         <div class="line" />
       </div>
 
-      <LinkButton link="{base}/issues/{issues[issues.length - 1].index}">
+      <LinkButton link="{base}/issues/{issues[0].index}">
         Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
         <span slot="hover">
           {#each {length: 3} as _, i}
