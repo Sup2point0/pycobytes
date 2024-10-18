@@ -11,11 +11,11 @@ with open(FILE, "r") as source:
 
 replacements = {
   "<em><strong>":
-    "<code style=\"font-family: 'Courier', monospace\">",
+    "<code style=\"font-family: monospace\">",
   "</strong></em>":
     "</code>",
   "class=\"language-py\" style=\"":
-    "class=\"language-py\" style=\"font-family: 'Courier', monospace;",
+    "class=\"language-py\" style=\"font-family: monospace;",
   "line-height: 140%":
     "line-height: normal",
   "line-height: 22.4px":
@@ -30,9 +30,9 @@ replacements = {
 
 rereplacements = {
   "font-family: ?'Source Sans Pro', ?sans-serif;":
-    "font-family: 'Segoe UI',sans-serif;",
+    "font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;",
   "font-family: ?'Rubik', ?sans-serif;":
-    "font-family: 'Segoe UI Semibold', sans-serif;",
+    "font-family: 'Source Sans Pro', 'Segoe UI Semibold', sans-serif;",
 }
 
 for old, new in replacements.items():
