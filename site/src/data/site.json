@@ -1,5 +1,5 @@
 {
-  "exported": "2024-10-07",
+  "exported": "2024-10-17",
   "index": {
     "01": {
       "route": null,
@@ -31,6 +31,12 @@
         "issues/05.md"
       ]
     },
+    "06": {
+      "route": null,
+      "pages": [
+        "issues/06.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -44,7 +50,8 @@
     ],
     "syntax": [
       "issues/01.md",
-      "issues/02.md"
+      "issues/02.md",
+      "issues/06.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -70,6 +77,9 @@
     ],
     "sets": [
       "issues/05.md"
+    ],
+    "tuples": [
+      "issues/06.md"
     ],
     "special": [
       "issues/404.md"
@@ -199,6 +209,30 @@
       ],
       "date": "2024-09-14",
       "date_display": "2024 September 14"
+    },
+    "issues/06.md": {
+      "path": "issues/06.md",
+      "last_deploy": "2024-10-15 20:37:09 +0100",
+      "slocs": 157,
+      "chars": 4044,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "06",
+      "title": "Tuple Trouble",
+      "head": "Tuple Trouble",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "06"
+      ],
+      "shard": [
+        "tuples",
+        "syntax"
+      ],
+      "date": "2024-10-08",
+      "date_display": "2024 October 8"
     },
     "issues/404.md": {
       "path": "issues/404.md",
