@@ -1,4 +1,5 @@
 .archive/
 .devcontainer/
+send/core.html
 
 __pycache__/
