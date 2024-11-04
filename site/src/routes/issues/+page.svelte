@@ -40,7 +40,7 @@ table {
 td {
   &.issue-index {
     padding: 1rem 2rem 0 0;
-    @include font-mono;
+    @include font-code;
     font-size: 150%;
     color: $grey-spirit;
     vertical-align: middle;

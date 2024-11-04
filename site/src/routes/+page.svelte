@@ -167,7 +167,7 @@ section {
   & h1 {
     margin: 0 0 2rem;
     padding: 0;
-    font-family: 'Roboto Mono', 'Fira Code', 'Consolas', 'Overpass', 'Segoe UI Semibold#', system-ui, sans-serif;
+    font-family: 'Roboto Mono', 'Fira Mono', 'Consolas', 'Overpass', 'Segoe UI Semibold#', system-ui, sans-serif;
     font-size: 10vw;
   }
   & p {

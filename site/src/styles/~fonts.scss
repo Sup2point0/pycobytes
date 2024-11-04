@@ -14,8 +14,8 @@
   font-size: 150%;
 }
 
-@mixin font-mono {
-  font-family: 'Fira Code', 'Roboto Mono', 'Consolas', monospace;
+@mixin font-code {
+  font-family: 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
   font-weight: normal;
   font-size: 80%;
 }

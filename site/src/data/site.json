@@ -1,5 +1,5 @@
 {
-  "exported": "2024-10-17",
+  "exported": "2024-11-04",
   "index": {
     "01": {
       "route": null,
@@ -35,6 +35,12 @@
       "route": null,
       "pages": [
         "issues/06.md"
+      ]
+    },
+    "07": {
+      "route": null,
+      "pages": [
+        "issues/07.md"
       ]
     },
     "404": {
@@ -81,6 +87,9 @@
     "tuples": [
       "issues/06.md"
     ],
+    "booleans": [
+      "issues/07.md"
+    ],
     "special": [
       "issues/404.md"
     ]
@@ -88,7 +97,7 @@
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-10-07 18:21:11 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 136,
       "chars": 4027,
       "isIndex": false,
@@ -113,7 +122,7 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-10-07 18:21:14 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 103,
       "chars": 3319,
       "isIndex": false,
@@ -137,7 +146,7 @@
     },
     "issues/03.md": {
       "path": "issues/03.md",
-      "last_deploy": "2024-10-07 18:21:16 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 107,
       "chars": 3372,
       "isIndex": false,
@@ -163,7 +172,7 @@
     },
     "issues/04.md": {
       "path": "issues/04.md",
-      "last_deploy": "2024-10-07 18:21:18 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 124,
       "chars": 2930,
       "isIndex": false,
@@ -189,7 +198,7 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-10-07 18:21:21 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 84,
       "chars": 2926,
       "isIndex": false,
@@ -212,9 +221,9 @@
     },
     "issues/06.md": {
       "path": "issues/06.md",
-      "last_deploy": "2024-10-15 20:37:09 +0100",
-      "slocs": 157,
-      "chars": 4044,
+      "last_deploy": "2024-10-30 14:30:16 +0000",
+      "slocs": 155,
+      "chars": 3827,
       "isIndex": false,
       "flags": [
         "live"
@@ -234,9 +243,32 @@
       "date": "2024-10-08",
       "date_display": "2024 October 8"
     },
+    "issues/07.md": {
+      "path": "issues/07.md",
+      "last_deploy": "2024-11-04 18:12:03 +0000",
+      "slocs": 145,
+      "chars": 4495,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "07",
+      "title": "Alternative Facts",
+      "head": "Alternative Facts",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "07"
+      ],
+      "shard": [
+        "booleans"
+      ],
+      "date": "2024-11-05",
+      "date_display": "2024 November 5"
+    },
     "issues/404.md": {
       "path": "issues/404.md",
-      "last_deploy": "2024-10-07 18:21:23 +0100",
+      "last_deploy": "2024-10-30 14:30:16 +0000",
       "slocs": 50,
       "chars": 2548,
       "isIndex": false,

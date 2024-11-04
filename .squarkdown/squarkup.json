@@ -20,7 +20,7 @@
   "assets": "assets",
   "site-assets": "assets/site",
   "fonts": [
-    "Fira+Code:wght@300..700",
+    "Fira+Mono:wght@400;500;700",
     "Overpass:ital,wght@0,100..900;1,100..900",
     "Roboto+Mono:ital,wght@0,100..700;1,100..700",
     "Sniglet:wght@400;800",
