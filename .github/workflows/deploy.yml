@@ -15,10 +15,11 @@ jobs:
       - name: 'git / checkout'
         uses: actions/checkout@v4
 
-      - name: 'python / setup'
-        uses: actions/setup-python@v5
+      - name: 'ruby / setup'
+        uses: ruby/setup-ruby@v1
         with:
-          python-version: 3.12
+          ruby-version: 3.3
+          bundler-cache: true
 
       - name: 'node / setup'
         uses: actions/setup-node@v4

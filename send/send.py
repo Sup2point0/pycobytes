@@ -20,19 +20,11 @@ replacements = {
     "line-height: normal",
   "line-height: 22.4px":
     "line-height: normal",
-  # ";height: 100%;":
-  #   ";",
-  # "line-height: 1.5;":
-  #   "line-height: auto;",
-  # "line-height: 22.4px;":
-  #   "line-height: auto;",
 }
 
 rereplacements = {
   "font-family: ?'Source Sans Pro', ?sans-serif;":
     "font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;",
-  "font-family: ?'Rubik', ?sans-serif;":
-    "font-family: 'Source Sans Pro', 'Segoe UI Semibold', sans-serif;",
 }
 
 for old, new in replacements.items():

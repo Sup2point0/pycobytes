@@ -1,5 +1,5 @@
 {
-  "exported": "2024-11-04",
+  "exported": "2024-11-05",
   "index": {
     "01": {
       "route": null,
@@ -198,9 +198,9 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
-      "slocs": 84,
-      "chars": 2926,
+      "last_deploy": "2024-11-04 20:04:02 +0000",
+      "slocs": 98,
+      "chars": 3087,
       "isIndex": false,
       "flags": [
         "live"
@@ -221,9 +221,9 @@
     },
     "issues/06.md": {
       "path": "issues/06.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
-      "slocs": 155,
-      "chars": 3827,
+      "last_deploy": "2024-11-04 20:01:51 +0000",
+      "slocs": 169,
+      "chars": 4045,
       "isIndex": false,
       "flags": [
         "live"
@@ -245,9 +245,9 @@
     },
     "issues/07.md": {
       "path": "issues/07.md",
-      "last_deploy": "2024-11-04 18:12:03 +0000",
-      "slocs": 145,
-      "chars": 4495,
+      "last_deploy": "2024-11-04 21:19:52 +0000",
+      "slocs": 165,
+      "chars": 5030,
       "isIndex": false,
       "flags": [
         "live"
