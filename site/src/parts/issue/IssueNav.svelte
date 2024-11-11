@@ -10,15 +10,15 @@ import { page } from "$app/stores";
 export let duality: string | null = null;
 
 
-const indexCurrent = Site.issues.findIndex(issue => issue.index && issue.index[0] == $page.data.index[0]);
+$: indexCurrent = Site.issues.findIndex(issue => issue.index && issue.index[0] == $page.data.index[0]);
 
 // issue 0 (#1) has no previous
-const issuePrev: IssueData | false | null = (indexCurrent != null) && (
+$: issuePrev = (indexCurrent != null) && (
   (indexCurrent < Site.issues.length -1) && Site.issues[indexCurrent +1]
 );
 
 // latest issue has no next
-const issueNext: IssueData | false | null = (indexCurrent != null) && (
+$: issueNext = (indexCurrent != null) && (
   (indexCurrent > 0) && Site.issues[indexCurrent -1]
 );
 
@@ -55,10 +55,12 @@ const issueNext: IssueData | false | null = (indexCurrent != null) && (
 <style lang="scss">
 
 .issue-nav {
+  margin: 0 auto;
   padding-top: 1rem;
+  max-width: max(70%, 800px);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

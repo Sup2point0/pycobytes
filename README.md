@@ -1,4 +1,8 @@
-[![pycobytes title](assets/pycobytes-title-full.png)](https://sup2point0.github.io/pycobytes)
+<div align="center">
+
+[![pyco:bytes – exploring the magic of Python, week by week](assets/pycobytes-title-full-new.png)](https://sup2point0.github.io/pycobytes)
+
+</div>
 
 ---
 
@@ -26,11 +30,14 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
-| [1](issues/01.md) | 06/06/24 | *The Power of List Comprehensions* |
-| [2](issues/02.md) | 12/06/24 | *Stringterpolation with f-Strings* |
-| [3](issues/03.md) | 21/06/24 | *"A Strand of String Theory"* |
-| [4](issues/04.md) | 27/06/24 | *Wait, you can multiply strings?* |
+| [7](issues/07.md) | 05/11/24 | *Alternative Facts* |
+| [6](issues/06.md) | 08/10/24 | *Tuple Trouble* |
+| [5](issues/05.md) | 14/09/24 | *Setting the Scene with Miserable Iterables* |
 | [404](issues/404.md) | 04/07/24 | *Where do I learn?* |
+| [4](issues/04.md) | 27/06/24 | *"Wait, you can multiply strings?"* |
+| [3](issues/03.md) | 21/06/24 | *"A Strand of String Theory"* |
+| [2](issues/02.md) | 12/06/24 | *Stringterpolation with f-Strings* |
+| [1](issues/01.md) | 06/06/24 | *The Power of List Comprehensions* |
 
 
 <br>
