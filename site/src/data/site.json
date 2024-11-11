@@ -1,5 +1,5 @@
 {
-  "exported": "2024-11-05",
+  "exported": "2024-11-11",
   "index": {
     "01": {
       "route": null,
@@ -43,6 +43,12 @@
         "issues/07.md"
       ]
     },
+    "08": {
+      "route": null,
+      "pages": [
+        "issues/08.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -57,12 +63,16 @@
     "syntax": [
       "issues/01.md",
       "issues/02.md",
-      "issues/06.md"
+      "issues/06.md",
+      "issues/08.md"
     ],
     "challenge": [
       "issues/01.md",
       "issues/03.md",
-      "issues/04.md"
+      "issues/04.md",
+      "issues/06.md",
+      "issues/07.md",
+      "issues/08.md"
     ],
     "strings": [
       "issues/02.md",
@@ -79,7 +89,8 @@
       "issues/04.md"
     ],
     "tricks": [
-      "issues/04.md"
+      "issues/04.md",
+      "issues/08.md"
     ],
     "sets": [
       "issues/05.md"
@@ -88,6 +99,9 @@
       "issues/06.md"
     ],
     "booleans": [
+      "issues/07.md"
+    ],
+    "technical": [
       "issues/07.md"
     ],
     "special": [
@@ -198,16 +212,16 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-11-04 20:04:02 +0000",
+      "last_deploy": "2024-11-05 13:32:45 +0000",
       "slocs": 98,
-      "chars": 3087,
+      "chars": 3085,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "05",
-      "title": "\"Setting the Scene with Miserable Iterables\"",
-      "head": "\"Setting the Scene with Miserable Iterables\"",
+      "title": "Setting the Scene with Miserable Iterables",
+      "head": "Setting the Scene with Miserable Iterables",
       "capt": null,
       "desc": null,
       "index": [
@@ -221,9 +235,9 @@
     },
     "issues/06.md": {
       "path": "issues/06.md",
-      "last_deploy": "2024-11-04 20:01:51 +0000",
+      "last_deploy": "2024-11-11 19:55:22 +0000",
       "slocs": 169,
-      "chars": 4045,
+      "chars": 4057,
       "isIndex": false,
       "flags": [
         "live"
@@ -238,16 +252,17 @@
       ],
       "shard": [
         "tuples",
-        "syntax"
+        "syntax",
+        "challenge"
       ],
       "date": "2024-10-08",
       "date_display": "2024 October 8"
     },
     "issues/07.md": {
       "path": "issues/07.md",
-      "last_deploy": "2024-11-04 21:19:52 +0000",
+      "last_deploy": "2024-11-11 19:56:10 +0000",
       "slocs": 165,
-      "chars": 5030,
+      "chars": 5054,
       "isIndex": false,
       "flags": [
         "live"
@@ -261,10 +276,37 @@
         "07"
       ],
       "shard": [
-        "booleans"
+        "booleans",
+        "technical",
+        "challenge"
       ],
       "date": "2024-11-05",
       "date_display": "2024 November 5"
+    },
+    "issues/08.md": {
+      "path": "issues/08.md",
+      "last_deploy": "2024-11-11 20:25:13 +0000",
+      "slocs": 160,
+      "chars": 3859,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "08",
+      "title": "Collapse if Able, else Expand",
+      "head": "Collapse if Able, else Expand",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "08"
+      ],
+      "shard": [
+        "syntax",
+        "tricks",
+        "challenge"
+      ],
+      "date": "2024-11-12",
+      "date_display": "2024 November 12"
     },
     "issues/404.md": {
       "path": "issues/404.md",
