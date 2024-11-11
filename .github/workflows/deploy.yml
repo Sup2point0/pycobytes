@@ -3,6 +3,10 @@ name: 'GitHub Pages Deployment'
 on:
   workflow_dispatch:
   push:
+    paths:
+      - '**.yml'
+      - 'site/**'
+      - 'issues/**'
 
 jobs:
   build:
