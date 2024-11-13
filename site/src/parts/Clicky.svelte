@@ -115,6 +115,7 @@ button {
   box-shadow: 0 0 16px light-dark(rgba($yellow-nova, 0.5), rgb(0 0 0));
 
   &:hover {
+  cursor: pointer;
     background-color: $pink-elec;
     box-shadow: 0 0 16px rgba($pink-elec, 0.5);
   }
