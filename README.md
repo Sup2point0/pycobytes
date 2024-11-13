@@ -8,7 +8,7 @@
 
 Python is awesome. But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial.
 
-So, ***pycobytes*** is a weekly series where I delve into interesting and useful features in Python. It’s not a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring.
+So, ***pycobytes*** is a weekly series where we delve into interesting and useful features in Python. It’s not a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring.
 
 
 <br>
@@ -18,7 +18,7 @@ So, ***pycobytes*** is a weekly series where I delve into interesting and useful
 
 Unsure where to start? The [pycobytes site<sup>↗</sup>](https://sup2point0.github.io/pycobytes) is pretty cool!
 
-You can read the issues here on GitHub, or read on the site for a much nicer experience.
+You can read the issues [here on GitHub](issues/), or read on the site for a much nicer experience.
 
 If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycobytes was made in [Synopsis](synopsis.md).
 
@@ -30,6 +30,7 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [8](issues/08.md) | 12/11/24 | *Collapse if Able else Expand* |
 | [7](issues/07.md) | 05/11/24 | *Alternative Facts* |
 | [6](issues/06.md) | 08/10/24 | *Tuple Trouble* |
 | [5](issues/05.md) | 14/09/24 | *Setting the Scene with Miserable Iterables* |
