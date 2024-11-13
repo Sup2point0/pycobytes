@@ -10,7 +10,7 @@
 		"squark": "cd ../.stranger-quarkdown && rake squark && cd ../site",
       "squarkx": "cd ../.stranger-quarkdown && rake squark[fonts,scss,assets] && cd ../site",
 		"build": "vite build",
-      "buildx": "npm run prep && vite build",
+      "buildx": "npm run prepx && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
