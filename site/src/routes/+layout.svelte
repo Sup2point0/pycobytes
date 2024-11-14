@@ -14,9 +14,9 @@ $: currentDuality = duality ? ($duality == "dark" ? "dark" : "light") : getLocal
 </script>
 
 
-<svelte:head>
+<!-- <svelte:head>
   <script defer src="/src/scripts/prism.js"> </script>
-</svelte:head>
+</svelte:head> -->
 
 <div class="duality-container" style="color-scheme: {currentDuality}">
   <Nav />

@@ -1,4 +1,5 @@
-<!-- @component
+<!-- @component NavPart
+
 The content within a `NavLink`.
 -->
 
@@ -91,7 +92,9 @@ button {
 
 ul.nav-dropdown {
   display: none;
+  // opacity: 0;
   list-style-type: none;
+  // transition: opacity 0.2s ease-out;
 }
 
 .nav-part:hover ~ ul.nav-dropdown,
@@ -102,6 +105,7 @@ ul.nav-dropdown:hover
   padding: 0 0.5rem;
   display: block;
   background-color: $col-idle;
+  // opacity: 1;
   border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
 }
