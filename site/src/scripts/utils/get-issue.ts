@@ -16,5 +16,6 @@ export function getIssue(
 // Get link for a random issue.
 export function pickRandomIssue(): string {
   let index = Math.floor(Math.random() * Site.issues.length);
-  return `${base}/issues/${index}`;
+  let issue = Site.issues[index].dest;
+  return `${base}/issues/${issue}`;
 }

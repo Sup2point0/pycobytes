@@ -46,7 +46,7 @@ const pyco = "<span class=\"pyb-flavour left\">pyco</span><span class=\"pyb-flav
     <NavLink text="Issues" link="{base}/issues" collapsible={true} >
       <NavLink text="Index" link="{base}/issues" />
       <NavLink text="Latest" link="{base}/issues/{Site.issues[0].index}" />
-      <NavLink text="Random" button={() => { console.log("picking"); }}>
+      <NavLink text="Random" button={() => { window.location.href = pickRandomIssue() }}>
         Random
       </NavLink>
     </NavLink>
