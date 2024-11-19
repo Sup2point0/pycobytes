@@ -1,5 +1,9 @@
 {
-  "exported": "2024-11-11",
+  "meta": {
+    "exported": "2024-11-19",
+    "file_count": 10,
+    "page_count": 10
+  },
   "index": {
     "01": {
       "route": null,
@@ -49,6 +53,12 @@
         "issues/08.md"
       ]
     },
+    "09": {
+      "route": null,
+      "pages": [
+        "issues/09.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -72,7 +82,8 @@
       "issues/04.md",
       "issues/06.md",
       "issues/07.md",
-      "issues/08.md"
+      "issues/08.md",
+      "issues/09.md"
     ],
     "strings": [
       "issues/02.md",
@@ -99,10 +110,12 @@
       "issues/06.md"
     ],
     "booleans": [
-      "issues/07.md"
+      "issues/07.md",
+      "issues/09.md"
     ],
     "technical": [
-      "issues/07.md"
+      "issues/07.md",
+      "issues/09.md"
     ],
     "special": [
       "issues/404.md"
@@ -136,7 +149,7 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
+      "last_deploy": "2024-11-19 13:05:49 +0000",
       "slocs": 103,
       "chars": 3319,
       "isIndex": false,
@@ -186,9 +199,9 @@
     },
     "issues/04.md": {
       "path": "issues/04.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
-      "slocs": 124,
-      "chars": 2930,
+      "last_deploy": "2024-11-11 20:41:02 +0000",
+      "slocs": 125,
+      "chars": 2924,
       "isIndex": false,
       "flags": [
         "live"
@@ -235,9 +248,9 @@
     },
     "issues/06.md": {
       "path": "issues/06.md",
-      "last_deploy": "2024-11-11 19:55:22 +0000",
-      "slocs": 169,
-      "chars": 4057,
+      "last_deploy": "2024-11-19 13:06:07 +0000",
+      "slocs": 171,
+      "chars": 4126,
       "isIndex": false,
       "flags": [
         "live"
@@ -285,9 +298,9 @@
     },
     "issues/08.md": {
       "path": "issues/08.md",
-      "last_deploy": "2024-11-11 20:25:13 +0000",
+      "last_deploy": "2024-11-13 17:28:39 +0000",
       "slocs": 160,
-      "chars": 3859,
+      "chars": 3855,
       "isIndex": false,
       "flags": [
         "live"
@@ -307,6 +320,31 @@
       ],
       "date": "2024-11-12",
       "date_display": "2024 November 12"
+    },
+    "issues/09.md": {
+      "path": "issues/09.md",
+      "last_deploy": "2024-11-19 13:57:57 +0000",
+      "slocs": 165,
+      "chars": 3987,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "09",
+      "title": "OR and AND do WHAT now?",
+      "head": "OR and AND do WHAT now?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "09"
+      ],
+      "shard": [
+        "booleans",
+        "technical",
+        "challenge"
+      ],
+      "date": "2024-11-19",
+      "date_display": "2024 November 19"
     },
     "issues/404.md": {
       "path": "issues/404.md",
