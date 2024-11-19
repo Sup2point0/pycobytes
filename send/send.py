@@ -10,16 +10,16 @@ with open(FILE, "r") as source:
   content = source.read()
 
 replacements = {
-  "<em><strong>":
-    "<code style=\"font-family: monospace\">",
-  "</strong></em>":
-    "</code>",
-  "class=\"language-py\" style=\"":
-    "class=\"language-py\" style=\"font-family: monospace;",
-  "line-height: 140%":
-    "line-height: normal",
-  "line-height: 22.4px":
-    "line-height: normal",
+  '<em><strong>':
+    '<strong><code style="font-family: monospace; color: #9090f1;">',
+  '</strong></em>':
+    '</code></strong>',
+  'class="language-py" style="':
+    'class="language-py" style="font-family: monospace;',
+  'line-height: 140%':
+    'line-height: normal',
+  'line-height: 22.4px':
+    'line-height: normal',
 }
 
 rereplacements = {
