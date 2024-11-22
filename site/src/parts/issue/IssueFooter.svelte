@@ -4,6 +4,7 @@
 <style lang="scss">
 
 p {
+  margin-top: 4rem;
   padding-top: 1rem;
   color: light-dark($grey-nova, white);
   text-align: right;
