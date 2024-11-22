@@ -11,7 +11,7 @@ h2, h3 {
   border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
 }
 
-main > blockquote:first-child {
+blockquote:first-child {
   @include font-flavour;
   margin: 0 0 3rem;
   padding: 0 0 2rem;
