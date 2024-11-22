@@ -21,7 +21,7 @@ export let collapsible: boolean = false;
 </script>
 
 
-<div class="nav-part {collapsible ? "collapsible" : ""}">
+<div class="nav-part" class:collapsible>
   {#if pict || light || dark}
     <img alt={text}
       src={$duality == "light" ? (light ?? pict) : (dark ?? pict)}>
@@ -74,6 +74,7 @@ img {
   height: 30px;
   min-height: 30px;
   max-height: 30px;
+  aspect-ratio: 1;
 }
 
 button {
@@ -108,6 +109,12 @@ ul.nav-dropdown:hover
   // opacity: 1;
   border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
+}
+
+@media (max-width: 36rem) {
+  .nav-part.collapsible {
+    display: none;
+  }
 }
 
 </style>
