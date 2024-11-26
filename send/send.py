@@ -1,4 +1,4 @@
-print(">>> Python / cleaning up build...")
+print(">>> python / cleaning up build...")
 
 import re
 
@@ -8,6 +8,8 @@ FILE = "core.html"
 
 with open(FILE, "r") as source:
   content = source.read()
+# with open(FILE, "rb") as source:
+  # content = source.read().decode("utf-8")
 
 replacements = {
   '<em><strong>':
@@ -37,4 +39,4 @@ with open(FILE, "w") as dest:
   dest.write(content)
 
 
-print(">>> Python / done!")
+print(">>> python / done!")

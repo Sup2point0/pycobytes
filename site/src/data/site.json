@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2024-11-19",
-    "file_count": 10,
-    "page_count": 10
+    "exported": "2024-11-26",
+    "file_count": 11,
+    "page_count": 11
   },
   "index": {
     "01": {
@@ -59,6 +59,12 @@
         "issues/09.md"
       ]
     },
+    "10": {
+      "route": null,
+      "pages": [
+        "issues/10.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -83,7 +89,8 @@
       "issues/06.md",
       "issues/07.md",
       "issues/08.md",
-      "issues/09.md"
+      "issues/09.md",
+      "issues/10.md"
     ],
     "strings": [
       "issues/02.md",
@@ -94,14 +101,16 @@
       "issues/03.md"
     ],
     "quickies": [
-      "issues/03.md"
+      "issues/03.md",
+      "issues/10.md"
     ],
     "operators": [
       "issues/04.md"
     ],
     "tricks": [
       "issues/04.md",
-      "issues/08.md"
+      "issues/08.md",
+      "issues/10.md"
     ],
     "sets": [
       "issues/05.md"
@@ -116,6 +125,9 @@
     "technical": [
       "issues/07.md",
       "issues/09.md"
+    ],
+    "functions": [
+      "issues/10.md"
     ],
     "special": [
       "issues/404.md"
@@ -323,9 +335,9 @@
     },
     "issues/09.md": {
       "path": "issues/09.md",
-      "last_deploy": "2024-11-19 13:57:57 +0000",
-      "slocs": 165,
-      "chars": 3987,
+      "last_deploy": "2024-11-22 17:18:00 +0000",
+      "slocs": 168,
+      "chars": 3996,
       "isIndex": false,
       "flags": [
         "live"
@@ -345,6 +357,32 @@
       ],
       "date": "2024-11-19",
       "date_display": "2024 November 19"
+    },
+    "issues/10.md": {
+      "path": "issues/10.md",
+      "last_deploy": "2024-11-22 17:25:31 +0000",
+      "slocs": 128,
+      "chars": 2816,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "10",
+      "title": "For Any, For All",
+      "head": "For Any, For All",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "10"
+      ],
+      "shard": [
+        "functions",
+        "tricks",
+        "quickies",
+        "challenge"
+      ],
+      "date": "2024-11-26",
+      "date_display": "2024 November 26"
     },
     "issues/404.md": {
       "path": "issues/404.md",
