@@ -26,6 +26,7 @@ export let link: string;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 5px rgb(black, 25%);
 
   .content {
     width: 100%;

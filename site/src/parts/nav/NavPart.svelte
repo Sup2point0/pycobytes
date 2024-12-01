@@ -96,6 +96,7 @@ ul.nav-dropdown {
   // opacity: 0;
   list-style-type: none;
   // transition: opacity 0.2s ease-out;
+  box-shadow: 0 4px 2px -1px rgb(black, 10%);
 }
 
 .nav-part:hover ~ ul.nav-dropdown,
