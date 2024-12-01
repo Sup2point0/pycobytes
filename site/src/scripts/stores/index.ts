@@ -1,1 +1,1 @@
-export { duality, getLocalDuality, swapDuality } from "./duality";
+export { duality, getLocalDuality, setFromLocalDuality, swapDuality } from "./duality";

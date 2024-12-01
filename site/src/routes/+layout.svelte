@@ -3,13 +3,18 @@
 import "#styles/essence.scss";
 import "#styles/prism-night-owl.scss";
 
-import { duality, getLocalDuality } from "#scripts/stores";
+import { duality, setFromLocalDuality } from "#scripts/stores";
 
 import Nav from "#parts/nav/Nav.svelte";
 import Footer from "#parts/layout/Footer.svelte";
 
+import { browser } from "$app/environment";
 
-$: currentDuality = duality ? ($duality == "dark" ? "dark" : "light") : getLocalDuality(window)
+
+$: currentDuality = (
+  $duality ? ($duality == "dark" ? "dark" : "light")
+  : browser ? setFromLocalDuality(window) : "light"
+);
 
 </script>
 

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2024-11-26",
-    "file_count": 11,
-    "page_count": 11
+    "exported": "2024-12-01",
+    "file_count": 12,
+    "page_count": 12
   },
   "index": {
     "01": {
@@ -65,6 +65,12 @@
         "issues/10.md"
       ]
     },
+    "11": {
+      "route": null,
+      "pages": [
+        "issues/11.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -90,7 +96,8 @@
       "issues/07.md",
       "issues/08.md",
       "issues/09.md",
-      "issues/10.md"
+      "issues/10.md",
+      "issues/11.md"
     ],
     "strings": [
       "issues/02.md",
@@ -124,7 +131,8 @@
     ],
     "technical": [
       "issues/07.md",
-      "issues/09.md"
+      "issues/09.md",
+      "issues/11.md"
     ],
     "functions": [
       "issues/10.md"
@@ -383,6 +391,30 @@
       ],
       "date": "2024-11-26",
       "date_display": "2024 November 26"
+    },
+    "issues/11.md": {
+      "path": "issues/11.md",
+      "last_deploy": "2024-12-01 14:57:32 +0000",
+      "slocs": 129,
+      "chars": 3844,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "11",
+      "title": "Short Circuits",
+      "head": "Short Circuits",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "11"
+      ],
+      "shard": [
+        "technical",
+        "challenge"
+      ],
+      "date": "2024-12-02",
+      "date_display": "2024 December 2"
     },
     "issues/404.md": {
       "path": "issues/404.md",
