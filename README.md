@@ -30,6 +30,8 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [11](issues/11.md) | 03/12/24 | *Short Circuits* |
+| [10](issues/10.md) | 26/11/24 | *For Any, For All* |
 | [9](issues/09.md) | 19/11/24 | *OR and AND do WHAT now?* |
 | [8](issues/08.md) | 12/11/24 | *Collapse if Able else Expand* |
 | [7](issues/07.md) | 05/11/24 | *Alternative Facts* |
