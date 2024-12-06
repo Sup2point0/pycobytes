@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2024-12-01",
-    "file_count": 12,
-    "page_count": 12
+    "exported": "2024-12-05",
+    "file_count": 13,
+    "page_count": 13
   },
   "index": {
     "01": {
@@ -71,6 +71,12 @@
         "issues/11.md"
       ]
     },
+    "12": {
+      "route": null,
+      "pages": [
+        "issues/12.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -109,7 +115,8 @@
     ],
     "quickies": [
       "issues/03.md",
-      "issues/10.md"
+      "issues/10.md",
+      "issues/12.md"
     ],
     "operators": [
       "issues/04.md"
@@ -137,6 +144,9 @@
     "functions": [
       "issues/10.md"
     ],
+    "modules": [
+      "issues/12.md"
+    ],
     "special": [
       "issues/404.md"
     ]
@@ -144,9 +154,9 @@
   "pages": {
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
+      "last_deploy": "2024-12-02 20:50:10 +0000",
       "slocs": 136,
-      "chars": 4027,
+      "chars": 4026,
       "isIndex": false,
       "flags": [
         "live"
@@ -394,9 +404,9 @@
     },
     "issues/11.md": {
       "path": "issues/11.md",
-      "last_deploy": "2024-12-01 14:57:32 +0000",
+      "last_deploy": "2024-12-02 20:49:27 +0000",
       "slocs": 129,
-      "chars": 3844,
+      "chars": 3917,
       "isIndex": false,
       "flags": [
         "live"
@@ -416,11 +426,35 @@
       "date": "2024-12-02",
       "date_display": "2024 December 2"
     },
+    "issues/12.md": {
+      "path": "issues/12.md",
+      "last_deploy": "2024-12-05 18:17:20 +0000",
+      "slocs": 144,
+      "chars": 2866,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "12",
+      "title": "import math",
+      "head": "import math",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "12"
+      ],
+      "shard": [
+        "modules",
+        "quickies"
+      ],
+      "date": "2024-12-06",
+      "date_display": "2024 December 6"
+    },
     "issues/404.md": {
       "path": "issues/404.md",
-      "last_deploy": "2024-10-30 14:30:16 +0000",
-      "slocs": 50,
-      "chars": 2548,
+      "last_deploy": "2024-12-02 20:46:06 +0000",
+      "slocs": 80,
+      "chars": 3665,
       "isIndex": false,
       "flags": [
         "live"
