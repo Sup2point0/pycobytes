@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2024-12-05",
-    "file_count": 13,
-    "page_count": 13
+    "exported": "2024-12-12",
+    "file_count": 14,
+    "page_count": 14
   },
   "index": {
     "01": {
@@ -77,6 +77,12 @@
         "issues/12.md"
       ]
     },
+    "13": {
+      "route": null,
+      "pages": [
+        "issues/13.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -103,7 +109,8 @@
       "issues/08.md",
       "issues/09.md",
       "issues/10.md",
-      "issues/11.md"
+      "issues/11.md",
+      "issues/13.md"
     ],
     "strings": [
       "issues/02.md",
@@ -142,7 +149,8 @@
       "issues/11.md"
     ],
     "functions": [
-      "issues/10.md"
+      "issues/10.md",
+      "issues/13.md"
     ],
     "modules": [
       "issues/12.md"
@@ -328,9 +336,9 @@
     },
     "issues/08.md": {
       "path": "issues/08.md",
-      "last_deploy": "2024-11-13 17:28:39 +0000",
+      "last_deploy": "2024-12-12 10:03:36 +0000",
       "slocs": 160,
-      "chars": 3855,
+      "chars": 3856,
       "isIndex": false,
       "flags": [
         "live"
@@ -428,9 +436,9 @@
     },
     "issues/12.md": {
       "path": "issues/12.md",
-      "last_deploy": "2024-12-05 18:17:20 +0000",
+      "last_deploy": "2024-12-05 18:26:23 +0000",
       "slocs": 144,
-      "chars": 2866,
+      "chars": 2850,
       "isIndex": false,
       "flags": [
         "live"
@@ -449,6 +457,30 @@
       ],
       "date": "2024-12-06",
       "date_display": "2024 December 6"
+    },
+    "issues/13.md": {
+      "path": "issues/13.md",
+      "last_deploy": "2024-12-12 10:02:20 +0000",
+      "slocs": 161,
+      "chars": 3656,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "13",
+      "title": "Counting",
+      "head": "Counting",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "13"
+      ],
+      "shard": [
+        "functions",
+        "challenge"
+      ],
+      "date": "2025-12-01",
+      "date_display": "2025 December"
     },
     "issues/404.md": {
       "path": "issues/404.md",

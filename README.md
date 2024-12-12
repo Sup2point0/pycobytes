@@ -32,6 +32,7 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [13](issues/13.md) | 12/12/24 | *Counting* |
 | [12](issues/12.md) | 06/12/24 | *import math* |
 | [11](issues/11.md) | 03/12/24 | *Short Circuits* |
 | [10](issues/10.md) | 26/11/24 | *For Any, For All* |

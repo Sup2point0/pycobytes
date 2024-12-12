@@ -83,6 +83,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: white;  // fallback
   background-color: $col-idle;
   border-bottom: 2px solid $col-flavour;
   @include fade-duality;
