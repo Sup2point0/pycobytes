@@ -2,6 +2,8 @@
 
 [![pyco:bytes – exploring the magic of Python, week by week](assets/pycobytes-title-full-new.png)](https://sup2point0.github.io/pycobytes)
 
+[Site](https://sup2point0.github.io/pycobytes) · [Issues](issues/) · [FAQ](faq.md) · [About](synopsis.md)
+
 </div>
 
 ---
@@ -30,6 +32,7 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [12](issues/12.md) | 06/12/24 | *import math* |
 | [11](issues/11.md) | 03/12/24 | *Short Circuits* |
 | [10](issues/10.md) | 26/11/24 | *For Any, For All* |
 | [9](issues/09.md) | 19/11/24 | *OR and AND do WHAT now?* |
