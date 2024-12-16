@@ -1,4 +1,8 @@
 # Fervently Anticipated Questions
+<!-- #SQUARK live!
+| dest = 
+| index = 
+-->
 
 ### What’s this for?
 I originally came up with *pyco:bytes* as a supplement to the other programming competitions going on at my school – I thought, given the ubiquity of Python as an introductory programming language, it’d be awesome (and hopefully helpful) to show everyone all the cool stuff you can do in the language.
