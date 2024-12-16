@@ -6,7 +6,7 @@ import processAnimations from "#scripts/anim";
 
 import LinkButton from "#parts/LinkButton.svelte";
 import Clicky from "#parts/Clicky.svelte";
-import FlavourCode from "#src/routes/flavour-code.svx";
+import FlavourCode from "./flavour-code.svx";
 
 import { base } from "$app/paths";
 import { onMount } from "svelte";
@@ -167,7 +167,8 @@ section {
   & h1 {
     margin: 0 0 2rem;
     padding: 0;
-    font-family: 'Roboto Mono', 'Fira Mono', 'Consolas', 'Overpass', 'Segoe UI Semibold#', system-ui, sans-serif;
+    font-family: 'Geologica', 'Fira Mono', 'Consolas', 'Overpass', 'Segoe UI Semibold', system-ui, sans-serif;
+    font-weight: 100;
     font-size: 10vw;
   }
   & p {
