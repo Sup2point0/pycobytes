@@ -8,6 +8,8 @@ import scssConfig from "./scss-config.js";
 
 
 const config = {
+  extensions: [".svelte", ".md", ".svx"],
+
   kit: {
     adapter: adapter({
       pages: "build",
@@ -33,15 +35,13 @@ const config = {
 
   preprocess: [
     mdsvex({
-      extensions: [".svelte", ".md", ".svx"],
+      extensions: [".md", ".svx"],
       remarkPlugins: [remarkAlert],
     }),
     sveltePreprocess({
       scss: scssConfig,
     }),
   ],
-
-  extensions: [".svelte", ".md", ".svx"],
 
   onwarn: (warning, handler) => {
     if (warning.code === "css-unused-selector") {
