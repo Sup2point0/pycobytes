@@ -1,4 +1,27 @@
-# Synopsis
+---
+path: synopsis.md
+last_deploy: 2024-12-16 12:29:01.300846200 +00:00
+flags:
+- live
+title: Synopsis
+head: Synopsis
+capt:
+desc:
+index: &1 []
+shard: *1
+date_display:
+---
+
+<script>
+
+import { base } from "$app/paths";
+
+</script>
+
+<svelte:head>
+  <title> Synopsis · pycobytes </title>
+</svelte:head>
+
 <!-- #SQUARK live!
 | dest = synopsis
 -->
@@ -39,4 +62,9 @@ Oh, you found the clicky, did you? That’s connected to a [Napkin](https://napk
 
 ## Assets
 
-All assets were lovingly crafted in PowerPoint 2016 offline =)
+All {base} were lovingly crafted in PowerPoint 2016 offline =)
+
+<style lang="scss">
+
+@use './src/styles/article' as *;
+</style>

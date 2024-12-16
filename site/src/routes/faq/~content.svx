@@ -1,4 +1,27 @@
-# Fervently Anticipated Questions
+---
+path: faq.md
+last_deploy: 2024-12-16 12:18:07.604402200 +00:00
+flags:
+- live
+title: FAQ
+head: Fervently Anticipated Questions
+capt:
+desc:
+index: &1 []
+shard: *1
+date_display:
+---
+
+<script>
+
+import { base } from "$app/paths";
+
+</script>
+
+<svelte:head>
+  <title> FAQ · pycobytes </title>
+</svelte:head>
+
 <!-- #SQUARK live!
 | dest = faq
 | title = FAQ
@@ -67,3 +90,8 @@ Hey Vsauce, Michael here!
 
 ### Why doesn’t the site work on iOS / iPadOS / macOS?
 There are some issues with JavaScript crashing, I’m working on it!
+
+<style lang="scss">
+
+@use './src/styles/article' as *;
+</style>

@@ -1,4 +1,27 @@
-# *decoded*: pycobytes
+---
+path: edu.md
+last_deploy: 2024-12-16 12:24:46.190598700 +00:00
+flags:
+- live
+title: decoded
+head: "*decoded*: pycobytes"
+capt:
+desc:
+index: &1 []
+shard: *1
+date_display:
+---
+
+<script>
+
+import { base } from "$app/paths";
+
+</script>
+
+<svelte:head>
+  <title> decoded · pycobytes </title>
+</svelte:head>
+
 <!-- #SQUARK live!
 | dest = decoded
 | title = decoded
@@ -30,3 +53,8 @@
 
 - Statically rendering dynamic `/[slug]/` routes was painfully nontrivial.
   - In the end, statically generating every page turned out to be more convenient. And hey, we made a [framework](https://github.com/Sup2point0/stranger-quarkdown) out of it!
+
+<style lang="scss">
+
+@use './src/styles/article' as *;
+</style>

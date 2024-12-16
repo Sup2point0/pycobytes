@@ -18,7 +18,7 @@ import Content from "../edu/_Content.svx";
   />
 
   <Main>
-      <Content />
+    <Content />
   </Main>
 </article>
   

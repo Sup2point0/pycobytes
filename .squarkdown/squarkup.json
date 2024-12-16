@@ -4,7 +4,11 @@
   "repo": "pycobytes",
 
   "site": "site",
-  "sources": ["issues/"],
+  "sources": [""],
+  "exclude": [
+    ".stranger-quarkdown/",
+    "site/"
+  ],
   "dest": "src/routes/",
   "if-no-dir": ["warn", "create"],
   "on-error": "kill",
@@ -12,6 +16,7 @@
   "file-name": "~content",
   "bases": "src/parts/bases",
   "page.svelte": "~page.svelte",
+  "page.js": "~page.js",
   
   "site-data": "src/data/site.json",
   "styles": "src/styles",

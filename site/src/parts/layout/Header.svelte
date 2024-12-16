@@ -4,6 +4,7 @@ import { page } from "$app/stores";
 
 export let type: "issue" | null = null;
 export let title: string | undefined = undefined;
+export let caption: string | undefined = undefined;
 
 </script>
 

@@ -20,8 +20,10 @@ const Site: SiteData = {
     long: "exploring the magic of Python, week by week",
   },
 
-  issues: pages.sort((prot, deut) => {
-    return new Date(deut.date) - new Date(prot.date);
-  }),
+  issues: pages.filter(
+    page => page.index.length
+  ).sort(
+    (prot, deut) => new Date(deut.date) - new Date(prot.date)
+  ),
 }
 export default Site;

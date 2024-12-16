@@ -1,8 +1,8 @@
 {
   "meta": {
     "exported": "2024-12-16",
-    "file_count": 14,
-    "page_count": 14
+    "file_count": 18,
+    "page_count": 17
   },
   "index": {
     "01": {
@@ -160,6 +160,44 @@
     ]
   },
   "pages": {
+    "edu.md": {
+      "path": "edu.md",
+      "last_deploy": "2024-12-16 12:24:46 +0000",
+      "slocs": 32,
+      "chars": 971,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "decoded",
+      "title": "decoded",
+      "head": "*decoded*: pycobytes",
+      "capt": null,
+      "desc": null,
+      "index": [],
+      "shard": [],
+      "date": null,
+      "date_display": null
+    },
+    "faq.md": {
+      "path": "faq.md",
+      "last_deploy": "2024-12-16 12:18:07 +0000",
+      "slocs": 69,
+      "chars": 4331,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "faq",
+      "title": "FAQ",
+      "head": "Fervently Anticipated Questions",
+      "capt": null,
+      "desc": null,
+      "index": [],
+      "shard": [],
+      "date": null,
+      "date_display": null
+    },
     "issues/01.md": {
       "path": "issues/01.md",
       "last_deploy": "2024-12-16 11:01:30 +0000",
@@ -504,6 +542,25 @@
       ],
       "date": "2024-07-04",
       "date_display": "2024 July 4"
+    },
+    "synopsis.md": {
+      "path": "synopsis.md",
+      "last_deploy": "2024-12-16 12:29:01 +0000",
+      "slocs": 42,
+      "chars": 1544,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "synopsis",
+      "title": "Synopsis",
+      "head": "Synopsis",
+      "capt": null,
+      "desc": null,
+      "index": [],
+      "shard": [],
+      "date": null,
+      "date_display": null
     }
   }
 }
