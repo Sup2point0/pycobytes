@@ -4,13 +4,7 @@
   "repo": "pycobytes",
 
   "site": "site",
-  "sources": [
-    ""
-  ],
-  "exclude": [
-    ".stranger-quarkdown/",
-    "site/"
-  ],
+  "sources": ["issues/"],
   "dest": "src/routes/",
   "if-no-dir": ["warn", "create"],
   "on-error": "kill",

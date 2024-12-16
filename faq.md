@@ -1,7 +1,6 @@
 # Fervently Anticipated Questions
 <!-- #SQUARK live!
-| dest = 
-| index = 
+| dest = faq
 -->
 
 ### What’s this for?

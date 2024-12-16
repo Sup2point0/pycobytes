@@ -1,8 +1,8 @@
 {
   "meta": {
     "exported": "2024-12-16",
-    "file_count": 18,
-    "page_count": 15
+    "file_count": 14,
+    "page_count": 14
   },
   "index": {
     "01": {
@@ -160,25 +160,6 @@
     ]
   },
   "pages": {
-    "faq.md": {
-      "path": "faq.md",
-      "last_deploy": "2024-12-16 11:23:24 +0000",
-      "slocs": 68,
-      "chars": 4317,
-      "isIndex": false,
-      "flags": [
-        "live"
-      ],
-      "dest": "faq",
-      "title": "Fervently Anticipated Questions",
-      "head": "Fervently Anticipated Questions",
-      "capt": null,
-      "desc": null,
-      "index": [],
-      "shard": [],
-      "date": null,
-      "date_display": null
-    },
     "issues/01.md": {
       "path": "issues/01.md",
       "last_deploy": "2024-12-16 11:01:30 +0000",

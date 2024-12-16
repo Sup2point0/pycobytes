@@ -27,6 +27,10 @@ body {
   @include font-body;
 }
 
+article main h1 {
+  display: none;
+}
+
 :where(h2,h3,h4) {
   @include font-head;
   color: light-dark($col-accent, $col-flavour);
