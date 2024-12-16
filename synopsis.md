@@ -1,6 +1,6 @@
 # Synopsis
 <!-- #SQUARK live!
-| dest = synopsis
+| dest = (info)/synopsis
 -->
 
 *pyco:bytes* is a pretty involved project, and tons of fun to work on!

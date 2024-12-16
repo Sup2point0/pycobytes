@@ -1,6 +1,6 @@
 # *decoded*: pycobytes
 <!-- #SQUARK live!
-| dest = decoded
+| dest = (decoded)/decoded
 | title = decoded
 -->
 

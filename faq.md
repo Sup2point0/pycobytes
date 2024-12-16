@@ -1,6 +1,6 @@
 # Fervently Anticipated Questions
 <!-- #SQUARK live!
-| dest = faq
+| dest = (info)/faq
 | title = FAQ
 -->
 
