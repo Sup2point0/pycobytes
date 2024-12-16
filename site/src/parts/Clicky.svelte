@@ -104,7 +104,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @include font-fun;
+  @include font-flavour;
   font-size: 125%;
   color: white;
   background-color: $orange-spirit;

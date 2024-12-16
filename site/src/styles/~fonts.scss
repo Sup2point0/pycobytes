@@ -15,19 +15,13 @@
 }
 
 @mixin font-code {
-  font-family: 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
+  font-family: 'Fira Mono', 'Consolas', monospace;
   font-weight: normal;
   font-size: 80%;
 }
 
 @mixin font-flavour {
   font-family: 'Overpass', 'Source Sans Pro', 'Segoe UI', system-ui;
-  font-weight: normal;
-  font-size: 100%;
-}
-
-@mixin font-fun {
-  font-family: 'Sniglet', 'Overpass', 'Source Sans Pro', 'Segoe UI', system-ui;
   font-weight: normal;
   font-size: 100%;
 }
