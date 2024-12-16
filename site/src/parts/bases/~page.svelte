@@ -14,7 +14,6 @@ import Main from "#parts/layout/Main.svelte";
   <title> {$page.data.title ?? "404 Not Found"} · pycobytes </title>
 </svelte:head>
 
-<Header title="{$page.data.title ?? "404 Not Found"}" />
 
 <article>
   <Main>
