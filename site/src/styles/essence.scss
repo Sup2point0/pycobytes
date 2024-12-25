@@ -1,31 +1,27 @@
-/// Core Styles
+@use './src/styles/mixins/~nova' as *;
+@use './src/styles/mixins/~colours' as *;
+@use './src/styles/mixins/~fonts' as *;
+@use './src/styles/mixins/~anim' as *;
 
-@use './src/styles/~nova' as *;
-@use './src/styles/~variables' as *;
-@use './src/styles/~fonts' as *;
-@use './src/styles/~anim' as *;
-
-@use './src/styles/links' as *;
-@use './src/styles/code-blocks' as *;
 @use './src/styles/flavour' as *;
 
 
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
   color-scheme: light dark;
+  @include font-body;
+  font-size: 100%;
 }
 
 html, body {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-body {
-  @include font-body;
-}
 
 article main h1 {
   display: none;
@@ -33,7 +29,7 @@ article main h1 {
 
 :where(h2,h3,h4) {
   @include font-head;
-  color: light-dark($col-accent, $col-flavour);
+  color: light-dark($col-prot, $col-deut);
 }
 
 code {
@@ -44,8 +40,16 @@ p code {
   padding: 0.2em 0.4em;
   margin: 0;
   white-space: break-spaces;
-  background-color: rgba(175, 184, 193, 0.2);
-  border-radius: 6px;
+  background-color: rgb(175 184 193 / 20%);
+  border-radius: 0.4em;
+}
+
+pre:has(code) {
+  padding-left: 1em;
+  border-radius: 0.75em;
+  box-shadow: 0 0 12px light-dark(
+    rgb(black, 0),
+    rgb($col-prot, 50%));
 }
 
 b, strong {
@@ -68,18 +72,19 @@ hr {
   color: light-dark($grey-nova, $blue-deep);
 }
 
-// selection colours should override everything else
+
 :not(code, code > *)::selection {
   color: white !important;
-  background-color: light-dark($col-accent, $col-flavour) !important;
+  background-color: light-dark($col-prot, $col-deut) !important;
 }
 
 
 :where(.duality-container) {
-  color: light-dark(black, white);
-  background-color: light-dark(#f9f9f9, #00172a);
-  @include fade-duality;
+  color: $col-text;
+  background-color: $col-back;
+  transition: #{fade-duality()};
 }
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -97,8 +102,8 @@ hr {
   color: $red-nova;
 }
 
-.pyb-flavour {
-  &.left   { color: light-dark($light-accent-prot, $dark-accent-prot); }
-  &.centre { color: light-dark($grey-nova, $blue-ocean); }
-  &.right  { color: light-dark($light-accent-deut, $dark-accent-deut); }
+.pyco-flavour {
+  // &.left   { color: light-dark($light-accent-prot, $dark-accent-prot); }
+  // &.centre { color: light-dark($grey-nova, $blue-ocean); }
+  // &.right  { color: light-dark($light-accent-deut, $dark-accent-deut); }
 }

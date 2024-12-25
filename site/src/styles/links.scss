@@ -1,37 +1,34 @@
 /// Link Styles
 
-@use './src/styles/~nova' as *;
-@use './src/styles/~variables' as *;
+@use './src/styles/mixins/~nova' as *;
+@use './src/styles/mixins/~colours' as *;
 
 
-$link: ':where(a:not(.no-anim, :has(img), .nav-link))';
-
-
-#{$link} {
+a:not(:has(img)) {
   text-decoration: none;
   display: inline-block;
   position: relative;
   color: $pink-elec;
   transition: 0.2s;
-}
-
-#{$link}:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: light-dark($col-accent, $col-flavour);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.2s ease-out;
-}
-
-#{$link}:hover {
-  color: light-dark($col-accent, $col-flavour);
-}
-#{$link}:hover:after {
-  transform: scaleX(1);
-  transform-origin: left;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: light-dark($col-prot, $col-deut);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-out;
+  }
+  
+  &:hover {
+    color: light-dark($col-prot, $col-deut);
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }

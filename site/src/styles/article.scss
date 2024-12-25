@@ -1,6 +1,8 @@
-@use './src/styles/~nova' as *;
-@use './src/styles/~variables' as *;
-@use './src/styles/~fonts' as *;
+@use './src/styles/mixins/~nova' as *;
+@use './src/styles/mixins/~colours' as *;
+@use './src/styles/mixins/~fonts' as *;
+
+@use './src/styles/links' as *;
 
 
 p {
@@ -20,9 +22,9 @@ blockquote:first-child {
 
   p {
     margin: 0;
-    @include font-flavour;
+    @include font-ui;
     font-size: 200%;
-    color: light-dark($col-accent, $col-flavour);
+    color: light-dark($col-prot, $col-deut);
   }
 
   // &:after {

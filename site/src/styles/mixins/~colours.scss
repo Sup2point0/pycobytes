@@ -1,0 +1,19 @@
+@use './src/styles/mixins/~nova' as *;
+
+
+$col-prot: $blue-nova;
+$col-deut: $yellow-nova;
+
+$col-back: light-dark(white, black);
+
+$col-text: light-dark(black, white);
+$col-text-deut: light-dark($grey-nova, $blue-ocean);
+
+$col-line: light-dark($grey-spirit, $blue-deep);
+
+$col-hover: light-dark(
+  rgb(black, 3%),
+  rgb(white, 5%));
+$col-click: light-dark(
+  rgb(black, 7%),
+  rgb(white, 10%));

@@ -1,10 +1,10 @@
 /// Flavour Text
 
-@use './src/styles/~nova' as *;
-@use './src/styles/~variables' as *;
+@use './src/styles/mixins/~nova' as *;
+@use './src/styles/mixins/~colours' as *;
 
 
-.pyco-flavour {
+.pyco-full-flavour {
   --length: 800%;
   color: transparent;
   background-size: var(--length) 100%;
@@ -23,10 +23,6 @@
 
   animation: anim-flavour 20s infinite alternate ease-in-out;
   animation-delay: -6.9s;
-
-  @media (prefers-reduced-motion) {
-    animation: none;
-  }
 }
 
 @keyframes anim-flavour {
