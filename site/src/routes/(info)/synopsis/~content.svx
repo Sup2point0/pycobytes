@@ -1,6 +1,6 @@
 ---
 path: synopsis.md
-last_deploy: 2024-12-16 12:29:01.300846200 +00:00
+last_deploy: 2024-12-16 16:36:22.162121300 +00:00
 flags:
 - live
 title: Synopsis
@@ -23,7 +23,7 @@ import { base } from "$app/paths";
 </svelte:head>
 
 <!-- #SQUARK live!
-| dest = synopsis
+| dest = (info)/synopsis
 -->
 
 *pyco:bytes* is a pretty involved project, and tons of fun to work on!
@@ -62,7 +62,7 @@ Oh, you found the clicky, did you? That’s connected to a [Napkin](https://napk
 
 ## Assets
 
-All {base} were lovingly crafted in PowerPoint 2016 offline =)
+All assets were lovingly crafted in PowerPoint 2016 offline =)
 
 <style lang="scss">
 

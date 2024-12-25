@@ -1,6 +1,6 @@
 ---
 path: edu.md
-last_deploy: 2024-12-16 12:24:46.190598700 +00:00
+last_deploy: 2024-12-16 16:49:30.855583900 +00:00
 flags:
 - live
 title: decoded
@@ -23,7 +23,7 @@ import { base } from "$app/paths";
 </svelte:head>
 
 <!-- #SQUARK live!
-| dest = decoded
+| dest = (info)/decoded
 | title = decoded
 -->
 

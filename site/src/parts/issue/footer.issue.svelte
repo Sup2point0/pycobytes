@@ -3,12 +3,15 @@
 
 <style lang="scss">
 
+@use './src/styles/links' as *;
+
+
 p {
   margin-top: 4rem;
   padding-top: 1rem;
-  color: light-dark($grey-nova, white);
+  color: $col-text-deut;
   text-align: right;
-  border-top: 1.5px solid light-dark($grey-spirit, $blue-deep);
+  border-top: 1px solid $col-line;
 }
 
 </style>

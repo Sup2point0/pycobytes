@@ -2,9 +2,14 @@
 
 import { page } from "$app/stores";
 
-export let type: "issue" | null = null;
-export let title: string | undefined = undefined;
-export let caption: string | undefined = undefined;
+interface Props {
+  type?: "issue" | undefined;
+  title?: string;
+  desc?: string;
+  children?: any;
+}
+
+let { type, title, desc, children }: Props = $props();
 
 </script>
 
@@ -13,9 +18,9 @@ export let caption: string | undefined = undefined;
   <div class="dark-overlay">
     {#if type === "issue"}
       <code> #{$page.data.index} </code>
-      <h1 class="pyco-flavour"> {@html $page.data.head} </h1>
+      <h1 class="pyco-full-flavour"> {@html $page.data.head} </h1>
 
-      <ul>
+      <ul class="shards">
         {#each $page.data.shard ?? [] as shard}
           <li class={shard}> {shard} </li>
         {/each}
@@ -23,11 +28,13 @@ export let caption: string | undefined = undefined;
 
     {:else}
       <h1> {@html title} </h1>
+      {#if desc}
+        <p class="caption"> {@html desc} </p>
+      {/if}
     
     {/if}
 
-    <slot />
-    
+    {@render children?.()}
   </div>
 </header>
 
@@ -35,8 +42,8 @@ export let caption: string | undefined = undefined;
 <style lang="scss">
 
 header {
-  margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  position: relative;
   text-align: center;
   background-color: $blue-night;
   background-image: url("/pycobytes-back.png");
@@ -47,16 +54,14 @@ header {
 .dark-overlay {
   width: 100%;
   height: 100%;
-  padding: ($nav-height + 2rem) 0 2.5rem;
-  background: linear-gradient(to right in srgb, rgba(black, 0.5), black 69%);
-
-  &:hover {
-  }
+  padding: 4rem 0 3rem;
+  background: linear-gradient(to right in srgb, rgb(black, 50%), black 69%);
 }
+
 
 code {
   font-size: 125%;
-  color: light-dark($col-flavour, $col-accent);
+  color: light-dark($col-deut, $col-prot);
 }
 
 h1 {
@@ -65,48 +70,47 @@ h1 {
   margin: 0;
   font-size: 300%;
 
-  &:not(.pyco-flavour) {
-    // color: light-dark($col-accent, $col-flavour);
+  &:not(.pyco-full-flavour) {
     color: white;
   }
 }
 
 p {
-  @include font-flavour;
+  @include font-ui;
   margin: 0;
   font-size: 150%;
   color: white;
 }
 
-ul {
-  margin-top: 4rem;
-  padding: 0;
+ul.shards {
+  margin: 3rem 0 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  list-style-type: none;
+  list-style: none;
 }
 
 li {
-  @include font-flavour;
+  @include font-ui;
   margin: 0 0.2rem;
   padding: 0.25em 0.8em;
   color: white;
-  background-color: rgba($col-accent, 0.42);
-  border-radius: 1rem;
+  background-color: rgb($col-prot, 42%);
+  border-radius: 1em;
 
   transition: all 0.12s ease-out;
 
   &:hover {
+    cursor: pointer;
     background-color: $pink-elec;
   }
 
   &:not(:hover) {
-    &.syntax { background-color: rgba($pink-spirit, 0.69); }
-    &.tricks { background-color: rgba($lilac-nova, 0.69); }
-    &.quickies { background-color: rgba($blue-sky, 0.69); }
-    &.challenge { background-color: rgba($teal-elec, 0.69); }
+    &.syntax { background-color: rgb($pink-spirit, 69%); }
+    &.tricks { background-color: rgb($lilac-nova, 69%); }
+    &.quickies { background-color: rgb($blue-sky, 69%); }
+    &.challenge { background-color: rgb($teal-elec, 69%); }
   }
 }
 

@@ -1,6 +1,6 @@
 ---
 path: faq.md
-last_deploy: 2024-12-16 12:18:07.604402200 +00:00
+last_deploy: 2024-12-16 17:38:15.501773600 +00:00
 flags:
 - live
 title: FAQ
@@ -23,7 +23,7 @@ import { base } from "$app/paths";
 </svelte:head>
 
 <!-- #SQUARK live!
-| dest = faq
+| dest = (info)/faq
 | title = FAQ
 -->
 

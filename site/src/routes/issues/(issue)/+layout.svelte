@@ -2,10 +2,13 @@
 
 import { page } from "$app/stores";
 
-import Header from "#parts/layout/Header.svelte";
-import Main from "#parts/layout/Main.svelte";
-import IssueNav from "#parts/issue/IssueNav.svelte";
-import IssueFooter from "#parts/issue/IssueFooter.svelte";
+import Header from "#parts/core/header.svelte";
+import Main from "#parts/core/main.svelte";
+import IssueNav from "#parts/issue/nav.issue.svelte";
+import IssueFooter from "#parts/issue/footer.issue.svelte";
+
+
+let { children } = $props();
 
 </script>
 
@@ -21,7 +24,11 @@ import IssueFooter from "#parts/issue/IssueFooter.svelte";
 
 <article>
   <Main>
-    <slot />
+    {#if children}
+      {@render children()}
+    {:else}
+      <p class="error"> Uh, something went wrong! </p>
+    {/if}
     
     <IssueFooter />
   </Main>

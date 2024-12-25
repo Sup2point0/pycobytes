@@ -8,13 +8,13 @@ import LinkButton from "#parts/LinkButton.svelte";
 import Clicky from "#parts/Clicky.svelte";
 import FlavourCode from "./flavour-code.svx";
 
-import { base } from "$app/paths";
 import { onMount } from "svelte";
+import { base } from "$app/paths";
 
 
 const issues = Object.values(Site.issues);
 
-onMount(() => processAnimations());
+onMount(processAnimations);
 
 </script>
 
@@ -27,26 +27,28 @@ onMount(() => processAnimations());
   <section class="hero">
     <div class="overlay">
       <div class="left anim init-only">
-        <h1> <span class="pyco-flavour">
-          pyco<span class="pyco-flavour-null">:</span>bytes
+        <h1> <span class="pyco-full-flavour">
+          pyco<span class="pyco-full-flavour-null">:</span>bytes
         </span> </h1>
         <p> {Site.desc.long} </p>
-        <div class="line" />
+        <div class="line"></div>
       </div>
 
       <LinkButton link="{base}/issues/{issues[0].index}">
         Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
-        <span slot="hover">
-          {#each {length: 3} as _, i}
-            <span class="material-symbols-outlined"> arrow_forward_ios </span>
-          {/each}
-        </span>
+        {#snippet hover()}
+                <span >
+            {#each {length: 3} as _, i}
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            {/each}
+          </span>
+              {/snippet}
       </LinkButton>
     </div>
   </section>
 
   <section class="right anim on-scroll init-only">
-    <h2 class="pyco-flavour" style:--anim-offset="-12"> Python is awesome. </h2>
+    <h2 class="pyco-full-flavour" style:--anim-offset="-12"> Python is awesome. </h2>
     <p> But much of its stacks of fascinating quirks, tricks, and other syntactic sugar good stuff tend to be hidden amidst ancient Stack Overflow posts and questionable reddit threads, which makes discovering it quite nontrivial. </p>
   </section>
 
@@ -57,24 +59,26 @@ onMount(() => processAnimations());
   </section>
 
   <section class="left anim on-scroll init-only">
-    <h2 class="pyco-flavour" style:--anim-offset="-24"> So, here’s pycobytes. </h2>
+    <h2 class="pyco-full-flavour" style:--anim-offset="-24"> So, here’s pycobytes. </h2>
     <p> A weekly series where we delve into interesting and useful features in Python. This isn’t a comprehensive overview of the language by any means, but I share all the cool stuff I’ve discovered through years of adventuring. </p>
   </section>
 
-  <div class="line" />
+  <div class="line"></div>
 
   <section class="anim on-scroll init-only">
-    <h2 class="pyco-flavour" style:--anim-offset="-36"> An adventure into the wonders of Python. </h2>
+    <h2 class="pyco-full-flavour" style:--anim-offset="-36"> An adventure into the wonders of Python. </h2>
     <p> Quick, snappy and fun! </p>
   </section>
 
   <LinkButton link="{base}/issues">
     Start Exploring <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    <span slot="hover">
-      {#each {length: 3} as _, i}
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-      {/each}
-    </span>
+    {#snippet hover()}
+        <span >
+        {#each {length: 3} as _, i}
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        {/each}
+      </span>
+      {/snippet}
   </LinkButton>
 
   <section>
@@ -111,19 +115,19 @@ section {
     padding: 0;
     font-size: 300%;
 
-    &.pyco-flavour {
+    &.pyco-full-flavour {
       animation-delay: calc(var(--anim-offset) * 1s);
     }
   }
 
   & p {
-    @include font-flavour;
+    @include font-ui;
     font-size: 150%;
     color: light-dark($grey-storm, $grey-swallow);
   }
 
   & .caption {
-    @include font-flavour;
+    @include font-ui;
     font-size: 120%;
   }
 }
@@ -135,7 +139,7 @@ section {
   width: 42vw;
   max-width: 42vw;
   margin: 2rem 0;
-  border-bottom: 2px solid light-dark($col-flavour, white);
+  border-bottom: 2px solid light-dark($col-deut, white);
 }
 
 .hero {
@@ -172,7 +176,7 @@ section {
     font-size: 10vw;
   }
   & p {
-    @include font-flavour;
+    @include font-ui;
     font-size: 200%;
     margin: 0;
     padding: 0;
@@ -182,7 +186,7 @@ section {
     width: 20vw;
     max-width: 20vw;
     padding-top: 5rem;
-    border-bottom: 3px solid light-dark($col-flavour, $col-accent);
+    border-bottom: 3px solid light-dark($col-deut, $col-prot);
   }
 }
 

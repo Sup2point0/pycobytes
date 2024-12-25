@@ -4,8 +4,8 @@ import { page } from "$app/stores";
 
 import Content from "./%{file}.svx";
 
-import Header from "#parts/layout/Header.svelte";
-import Main from "#parts/layout/Main.svelte";
+import Header from "#parts/core/header.svelte";
+import Main from "#parts/core/main.svelte";
 
 </script>
 
