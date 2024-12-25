@@ -6,24 +6,25 @@ const pages = Object.values(data.default.pages);
 
 
 interface SiteData {
-  desc: SiteDesc;
+  root: string;
+  desc: {
+    short: string;
+    long: string;
+  };
   issues: IssueData[];
-}
-interface SiteDesc {
-  short: string;
-  long: string;
 }
 
 const Site: SiteData = {
+  root: "https://sup2point0.github.io/pycobytes",
+
   desc: {
     short: "exploring the magic of Python",
     long: "exploring the magic of Python, week by week",
   },
 
-  issues: pages.filter(
-    page => page.index.length
-  ).sort(
-    (prot, deut) => new Date(deut.date) - new Date(prot.date)
+  issues: (pages
+    .filter(page => page.index.length)
+    .sort((prot, deut) => new Date(deut.date) - new Date(prot.date))
   ),
 }
 export default Site;

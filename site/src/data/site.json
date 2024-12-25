@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2024-12-16",
-    "file_count": 18,
-    "page_count": 17
+    "exported": "2024-12-25",
+    "file_count": 19,
+    "page_count": 18
   },
   "index": {
     "01": {
@@ -83,6 +83,12 @@
         "issues/13.md"
       ]
     },
+    "14": {
+      "route": null,
+      "pages": [
+        "issues/14.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -98,7 +104,8 @@
       "issues/01.md",
       "issues/02.md",
       "issues/06.md",
-      "issues/08.md"
+      "issues/08.md",
+      "issues/14.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -155,6 +162,9 @@
     "modules": [
       "issues/12.md"
     ],
+    "quirks": [
+      "issues/14.md"
+    ],
     "special": [
       "issues/404.md"
     ]
@@ -162,14 +172,14 @@
   "pages": {
     "edu.md": {
       "path": "edu.md",
-      "last_deploy": "2024-12-16 12:24:46 +0000",
+      "last_deploy": "2024-12-16 16:49:30 +0000",
       "slocs": 32,
-      "chars": 971,
+      "chars": 978,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "decoded",
+      "dest": "(info)/decoded",
       "title": "decoded",
       "head": "*decoded*: pycobytes",
       "capt": null,
@@ -181,14 +191,14 @@
     },
     "faq.md": {
       "path": "faq.md",
-      "last_deploy": "2024-12-16 12:18:07 +0000",
+      "last_deploy": "2024-12-16 17:38:15 +0000",
       "slocs": 69,
-      "chars": 4331,
+      "chars": 4338,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "faq",
+      "dest": "(info)/faq",
       "title": "FAQ",
       "head": "Fervently Anticipated Questions",
       "capt": null,
@@ -200,14 +210,14 @@
     },
     "issues/01.md": {
       "path": "issues/01.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 136,
-      "chars": 4042,
+      "chars": 4041,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/01",
+      "dest": "issues/(issue)/01",
       "title": "The Power of List Comprehensions",
       "head": "The Power of List Comprehensions",
       "capt": null,
@@ -225,14 +235,14 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 103,
-      "chars": 3335,
+      "chars": 3334,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/02",
+      "dest": "issues/(issue)/02",
       "title": "Stringterpolation with f-Strings",
       "head": "Stringterpolation with f-Strings",
       "capt": null,
@@ -249,14 +259,14 @@
     },
     "issues/03.md": {
       "path": "issues/03.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 107,
-      "chars": 3388,
+      "chars": 3387,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/03",
+      "dest": "issues/(issue)/03",
       "title": "\"A Strand of String Theory\"",
       "head": "\"A Strand of String Theory\"",
       "capt": null,
@@ -275,14 +285,14 @@
     },
     "issues/04.md": {
       "path": "issues/04.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 125,
-      "chars": 2940,
+      "chars": 2939,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/04",
+      "dest": "issues/(issue)/04",
       "title": "\"Wait, you can multiply strings?\"",
       "head": "\"Wait, you can multiply strings?\"",
       "capt": null,
@@ -301,14 +311,14 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 98,
-      "chars": 3101,
+      "chars": 3100,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/05",
+      "dest": "issues/(issue)/05",
       "title": "Setting the Scene with Miserable Iterables",
       "head": "Setting the Scene with Miserable Iterables",
       "capt": null,
@@ -324,14 +334,14 @@
     },
     "issues/06.md": {
       "path": "issues/06.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 171,
-      "chars": 4142,
+      "chars": 4141,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/06",
+      "dest": "issues/(issue)/06",
       "title": "Tuple Trouble",
       "head": "Tuple Trouble",
       "capt": null,
@@ -349,14 +359,14 @@
     },
     "issues/07.md": {
       "path": "issues/07.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 165,
-      "chars": 5070,
+      "chars": 5069,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/07",
+      "dest": "issues/(issue)/07",
       "title": "Alternative Facts",
       "head": "Alternative Facts",
       "capt": null,
@@ -374,14 +384,14 @@
     },
     "issues/08.md": {
       "path": "issues/08.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 160,
-      "chars": 3872,
+      "chars": 3871,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/08",
+      "dest": "issues/(issue)/08",
       "title": "Collapse if Able, else Expand",
       "head": "Collapse if Able, else Expand",
       "capt": null,
@@ -399,14 +409,14 @@
     },
     "issues/09.md": {
       "path": "issues/09.md",
-      "last_deploy": "2024-12-16 11:01:30 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 168,
-      "chars": 4012,
+      "chars": 4011,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/09",
+      "dest": "issues/(issue)/09",
       "title": "OR and AND do WHAT now?",
       "head": "OR and AND do WHAT now?",
       "capt": null,
@@ -424,14 +434,14 @@
     },
     "issues/10.md": {
       "path": "issues/10.md",
-      "last_deploy": "2024-12-16 11:01:35 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 128,
-      "chars": 2832,
+      "chars": 2831,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/10",
+      "dest": "issues/(issue)/10",
       "title": "For Any, For All",
       "head": "For Any, For All",
       "capt": null,
@@ -450,14 +460,14 @@
     },
     "issues/11.md": {
       "path": "issues/11.md",
-      "last_deploy": "2024-12-16 11:01:35 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 129,
-      "chars": 3933,
+      "chars": 3932,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/11",
+      "dest": "issues/(issue)/11",
       "title": "Short Circuits",
       "head": "Short Circuits",
       "capt": null,
@@ -474,14 +484,14 @@
     },
     "issues/12.md": {
       "path": "issues/12.md",
-      "last_deploy": "2024-12-16 11:01:35 +0000",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
       "slocs": 144,
-      "chars": 2866,
+      "chars": 2865,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/12",
+      "dest": "issues/(issue)/12",
       "title": "import math",
       "head": "import math",
       "capt": null,
@@ -498,14 +508,14 @@
     },
     "issues/13.md": {
       "path": "issues/13.md",
-      "last_deploy": "2024-12-16 11:01:35 +0000",
+      "last_deploy": "2024-12-17 14:55:51 +0000",
       "slocs": 173,
-      "chars": 3824,
+      "chars": 3826,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/13",
+      "dest": "issues/(issue)/13",
       "title": "Counting",
       "head": "Counting",
       "capt": null,
@@ -517,19 +527,43 @@
         "functions",
         "challenge"
       ],
-      "date": "2025-12-01",
-      "date_display": "2025 December"
+      "date": "2024-12-12",
+      "date_display": "2024 December 12"
     },
-    "issues/404.md": {
-      "path": "issues/404.md",
-      "last_deploy": "2024-12-16 11:19:56 +0000",
-      "slocs": 80,
-      "chars": 3681,
+    "issues/14.md": {
+      "path": "issues/14.md",
+      "last_deploy": "2024-12-17 15:27:38 +0000",
+      "slocs": 149,
+      "chars": 3987,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "issues/(issues)/404",
+      "dest": "issues/(issue)/14",
+      "title": "SyntaxError on line 42",
+      "head": "SyntaxError on line 42",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "14"
+      ],
+      "shard": [
+        "syntax",
+        "quirks"
+      ],
+      "date": "2024-12-17",
+      "date_display": "2024 December 17"
+    },
+    "issues/404.md": {
+      "path": "issues/404.md",
+      "last_deploy": "2024-12-16 18:30:49 +0000",
+      "slocs": 80,
+      "chars": 3680,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/404",
       "title": "Where do I learn?",
       "head": "Where do I learn?",
       "capt": null,
@@ -545,14 +579,14 @@
     },
     "synopsis.md": {
       "path": "synopsis.md",
-      "last_deploy": "2024-12-16 12:29:01 +0000",
+      "last_deploy": "2024-12-16 16:36:22 +0000",
       "slocs": 42,
-      "chars": 1544,
+      "chars": 1551,
       "isIndex": false,
       "flags": [
         "live"
       ],
-      "dest": "synopsis",
+      "dest": "(info)/synopsis",
       "title": "Synopsis",
       "head": "Synopsis",
       "capt": null,
