@@ -26,18 +26,18 @@ onMount(processAnimations);
 
 <main>
   <section class="hero">
-    <div class="overlay">
+    <div class="dark-overlay">
       <div class="left anim init-only">
-        <h1> <span class="pyco-full-flavour">
-          pyco<span class="pyco-full-flavour-null">:</span>bytes
-        </span> </h1>
+        <h1 class="pyco-full-flavour"> pyco:bytes </h1>
         <p> {Site.desc.long} </p>
         <div class="line"></div>
       </div>
 
-      <FlavourButton text="Read the latest issue"
-        intern="issues/{issues[0].index}"
-      />
+      <div class="right">
+        <FlavourButton text="Read the latest issue"
+          intern="issues/{issues[0].index}"
+        />
+      </div>
     </div>
   </section>
 
@@ -133,20 +133,19 @@ section {
   width: 42vw;
   max-width: 42vw;
   margin: 2rem 0;
-  border-bottom: 2px solid light-dark($col-deut, white);
+  border-bottom: 1px solid light-dark($col-deut, white);
 }
 
 .hero {
   width: 100%;
   height: 100%;
   margin: 0 0 4rem;
-  color: white;
   background-color: $blue-night;
-  background-image: url("/pycobytes-back.png");
+  background-image: url('/pycobytes-back.png');
   background-size: cover;
   background-repeat: no-repeat;
 
-  .overlay {
+  .dark-overlay {
     width: 100%;
     height: 100%;
     padding-bottom: 5rem;
@@ -157,31 +156,35 @@ section {
     background: linear-gradient(to right in srgb, black 20%, rgba(black, 0.2));
   }
 }
-
 .hero .left {
   width: 100%;
-  padding: 4rem 0 4rem 20vw;
+  padding: 4rem 0 0 10vw;
 
   & h1 {
-    margin: 0 0 2rem;
+    width: 100%;
+    margin: 0 -0.05em 2rem;
     padding: 0;
     font-family: 'Geologica', 'Fira Mono', 'Consolas', 'Overpass', 'Segoe UI Semibold', system-ui, sans-serif;
     font-weight: 100;
-    font-size: 10vw;
+    font-size: max(10vw, 4rem);
   }
+
   & p {
     @include font-ui;
     font-size: 200%;
-    margin: 0;
-    padding: 0;
     color: white;
   }
+  
   & .line {
-    width: 20vw;
-    max-width: 20vw;
+    max-width: max(20vw, 20rem);
     padding-top: 5rem;
-    border-bottom: 3px solid light-dark($col-deut, $col-prot);
   }
+}
+.hero .right {
+  width: 100%;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: end;
 }
 
 .material-symbols-outlined {

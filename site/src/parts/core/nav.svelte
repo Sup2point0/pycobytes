@@ -73,8 +73,7 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  background-color: white;  // fallback
-  background-color: light-dark(white, black);
+  background: black;
   border-bottom: 1px solid $col-deut;
   transition: #{fade-duality()};
 }

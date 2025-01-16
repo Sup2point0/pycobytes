@@ -25,6 +25,7 @@ let { text, intern }: Props = $props();
 <style lang="scss">
 
 a {
+  width: max-content;
   $margin: 2px;
   display: block;
   position: relative;

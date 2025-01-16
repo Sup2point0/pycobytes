@@ -42,7 +42,7 @@ let { text, link, intern, extern, button }: Props = $props();
   display: block;
   
   @include font-ui;
-  color: $col-text;
+  color: white;
   text-decoration: none;
   text-align: left;
   background: none;

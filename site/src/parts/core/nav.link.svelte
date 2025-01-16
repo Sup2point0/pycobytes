@@ -105,7 +105,7 @@ let {
 
   p {
     @include font-ui;
-    color: $col-text;
+    color: white;
   }
 
   img {
@@ -114,6 +114,7 @@ let {
 
   img ~ p {
     padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
 
@@ -130,8 +131,7 @@ let {
   visibility: hidden;
   opacity: 0;
 
-  background-color: white;  // fallback
-  background-color: light-dark(white, black);
+  background: black;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   box-shadow: 0 4px 2px -2px rgb(black, 10%);
