@@ -1,7 +1,7 @@
 @function fade-duality() {
-  @return "color 0.2s ease-in-out, background-color 0.2s ease-in-out";
+  @return 'color 0.2s ease-in-out, background-color 0.2s ease-in-out';
 }
 
 @function fade-interact() {
-  @return "color 0.12s ease-out, background-color 0.12s ease-out";
+  @return 'color 0.12s ease-out, background-color 0.12s ease-out';
 }

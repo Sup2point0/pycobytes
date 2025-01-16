@@ -53,7 +53,7 @@ import NavDropLink from "#parts/core/nav.link.drop.svelte";
     </NavLink>
 
     <NavLink text="GitHub" extern="https://github.com/Sup2point0/pycobytes" collapse={true}
-      pict={{ light: "github-light.svg", dark: "github-dark.svg" }}
+      pict="github-light.svg"
     />
   </section>
 </nav>
@@ -64,7 +64,7 @@ import NavDropLink from "#parts/core/nav.link.drop.svelte";
 nav {
   width: 100%;
   padding: 0 5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 20;
   display: flex;
@@ -73,17 +73,19 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  background: black;
+  background: rgb(black, 70%);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid $col-deut;
   transition: #{fade-duality()};
 }
 
 section {
+  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 </style>

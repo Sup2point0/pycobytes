@@ -45,14 +45,15 @@ let { text, link, intern, extern, button }: Props = $props();
   color: white;
   text-decoration: none;
   text-align: left;
-  background: none;
+  background: transparent;
   border: none;
   border-radius: 0.5em;
   transition: #{fade-duality()}, #{fade-interact()};
 
   &:hover, &:focus {
     cursor: pointer;
-    background-color: $col-hover;
+    color: $col-deut;
+    background-color: rgb(black, 20%);
   }
 
   &:active {

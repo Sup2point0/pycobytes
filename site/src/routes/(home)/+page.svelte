@@ -64,6 +64,10 @@ onMount(processAnimations);
     <p> Quick, snappy and fun! </p>
   </section>
 
+  <FlavourButton text="Start Exploring"
+    intern="issues"
+  />
+
   <!-- <LinkButton link="{base}/issues">
     Start Exploring <span class="material-symbols-outlined"> arrow_forward_ios </span>
     {#snippet hover()}
@@ -104,9 +108,11 @@ section {
   }
   
   & h2 {
+    position: relative;
+    z-index: 1;
     @include font-head;
-    margin: 0;
-    padding: 0;
+    padding: 0 0 0.5em; // down here to override font-head
+    font-weight: 400;
     font-size: 300%;
 
     &.pyco-full-flavour {
@@ -148,7 +154,7 @@ section {
   .dark-overlay {
     width: 100%;
     height: 100%;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;

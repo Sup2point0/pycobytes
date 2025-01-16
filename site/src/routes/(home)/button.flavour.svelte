@@ -56,7 +56,7 @@ a {
     right: 0;
     z-index: -1;
     background: linear-gradient(
-      to right in oklch,
+      109deg in oklch,
       $teal-elec,
       $blue-nova,
       $lilac-nova,
@@ -66,7 +66,7 @@ a {
       $yellow-solar,
     ) 0 0 / 200% no-repeat;
     border-radius: inherit;
-    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);  // ease-out-exp
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);  // ease-out-exp
   }
 }
 

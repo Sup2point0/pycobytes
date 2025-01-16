@@ -20,7 +20,7 @@ interface Props {
   link?: string;
     intern?: string;
     extern?: string;
-  button?: () => void;
+  action?: () => void;
   collapse?: boolean;
   children?: any;
 }
@@ -29,7 +29,7 @@ let {
   text, body,
   pict,
   link, intern, extern,
-  button,
+  action,
   collapse,
   children,
 }: Props = $props();
@@ -54,8 +54,8 @@ let {
 
 
 <div class="nav-link {collapse}">
-  {#if button}
-    <button id={text} class="trigger" onclick={button}>
+  {#if action}
+    <button id={text} class="trigger" onclick={action}>
       {@render content()}
     </button>
   {:else}
@@ -68,8 +68,10 @@ let {
   {/if}
 
   {#if children}
-    <div class="nav-dropdown">
-      {@render children()}
+    <div class="dropdown">
+      <div class="dropdown-content">
+        {@render children()}
+      </div>
     </div>
   {/if}
 </div>
@@ -82,47 +84,51 @@ let {
 }
 
 .trigger {
-  padding: 0.75em;
-  &:has(img) { padding: 0.25em 0.5em; }
+  padding: 0.8em 1em 0.7em;
+  &:has(img) { padding: 0.6em 1em 0.4em; }
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background: none;
+  background: transparent;
   border: none;
   border-radius: 0.5em;
   transition: #{fade-duality()}, #{fade-interact()};
 
-  &:hover, &:focus {
-    cursor: pointer;
-    background-color: $col-hover;
-  }
-
-  &:active {
-    cursor: pointer;
-    background-color: $col-click;
-  }
-
   p {
     @include font-ui;
     color: white;
+    transition: #{fade-interact()};
   }
 
   img {
-    max-height: 1.75em;
+    margin-top: -3px;
+    max-height: 1.6em;
   }
 
   img ~ p {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
+
+  &:hover, &:focus {
+    cursor: pointer;
+    background: rgb(black, 20%);
+
+    p {
+      color: $col-deut;
+    }
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: $col-click;
+  }
 }
 
 
-.nav-dropdown {
+.dropdown {
   min-width: 5em;
-  margin-top: 2px;
-  padding: 0.5em;
   position: absolute;
   z-index: 22;
   display: flex;
@@ -130,12 +136,7 @@ let {
   gap: 0.2rem;
   visibility: hidden;
   opacity: 0;
-
-  background: black;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  box-shadow: 0 4px 2px -2px rgb(black, 10%);
-  transform: translateY(-0.4em);
+  transition: opacity 0.2s ease;
   
   .nav-link:is(:hover, :focus) &,
   &:hover {
@@ -144,6 +145,21 @@ let {
     visibility: visible;
     opacity: 1;
     transform: none;
+  }
+}
+
+.dropdown-content {
+  padding: 0.5em 1.5em 0.5em 0.5em;
+  background: rgb(black, 70%);
+  outline: 1.5px solid white;
+  // backdrop-filter: blur(12px);  // FIXME will need to use pseudoelement
+  border-radius: 0.5em;
+  transform: translateY(1.2em);
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  .nav-link:is(:hover, :focus) .dropdown &,
+  &:hover {
+    transform: translateY(0.8em);
   }
 }
 
