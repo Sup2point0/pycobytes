@@ -1,24 +1,24 @@
 /// Handles interactions with the Napkin API
 
-const URL = "https://sup2point0.npkn.net/pycobytes-clicky/";
+const URL = "https://sup2point0.npkn.net/pycobytes-clicky";
 
 
 export interface ClickData {
-  clickCount: number | string;
-  lastClick: string;
+  click_count: number | string;
+  last_click: string;
 }
 
 
 export default async function requestNapkin(
   method: string,
   body: object | null = null
-) : Promise<ClickData>
+): Promise<ClickData>
 {
   if (!body) {
     body = {};
   }
 
-  let request = {
+  let request: Request = {
     method: method,
     headers: {
       "Content-Type": "text/plain",
@@ -34,8 +34,8 @@ export default async function requestNapkin(
   }
   catch (error) {
     return {
-      clickCount: "?",
-      lastClick: "?",
+      click_count: "?",
+      last_click: "?",
     };
   }
 }

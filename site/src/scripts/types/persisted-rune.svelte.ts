@@ -10,12 +10,16 @@ import { browser } from "$app/environment";
  */
 export class PersistedState<T>
 {
-  key: string;
+  #key: string;
   value = $state<T>() as T;
+
+  get key() {
+    return this.#key;
+  }
 
   constructor(key: string, init: T)
   {
-    this.key = key ?? "";
+    this.#key = key ?? "";
     this.value = init;
 
     if (browser) {
@@ -25,8 +29,10 @@ export class PersistedState<T>
       }
     }
 
-    $effect(() => {
-      localStorage?.setItem(this.key, JSON.stringify(this.value));
+    $effect.root(() => {
+      $effect(() => {
+        localStorage?.setItem(this.key, JSON.stringify(this.value));
+      })
     });
   }
 }

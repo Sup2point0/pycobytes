@@ -1,20 +1,20 @@
-/// Handles processing scroll animations
-
-
-export default function processAnimations()
+export default function process_animations()
 {
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+    for (let entry of entries) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('anim-in');
-      } else if (!entry.isIntersecting) {
-        if (!entry.target.classList.contains('init-only')) {
-          entry.target.classList.remove('anim-in');
+        entry.target.classList.add("anim-in");
+      }
+      else if (!entry.isIntersecting) {
+        if (!entry.target.classList.contains("init-only")) {
+          entry.target.classList.remove("anim-in");
         }
       }
-    });
+    }
   })
 
-  const animElements = document.querySelectorAll('.anim');
-  animElements.forEach(each => observer.observe(each))
+  let animated = document.querySelectorAll(".anim");
+  for (let each of animated) {
+    observer.observe(each);
+  }
 }

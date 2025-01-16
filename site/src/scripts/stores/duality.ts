@@ -1,13 +1,13 @@
-import { persisted } from "svelte-persisted-store";
+import { PersistedState } from "#scripts/types";
 
 
-type Duality = "light" | "dark" | null;
-export const duality = persisted<Duality>("pycobytes.duality", null);
+/** A light/dark colour theme preference. `null` indicates no preference, in which case the theme is automatically synced with system preferences. */
+export type Duality = "light" | "dark" | null;
+
+export let duality = new PersistedState<Duality>("pyco.duality", null)
 
 
-/**
- * Get system theme preference.
- */
+/** Get system theme preference. */
 export function getLocalDuality(window): Duality
 {
   if (window.matchMedia) {
@@ -17,18 +17,16 @@ export function getLocalDuality(window): Duality
       return "light";
     }
   }
-
   return "light";
 }
 
-/**
- * If the theme is not set, set it to the system theme.
- */
+/** If the theme is not set, set it to the system theme. */
 export function setFromLocalDuality(window): Duality
 {
-  let local = getLocalDuality(window);
-  duality.update(d => d ? d : local);
-  return local;
+  if (!duality) {
+    duality = getLocalDuality(window);
+  }
+  return duality;
 }
 
 /**
