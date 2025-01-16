@@ -4,9 +4,10 @@ import Site from "#src/site";
 
 import processAnimations from "#scripts/anim";
 
-import LinkButton from "#parts/LinkButton.svelte";
-import Clicky from "#parts/Clicky.svelte";
 import FlavourCode from "./flavour-code.svx";
+import Clicky from "./clicky.svelte";
+
+import FlavourButton from "#src/routes/(home)/button.flavour.svelte";
 
 import { onMount } from "svelte";
 import { base } from "$app/paths";
@@ -34,16 +35,9 @@ onMount(processAnimations);
         <div class="line"></div>
       </div>
 
-      <LinkButton link="{base}/issues/{issues[0].index}">
-        Read the latest issue <span class="material-symbols-outlined"> arrow_forward_ios </span>
-        {#snippet hover()}
-                <span >
-            {#each {length: 3} as _, i}
-              <span class="material-symbols-outlined"> arrow_forward_ios </span>
-            {/each}
-          </span>
-              {/snippet}
-      </LinkButton>
+      <FlavourButton text="Read the latest issue"
+        intern="issues/{issues[0].index}"
+      />
     </div>
   </section>
 
@@ -70,16 +64,16 @@ onMount(processAnimations);
     <p> Quick, snappy and fun! </p>
   </section>
 
-  <LinkButton link="{base}/issues">
+  <!-- <LinkButton link="{base}/issues">
     Start Exploring <span class="material-symbols-outlined"> arrow_forward_ios </span>
     {#snippet hover()}
-        <span >
+      <span>
         {#each {length: 3} as _, i}
           <span class="material-symbols-outlined"> arrow_forward_ios </span>
         {/each}
       </span>
-      {/snippet}
-  </LinkButton>
+    {/snippet}
+  </LinkButton> -->
 
   <section>
     <img id="xkcd" alt="XKCD 353" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
