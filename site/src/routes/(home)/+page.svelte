@@ -39,7 +39,7 @@ onMount(processAnimations);
       </div>
     </div>
 
-    <div style="width: max-content; position: absolute; right: 12vw; bottom: 20px; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
+    <div style="width: max-content; position: fixed; left: 5vw; bottom: 20px; z-index: 50; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
       Heads up: I’m still migrating the site to Svelte 5, so some things might be broken. We’ll be back up soon!
     </div>
   </section>
