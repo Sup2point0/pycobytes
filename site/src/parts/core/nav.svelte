@@ -84,7 +84,7 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  background: rgb($blue-night, 70%);
+  background: rgb($blue-night, 80%);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid $col-deut;
   transition: #{fade-duality()};

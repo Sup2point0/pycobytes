@@ -34,10 +34,14 @@ onMount(processAnimations);
       </div>
 
       <div class="right">
-        <FlavourButton text="Read the latest issue"
+        <FlavourButton text="Read the latest issue &ensp; 🡪"
           intern="issues/{issues[0].index}"
         />
       </div>
+    </div>
+
+    <div style="width: max-content; position: absolute; right: 12vw; bottom: 20px; padding: 1rem; background: #9090f1; color: white; font-family: 'Gabarito';">
+      Heads up: the site is still being migrated to Svelte 5, so there may be some issues. We’ll be back up soon!
     </div>
   </section>
 

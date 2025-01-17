@@ -96,7 +96,7 @@ let {
   transition: #{fade-duality()}, #{fade-interact()};
 
   p {
-    padding: 0.8em 0 0.7em;
+    padding: 0.75em 0;
     @include font-ui;
     color: white;
     transition: #{fade-interact()};
@@ -149,8 +149,8 @@ let {
 }
 
 .dropdown-content {
-  padding: 0.5em 1.5em 0.5em 0.5em;
-  background: rgb(black, 70%);
+  padding: 0.5em 1.5em 0.75em 0.5em;
+  background: rgb($blue-night, 80%);
   outline: 1.5px solid white;
   // backdrop-filter: blur(12px);  // FIXME will need to use pseudoelement
   border-radius: 0.5em;

@@ -54,7 +54,7 @@ header {
 .dark-overlay {
   width: 100%;
   height: 100%;
-  padding: 4rem 0 3rem;
+  padding: 9rem 0 3rem;
   background: linear-gradient(to right in srgb, rgb(black, 50%), black 69%);
 }
 

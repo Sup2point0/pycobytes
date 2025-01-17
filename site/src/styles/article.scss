@@ -8,6 +8,7 @@
 p {
   margin: 1.5em 0;
   @include font-body;
+  font-size: 120%;
 }
 
 h2, h3 {
