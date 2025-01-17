@@ -6,5 +6,5 @@ class Pycobyte[Fun]:
         '''You’ve never seen Python like this~'''
 
         for i, day in enumerate(self._days):
-            yield (await post(i) async for post in self.start(day))
+            yield (await post(i) async for post in self.start(day) if post.state)
 ```

@@ -10,7 +10,6 @@ import Clicky from "./clicky.svelte";
 import FlavourButton from "#src/routes/(home)/button.flavour.svelte";
 
 import { onMount } from "svelte";
-import { base } from "$app/paths";
 
 
 const issues = Object.values(Site.issues);
@@ -41,7 +40,7 @@ onMount(processAnimations);
     </div>
 
     <div style="width: max-content; position: absolute; right: 12vw; bottom: 20px; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
-      Heads up: I’m still migrating the site to Svelte 5, so there may be issues. We’ll be back up soon!
+      Heads up: I’m still migrating the site to Svelte 5, so some things might be broken. We’ll be back up soon!
     </div>
   </section>
 
@@ -53,7 +52,7 @@ onMount(processAnimations);
   <section class="flavour-code">
     <FlavourCode />
     <br>
-    <span class="caption"> Looks scary, right? Don’t worry, we’ll be delving into all this deliciousness ;D </span>
+    <span class="caption"> Looks scary? Don’t worry – we’ll be delving into all this deliciousness >:) </span>
   </section>
 
   <section class="left anim on-scroll init-only">
@@ -155,6 +154,7 @@ section {
     align-items: center;
     text-align: center;
     background: linear-gradient(to right in srgb, black 20%, rgba(black, 0.2));
+    backdrop-filter: blur(1.5px);
   }
 }
 .hero .left {
