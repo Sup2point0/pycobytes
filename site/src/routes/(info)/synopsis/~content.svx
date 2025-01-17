@@ -22,9 +22,6 @@ import { base } from "$app/paths";
   <title> Synopsis · pycobytes </title>
 </svelte:head>
 
-<!-- #SQUARK live!
-| dest = (info)/synopsis
--->
 
 *pyco:bytes* is a pretty involved project, and tons of fun to work on!
 

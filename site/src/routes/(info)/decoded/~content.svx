@@ -22,10 +22,6 @@ import { base } from "$app/paths";
   <title> decoded · pycobytes </title>
 </svelte:head>
 
-<!-- #SQUARK live!
-| dest = (info)/decoded
-| title = decoded
--->
 
 > [!Note]
 > This is part of my [*decoded*](https://github.com/Sup2point0/Assort/blob/origin/~dev/decoded.md) series, a collection of lessons learnt from each major project I’ve undertaken.

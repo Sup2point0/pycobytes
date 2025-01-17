@@ -25,6 +25,7 @@
   "site-assets": "assets/site",
   "fonts": [
     "Fira+Mono:wght@400;500;700",
+    "Gabarito:wght@400..900",
     "Geologica:wght@100",
     "Overpass:ital,wght@0,100..900;1,100..900",
     "Source+Sans+Pro:ital,wght@0,200..900;1,200..900"
