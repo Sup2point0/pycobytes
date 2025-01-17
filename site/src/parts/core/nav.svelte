@@ -30,7 +30,7 @@ import Pycobytes from "#parts/misc/pyco.svelte";
       {/snippet}
     </NavLink>
 
-    <NavLink text="duality" action={swapDuality} collapse={true}>
+    <NavLink text="duality" action={swapDuality}>
       {#snippet body()}
         <span class="material-symbols-outlined" style:padding="0.4em 0">
           {#if duality == "dark"}
@@ -44,7 +44,7 @@ import Pycobytes from "#parts/misc/pyco.svelte";
   </section>
 
   <section class="right">
-    <NavLink text="About" intern="synopsis" collapse={true} >
+    <NavLink text="About" intern="synopsis" >
       <NavDropLink text="FAQ" intern="faq" />
       <NavDropLink text="decoded" intern="decoded" />
       <NavDropLink text="License" intern="license" />

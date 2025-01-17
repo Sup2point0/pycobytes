@@ -53,7 +53,7 @@ let {
 {/snippet}
 
 
-<div class="nav-link {collapse}">
+<div class="nav-link" class:collapse>
   {#if action}
     <button id={text} class="trigger" onclick={action}>
       {@render content()}
@@ -123,6 +123,12 @@ let {
   &:active {
     cursor: pointer;
     background-color: rgb(white, 8%);
+  }
+}
+
+@media (max-width: 5rem) {
+  .nav-link.collapse {
+    display: none;
   }
 }
 
