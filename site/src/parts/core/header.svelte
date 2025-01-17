@@ -3,20 +3,20 @@
 import { page } from "$app/stores";
 
 interface Props {
-  type?: "issue" | undefined;
+  ctx?: "issue" | undefined;
   title?: string;
   desc?: string;
   children?: any;
 }
 
-let { type, title, desc, children }: Props = $props();
+let { ctx, title, desc, children }: Props = $props();
 
 </script>
 
 
 <header>
   <div class="dark-overlay">
-    {#if type === "issue"}
+    {#if ctx === "issue"}
       <code> #{$page.data.index} </code>
       <h1 class="pyco-full-flavour"> {@html $page.data.head} </h1>
 
@@ -61,13 +61,13 @@ header {
 
 code {
   font-size: 125%;
-  color: light-dark($col-deut, $col-prot);
+  color: light-dark($col-prot, $col-deut);
 }
 
 h1 {
-  @include font-head;
   padding: 1rem 0 1.5rem;
   margin: 0;
+  @include font-ui;
   font-size: 300%;
 
   &:not(.pyco-full-flavour) {
@@ -96,7 +96,7 @@ li {
   margin: 0 0.2rem;
   padding: 0.25em 0.8em;
   color: white;
-  background-color: rgb($col-prot, 42%);
+  background-color: rgb($col-deut, 42%);
   border-radius: 1em;
 
   transition: all 0.12s ease-out;

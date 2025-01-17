@@ -1,8 +1,8 @@
 @use './src/styles/mixins/~nova' as *;
 
 
-$col-prot: $blue-nova;
-$col-deut: $yellow-nova;
+$col-prot: $yellow-nova;
+$col-deut: $blue-nova;
 
 $col-back: light-dark(white, black);
 

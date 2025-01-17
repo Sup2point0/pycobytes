@@ -70,7 +70,7 @@ a {
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: light-dark($col-prot, $col-deut);
+  background-color: light-dark($col-deut, $col-prot);
   border-radius: 0.8em;
   outline: none;
 

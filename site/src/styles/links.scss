@@ -18,14 +18,14 @@ a:not(:has(img)) {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: light-dark($col-prot, $col-deut);
+    background-color: light-dark($col-deut, $col-prot);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.2s ease-out;
   }
   
   &:hover {
-    color: light-dark($col-prot, $col-deut);
+    color: light-dark($col-deut, $col-prot);
   }
   &:hover::after {
     transform: scaleX(1);

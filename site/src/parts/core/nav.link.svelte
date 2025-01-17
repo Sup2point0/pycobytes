@@ -116,13 +116,13 @@ let {
     background: rgb(black, 20%);
 
     p {
-      color: $col-deut;
+      color: $col-prot;
     }
   }
 
   &:active {
     cursor: pointer;
-    background-color: $col-click;
+    background-color: rgb(white, 8%);
   }
 }
 
@@ -138,7 +138,7 @@ let {
   opacity: 0;
   transition: opacity 0.2s ease;
   
-  .nav-link:is(:hover, :focus) &,
+  .nav-link:is(:hover, :focus, :focus-within) &,
   &:hover {
     display: flex;
     flex-direction: column;
@@ -149,7 +149,7 @@ let {
 }
 
 .dropdown-content {
-  padding: 0.5em 1.5em 0.75em 0.5em;
+  padding: 0.5em 0.5em 0.75em 0.5em;
   background: rgb($blue-night, 80%);
   outline: 1.5px solid white;
   // backdrop-filter: blur(12px);  // FIXME will need to use pseudoelement
@@ -165,7 +165,7 @@ let {
 
 
 button#duality {
-  color: light-dark($col-prot, $lilac-nova);
+  color: light-dark($col-deut, $lilac-nova);
 }
 
 </style>

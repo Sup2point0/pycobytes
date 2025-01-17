@@ -38,7 +38,7 @@ let { text, link, intern, extern, button }: Props = $props();
 <style lang="scss">
 
 .nav-drop-link {
-  padding: 0.5em;
+  padding: 0.5em 1.5em 0.5em 0.5em;
   display: block;
   
   @include font-ui;
@@ -52,7 +52,7 @@ let { text, link, intern, extern, button }: Props = $props();
 
   &:hover, &:focus {
     cursor: pointer;
-    color: $col-deut;
+    color: $col-prot;
     background-color: rgb(black, 20%);
   }
 

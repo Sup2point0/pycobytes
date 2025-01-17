@@ -1,8 +1,8 @@
 {
   "meta": {
     "exported": "2025-01-17",
-    "file_count": 19,
-    "page_count": 18
+    "file_count": 20,
+    "page_count": 19
   },
   "index": {
     "01": {
@@ -89,6 +89,12 @@
         "issues/14.md"
       ]
     },
+    "15": {
+      "route": null,
+      "pages": [
+        "issues/15.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -165,6 +171,9 @@
     "quirks": [
       "issues/14.md"
     ],
+    "internals": [
+      "issues/15.md"
+    ],
     "special": [
       "issues/404.md"
     ]
@@ -172,16 +181,16 @@
   "pages": {
     "edu.md": {
       "path": "edu.md",
-      "last_deploy": "2024-12-16 16:49:30 +0000",
-      "slocs": 32,
-      "chars": 978,
+      "last_deploy": "2025-01-17 11:42:32 +0000",
+      "slocs": 33,
+      "chars": 1015,
       "isIndex": false,
       "flags": [
         "live"
       ],
       "dest": "(info)/decoded",
       "title": "decoded",
-      "head": "*decoded*: pycobytes",
+      "head": "<em>decoded</em>: pycobytes",
       "capt": null,
       "desc": null,
       "index": [],
@@ -553,6 +562,29 @@
       ],
       "date": "2024-12-17",
       "date_display": "2024 December 17"
+    },
+    "issues/15.md": {
+      "path": "issues/15.md",
+      "last_deploy": "2025-01-17 11:21:42 +0000",
+      "slocs": 111,
+      "chars": 2968,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/15",
+      "title": "Why is range() so fast?",
+      "head": "Why is range() so fast?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "15"
+      ],
+      "shard": [
+        "internals"
+      ],
+      "date": "2025-01-01",
+      "date_display": "2025 January"
     },
     "issues/404.md": {
       "path": "issues/404.md",

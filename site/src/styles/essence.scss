@@ -29,7 +29,7 @@ article main h1 {
 
 :where(h2,h3,h4) {
   @include font-head;
-  color: light-dark($col-prot, $col-deut);
+  color: light-dark($col-deut, $col-prot);
 }
 
 code {
@@ -49,7 +49,7 @@ pre:has(code) {
   border-radius: 0.75em;
   box-shadow: 0 0 12px light-dark(
     rgb(black, 0),
-    rgb($col-prot, 50%));
+    rgb($col-deut, 50%));
 }
 
 b, strong {
@@ -75,7 +75,7 @@ hr {
 
 :not(code, code > *)::selection {
   color: white !important;
-  background-color: light-dark($col-prot, $col-deut) !important;
+  background-color: light-dark($col-deut, $col-prot) !important;
 }
 
 

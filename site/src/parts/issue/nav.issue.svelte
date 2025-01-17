@@ -98,11 +98,11 @@ a {
 
   &:where(:hover, :focus, :active) {
     // h4 {
-    //   color: light-dark($col-prot, $col-deut);
+    //   color: light-dark($col-deut, $col-prot);
     // }
     
     span.material-symbols-outlined {
-      color: light-dark($col-prot, $col-deut);
+      color: light-dark($col-deut, $col-prot);
     }
   }
 

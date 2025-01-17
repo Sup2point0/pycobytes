@@ -26,7 +26,7 @@ blockquote:first-child {
     margin: 0;
     @include font-ui;
     font-size: 200%;
-    color: light-dark($col-prot, $col-deut);
+    color: light-dark($col-deut, $col-prot);
   }
 
   // &:after {

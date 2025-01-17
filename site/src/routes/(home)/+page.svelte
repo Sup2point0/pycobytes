@@ -134,7 +134,7 @@ section {
   width: 42vw;
   max-width: 42vw;
   margin: 2rem 0;
-  border-bottom: 1px solid light-dark($col-deut, white);
+  border-bottom: 1px solid light-dark($col-prot, white);
 }
 
 .hero {

@@ -18,7 +18,7 @@ let { children } = $props();
 </svelte:head>
 
 
-<Header type="issue">
+<Header ctx="issue">
   <IssueNav duality="dark" />
 </Header>
 

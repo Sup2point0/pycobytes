@@ -59,7 +59,7 @@ td {
     padding: 0 10rem 0.5rem 0;
     @include font-ui;
     font-size: 200%;
-    color: $col-deut;
+    color: $col-prot;
     border-bottom: 1px solid $grey-spirit;
   }
 }

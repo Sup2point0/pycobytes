@@ -58,7 +58,7 @@ input {
 button {
   font-size: 100%;
   color: white;
-  background-color: light-dark($col-prot, $col-deut);
+  background-color: light-dark($col-deut, $col-prot);
 
   &:hover {
     background-color: $pink-elec;

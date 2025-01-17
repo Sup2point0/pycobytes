@@ -79,23 +79,21 @@ nav {
   top: 0;
   z-index: 20;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 0.5rem;
+  
+  font-size: 110%;
   background: rgb($blue-night, 80%);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid $col-deut;
-  transition: #{fade-duality()};
+  border-bottom: 1px solid $col-prot;
 }
 
 section {
-  padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 0.4rem;
 }
 
