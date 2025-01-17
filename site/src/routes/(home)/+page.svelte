@@ -34,14 +34,14 @@ onMount(processAnimations);
       </div>
 
       <div class="right">
-        <FlavourButton text="Read the latest issue &ensp; 🡪"
+        <FlavourButton text="Read the latest issue &thinsp; 🡪"
           intern="issues/{issues[0].index}"
         />
       </div>
     </div>
 
-    <div style="width: max-content; position: absolute; right: 12vw; bottom: 20px; padding: 1rem; background: #9090f1; color: white; font-family: 'Gabarito';">
-      Heads up: the site is still being migrated to Svelte 5, so there may be some issues. We’ll be back up soon!
+    <div style="width: max-content; position: absolute; right: 12vw; bottom: 20px; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
+      Heads up: I’m still migrating the site to Svelte 5, so there may be issues. We’ll be back up soon!
     </div>
   </section>
 
@@ -68,20 +68,13 @@ onMount(processAnimations);
     <p> Quick, snappy and fun! </p>
   </section>
 
-  <FlavourButton text="Start Exploring"
-    intern="issues"
-  />
+  <div class="line"></div>
 
-  <!-- <LinkButton link="{base}/issues">
-    Start Exploring <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    {#snippet hover()}
-      <span>
-        {#each {length: 3} as _, i}
-          <span class="material-symbols-outlined"> arrow_forward_ios </span>
-        {/each}
-      </span>
-    {/snippet}
-  </LinkButton> -->
+  <div style:padding="2rem 0">
+    <FlavourButton text="Start Exploring"
+      intern="issues"
+    />
+  </div>
 
   <section>
     <img id="xkcd" alt="XKCD 353" title="XKCD 353" src="https://imgs.xkcd.com/comics/python.png">
@@ -108,15 +101,13 @@ section {
   &:not(.hero) {
     width: 69%;
     max-width: 69%;
-    margin: 2rem 0;
+    padding: 2rem 0;
   }
   
   & h2 {
-    position: relative;
-    z-index: 1;
     @include font-head;
     padding: 0 0 0.5em; // down here to override font-head
-    font-weight: 400;
+    font-weight: 350;
     font-size: 300%;
 
     &.pyco-full-flavour {
@@ -125,9 +116,9 @@ section {
   }
 
   & p {
-    @include font-ui;
+    @include font-body;
     font-size: 150%;
-    color: light-dark($grey-storm, $grey-swallow);
+    color: light-dark($grey-ocean, $grey-swallow);
   }
 
   & .caption {
@@ -197,11 +188,6 @@ section {
   justify-content: end;
 }
 
-.material-symbols-outlined {
-  font-size: 1rem;
-  vertical-align: middle;
-}
-
 /// NOTE putting animation styles here until needed on other pages
 .anim {
   transition-property: opacity, transform;
@@ -225,7 +211,6 @@ section {
 #xkcd {
   width: 50vw;
   max-width: 100vw;
-  margin-top: 3rem;
 }
 
 </style>
