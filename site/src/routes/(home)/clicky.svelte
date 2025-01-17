@@ -62,8 +62,10 @@ async function clicky() {
 
 
 <div class="clicky">
-  <button onclick={clicky}>
-    {#if clickData}
+  <!-- <button onclick={clicky}> -->
+  <button>
+    We’ll be back soon!
+    <!-- {#if clickData}
       {#if clickState == ClickState.Depleted}
         <p> This button has been clicked by {clickData.clickCount ?? "?"} pips, including you! </p>
       
@@ -81,7 +83,7 @@ async function clicky() {
     {:else}
       <p> Oh, what’s this? </p>
     
-    {/if}
+    {/if} -->
   </button>
 
   <p class="caption"> {clickData?.lastClick

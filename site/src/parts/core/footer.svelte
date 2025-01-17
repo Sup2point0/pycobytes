@@ -41,7 +41,7 @@ footer {
 .dark-overlay {
   width: 100%;
   height: 100%;
-  padding: 4rem 10% 4rem;
+  padding: 4rem 10% 8rem;
   display: flex;
   flex-direction: column;
   align-items: end;
