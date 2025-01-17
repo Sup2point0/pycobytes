@@ -2,6 +2,7 @@
 <!-- #SQUARK live!
 | dest = (info)/decoded
 | title = decoded
+| head = <em>decoded</em>: pycobytes
 -->
 
 > [!Note]
