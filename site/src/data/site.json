@@ -244,9 +244,9 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2024-12-16 18:30:49 +0000",
-      "slocs": 103,
-      "chars": 3334,
+      "last_deploy": "2025-01-17 12:02:24 +0000",
+      "slocs": 102,
+      "chars": 3337,
       "isIndex": false,
       "flags": [
         "live"
@@ -268,9 +268,9 @@
     },
     "issues/03.md": {
       "path": "issues/03.md",
-      "last_deploy": "2024-12-16 18:30:49 +0000",
-      "slocs": 107,
-      "chars": 3387,
+      "last_deploy": "2025-01-17 12:02:28 +0000",
+      "slocs": 106,
+      "chars": 3390,
       "isIndex": false,
       "flags": [
         "live"
@@ -541,9 +541,9 @@
     },
     "issues/14.md": {
       "path": "issues/14.md",
-      "last_deploy": "2024-12-17 15:27:38 +0000",
+      "last_deploy": "2025-01-17 12:02:36 +0000",
       "slocs": 149,
-      "chars": 3987,
+      "chars": 3989,
       "isIndex": false,
       "flags": [
         "live"
@@ -565,9 +565,9 @@
     },
     "issues/15.md": {
       "path": "issues/15.md",
-      "last_deploy": "2025-01-17 11:21:42 +0000",
-      "slocs": 111,
-      "chars": 2968,
+      "last_deploy": "2025-01-17 12:16:32 +0000",
+      "slocs": 133,
+      "chars": 3329,
       "isIndex": false,
       "flags": [
         "live"

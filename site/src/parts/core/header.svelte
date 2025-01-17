@@ -35,6 +35,8 @@ let { ctx, title, desc, children }: Props = $props();
     {/if}
 
     {@render children?.()}
+
+    <hr style:display="none">
   </div>
 </header>
 
