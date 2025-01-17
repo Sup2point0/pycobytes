@@ -13,21 +13,31 @@ import { pickRandomIssue } from "#scripts/utils";
 import NavLink from "#parts/core/nav.link.svelte";
 import NavDropLink from "#parts/core/nav.link.drop.svelte";
 
+import Pycobytes from "#parts/misc/pyco.svelte";
+
 </script>
 
 
 <nav>
   <section class="left">
-    <NavLink pict="pycobytes-icon.png" link={Site.root}>
+    <NavLink link={Site.root}
+      pict="pycobytes-icon.png"
+    >
       {#snippet body()}
-        <span class="pyco-flavour left">pyco</span><span class="pyco-flavour centre">:</span><span class="pyco-flavour right">bytes</span>
+        <span style:padding="0.5em 0.25em">
+          <Pycobytes size="1.25rem" />
+        </span>
       {/snippet}
     </NavLink>
 
-    <NavLink text="duality" button={swapDuality} collapse={true}>
+    <NavLink text="duality" action={swapDuality} collapse={true}>
       {#snippet body()}
-        <span class="material-symbols-outlined">
-          {#if duality == "dark"} dark_mode {:else} light_mode {/if}
+        <span class="material-symbols-outlined" style:padding="0.4em 0">
+          {#if duality == "dark"}
+            dark_mode
+          {:else}
+            light_mode
+          {/if}
         </span>
       {/snippet}
     </NavLink>
@@ -36,8 +46,9 @@ import NavDropLink from "#parts/core/nav.link.drop.svelte";
   <section class="right">
     <NavLink text="About" intern="synopsis" collapse={true} >
       <NavDropLink text="FAQ" intern="faq" />
-      <NavDropLink text="Synopsis" intern="synopsis" />
       <NavDropLink text="decoded" intern="decoded" />
+      <NavDropLink text="License" intern="license" />
+      <NavDropLink text="Privacy" intern="privacy" />
     </NavLink>
 
     <NavLink text="Issues" intern="issues" collapse={true} >
@@ -73,8 +84,8 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  background: rgb(black, 70%);
-  backdrop-filter: blur(12px);
+  background: rgb($blue-night, 70%);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid $col-deut;
   transition: #{fade-duality()};
 }

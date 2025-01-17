@@ -84,8 +84,8 @@ let {
 }
 
 .trigger {
-  padding: 0.8em 1em 0.7em;
-  &:has(img) { padding: 0.6em 1em 0.4em; }
+  padding: 0 1em;
+  &:has(img) { padding: 0 0.5em; }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,19 +96,19 @@ let {
   transition: #{fade-duality()}, #{fade-interact()};
 
   p {
+    padding: 0.8em 0 0.7em;
     @include font-ui;
     color: white;
     transition: #{fade-interact()};
   }
 
   img {
-    margin-top: -3px;
+    // margin-top: -3px;
     max-height: 1.6em;
   }
 
   img ~ p {
     padding-left: 0.5em;
-    padding-right: 0.5em;
   }
 
   &:hover, &:focus {
