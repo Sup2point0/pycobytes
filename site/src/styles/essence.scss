@@ -73,9 +73,9 @@ hr {
 }
 
 
-:not(code, code > *)::selection {
-  color: white !important;
-  background-color: light-dark($col-deut, $col-prot) !important;
+:not(pre code, pre code > *)::selection {
+  // color: white !important;
+  background-color: rgb($col-prot, 50%) !important;
 }
 
 
