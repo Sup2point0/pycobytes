@@ -1,13 +1,24 @@
-<footer>
-  <div class="info left">
-    <p style:font-size="125%"> <span class="pyco-flavour left">pyco</span><span class="pyco-flavour centre">:</span><span class="pyco-flavour right">bytes</span>
-    <br> exploring the magic of Python, week by week </p>
-    <p> by <a href="https://github.com/Sup2point0">Sup#2.0</a> </p>
-  </div>
+<script>
 
-  <small>
-    built with <a target="_blank" href="https://svelte.dev/">Svelte 5</a> + <a target="_blank" href="https://svelte.dev/docs/kit/introduction">SvelteKit</a> &ensp; · &ensp; hosted on <a target="_blank" href="https://pages.github.com/">GitHub Pages</a>
-  </small>
+import Pycobytes from "#parts/misc/pyco.svelte";
+
+</script>
+
+
+<footer>
+  <div class="dark-overlay">
+    <div class="info">
+      <Pycobytes size="500%" />
+      <p id="footer-pyco-desc"> exploring the magic of Python, week by week </p>
+      <div class="line"></div>
+
+      <p id="footer-sup"> by <a href="https://github.com/Sup2point0">Sup#2.0</a> </p>
+    </div>
+
+    <div class="credits">
+      built with <a target="_blank" href="https://svelte.dev/">Svelte 5</a> + <a target="_blank" href="https://svelte.dev/docs/kit/introduction">SvelteKit</a> &thinsp; · &thinsp; hosted on <a target="_blank" href="https://pages.github.com/">GitHub Pages</a>
+    </div>
+  </div>
 </footer>
 
  
@@ -15,27 +26,55 @@
 
 @use './src/styles/links' as *;
 
-p {
-  margin-bottom: 2em;
-}
-
 footer {
-  width: 100%;
+  color-scheme: dark;
   margin-top: 2rem;
-  padding: 2rem 10% 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 
   @include font-ui;
-  color: $col-text-deut;
-  background-color: $col-hover;
-  transition: #{fade-duality()};
+  color: white;
+  background-color: $blue-night;
+  background-image: url("/pycobytes-back-2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-small {
+.dark-overlay {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  padding: 4rem 10% 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  background: linear-gradient(to right in srgb,
+    rgb(black, 20%),
+    black 75%,
+  );
+  backdrop-filter: blur(1px);
+}
+
+.info {
+  margin-bottom: 5em;
+  
+  #footer-pyco-desc {
+    padding-top: 0.75em;
+    font-size: 150%;
+  }
+
+  .line {
+    width: 50%;
+    padding-top: 0.75em;
+    margin-left: auto;
+    border-bottom: 1px solid $col-prot;
+  }
+
+  #footer-sup {
+    padding-top: 2em;
+  }
+}
+
+.credits {
+  padding-top: 1em;
 }
 
 </style>
