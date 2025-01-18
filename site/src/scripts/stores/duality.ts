@@ -8,17 +8,7 @@ export let duality = new PersistedState<Duality>("pyco.duality", null)
 
 
 /** Get system theme preference. */
-export function getLocalDuality(window): Duality
-{
-  if (window.matchMedia) {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
-  }
-  return "light";
-}
+
 
 /** If the theme is not set, set it to the system theme. */
 export function setFromLocalDuality(window): Duality

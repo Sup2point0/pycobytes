@@ -79,13 +79,6 @@ hr {
 }
 
 
-:where(.duality-container) {
-  color: $col-text;
-  background-color: $col-back;
-  transition: #{fade-duality()};
-}
-
-
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,

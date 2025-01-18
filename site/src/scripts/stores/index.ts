@@ -1,1 +1,1 @@
-export { duality, getLocalDuality, setFromLocalDuality, swapDuality } from "./duality";
+export { prefs } from "./prefs.svelte.ts";

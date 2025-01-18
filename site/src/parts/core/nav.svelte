@@ -5,15 +5,18 @@ The global site navigation bar.
 
 <script lang="ts">
 
-import Site from "#src/site";
+import * as cookies from "cookie";
 
-import { duality, swapDuality } from "#scripts/stores";
+import Site from "#src/site";
+import { prefs } from "#scripts/stores";
 import { pickRandomIssue } from "#scripts/utils";
 
 import NavLink from "#parts/core/nav.link.svelte";
 import NavDropLink from "#parts/core/nav.link.drop.svelte";
 
 import Pycobytes from "#parts/misc/pyco.svelte";
+
+import { page } from "$app/state";
 
 </script>
 
@@ -30,10 +33,18 @@ import Pycobytes from "#parts/misc/pyco.svelte";
       {/snippet}
     </NavLink>
 
-    <NavLink text="duality" action={swapDuality}>
+    <NavLink text="duality" action={() => {
+      let current = cookies.parse(document.cookie)?.duality;
+
+      let changed: "light" | "dark" = (current === "dark" ? "light" : "dark");
+      prefs.duality = changed;
+      console.log(prefs)
+
+      document.cookie = cookies.serialize("duality", changed, { path: "/" });
+    }}>
       {#snippet body()}
         <span class="material-symbols-outlined" style:padding="0.4em 0">
-          {#if duality == "dark"}
+          {#if page.data.duality === "dark"}
             dark_mode
           {:else}
             light_mode

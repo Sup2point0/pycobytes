@@ -5,7 +5,7 @@ A link in the navbar. Dropdown links can be provided as `NavDropLink` children.
 
 <script lang="ts">
 
-import { duality } from "#scripts/stores";
+import { prefs } from "#scripts/stores";
 
 import { base } from "$app/paths";
 
@@ -13,10 +13,7 @@ import { base } from "$app/paths";
 interface Props {
   text?: string;
     body?: any;
-  pict?: string | {
-    light?: string;
-    dark?: string;
-  };
+  pict?: string;
   link?: string;
     intern?: string;
     extern?: string;
@@ -39,10 +36,7 @@ let {
 
 {#snippet content()}
   {#if pict}
-    <img alt="" src="{base}/{
-      typeof pict === 'string' ? pict
-      : duality === 'light' ? pict.light : pict.dark
-    }" />
+    <img alt="" src="{base}/{pict}" />
   {/if}
 
   {#if body}
