@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-      "devx": "npm run prep && Vite dev",
+    "devx": "npm run prep && Vite dev",
     "prep": "npm run squark",
-      "prepx": "npm run squarkx",
+    "prepx": "npm run squarkx",
     "squark": "cd ../.stranger-quarkdown && rake squark && cd ../site",
-      "squarkx": "cd ../.stranger-quarkdown && rake squark[fonts,scss,assets] && cd ../site",
+    "squarkx": "cd ../.stranger-quarkdown && rake squark[fonts,scss,assets] && cd ../site",
     "build": "vite build",
-      "buildx": "npm run prepx && vite build",
+    "buildx": "npm run prepx && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -19,7 +19,6 @@
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "javascript-time-ago": "^2.5.10",
     "mdsvex": "^0.11.0",
-    "remark-github-blockquote-alert": "^1.2.1",
     "sass": "^1.77.3",
     "svelte": "^5.0.0",
     "svelte-persisted-store": "^0.11.0",

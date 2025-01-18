@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exported": "2025-01-17",
+    "exported": "2025-01-18",
     "file_count": 20,
     "page_count": 19
   },
@@ -565,9 +565,9 @@
     },
     "issues/15.md": {
       "path": "issues/15.md",
-      "last_deploy": "2025-01-17 12:16:32 +0000",
+      "last_deploy": "2025-01-17 17:33:43 +0000",
       "slocs": 133,
-      "chars": 3329,
+      "chars": 3332,
       "isIndex": false,
       "flags": [
         "live"
@@ -583,8 +583,8 @@
       "shard": [
         "internals"
       ],
-      "date": "2025-01-01",
-      "date_display": "2025 January"
+      "date": "2025-01-17",
+      "date_display": "2025 January 17"
     },
     "issues/404.md": {
       "path": "issues/404.md",
