@@ -5,8 +5,6 @@ A link in the navbar. Dropdown links can be provided as `NavDropLink` children.
 
 <script lang="ts">
 
-import { prefs } from "#scripts/stores";
-
 import { base } from "$app/paths";
 
 
@@ -97,7 +95,6 @@ let {
   }
 
   img {
-    // margin-top: -3px;
     max-height: 1.6em;
   }
 

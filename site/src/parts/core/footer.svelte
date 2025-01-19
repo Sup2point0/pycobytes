@@ -57,7 +57,7 @@ footer {
   margin-bottom: 5em;
   
   #footer-pyco-desc {
-    padding-top: 0.75em;
+    padding: 0.75em 0 1.5em;
     font-size: 150%;
   }
 
@@ -69,7 +69,7 @@ footer {
   }
 
   #footer-sup {
-    padding-top: 2em;
+    padding-top: 1em;
   }
 }
 

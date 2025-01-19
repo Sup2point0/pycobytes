@@ -35,16 +35,14 @@ import { page } from "$app/state";
 
     <NavLink text="duality" action={() => {
       let current = cookies.parse(document.cookie)?.duality;
-
       let changed: "light" | "dark" = (current === "dark" ? "light" : "dark");
-      prefs.duality = changed;
-      console.log(prefs)
 
+      prefs.duality = changed;
       document.cookie = cookies.serialize("duality", changed, { path: "/" });
     }}>
       {#snippet body()}
         <span class="material-symbols-outlined" style:padding="0.4em 0">
-          {#if page.data.duality === "dark"}
+          {#if prefs.duality === "dark"}
             dark_mode
           {:else}
             light_mode

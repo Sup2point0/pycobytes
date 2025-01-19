@@ -18,20 +18,26 @@ import { browser } from "$app/environment";
 let { children, data } = $props();
 
 
-let client = false;
+let client = $state(false);
 
 onMount(() => {
   if (browser) {
     client = true;
+
     let current = cookies.parse(document.cookie)?.duality;
 
+    // if unset, sync with local preference
+    let pref: "light" | "dark" = data.duality;
     if (current === undefined) {
-      let pref = (
+      pref = (
         window.matchMedia?.("(prefers-color-scheme: dark)").matches
         ? "light" : "dark"
       );
+      data.duality = pref;
       document.cookie = cookies.serialize("duality", pref, { path: "/" });
     }
+
+    prefs.duality = pref;
   }
 })
 
@@ -56,7 +62,9 @@ onMount(() => {
 <style lang="scss">
 
 .duality-container {
+  color: $col-text;
   background: light-dark(white, $blue-night);
+  transition: #{fade-duality()};
 }
 
 </style>
