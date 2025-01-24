@@ -5,39 +5,64 @@
 @use './src/styles/links' as *;
 
 
+$root-size: 120%;
+
+
 p {
   margin: 1.5em 0;
   @include font-body;
-  font-size: 120%;
+  font-size: $root-size;
+}
+
+main h1 {
+  display: none;
 }
 
 h2, h3 {
-  border-bottom: 1px solid light-dark($grey-nova, $blue-deep);
+  width: 90%;
+  padding: 0 0 0.4em;
+  margin: 1.5em 0 1em;
+  @include font-ui;
+  color: light-dark($col-deut, $col-prot);
+  border-bottom: 1.5px solid $col-line;
+}
+h2 { font-size: $root-size * 1.5; }
+h3 { font-size: $root-size * 1.25; }
+
+img {
+  box-shadow: 0 2px 8px light-dark(#ddd, white);
 }
 
 blockquote:first-child {
-  margin: 0 0 3rem;
+  $width-factor: 15%;
   padding: 0 0 2rem;
+  margin: 0 0 3rem;
   text-align: center;
   border-left: none;
-  border-bottom: 2px solid light-dark($grey-spirit, $blue-deep);
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right,
+    transparent $width-factor,
+    $col-line $width-factor,
+    $col-line (100% - $width-factor),
+    transparent (100% - $width-factor)
+  ) 100% 1;
 
   p {
     margin: 0;
     @include font-ui;
     font-size: 200%;
     color: light-dark($col-deut, $col-prot);
+    em { font-style: normal; }
   }
+}
 
-  // &:after {
-  //   content: '';
-  //   width: 60%;
-  //   height: 4rem;
-  //   position: absolute;
-  //   z-index: 1;
-  //   bottom: 1rem;
-  //   display: block;
-  //   background-color: light-dark($grey-swallow, $blue-deep);
-  //   transform: translateZ(-1)
-  // }
+
+li {
+  @include font-ui;
+  font-size: $root-size;
+
+  &::marker {
+    color: $col-line;
+    content: '›   ';
+  }
 }

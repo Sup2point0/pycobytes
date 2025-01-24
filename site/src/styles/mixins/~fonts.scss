@@ -11,13 +11,6 @@
   letter-spacing: 0.015em;
 }
 
-@mixin font-head {
-  padding: 1em 0 0.1em;
-  font-family: 'Gantari', 'Source Sans Pro', 'Segoe UI', system-ui;
-  font-weight: 600;
-  font-size: 150%;
-}
-
 @mixin font-code {
   font-family: 'Fira Mono', 'Consolas', monospace;
   font-weight: normal;
