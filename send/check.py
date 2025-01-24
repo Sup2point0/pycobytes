@@ -10,6 +10,8 @@ def check(text: str):
     sys.exit()
 
 
+check("Have we set the quote?")
 check("Have we set the header links?")
+check("Have we updated the Codeless / XKCD")
 check("Have we set the email preview text?")
 check("Have we cc-d?")
