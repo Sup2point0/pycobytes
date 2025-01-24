@@ -104,8 +104,8 @@ section {
   }
   
   & h2 {
-    @include font-head;
-    padding: 0 0 0.5em; // down here to override font-head
+    padding: 0 0 0.5em;
+    @include font-ui;
     font-weight: 350;
     font-size: 300%;
 
