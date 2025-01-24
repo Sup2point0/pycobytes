@@ -59,8 +59,19 @@ img {
   object-fit: contain;
 }
 
+/* colouring <hr> is a bit nontrivial, so we'll use a pseudo-element instead */
 hr {
-  color: light-dark($grey-nova, $blue-deep);
+  width: 90%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  visibility: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    visibility: visible;
+    border-bottom: 1px solid $col-line;
+  }
 }
 
 
