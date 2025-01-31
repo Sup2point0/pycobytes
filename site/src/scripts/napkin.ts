@@ -9,7 +9,7 @@ export interface ClickData {
 }
 
 
-export default async function requestNapkin(
+export async function request_napkin(
   method: string,
   body: object | null = null
 ): Promise<ClickData>
