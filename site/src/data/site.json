@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-01-24",
-    "file_count": 21,
-    "page_count": 20
+    "exported": "2025-01-31",
+    "file_count": 22,
+    "page_count": 21
   },
   "index": {
     "01": {
@@ -101,6 +101,12 @@
         "issues/16.md"
       ]
     },
+    "17": {
+      "route": null,
+      "pages": [
+        "issues/17.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -171,7 +177,8 @@
     ],
     "functions": [
       "issues/10.md",
-      "issues/13.md"
+      "issues/13.md",
+      "issues/17.md"
     ],
     "modules": [
       "issues/12.md"
@@ -573,9 +580,9 @@
     },
     "issues/15.md": {
       "path": "issues/15.md",
-      "last_deploy": "2025-01-24 07:27:02 +0000",
+      "last_deploy": "2025-01-31 10:56:24 +0000",
       "slocs": 133,
-      "chars": 3328,
+      "chars": 3329,
       "isIndex": false,
       "flags": [
         "live"
@@ -617,6 +624,29 @@
       ],
       "date": "2025-01-24",
       "date_display": "2025 January 24"
+    },
+    "issues/17.md": {
+      "path": "issues/17.md",
+      "last_deploy": "2025-01-31 11:59:57 +0000",
+      "slocs": 162,
+      "chars": 6096,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/17",
+      "title": "Zipped and Quipped",
+      "head": "Zipped and Quipped",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "17"
+      ],
+      "shard": [
+        "functions"
+      ],
+      "date": "2025-01-31",
+      "date_display": "2025 January 31"
     },
     "issues/404.md": {
       "path": "issues/404.md",

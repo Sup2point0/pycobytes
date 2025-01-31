@@ -27,7 +27,7 @@ code {
   @include font-code;
 }
 
-p code {
+p code, li code {
   padding: 0.2em 0.4em;
   margin: 0;
   white-space: break-spaces;

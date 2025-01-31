@@ -29,6 +29,10 @@ h2, h3 {
 h2 { font-size: $root-size * 1.5; }
 h3 { font-size: $root-size * 1.25; }
 
+strong {
+  font-weight: 450;
+}
+
 img {
   box-shadow: 0 2px 8px light-dark(#ddd, white);
 }
