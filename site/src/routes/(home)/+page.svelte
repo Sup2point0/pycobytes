@@ -86,6 +86,9 @@ onMount(processAnimations);
 
 <style lang="scss">
 
+@use 'src/styles/links' as *;
+
+
 main {
   display: flex;
   flex-direction: column;

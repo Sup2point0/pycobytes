@@ -151,6 +151,7 @@ let {
   outline: 1.5px solid white;
   // backdrop-filter: blur(12px);  // FIXME will need to use pseudoelement
   border-radius: 0.5em;
+  box-shadow: 0 4px 8px -1px rgb(black, 20%);
   transform: translateY(1.2em);
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
