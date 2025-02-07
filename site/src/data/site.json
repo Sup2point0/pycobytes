@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-01-31",
-    "file_count": 22,
-    "page_count": 21
+    "exported": "2025-02-07",
+    "file_count": 23,
+    "page_count": 22
   },
   "index": {
     "01": {
@@ -107,6 +107,12 @@
         "issues/17.md"
       ]
     },
+    "18": {
+      "route": null,
+      "pages": [
+        "issues/18.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -188,6 +194,9 @@
     ],
     "internals": [
       "issues/15.md"
+    ],
+    "dictionaries": [
+      "issues/18.md"
     ],
     "special": [
       "issues/404.md"
@@ -647,6 +656,29 @@
       ],
       "date": "2025-01-31",
       "date_display": "2025 January 31"
+    },
+    "issues/18.md": {
+      "path": "issues/18.md",
+      "last_deploy": "2025-02-07 10:20:21 +0000",
+      "slocs": 125,
+      "chars": 3952,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/18",
+      "title": "The Mighty Dictionary",
+      "head": "The Mighty Dictionary",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "18"
+      ],
+      "shard": [
+        "dictionaries"
+      ],
+      "date": "2025-02-07",
+      "date_display": "2025 February 7"
     },
     "issues/404.md": {
       "path": "issues/404.md",
