@@ -612,9 +612,9 @@
     },
     "issues/16.md": {
       "path": "issues/16.md",
-      "last_deploy": "2025-01-24 10:34:43 +0000",
+      "last_deploy": "2025-02-07 10:34:09 +0000",
       "slocs": 177,
-      "chars": 4015,
+      "chars": 4014,
       "isIndex": false,
       "flags": [
         "live"
@@ -659,9 +659,9 @@
     },
     "issues/18.md": {
       "path": "issues/18.md",
-      "last_deploy": "2025-02-07 10:20:21 +0000",
-      "slocs": 125,
-      "chars": 3952,
+      "last_deploy": "2025-02-07 11:16:41 +0000",
+      "slocs": 139,
+      "chars": 4245,
       "isIndex": false,
       "flags": [
         "live"

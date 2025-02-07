@@ -63,7 +63,6 @@ blockquote:first-child {
 
 li {
   @include font-ui;
-  font-size: $root-size;
 
   &::marker {
     color: $col-line;
