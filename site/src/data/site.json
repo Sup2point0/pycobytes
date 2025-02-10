@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-02-07",
-    "file_count": 23,
-    "page_count": 22
+    "exported": "2025-02-10",
+    "file_count": 24,
+    "page_count": 23
   },
   "index": {
     "01": {
@@ -113,6 +113,12 @@
         "issues/18.md"
       ]
     },
+    "19": {
+      "route": null,
+      "pages": [
+        "issues/19.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -131,7 +137,8 @@
       "issues/06.md",
       "issues/08.md",
       "issues/14.md",
-      "issues/16.md"
+      "issues/16.md",
+      "issues/19.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -196,7 +203,8 @@
       "issues/15.md"
     ],
     "dictionaries": [
-      "issues/18.md"
+      "issues/18.md",
+      "issues/19.md"
     ],
     "special": [
       "issues/404.md"
@@ -679,6 +687,30 @@
       ],
       "date": "2025-02-07",
       "date_display": "2025 February 7"
+    },
+    "issues/19.md": {
+      "path": "issues/19.md",
+      "last_deploy": "2025-02-10 21:06:23 +0000",
+      "slocs": 103,
+      "chars": 3602,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/19",
+      "title": "Dictionary && Set Comprehensions",
+      "head": "Dictionary && Set Comprehensions",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "19"
+      ],
+      "shard": [
+        "dictionaries",
+        "syntax"
+      ],
+      "date": "2025-01-01",
+      "date_display": "2025"
     },
     "issues/404.md": {
       "path": "issues/404.md",

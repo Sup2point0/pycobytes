@@ -108,8 +108,8 @@ button {
 
   @include font-ui;
   font-size: 120%;
-  color: light-dark(white, white);
-  background: light-dark(black, white);
+  color: white;
+  background: black;
   border: none;
   border-radius: 2rem;
   transition: all 0.12s ease-out;  // ease-out cubic

@@ -39,9 +39,9 @@ onMount(processAnimations);
       </div>
     </div>
 
-    <div style="width: max-content; position: fixed; left: 5vw; bottom: 20px; z-index: 50; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
+    <!-- <div style="width: max-content; position: fixed; left: 5vw; bottom: 20px; z-index: 50; padding: 1rem; background: #145090; color: white; font-family: 'Sen';">
       Heads up: I’m still migrating the site to Svelte 5, so some things might be broken. We’ll be back up soon!
-    </div>
+    </div> -->
   </section>
 
   <section class="right anim on-scroll init-only">
@@ -136,7 +136,7 @@ section {
   width: 42vw;
   max-width: 42vw;
   margin: 2rem 0;
-  border-bottom: 1px solid light-dark($col-prot, white);
+  border-bottom: 1px solid $col-prot;
 }
 
 .hero {
