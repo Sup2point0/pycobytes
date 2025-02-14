@@ -23,7 +23,7 @@ enum ClickState {
   Error,
 }
 
-let click_data: ClickData = $state();
+let click_data: ClickData | undefined = $state();
 let click_state: ClickState = $state(ClickState.Idle);
 
 
