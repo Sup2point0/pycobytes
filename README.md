@@ -18,7 +18,7 @@ So, ***pycobytes*** is a weekly series where we delve into all kinds of interest
 
 ## Portal
 
-Unsure where to start? The [pycobytes site<sup>↗</sup>](https://sup2point0.github.io/pycobytes) is pretty cool!
+Unsure where to start? You should check out the [pycobytes site<sup>↗</sup>](https://sup2point0.github.io/pycobytes)!
 
 You can read the issues [here on GitHub](issues/) or [on the site](https://sup2point0.github.io/pycobytes/issues) for a much nicer experience.
 
@@ -32,6 +32,10 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [19](issues/19.md) | 11/02/2025 | *Dictionary && Set Comprehensions* |
+| [18](issues/18.md) | 7/02/2025 | *The Mighty Dictionary* |
+| [17](issues/17.md) | 31/01/2025 | *Zipped and Quipped* |
+| [16](issues/16.md) | 24/01/2025 | *Slice, Splice, Nice* |
 | [15](issues/15.md) | 17/01/2025 | *Why is range() so fast?* |
 | [14](issues/14.md) | 17/12/24 | *SyntaxError on line 42* |
 | [13](issues/13.md) | 12/12/24 | *Counting* |
