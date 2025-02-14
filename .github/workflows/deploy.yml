@@ -14,6 +14,9 @@ jobs:
     defaults:
       run:
         working-directory: './site'
+    concurrency:
+      group: staging_environment
+      cancel-in-progress: true
         
     steps:
       - name: 'git / checkout'
