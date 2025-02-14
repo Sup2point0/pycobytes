@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-02-10",
-    "file_count": 24,
-    "page_count": 23
+    "exported": "2025-02-14",
+    "file_count": 25,
+    "page_count": 24
   },
   "index": {
     "01": {
@@ -119,6 +119,12 @@
         "issues/19.md"
       ]
     },
+    "20": {
+      "route": null,
+      "pages": [
+        "issues/20.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -194,7 +200,8 @@
       "issues/17.md"
     ],
     "modules": [
-      "issues/12.md"
+      "issues/12.md",
+      "issues/20.md"
     ],
     "quirks": [
       "issues/14.md"
@@ -690,9 +697,9 @@
     },
     "issues/19.md": {
       "path": "issues/19.md",
-      "last_deploy": "2025-02-10 21:06:23 +0000",
-      "slocs": 103,
-      "chars": 3602,
+      "last_deploy": "2025-02-11 08:08:12 +0000",
+      "slocs": 115,
+      "chars": 3770,
       "isIndex": false,
       "flags": [
         "live"
@@ -709,8 +716,31 @@
         "dictionaries",
         "syntax"
       ],
-      "date": "2025-01-01",
-      "date_display": "2025"
+      "date": "2025-02-11",
+      "date_display": "2025 February 11"
+    },
+    "issues/20.md": {
+      "path": "issues/20.md",
+      "last_deploy": "2025-02-14 09:13:21 +0000",
+      "slocs": 153,
+      "chars": 4911,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/20",
+      "title": "import itertools",
+      "head": "import itertools",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "20"
+      ],
+      "shard": [
+        "modules"
+      ],
+      "date": "2025-02-14",
+      "date_display": "2025 February 14"
     },
     "issues/404.md": {
       "path": "issues/404.md",
