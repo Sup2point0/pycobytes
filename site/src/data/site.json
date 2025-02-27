@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-02-14",
-    "file_count": 25,
-    "page_count": 24
+    "exported": "2025-02-27",
+    "file_count": 26,
+    "page_count": 25
   },
   "index": {
     "01": {
@@ -125,6 +125,12 @@
         "issues/20.md"
       ]
     },
+    "21": {
+      "route": null,
+      "pages": [
+        "issues/21.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -169,7 +175,8 @@
     "quickies": [
       "issues/03.md",
       "issues/10.md",
-      "issues/12.md"
+      "issues/12.md",
+      "issues/21.md"
     ],
     "operators": [
       "issues/04.md"
@@ -651,7 +658,7 @@
     },
     "issues/17.md": {
       "path": "issues/17.md",
-      "last_deploy": "2025-01-31 12:13:16 +0000",
+      "last_deploy": "2025-02-27 10:26:00 +0000",
       "slocs": 160,
       "chars": 5930,
       "isIndex": false,
@@ -721,9 +728,9 @@
     },
     "issues/20.md": {
       "path": "issues/20.md",
-      "last_deploy": "2025-02-14 09:13:21 +0000",
-      "slocs": 153,
-      "chars": 4911,
+      "last_deploy": "2025-02-14 10:00:41 +0000",
+      "slocs": 154,
+      "chars": 4776,
       "isIndex": false,
       "flags": [
         "live"
@@ -741,6 +748,29 @@
       ],
       "date": "2025-02-14",
       "date_display": "2025 February 14"
+    },
+    "issues/21.md": {
+      "path": "issues/21.md",
+      "last_deploy": "2025-02-27 13:01:52 +0000",
+      "slocs": 117,
+      "chars": 2726,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/21",
+      "title": "Quickswap, Swapquick",
+      "head": "Quickswap, Swapquick",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "21"
+      ],
+      "shard": [
+        "quickies"
+      ],
+      "date": "2025-02-27",
+      "date_display": "2025 February 27"
     },
     "issues/404.md": {
       "path": "issues/404.md",
