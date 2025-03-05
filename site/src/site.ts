@@ -1,8 +1,8 @@
 import type { IssueData } from "#scripts/types";
 
 
-const data = await import("./data/site.json");
-const pages = Object.values(data.default.pages);
+import data from "./data/site.json" assert { type: "json" };
+const pages = Object.values(data.pages);
 
 
 interface SiteData {
