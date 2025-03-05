@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-02-27",
-    "file_count": 26,
-    "page_count": 25
+    "exported": "2025-03-05",
+    "file_count": 27,
+    "page_count": 26
   },
   "index": {
     "01": {
@@ -131,6 +131,12 @@
         "issues/21.md"
       ]
     },
+    "22": {
+      "route": null,
+      "pages": [
+        "issues/22.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -150,7 +156,8 @@
       "issues/08.md",
       "issues/14.md",
       "issues/16.md",
-      "issues/19.md"
+      "issues/19.md",
+      "issues/22.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -751,9 +758,9 @@
     },
     "issues/21.md": {
       "path": "issues/21.md",
-      "last_deploy": "2025-02-27 13:01:52 +0000",
-      "slocs": 117,
-      "chars": 2726,
+      "last_deploy": "2025-02-27 13:55:52 +0000",
+      "slocs": 115,
+      "chars": 2748,
       "isIndex": false,
       "flags": [
         "live"
@@ -771,6 +778,29 @@
       ],
       "date": "2025-02-27",
       "date_display": "2025 February 27"
+    },
+    "issues/22.md": {
+      "path": "issues/22.md",
+      "last_deploy": "2025-03-05 11:34:13 +0000",
+      "slocs": 143,
+      "chars": 3526,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/22",
+      "title": "Unpacking Variable Unpacking",
+      "head": "Unpacking Variable Unpacking",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "22"
+      ],
+      "shard": [
+        "syntax"
+      ],
+      "date": "2025-03-05",
+      "date_display": "2025 March 5"
     },
     "issues/404.md": {
       "path": "issues/404.md",
