@@ -32,7 +32,9 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
-| [22](issues/22.md) | 11/02/25 | *Unpacking Variable Unpacking* |
+| [24](issues/24.md) | 04/04/25 | *\*Alien \*\*Kwargs* |
+| [23](issues/23.md) | 14/03/25 | *The Argument Over Parameters* |
+| [22](issues/22.md) | 05/03/25 | *Unpacking Variable Unpacking* |
 | [21](issues/21.md) | 27/02/25 | *Quickswap, Swapquick* |
 | [20](issues/20.md) | 14/02/25 | *import itertools* |
 | [19](issues/19.md) | 11/02/25 | *Dictionary && Set Comprehensions* |
