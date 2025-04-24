@@ -20,9 +20,9 @@ let { ctx, title, desc, children }: Props = $props();
       <code> #{$page.data.index} </code>
       <h1 class="pyco-full-flavour"> {@html $page.data.head} </h1>
 
-      <ul class="shards">
-        {#each $page.data.shard ?? [] as shard}
-          <li class={shard}> {shard} </li>
+      <ul class="tags">
+        {#each $page.data.tags ?? [] as tag}
+          <li class={tag}> {tag} </li>
         {/each}
       </ul>
 
@@ -84,7 +84,7 @@ p {
   color: white;
 }
 
-ul.shards {
+ul.tags {
   margin: 3rem 0 1rem;
   display: flex;
   flex-direction: row;
