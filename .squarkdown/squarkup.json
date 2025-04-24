@@ -1,29 +1,36 @@
 {
-  "$schema": "../.stranger-quarkdown/squarkdown/resources/squarkup-schema.json",
+  "$schema": "https://sup2point0.github.io/stranger-quarkdown/squarkup-schema/latest.json",
 
   "repo": "pycobytes",
 
-  "site": "site",
-  "sources": [""],
-  "exclude": [
+  "paths / site": "site",
+  "paths / sources": [
+    "./",
+    "issues/"
+  ],
+  "paths / exclude": [
     ".stranger-quarkdown/",
     "site/"
   ],
-  "dest": "src/routes/",
-  "if-no-dir": ["warn", "create"],
-  "on-error": "kill",
+  "paths / dest": "src/routes/",
 
-  "file-name": "~content",
-  "bases": "src/parts/bases",
-  "page.svelte": "~page.svelte",
-  "page.js": "~page.js",
+  "out / file-name": "~content",
+  "out / site-data": "src/data/site.json",
   
-  "site-data": "src/data/site.json",
-  "styles": "src/styles",
-  "page-styles": "src/styles",
-  "assets": "assets",
-  "site-assets": "assets/site",
-  "fonts": [
+  "opts / if-no-dir": ["warn", "create"],
+  "opts / on-error": "kill",
+
+  "bases / path": "src/parts/bases",
+  "bases / page.svelte": "~page.svelte",
+  "bases / page.js": "~page.js",
+  
+  "styles / path": "src/styles",
+  "styles / page-styles": "src/styles",
+  
+  "assets / path": "assets",
+  "assets / site-assets": "assets/site",
+
+  "fonts / queries": [
     "Fira+Mono:wght@400;500;700",
     "Geologica:wght@100",
     "Readex+Pro:wght@160..700",

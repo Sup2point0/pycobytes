@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-04-04",
-    "file_count": 29,
-    "page_count": 28
+    "exported": "2025-04-24",
+    "file_count": 30,
+    "page_count": 29
   },
   "index": {
     "01": {
@@ -149,6 +149,12 @@
         "issues/24.md"
       ]
     },
+    "25": {
+      "route": null,
+      "pages": [
+        "issues/25.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -156,92 +162,83 @@
       ]
     }
   },
-  "shard": {
-    "lists": [
-      "issues/01.md",
-      "issues/16.md"
+  "tags": {
+    "01": [
+      "issues/01.md"
     ],
-    "syntax": [
-      "issues/01.md",
-      "issues/02.md",
-      "issues/06.md",
-      "issues/08.md",
-      "issues/14.md",
-      "issues/16.md",
-      "issues/19.md",
-      "issues/22.md",
-      "issues/23.md",
-      "issues/24.md"
+    "02": [
+      "issues/02.md"
     ],
-    "challenge": [
-      "issues/01.md",
-      "issues/03.md",
-      "issues/04.md",
-      "issues/06.md",
-      "issues/07.md",
-      "issues/08.md",
-      "issues/09.md",
-      "issues/10.md",
-      "issues/11.md",
-      "issues/13.md"
-    ],
-    "strings": [
-      "issues/02.md",
-      "issues/03.md",
-      "issues/04.md"
-    ],
-    "methods": [
+    "03": [
       "issues/03.md"
     ],
-    "quickies": [
-      "issues/03.md",
-      "issues/10.md",
-      "issues/12.md",
-      "issues/21.md"
-    ],
-    "operators": [
+    "04": [
       "issues/04.md"
     ],
-    "tricks": [
-      "issues/04.md",
-      "issues/08.md",
-      "issues/10.md"
-    ],
-    "sets": [
+    "05": [
       "issues/05.md"
     ],
-    "tuples": [
+    "06": [
       "issues/06.md"
     ],
-    "booleans": [
-      "issues/07.md",
+    "07": [
+      "issues/07.md"
+    ],
+    "08": [
+      "issues/08.md"
+    ],
+    "09": [
       "issues/09.md"
     ],
-    "technical": [
-      "issues/07.md",
-      "issues/09.md",
+    "10": [
+      "issues/10.md"
+    ],
+    "11": [
       "issues/11.md"
     ],
-    "functions": [
-      "issues/10.md",
-      "issues/13.md",
-      "issues/17.md"
+    "12": [
+      "issues/12.md"
     ],
-    "modules": [
-      "issues/12.md",
-      "issues/20.md"
+    "13": [
+      "issues/13.md"
     ],
-    "quirks": [
+    "14": [
       "issues/14.md"
     ],
-    "internals": [
+    "15": [
       "issues/15.md"
     ],
-    "dictionaries": [
-      "issues/18.md",
+    "16": [
+      "issues/16.md"
+    ],
+    "17": [
+      "issues/17.md"
+    ],
+    "18": [
+      "issues/18.md"
+    ],
+    "19": [
       "issues/19.md"
     ],
-    "special": [
+    "20": [
+      "issues/20.md"
+    ],
+    "21": [
+      "issues/21.md"
+    ],
+    "22": [
+      "issues/22.md"
+    ],
+    "23": [
+      "issues/23.md"
+    ],
+    "24": [
+      "issues/24.md"
+    ],
+    "25": [
+      "issues/25.md"
+    ],
+    "404": [
       "issues/404.md"
     ]
   },
@@ -261,7 +258,7 @@
       "capt": null,
       "desc": null,
       "index": [],
-      "shard": [],
+      "tags": [],
       "date": null,
       "date_display": null
     },
@@ -280,7 +277,26 @@
       "capt": null,
       "desc": null,
       "index": [],
-      "shard": [],
+      "tags": [],
+      "date": null,
+      "date_display": null
+    },
+    "synopsis.md": {
+      "path": "synopsis.md",
+      "last_deploy": "2024-12-16 16:36:22 +0000",
+      "slocs": 42,
+      "chars": 1551,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "(info)/synopsis",
+      "title": "Synopsis",
+      "head": "Synopsis",
+      "capt": null,
+      "desc": null,
+      "index": [],
+      "tags": [],
       "date": null,
       "date_display": null
     },
@@ -301,10 +317,8 @@
       "index": [
         "01"
       ],
-      "shard": [
-        "lists",
-        "syntax",
-        "challenge"
+      "tags": [
+        "01"
       ],
       "date": "2024-06-06",
       "date_display": "2024 June 6"
@@ -326,9 +340,8 @@
       "index": [
         "02"
       ],
-      "shard": [
-        "strings",
-        "syntax"
+      "tags": [
+        "02"
       ],
       "date": "2024-06-12",
       "date_display": "2024 June 12"
@@ -350,11 +363,8 @@
       "index": [
         "03"
       ],
-      "shard": [
-        "strings",
-        "methods",
-        "quickies",
-        "challenge"
+      "tags": [
+        "03"
       ],
       "date": "2024-06-21",
       "date_display": "2024 June 21"
@@ -376,11 +386,8 @@
       "index": [
         "04"
       ],
-      "shard": [
-        "strings",
-        "operators",
-        "tricks",
-        "challenge"
+      "tags": [
+        "04"
       ],
       "date": "2024-06-27",
       "date_display": "2024 June 27"
@@ -402,8 +409,8 @@
       "index": [
         "05"
       ],
-      "shard": [
-        "sets"
+      "tags": [
+        "05"
       ],
       "date": "2024-09-14",
       "date_display": "2024 September 14"
@@ -425,10 +432,8 @@
       "index": [
         "06"
       ],
-      "shard": [
-        "tuples",
-        "syntax",
-        "challenge"
+      "tags": [
+        "06"
       ],
       "date": "2024-10-08",
       "date_display": "2024 October 8"
@@ -450,10 +455,8 @@
       "index": [
         "07"
       ],
-      "shard": [
-        "booleans",
-        "technical",
-        "challenge"
+      "tags": [
+        "07"
       ],
       "date": "2024-11-05",
       "date_display": "2024 November 5"
@@ -475,10 +478,8 @@
       "index": [
         "08"
       ],
-      "shard": [
-        "syntax",
-        "tricks",
-        "challenge"
+      "tags": [
+        "08"
       ],
       "date": "2024-11-12",
       "date_display": "2024 November 12"
@@ -500,10 +501,8 @@
       "index": [
         "09"
       ],
-      "shard": [
-        "booleans",
-        "technical",
-        "challenge"
+      "tags": [
+        "09"
       ],
       "date": "2024-11-19",
       "date_display": "2024 November 19"
@@ -525,11 +524,8 @@
       "index": [
         "10"
       ],
-      "shard": [
-        "functions",
-        "tricks",
-        "quickies",
-        "challenge"
+      "tags": [
+        "10"
       ],
       "date": "2024-11-26",
       "date_display": "2024 November 26"
@@ -551,9 +547,8 @@
       "index": [
         "11"
       ],
-      "shard": [
-        "technical",
-        "challenge"
+      "tags": [
+        "11"
       ],
       "date": "2024-12-02",
       "date_display": "2024 December 2"
@@ -575,9 +570,8 @@
       "index": [
         "12"
       ],
-      "shard": [
-        "modules",
-        "quickies"
+      "tags": [
+        "12"
       ],
       "date": "2024-12-06",
       "date_display": "2024 December 6"
@@ -599,9 +593,8 @@
       "index": [
         "13"
       ],
-      "shard": [
-        "functions",
-        "challenge"
+      "tags": [
+        "13"
       ],
       "date": "2024-12-12",
       "date_display": "2024 December 12"
@@ -623,9 +616,8 @@
       "index": [
         "14"
       ],
-      "shard": [
-        "syntax",
-        "quirks"
+      "tags": [
+        "14"
       ],
       "date": "2024-12-17",
       "date_display": "2024 December 17"
@@ -647,8 +639,8 @@
       "index": [
         "15"
       ],
-      "shard": [
-        "internals"
+      "tags": [
+        "15"
       ],
       "date": "2025-01-17",
       "date_display": "2025 January 17"
@@ -670,9 +662,8 @@
       "index": [
         "16"
       ],
-      "shard": [
-        "syntax",
-        "lists"
+      "tags": [
+        "16"
       ],
       "date": "2025-01-24",
       "date_display": "2025 January 24"
@@ -694,8 +685,8 @@
       "index": [
         "17"
       ],
-      "shard": [
-        "functions"
+      "tags": [
+        "17"
       ],
       "date": "2025-01-31",
       "date_display": "2025 January 31"
@@ -717,8 +708,8 @@
       "index": [
         "18"
       ],
-      "shard": [
-        "dictionaries"
+      "tags": [
+        "18"
       ],
       "date": "2025-02-07",
       "date_display": "2025 February 7"
@@ -740,9 +731,8 @@
       "index": [
         "19"
       ],
-      "shard": [
-        "dictionaries",
-        "syntax"
+      "tags": [
+        "19"
       ],
       "date": "2025-02-11",
       "date_display": "2025 February 11"
@@ -764,8 +754,8 @@
       "index": [
         "20"
       ],
-      "shard": [
-        "modules"
+      "tags": [
+        "20"
       ],
       "date": "2025-02-14",
       "date_display": "2025 February 14"
@@ -787,8 +777,8 @@
       "index": [
         "21"
       ],
-      "shard": [
-        "quickies"
+      "tags": [
+        "21"
       ],
       "date": "2025-02-27",
       "date_display": "2025 February 27"
@@ -810,8 +800,8 @@
       "index": [
         "22"
       ],
-      "shard": [
-        "syntax"
+      "tags": [
+        "22"
       ],
       "date": "2025-03-05",
       "date_display": "2025 March 5"
@@ -833,17 +823,17 @@
       "index": [
         "23"
       ],
-      "shard": [
-        "syntax"
+      "tags": [
+        "23"
       ],
       "date": "2025-03-14",
       "date_display": "2025 March 14"
     },
     "issues/24.md": {
       "path": "issues/24.md",
-      "last_deploy": "2025-04-04 15:37:00 +0100",
+      "last_deploy": "2025-04-24 09:59:27 +0100",
       "slocs": 148,
-      "chars": 4194,
+      "chars": 4193,
       "isIndex": false,
       "flags": [
         "live"
@@ -856,11 +846,34 @@
       "index": [
         "24"
       ],
-      "shard": [
-        "syntax"
+      "tags": [
+        "24"
       ],
       "date": "2025-04-04",
       "date_display": "2025 April 4"
+    },
+    "issues/25.md": {
+      "path": "issues/25.md",
+      "last_deploy": "2025-04-24 10:18:08 +0100",
+      "slocs": 145,
+      "chars": 4114,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/25",
+      "title": "Snowflakes!",
+      "head": "Snowflakes!",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "25"
+      ],
+      "tags": [
+        "25"
+      ],
+      "date": "2025-04-24",
+      "date_display": "2025 April 24"
     },
     "issues/404.md": {
       "path": "issues/404.md",
@@ -879,30 +892,11 @@
       "index": [
         "404"
       ],
-      "shard": [
-        "special"
+      "tags": [
+        "404"
       ],
       "date": "2024-07-04",
       "date_display": "2024 July 4"
-    },
-    "synopsis.md": {
-      "path": "synopsis.md",
-      "last_deploy": "2024-12-16 16:36:22 +0000",
-      "slocs": 42,
-      "chars": 1551,
-      "isIndex": false,
-      "flags": [
-        "live"
-      ],
-      "dest": "(info)/synopsis",
-      "title": "Synopsis",
-      "head": "Synopsis",
-      "capt": null,
-      "desc": null,
-      "index": [],
-      "shard": [],
-      "date": null,
-      "date_display": null
     }
   }
 }
