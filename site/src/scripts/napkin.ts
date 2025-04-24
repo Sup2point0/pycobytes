@@ -33,6 +33,7 @@ export async function request_napkin(
     return await response.json();
   }
   catch (error) {
+    console.log(error);
     return {
       click_count: "?",
       last_click: "?",

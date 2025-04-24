@@ -2,7 +2,7 @@
 
 import Site from "#src/site";
 
-import processAnimations from "#scripts/anim";
+import process_animations from "#scripts/anim";
 
 import FlavourCode from "./flavour-code.svx";
 import Clicky from "./clicky.svelte";
@@ -14,7 +14,7 @@ import { onMount } from "svelte";
 
 const issues = Object.values(Site.issues);
 
-onMount(processAnimations);
+onMount(process_animations);
 
 </script>
 
