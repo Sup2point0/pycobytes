@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-03-05",
-    "file_count": 27,
-    "page_count": 26
+    "exported": "2025-04-04",
+    "file_count": 29,
+    "page_count": 28
   },
   "index": {
     "01": {
@@ -137,6 +137,18 @@
         "issues/22.md"
       ]
     },
+    "23": {
+      "route": null,
+      "pages": [
+        "issues/23.md"
+      ]
+    },
+    "24": {
+      "route": null,
+      "pages": [
+        "issues/24.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -157,7 +169,9 @@
       "issues/14.md",
       "issues/16.md",
       "issues/19.md",
-      "issues/22.md"
+      "issues/22.md",
+      "issues/23.md",
+      "issues/24.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -781,9 +795,9 @@
     },
     "issues/22.md": {
       "path": "issues/22.md",
-      "last_deploy": "2025-03-05 11:34:13 +0000",
+      "last_deploy": "2025-03-05 11:54:55 +0000",
       "slocs": 143,
-      "chars": 3526,
+      "chars": 3538,
       "isIndex": false,
       "flags": [
         "live"
@@ -801,6 +815,52 @@
       ],
       "date": "2025-03-05",
       "date_display": "2025 March 5"
+    },
+    "issues/23.md": {
+      "path": "issues/23.md",
+      "last_deploy": "2025-03-13 20:54:37 +0000",
+      "slocs": 149,
+      "chars": 3619,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/23",
+      "title": "The Argument Over Parameters",
+      "head": "The Argument Over Parameters",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "23"
+      ],
+      "shard": [
+        "syntax"
+      ],
+      "date": "2025-03-14",
+      "date_display": "2025 March 14"
+    },
+    "issues/24.md": {
+      "path": "issues/24.md",
+      "last_deploy": "2025-04-04 15:37:00 +0100",
+      "slocs": 148,
+      "chars": 4194,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/24",
+      "title": "*Alien **Kwargs",
+      "head": "*Alien **Kwargs",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "24"
+      ],
+      "shard": [
+        "syntax"
+      ],
+      "date": "2025-04-04",
+      "date_display": "2025 April 4"
     },
     "issues/404.md": {
       "path": "issues/404.md",
