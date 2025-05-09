@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-04-24",
-    "file_count": 30,
-    "page_count": 29
+    "exported": "2025-05-09",
+    "file_count": 32,
+    "page_count": 31
   },
   "index": {
     "01": {
@@ -155,6 +155,18 @@
         "issues/25.md"
       ]
     },
+    "26": {
+      "route": null,
+      "pages": [
+        "issues/26.md"
+      ]
+    },
+    "27": {
+      "route": null,
+      "pages": [
+        "issues/27.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -178,7 +190,8 @@
       "issues/22.md",
       "issues/23.md",
       "issues/24.md",
-      "issues/25.md"
+      "issues/25.md",
+      "issues/27.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -232,7 +245,8 @@
     "functions": [
       "issues/10.md",
       "issues/13.md",
-      "issues/17.md"
+      "issues/17.md",
+      "issues/27.md"
     ],
     "modules": [
       "issues/12.md",
@@ -247,6 +261,9 @@
     "dictionaries": [
       "issues/18.md",
       "issues/19.md"
+    ],
+    "26": [
+      "issues/26.md"
     ],
     "special": [
       "issues/404.md"
@@ -890,9 +907,9 @@
     },
     "issues/25.md": {
       "path": "issues/25.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
-      "slocs": 145,
-      "chars": 4113,
+      "last_deploy": "2025-04-24 14:03:18 +0100",
+      "slocs": 143,
+      "chars": 4111,
       "isIndex": false,
       "flags": [
         "live"
@@ -910,6 +927,53 @@
       ],
       "date": "2025-04-24",
       "date_display": "2025 April 24"
+    },
+    "issues/26.md": {
+      "path": "issues/26.md",
+      "last_deploy": "2025-05-02 11:17:50 +0100",
+      "slocs": 132,
+      "chars": 3792,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/26",
+      "title": "Merging Dictionaries",
+      "head": "Merging Dictionaries",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "26"
+      ],
+      "tags": [
+        "26"
+      ],
+      "date": "2025-05-02",
+      "date_display": "2025 May 2"
+    },
+    "issues/27.md": {
+      "path": "issues/27.md",
+      "last_deploy": "2025-05-09 08:00:27 +0100",
+      "slocs": 124,
+      "chars": 4158,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/27",
+      "title": "Parameter Partitioning",
+      "head": "Parameter Partitioning",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "27"
+      ],
+      "tags": [
+        "syntax",
+        "functions"
+      ],
+      "date": "2025-05-09",
+      "date_display": "2025 May 9"
     },
     "issues/404.md": {
       "path": "issues/404.md",
