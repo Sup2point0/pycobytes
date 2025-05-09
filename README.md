@@ -32,6 +32,9 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [27](issues/27.md) | 09/05/25 | *Parameter Partitioning* |
+| [26](issues/26.md) | 02/05/25 | *Merging Dictionaries* |
+| [25](issues/25.md) | 24/04/25 | *Snowflakes!* |
 | [24](issues/24.md) | 04/04/25 | *\*Alien \*\*Kwargs* |
 | [23](issues/23.md) | 14/03/25 | *The Argument Over Parameters* |
 | [22](issues/22.md) | 05/03/25 | *Unpacking Variable Unpacking* |
