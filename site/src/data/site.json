@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-05-09",
-    "file_count": 32,
-    "page_count": 31
+    "exported": "2025-05-13",
+    "file_count": 33,
+    "page_count": 32
   },
   "index": {
     "01": {
@@ -167,6 +167,12 @@
         "issues/27.md"
       ]
     },
+    "28": {
+      "route": null,
+      "pages": [
+        "issues/28.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -264,6 +270,9 @@
     ],
     "26": [
       "issues/26.md"
+    ],
+    "keywords": [
+      "issues/28.md"
     ],
     "special": [
       "issues/404.md"
@@ -953,9 +962,9 @@
     },
     "issues/27.md": {
       "path": "issues/27.md",
-      "last_deploy": "2025-05-09 08:00:27 +0100",
-      "slocs": 124,
-      "chars": 4158,
+      "last_deploy": "2025-05-09 09:34:26 +0100",
+      "slocs": 132,
+      "chars": 4293,
       "isIndex": false,
       "flags": [
         "live"
@@ -974,6 +983,29 @@
       ],
       "date": "2025-05-09",
       "date_display": "2025 May 9"
+    },
+    "issues/28.md": {
+      "path": "issues/28.md",
+      "last_deploy": "2025-05-13 12:30:40 +0100",
+      "slocs": 176,
+      "chars": 4618,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/28",
+      "title": "Breaking Specificity",
+      "head": "Breaking Specificity",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "28"
+      ],
+      "tags": [
+        "keywords"
+      ],
+      "date": "2025-05-13",
+      "date_display": "2025 May 13"
     },
     "issues/404.md": {
       "path": "issues/404.md",
