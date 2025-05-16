@@ -1,5 +1,6 @@
 .archive/
-.devcontainer/
+
 send/core.html
+send/challenge.py
 
 __pycache__/
