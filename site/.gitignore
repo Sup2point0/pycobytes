@@ -3,6 +3,8 @@
 static/
 (issue)/
 
+scss-config.js
+
 node_modules/
 build/
 .svelte-kit/

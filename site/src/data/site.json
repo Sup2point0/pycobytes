@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-05-13",
-    "file_count": 33,
-    "page_count": 32
+    "exported": "2025-05-16",
+    "file_count": 34,
+    "page_count": 33
   },
   "index": {
     "01": {
@@ -171,6 +171,12 @@
       "route": null,
       "pages": [
         "issues/28.md"
+      ]
+    },
+    "29": {
+      "route": null,
+      "pages": [
+        "issues/29.md"
       ]
     },
     "404": {
@@ -986,9 +992,9 @@
     },
     "issues/28.md": {
       "path": "issues/28.md",
-      "last_deploy": "2025-05-13 12:30:40 +0100",
-      "slocs": 176,
-      "chars": 4618,
+      "last_deploy": "2025-05-13 13:48:25 +0100",
+      "slocs": 174,
+      "chars": 4445,
       "isIndex": false,
       "flags": [
         "live"
@@ -1006,6 +1012,27 @@
       ],
       "date": "2025-05-13",
       "date_display": "2025 May 13"
+    },
+    "issues/29.md": {
+      "path": "issues/29.md",
+      "last_deploy": "2025-05-16 12:02:33 +0100",
+      "slocs": 197,
+      "chars": 5561,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/29",
+      "title": "Expect the Exception",
+      "head": "Expect the Exception",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "29"
+      ],
+      "tags": [],
+      "date": "2025-05-16",
+      "date_display": "2025 May 16"
     },
     "issues/404.md": {
       "path": "issues/404.md",
