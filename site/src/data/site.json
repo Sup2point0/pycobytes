@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-05-16",
-    "file_count": 34,
-    "page_count": 33
+    "exported": "2025-05-22",
+    "file_count": 35,
+    "page_count": 34
   },
   "index": {
     "01": {
@@ -179,6 +179,12 @@
         "issues/29.md"
       ]
     },
+    "30": {
+      "route": null,
+      "pages": [
+        "issues/30.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -203,7 +209,8 @@
       "issues/23.md",
       "issues/24.md",
       "issues/25.md",
-      "issues/27.md"
+      "issues/27.md",
+      "issues/30.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -1033,6 +1040,29 @@
       "tags": [],
       "date": "2025-05-16",
       "date_display": "2025 May 16"
+    },
+    "issues/30.md": {
+      "path": "issues/30.md",
+      "last_deploy": "2025-05-22 12:15:04 +0100",
+      "slocs": 172,
+      "chars": 4796,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/30",
+      "title": "You’re havin’ a laugh",
+      "head": "You’re havin’ a laugh",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "30"
+      ],
+      "tags": [
+        "syntax"
+      ],
+      "date": "2025-05-22",
+      "date_display": "2025 May 22"
     },
     "issues/404.md": {
       "path": "issues/404.md",
