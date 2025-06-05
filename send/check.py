@@ -12,6 +12,7 @@ def check(text: str):
 
 check("Have we set the quote?")
 check("Have we set the header links?")
-check("Have we updated the Codeless / XKCD")
+check("Have we updated the Codeless / XKCD?")
+check("Have we linked the Codeless / XKCD?")
 check("Have we set the email preview text?")
 check("Have we cc-d?")

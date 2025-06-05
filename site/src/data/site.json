@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-05-22",
-    "file_count": 35,
-    "page_count": 34
+    "exported": "2025-06-05",
+    "file_count": 36,
+    "page_count": 35
   },
   "index": {
     "01": {
@@ -185,6 +185,12 @@
         "issues/30.md"
       ]
     },
+    "31": {
+      "route": null,
+      "pages": [
+        "issues/31.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -285,7 +291,8 @@
       "issues/26.md"
     ],
     "keywords": [
-      "issues/28.md"
+      "issues/28.md",
+      "issues/31.md"
     ],
     "special": [
       "issues/404.md"
@@ -376,9 +383,9 @@
     },
     "issues/02.md": {
       "path": "issues/02.md",
-      "last_deploy": "2025-04-24 10:29:18 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 102,
-      "chars": 3336,
+      "chars": 3335,
       "isIndex": false,
       "flags": [
         "live"
@@ -452,9 +459,9 @@
     },
     "issues/05.md": {
       "path": "issues/05.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 98,
-      "chars": 3099,
+      "chars": 3098,
       "isIndex": false,
       "flags": [
         "live"
@@ -525,9 +532,9 @@
     },
     "issues/08.md": {
       "path": "issues/08.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 160,
-      "chars": 3870,
+      "chars": 3869,
       "isIndex": false,
       "flags": [
         "live"
@@ -575,9 +582,9 @@
     },
     "issues/10.md": {
       "path": "issues/10.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 128,
-      "chars": 2830,
+      "chars": 2829,
       "isIndex": false,
       "flags": [
         "live"
@@ -625,9 +632,9 @@
     },
     "issues/12.md": {
       "path": "issues/12.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 146,
-      "chars": 2916,
+      "chars": 2915,
       "isIndex": false,
       "flags": [
         "live"
@@ -697,9 +704,9 @@
     },
     "issues/15.md": {
       "path": "issues/15.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 133,
-      "chars": 3328,
+      "chars": 3327,
       "isIndex": false,
       "flags": [
         "live"
@@ -744,9 +751,9 @@
     },
     "issues/17.md": {
       "path": "issues/17.md",
-      "last_deploy": "2025-04-24 10:29:17 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 160,
-      "chars": 5929,
+      "chars": 5928,
       "isIndex": false,
       "flags": [
         "live"
@@ -837,9 +844,9 @@
     },
     "issues/21.md": {
       "path": "issues/21.md",
-      "last_deploy": "2025-04-24 10:29:18 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 115,
-      "chars": 2747,
+      "chars": 2746,
       "isIndex": false,
       "flags": [
         "live"
@@ -860,9 +867,9 @@
     },
     "issues/22.md": {
       "path": "issues/22.md",
-      "last_deploy": "2025-04-24 10:29:18 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 143,
-      "chars": 3537,
+      "chars": 3536,
       "isIndex": false,
       "flags": [
         "live"
@@ -906,9 +913,9 @@
     },
     "issues/24.md": {
       "path": "issues/24.md",
-      "last_deploy": "2025-04-24 10:29:18 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 148,
-      "chars": 4192,
+      "chars": 4191,
       "isIndex": false,
       "flags": [
         "live"
@@ -975,9 +982,9 @@
     },
     "issues/27.md": {
       "path": "issues/27.md",
-      "last_deploy": "2025-05-09 09:34:26 +0100",
+      "last_deploy": "2025-05-22 12:18:17 +0100",
       "slocs": 132,
-      "chars": 4293,
+      "chars": 4292,
       "isIndex": false,
       "flags": [
         "live"
@@ -1043,9 +1050,9 @@
     },
     "issues/30.md": {
       "path": "issues/30.md",
-      "last_deploy": "2025-05-22 12:15:04 +0100",
-      "slocs": 172,
-      "chars": 4796,
+      "last_deploy": "2025-05-22 12:23:59 +0100",
+      "slocs": 170,
+      "chars": 4679,
       "isIndex": false,
       "flags": [
         "live"
@@ -1063,6 +1070,29 @@
       ],
       "date": "2025-05-22",
       "date_display": "2025 May 22"
+    },
+    "issues/31.md": {
+      "path": "issues/31.md",
+      "last_deploy": "2025-06-05 12:20:41 +0100",
+      "slocs": 216,
+      "chars": 7406,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/31",
+      "title": "Programmers Are Lazy",
+      "head": "Programmers Are Lazy",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "31"
+      ],
+      "tags": [
+        "keywords"
+      ],
+      "date": "2025-06-05",
+      "date_display": "2025 June 5"
     },
     "issues/404.md": {
       "path": "issues/404.md",
