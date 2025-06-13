@@ -32,6 +32,11 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [32](issues/32.md) | 13/06/25 | *Recursive Laziness* |
+| [31](issues/31.md) | 05/06/25 | *Programmers Are Lazy* |
+| [30](issues/30.md) | 22/05/25 | *You’re havin’ a laugh* |
+| [29](issues/29.md) | 16/05/25 | *Expect the Exception* |
+| [28](issues/28.md) | 13/05/25 | *Breaking Specificity* |
 | [27](issues/27.md) | 09/05/25 | *Parameter Partitioning* |
 | [26](issues/26.md) | 02/05/25 | *Merging Dictionaries* |
 | [25](issues/25.md) | 24/04/25 | *Snowflakes!* |
