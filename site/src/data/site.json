@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-06-05",
-    "file_count": 36,
-    "page_count": 35
+    "exported": "2025-06-13",
+    "file_count": 37,
+    "page_count": 36
   },
   "index": {
     "01": {
@@ -191,6 +191,12 @@
         "issues/31.md"
       ]
     },
+    "32": {
+      "route": null,
+      "pages": [
+        "issues/32.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -216,7 +222,8 @@
       "issues/24.md",
       "issues/25.md",
       "issues/27.md",
-      "issues/30.md"
+      "issues/30.md",
+      "issues/32.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -1073,9 +1080,9 @@
     },
     "issues/31.md": {
       "path": "issues/31.md",
-      "last_deploy": "2025-06-05 12:20:41 +0100",
-      "slocs": 216,
-      "chars": 7406,
+      "last_deploy": "2025-06-05 12:27:07 +0100",
+      "slocs": 218,
+      "chars": 7519,
       "isIndex": false,
       "flags": [
         "live"
@@ -1093,6 +1100,29 @@
       ],
       "date": "2025-06-05",
       "date_display": "2025 June 5"
+    },
+    "issues/32.md": {
+      "path": "issues/32.md",
+      "last_deploy": "2025-06-13 15:35:24 +0100",
+      "slocs": 200,
+      "chars": 5791,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/32",
+      "title": "Recursive Laziness",
+      "head": "Recursive Laziness",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "32"
+      ],
+      "tags": [
+        "syntax"
+      ],
+      "date": "2025-06-12",
+      "date_display": "2025 June 12"
     },
     "issues/404.md": {
       "path": "issues/404.md",
