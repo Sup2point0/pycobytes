@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-06-13",
-    "file_count": 37,
-    "page_count": 36
+    "exported": "2025-06-20",
+    "file_count": 38,
+    "page_count": 37
   },
   "index": {
     "01": {
@@ -197,6 +197,12 @@
         "issues/32.md"
       ]
     },
+    "33": {
+      "route": null,
+      "pages": [
+        "issues/33.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -272,7 +278,8 @@
     "technical": [
       "issues/07.md",
       "issues/09.md",
-      "issues/11.md"
+      "issues/11.md",
+      "issues/33.md"
     ],
     "functions": [
       "issues/10.md",
@@ -1103,7 +1110,7 @@
     },
     "issues/32.md": {
       "path": "issues/32.md",
-      "last_deploy": "2025-06-13 15:35:24 +0100",
+      "last_deploy": "2025-06-13 15:45:05 +0100",
       "slocs": 200,
       "chars": 5791,
       "isIndex": false,
@@ -1121,8 +1128,31 @@
       "tags": [
         "syntax"
       ],
-      "date": "2025-06-12",
-      "date_display": "2025 June 12"
+      "date": "2025-06-13",
+      "date_display": "2025 June 13"
+    },
+    "issues/33.md": {
+      "path": "issues/33.md",
+      "last_deploy": "2025-06-20 12:04:41 +0100",
+      "slocs": 167,
+      "chars": 5919,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/33",
+      "title": "What even is a function?",
+      "head": "What even is a function?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "33"
+      ],
+      "tags": [
+        "technical"
+      ],
+      "date": "2025-06-20",
+      "date_display": "2025 June 20"
     },
     "issues/404.md": {
       "path": "issues/404.md",
