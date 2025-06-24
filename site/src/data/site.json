@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-06-20",
-    "file_count": 38,
-    "page_count": 37
+    "exported": "2025-06-24",
+    "file_count": 39,
+    "page_count": 38
   },
   "index": {
     "01": {
@@ -203,6 +203,12 @@
         "issues/33.md"
       ]
     },
+    "34": {
+      "route": null,
+      "pages": [
+        "issues/34.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -229,7 +235,8 @@
       "issues/25.md",
       "issues/27.md",
       "issues/30.md",
-      "issues/32.md"
+      "issues/32.md",
+      "issues/34.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -306,7 +313,8 @@
     ],
     "keywords": [
       "issues/28.md",
-      "issues/31.md"
+      "issues/31.md",
+      "issues/34.md"
     ],
     "special": [
       "issues/404.md"
@@ -1133,9 +1141,9 @@
     },
     "issues/33.md": {
       "path": "issues/33.md",
-      "last_deploy": "2025-06-20 12:04:41 +0100",
+      "last_deploy": "2025-06-20 12:08:15 +0100",
       "slocs": 167,
-      "chars": 5919,
+      "chars": 5920,
       "isIndex": false,
       "flags": [
         "live"
@@ -1153,6 +1161,30 @@
       ],
       "date": "2025-06-20",
       "date_display": "2025 June 20"
+    },
+    "issues/34.md": {
+      "path": "issues/34.md",
+      "last_deploy": "2025-06-24 15:44:21 +0100",
+      "slocs": 196,
+      "chars": 5902,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/34",
+      "title": "Why is a Greek letter a keyword?",
+      "head": "Why is a Greek letter a keyword?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "34"
+      ],
+      "tags": [
+        "syntax",
+        "keywords"
+      ],
+      "date": "2025-06-24",
+      "date_display": "2025 June 24"
     },
     "issues/404.md": {
       "path": "issues/404.md",
