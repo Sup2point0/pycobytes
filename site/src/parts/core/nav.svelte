@@ -16,7 +16,7 @@ import NavDropLink from "#parts/core/nav.link.drop.svelte";
 
 import Pycobytes from "#parts/misc/pyco.svelte";
 
-import { page } from "$app/state";
+import { goto } from "$app/navigation";
 
 </script>
 
@@ -63,7 +63,7 @@ import { page } from "$app/state";
     <NavLink text="Issues" intern="issues" collapse={true} >
       <NavDropLink text="Index" intern="issues" />
       <NavDropLink text="Latest" intern="issues/{Site.issues[0].index}" />
-      <NavDropLink text="Random" button={() => { window.location.href = pickRandomIssue() }} />
+      <NavDropLink text="Random" button={() => goto(pickRandomIssue())} />
     </NavLink>
 
     <NavLink text="Contact" extern="https://github.com/Sup2point0/pycobytes/discussions" collapse={true} >
