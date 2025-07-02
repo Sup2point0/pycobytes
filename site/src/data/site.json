@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-06-27",
-    "file_count": 39,
-    "page_count": 38
+    "exported": "2025-07-02",
+    "file_count": 40,
+    "page_count": 39
   },
   "index": {
     "01": {
@@ -209,6 +209,12 @@
         "issues/34.md"
       ]
     },
+    "35": {
+      "route": null,
+      "pages": [
+        "issues/35.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -292,7 +298,8 @@
       "issues/10.md",
       "issues/13.md",
       "issues/17.md",
-      "issues/27.md"
+      "issues/27.md",
+      "issues/35.md"
     ],
     "modules": [
       "issues/12.md",
@@ -1164,9 +1171,9 @@
     },
     "issues/34.md": {
       "path": "issues/34.md",
-      "last_deploy": "2025-06-24 15:49:47 +0100",
+      "last_deploy": "2025-07-02 10:32:12 +0100",
       "slocs": 196,
-      "chars": 6014,
+      "chars": 6065,
       "isIndex": false,
       "flags": [
         "live"
@@ -1185,6 +1192,29 @@
       ],
       "date": "2025-06-24",
       "date_display": "2025 June 24"
+    },
+    "issues/35.md": {
+      "path": "issues/35.md",
+      "last_deploy": "2025-07-02 10:32:31 +0100",
+      "slocs": 234,
+      "chars": 7003,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/35",
+      "title": "Wrapping Up",
+      "head": "Wrapping Up",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "35"
+      ],
+      "tags": [
+        "functions"
+      ],
+      "date": "2025-07-02",
+      "date_display": "2025 July 2"
     },
     "issues/404.md": {
       "path": "issues/404.md",
