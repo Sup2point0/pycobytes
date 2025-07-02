@@ -3,6 +3,7 @@
 | dest = (info)/decoded
 | title = decoded
 | head = <em>decoded</em>: pycobytes
+| date = 2025 July 2
 -->
 
 > [!Note]
@@ -22,7 +23,9 @@
   - So plan *pragmatically* rather than programmatically.
 - Sometimes, it pays to have a little faith.
   - That said, leaving stuff until the last minute really isn’t fun.
-
+- Committing to a weekly schedule is HARD.
+- Not wanting to get things wrong is a pretty damn effective incentive to go do your own research.
+  - I’ve deepened my understanding of Python more than I expected just through all this additional research!
 
 <br>
 
