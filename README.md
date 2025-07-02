@@ -32,6 +32,9 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [35](issues/35.md) | 02/06/25 | *Wrapping Up* |
+| [34](issues/34.md) | 24/06/25 | *Why is a Greek letter a keyword?* |
+| [33](issues/33.md) | 20/06/25 | *What even is a function?* |
 | [32](issues/32.md) | 13/06/25 | *Recursive Laziness* |
 | [31](issues/31.md) | 05/06/25 | *Programmers Are Lazy* |
 | [30](issues/30.md) | 22/05/25 | *You’re havin’ a laugh* |
@@ -46,7 +49,7 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 | [21](issues/21.md) | 27/02/25 | *Quickswap, Swapquick* |
 | [20](issues/20.md) | 14/02/25 | *import itertools* |
 | [19](issues/19.md) | 11/02/25 | *Dictionary && Set Comprehensions* |
-| [18](issues/18.md) | 7/02/25 | *The Mighty Dictionary* |
+| [18](issues/18.md) | 07/02/25 | *The Mighty Dictionary* |
 | [17](issues/17.md) | 31/01/25 | *Zipped and Quipped* |
 | [16](issues/16.md) | 24/01/25 | *Slice, Splice, Nice* |
 | [15](issues/15.md) | 17/01/25 | *Why is range() so fast?* |
