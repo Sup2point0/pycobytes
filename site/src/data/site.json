@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-07-02",
-    "file_count": 40,
-    "page_count": 39
+    "exported": "2025-07-07",
+    "file_count": 41,
+    "page_count": 40
   },
   "index": {
     "01": {
@@ -215,6 +215,12 @@
         "issues/35.md"
       ]
     },
+    "36": {
+      "route": null,
+      "pages": [
+        "issues/36.md"
+      ]
+    },
     "404": {
       "route": null,
       "pages": [
@@ -242,7 +248,8 @@
       "issues/27.md",
       "issues/30.md",
       "issues/32.md",
-      "issues/34.md"
+      "issues/34.md",
+      "issues/36.md"
     ],
     "challenge": [
       "issues/01.md",
@@ -330,9 +337,9 @@
   "pages": {
     "edu.md": {
       "path": "edu.md",
-      "last_deploy": "2025-01-17 11:42:32 +0000",
-      "slocs": 33,
-      "chars": 1015,
+      "last_deploy": "2025-07-02 11:26:21 +0100",
+      "slocs": 36,
+      "chars": 1286,
       "isIndex": false,
       "flags": [
         "live"
@@ -344,8 +351,8 @@
       "desc": null,
       "index": [],
       "tags": [],
-      "date": null,
-      "date_display": null
+      "date": "2025-07-02",
+      "date_display": "2025 July 2"
     },
     "faq.md": {
       "path": "faq.md",
@@ -1195,9 +1202,9 @@
     },
     "issues/35.md": {
       "path": "issues/35.md",
-      "last_deploy": "2025-07-02 10:32:31 +0100",
-      "slocs": 234,
-      "chars": 7003,
+      "last_deploy": "2025-07-02 10:52:02 +0100",
+      "slocs": 236,
+      "chars": 7118,
       "isIndex": false,
       "flags": [
         "live"
@@ -1215,6 +1222,29 @@
       ],
       "date": "2025-07-02",
       "date_display": "2025 July 2"
+    },
+    "issues/36.md": {
+      "path": "issues/36.md",
+      "last_deploy": "2025-07-07 10:01:28 +0100",
+      "slocs": 185,
+      "chars": 6747,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/36",
+      "title": "Typical Typist is Typing...",
+      "head": "Typical Typist is Typing...",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "36"
+      ],
+      "tags": [
+        "syntax"
+      ],
+      "date": "2025-07-06",
+      "date_display": "2025 July 6"
     },
     "issues/404.md": {
       "path": "issues/404.md",
