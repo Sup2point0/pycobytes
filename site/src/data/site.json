@@ -1,8 +1,8 @@
 {
   "meta": {
-    "exported": "2025-07-07",
-    "file_count": 41,
-    "page_count": 40
+    "exported": "2025-07-09",
+    "file_count": 42,
+    "page_count": 41
   },
   "index": {
     "01": {
@@ -185,6 +185,12 @@
         "issues/30.md"
       ]
     },
+    "308": {
+      "route": null,
+      "pages": [
+        "issues/308.md"
+      ]
+    },
     "31": {
       "route": null,
       "pages": [
@@ -331,6 +337,7 @@
       "issues/34.md"
     ],
     "special": [
+      "issues/308.md",
       "issues/404.md"
     ]
   },
@@ -1107,6 +1114,29 @@
       "date": "2025-05-22",
       "date_display": "2025 May 22"
     },
+    "issues/308.md": {
+      "path": "issues/308.md",
+      "last_deploy": "2025-07-09 21:06:18 +0100",
+      "slocs": 67,
+      "chars": 5010,
+      "isIndex": false,
+      "flags": [
+        "live"
+      ],
+      "dest": "issues/(issue)/308",
+      "title": "How do we write maintainable code?",
+      "head": "How do we write maintainable code?",
+      "capt": null,
+      "desc": null,
+      "index": [
+        "308"
+      ],
+      "tags": [
+        "special"
+      ],
+      "date": "2025-07-07",
+      "date_display": "2025 July 7"
+    },
     "issues/31.md": {
       "path": "issues/31.md",
       "last_deploy": "2025-06-05 12:27:07 +0100",
@@ -1225,9 +1255,9 @@
     },
     "issues/36.md": {
       "path": "issues/36.md",
-      "last_deploy": "2025-07-07 10:01:28 +0100",
+      "last_deploy": "2025-07-07 10:28:09 +0100",
       "slocs": 185,
-      "chars": 6747,
+      "chars": 6753,
       "isIndex": false,
       "flags": [
         "live"
