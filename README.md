@@ -32,6 +32,8 @@ If you’ve got questons, check the [FAQ](faq.md). You can learn about how pycob
 
 | issue | date | title |
 | :---- | :--- | :---- |
+| [308](issues/308.md) | 07/06/25 | *How do we write maintainable code?* |
+| [36](issues/36.md) | 06/06/25 | *Typical Typist is Typing...* |
 | [35](issues/35.md) | 02/06/25 | *Wrapping Up* |
 | [34](issues/34.md) | 24/06/25 | *Why is a Greek letter a keyword?* |
 | [33](issues/33.md) | 20/06/25 | *What even is a function?* |
